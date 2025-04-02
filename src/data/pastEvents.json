@@ -1,0 +1,54 @@
+[
+    {
+      "id": "souviens-toi",
+      "title": "Souviens toi",
+      "date": "29 et 30 juin 2024",
+      "description": "La musique et la danse se retrouvent",
+      "photo_cover": "/images/events/souviens-toi/affiche.jpg",
+      "gallery_photos": [
+        "/images/events/souviens-toi/galerie/photo1.jpg",
+        "/images/events/souviens-toi/galerie/photo2.jpg",
+        "/images/events/souviens-toi/galerie/photo3.jpg"
+      ],
+      "partenaires": {
+        "partenaire": ["eddanse", "mathildeadam"],
+        "institutionnel": ["mairieoffemont", "villebelfort", "departementterritoire"],
+        "or": ["milgred"],
+        "argent": ["coesio"],
+        "sponsor": ["comptoirremparts", "pflevents"]
+      }
+    },
+    {
+      "id": "centenaire",
+      "title": "Centenaire",
+      "date": "2 novembre 2022",
+      "description": "Le Territoire de Belfort fête ses 100 ans !",
+      "photo_cover": "/images/events/centenaire/affiche.jpg",
+      "gallery_photos": [
+        "/images/events/centenaire/galerie/photo1.jpg",
+        "/images/events/centenaire/galerie/photo2.jpg",
+        "/images/events/centenaire/galerie/photo3.jpg"
+      ],
+      "partenaires": {
+        "partenaire": [],
+        "institutionnel": ["mairieoffemont", "villebelfort"],
+        "or": [],
+        "argent": [],
+        "sponsor": ["pflevents"]
+      }
+    },
+    {
+        "id": "3",
+        "title": "Événement 3",
+        "date": "13 février 2020",
+        "description": "Description de l'événement 3"
+    },
+    {
+      "id": "odyssee",
+      "title": "Odyssée du Cirque",
+      "date": "27 janvier 2019",
+      "description": "Cirque en musique avec Best Off'",
+      "photo_cover": "/images/events/odyssee/affiche.jpg"
+  }
+]
+  

@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+
+:root {
+  /* Polices */
+  --font-primary: 'Raleway', sans-serif;
+  --font-secondary: 'Open Sans', sans-serif;
+  
+  /* Vous pouvez ajouter d'autres variables comme : */
+  /* --color-primary: #3a86ff; */
+  /* --spacing-unit: 1rem; */
+}
+
+body {
+  font-family: var(--font-secondary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary);
+  color: white;
+  /* font-weight: 500; Poids typographique pour les titres */
+}
+
+h1, h2, h3 {
+  font-weight: 100;
+}
+
+
+p {
+  font-family: var(--font-secondary);
+  color: white;
+}
+
+/* 4. Classes utilitaires pour les polices */
+.font-primary {
+  font-family: var(--font-primary);
+}
+
+.font-secondary {
+  font-family: var(--font-secondary);
+}
