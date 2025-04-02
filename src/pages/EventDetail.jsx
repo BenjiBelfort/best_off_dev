@@ -10,7 +10,7 @@ const EventDetail = () => {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <Link to="/archives" className="text-gray-400 hover:text-white mb-4 inline-block">
+      <Link to="/archives" className="text-white hover:text-red-300 mb-4 inline-block">
         ← Retour aux archives
       </Link>
 

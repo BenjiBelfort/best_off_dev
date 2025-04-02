@@ -1,17 +1,14 @@
+// components/ui/AnchorLink.jsx
 import { Link, useNavigate } from 'react-router-dom';
 
-const AnchorLink = ({ to, children, ...props }) => {
+const AnchorLink = ({ to, children, className, onClick, ...props }) => {
   const navigate = useNavigate();
   
   const handleClick = (e) => {
     if (window.location.pathname !== '/') {
       e.preventDefault();
-      navigate('/', { 
-        state: { scrollTo: to },
-        replace: false
-      });
+      navigate('/', { state: { scrollTo: to } });
     } else {
-      // Scroll immédiat si déjà sur la homepage
       const element = document.getElementById(to);
       if (element) {
         e.preventDefault();
@@ -19,12 +16,14 @@ const AnchorLink = ({ to, children, ...props }) => {
         window.history.pushState({}, '', `#${to}`);
       }
     }
+    onClick?.();
   };
 
   return (
     <Link
       to={window.location.pathname === '/' ? `#${to}` : '/'}
       onClick={handleClick}
+      className={className}
       {...props}
     >
       {children}

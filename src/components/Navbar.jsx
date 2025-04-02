@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import AnchorLink from '../components/ui/AnchorLink';
+import PageLink from '../components/ui/PageLink';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,7 +43,7 @@ const Navbar = () => {
         <Link 
           to="/" 
           onClick={handleHomeClick} 
-          className="hover:text-red-300"
+          className="hover:text-red-300 transition-colors"
         >
           <h1 className="text-4xl">BEST OFF'</h1>
         </Link>
@@ -50,9 +51,9 @@ const Navbar = () => {
         {/* Liens de navigation - Desktop */}
         <div className="hidden lg:flex space-x-6">
             <AnchorLink to="actuality" className="hover:text-red-300 transition-colors">Actualités</AnchorLink>
-            <Link to="/archives" className="hover:text-red-300 transition-colors">Archives</Link>
-            <Link to="/galerie" className="hover:text-red-300 transition-colors">Galerie</Link>
-            <Link to="/biographie" className="hover:text-red-300 transition-colors">Biographie</Link>
+            <PageLink to="/archives" className="hover:text-red-300 transition-colors">Archives</PageLink>
+            <PageLink to="/galerie" className="hover:text-red-300 transition-colors">Galerie</PageLink>
+            <AnchorLink to="biographie" className="hover:text-red-300 transition-colors">Biographie</AnchorLink>
             <Link to="/presse" className="hover:text-red-300 transition-colors">Presse</Link>
             <Link to="/partenaires" className="hover:text-red-300 transition-colors">Partenaires</Link>
             <Link to="/auditions" className="hover:text-red-300 transition-colors">Auditions</Link>
