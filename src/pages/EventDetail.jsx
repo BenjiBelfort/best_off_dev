@@ -1,6 +1,6 @@
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import eventsData from '../data/pastEvents.json';
-import { Link } from 'react-router-dom';
+import Gallery from '../components/ui/Gallery';
 
 const EventDetail = () => {
   const { id } = useParams();
@@ -9,41 +9,41 @@ const EventDetail = () => {
   if (!event) return <div className="text-white text-center py-8">Événement non trouvé</div>;
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <section className="container mx-auto max-w-2xl px-4 py-8">
       <Link to="/archives" className="text-white hover:text-red-300 mb-4 inline-block">
         ← Retour aux archives
       </Link>
 
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-2xl mx-auto">
+        <h3>{event.title}</h3>
         <img
           src={event.photo_cover || '/placeholder-event.jpg'}
           alt={event.title}
-          className="w-full h-96 object-cover rounded-lg mb-6"
+          className="w-full h-full object-cover mb-6"
         />
         
-        <h1 className="text-4xl font-bold text-white mb-4">{event.title}</h1>
-        <p className="text-xl text-gray-300 mb-4">{event.date}</p>
-        <p className="text-lg text-gray-400 mb-8">{event.description}</p>
+        
+        <p className="text-xl mb-4">{event.date}</p>
+        <p className="text-lg mb-8">
+          {Array.isArray(event.description)
+            ? event.description.map((line, index) => (
+                <span key={index} className="block">
+                  {line}
+                </span>
+              ))
+            : event.description}
+        </p>
 
         {event.gallery_photos && (
           <div className="mb-8">
-            <h2 className="text-2xl font-bold text-white mb-4">Galerie Photos</h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-              {event.gallery_photos.map((photo, index) => (
-                <img
-                  key={index}
-                  src={photo}
-                  alt={`Photo ${index + 1}`}
-                  className="w-full h-32 object-cover rounded"
-                />
-              ))}
-            </div>
+            <h4>Galerie Photos</h4>
+            <Gallery photos={event.gallery_photos} />
           </div>
         )}
 
         {event.partenaires && (
           <div className="mb-8">
-            <h2 className="text-2xl font-bold text-white mb-4">Partenaires</h2>
+            <h4>Partenaires</h4>
             {Object.entries(event.partenaires).map(([type, partenaires]) => (
               partenaires.length > 0 && (
                 <div key={type} className="mb-4">
@@ -64,7 +64,7 @@ const EventDetail = () => {
           </div>
         )}
       </div>
-    </div>
+    </section>
   );
 };
 

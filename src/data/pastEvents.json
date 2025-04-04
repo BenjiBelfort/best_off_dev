@@ -3,12 +3,27 @@
       "id": "souviens-toi",
       "title": "Souviens toi",
       "date": "29 et 30 juin 2024",
-      "description": "La musique et la danse se retrouvent",
+      "lieu": "Maison du Peuple, Belfort",
+      "description": [
+        "L’histoire : deux personnages, la danse et la musique, se remémorent leurs différentes rencontres au travers d’un musée élaboré et créé pour laisser une trace de ces très beaux moments. Ils se retrouvent après une longue période de repos devant ce lieu qui deviendra, ils l’espèrent, mythique… Ce spectacle, dynamique, haut en couleurs vous replongera dans des souvenirs cinématographiques. Venez nombreux revivre ces scènes de films et clips connus...",
+        "Concert chorégraphié en faveur de l'association caritative SEMONS L’ESPOIR"
+      ],
       "photo_cover": "/images/events/souviens-toi/affiche.jpg",
       "gallery_photos": [
-        "/images/events/souviens-toi/galerie/photo1.jpg",
-        "/images/events/souviens-toi/galerie/photo2.jpg",
-        "/images/events/souviens-toi/galerie/photo3.jpg"
+        "/images/events/souviens-toi/galerie/Souviens-toi_1.webp",
+        "/images/events/souviens-toi/galerie/Souviens-toi_2.webp",
+        "/images/events/souviens-toi/galerie/Souviens-toi_3.webp",
+        "/images/events/souviens-toi/galerie/Souviens-toi_4.webp",
+        "/images/events/souviens-toi/galerie/Souviens-toi_5.webp",
+        "/images/events/souviens-toi/galerie/Souviens-toi_6.webp",
+        "/images/events/souviens-toi/galerie/Souviens-toi_7.webp",
+        "/images/events/souviens-toi/galerie/Souviens-toi_8.webp",
+        "/images/events/souviens-toi/galerie/Souviens-toi_9.webp",
+        "/images/events/souviens-toi/galerie/Souviens-toi_10.webp",
+        "/images/events/souviens-toi/galerie/Souviens-toi_11.webp",
+        "/images/events/souviens-toi/galerie/Souviens-toi_12.webp",
+        "/images/events/souviens-toi/galerie/Souviens-toi_13.webp"
+
       ],
       "partenaires": {
         "partenaire": ["eddanse", "mathildeadam"],
@@ -20,14 +35,40 @@
     },
     {
       "id": "centenaire",
-      "title": "Centenaire",
+      "title": "Centenaire du Territore de Belfort",
       "date": "2 novembre 2022",
+      "lieu": "Salle des Fêtes, Belfort",
       "description": "Le Territoire de Belfort fête ses 100 ans !",
       "photo_cover": "/images/events/centenaire/affiche.jpg",
       "gallery_photos": [
-        "/images/events/centenaire/galerie/photo1.jpg",
-        "/images/events/centenaire/galerie/photo2.jpg",
-        "/images/events/centenaire/galerie/photo3.jpg"
+        "/images/events/centenaire/galerie/Centenaire_1.webp",
+        "/images/events/centenaire/galerie/Centenaire_2.webp",
+        "/images/events/centenaire/galerie/Centenaire_3.webp",
+        "/images/events/centenaire/galerie/Centenaire_4.webp",
+        "/images/events/centenaire/galerie/Centenaire_5.webp",
+        "/images/events/centenaire/galerie/Centenaire_6.webp",
+        "/images/events/centenaire/galerie/Centenaire_7.webp",
+        "/images/events/centenaire/galerie/Centenaire_8.webp",
+        "/images/events/centenaire/galerie/Centenaire_9.webp",
+        "/images/events/centenaire/galerie/Centenaire_10.webp",
+        "/images/events/centenaire/galerie/Centenaire_11.webp",
+        "/images/events/centenaire/galerie/Centenaire_12.webp",
+        "/images/events/centenaire/galerie/Centenaire_13.webp",
+        "/images/events/centenaire/galerie/Centenaire_14.webp",
+        "/images/events/centenaire/galerie/Centenaire_15.webp",
+        "/images/events/centenaire/galerie/Centenaire_16.webp",
+        "/images/events/centenaire/galerie/Centenaire_17.webp",
+        "/images/events/centenaire/galerie/Centenaire_18.webp",
+        "/images/events/centenaire/galerie/Centenaire_19.webp",
+        "/images/events/centenaire/galerie/Centenaire_20.webp",
+        "/images/events/centenaire/galerie/Centenaire_21.webp",
+        "/images/events/centenaire/galerie/Centenaire_22.webp",
+        "/images/events/centenaire/galerie/Centenaire_23.webp",
+        "/images/events/centenaire/galerie/Centenaire_24.webp",
+        "/images/events/centenaire/galerie/Centenaire_25.webp",
+        "/images/events/centenaire/galerie/Centenaire_26.webp",
+        "/images/events/centenaire/galerie/Centenaire_27.webp",
+        "/images/events/centenaire/galerie/Centenaire_28.webp"
       ],
       "partenaires": {
         "partenaire": [],
@@ -47,6 +88,7 @@
       "id": "odyssee",
       "title": "Odyssée du Cirque",
       "date": "27 janvier 2019",
+      "lieu": "Odyssée du Cirque, Bavillier",
       "description": "Cirque en musique avec Best Off'",
       "photo_cover": "/images/events/odyssee/affiche.jpg"
   }

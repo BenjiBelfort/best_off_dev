@@ -12,6 +12,28 @@
   /* --spacing-unit: 1rem; */
 }
 
+@layer base {
+  h3 {
+    font-size: theme('fontSize.5xl');
+    text-align: center;
+    padding: theme('spacing.6');
+    margin-bottom: theme('spacing.3');
+  }
+
+  h4 {
+    font-size: theme('fontSize.3xl');
+    padding-bottom: theme('spacing.1');
+  }
+
+  /* Version responsive avec @media */
+  @media (min-width: 640px) { /* sm:640px par défaut dans Tailwind */
+    h3 {
+      padding: theme('spacing.4');
+    }
+  }
+}
+
+
 body {
   font-family: var(--font-secondary);
 }
@@ -19,13 +41,9 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-primary);
   color: white;
+  font-weight: 100;
   /* font-weight: 500; Poids typographique pour les titres */
 }
-
-h1, h2, h3 {
-  font-weight: 100;
-}
-
 
 p {
   font-family: var(--font-secondary);
@@ -39,4 +57,8 @@ p {
 
 .font-secondary {
   font-family: var(--font-secondary);
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
