@@ -8,7 +8,7 @@
         "L’histoire : deux personnages, la danse et la musique, se remémorent leurs différentes rencontres au travers d’un musée élaboré et créé pour laisser une trace de ces très beaux moments. Ils se retrouvent après une longue période de repos devant ce lieu qui deviendra, ils l’espèrent, mythique… Ce spectacle, dynamique, haut en couleurs vous replongera dans des souvenirs cinématographiques. Venez nombreux revivre ces scènes de films et clips connus...",
         "Concert chorégraphié en faveur de l'association caritative SEMONS L’ESPOIR"
       ],
-      "photo_cover": "/images/events/souviens-toi/affiche.jpg",
+      "photo_cover": "/images/events/souviens-toi/affiche.webp",
       "gallery_photos": [
         "/images/events/souviens-toi/galerie/Souviens-toi_1.webp",
         "/images/events/souviens-toi/galerie/Souviens-toi_2.webp",
@@ -25,6 +25,9 @@
         "/images/events/souviens-toi/galerie/Souviens-toi_13.webp"
 
       ],
+      "presse": [
+        "/images/events/souviens-toi/presse/Article_centenaire_1.webp"
+      ],
       "partenaires": {
         "partenaire": ["eddanse", "mathildeadam"],
         "institutionnel": ["mairieoffemont", "villebelfort", "departementterritoire"],
@@ -35,11 +38,13 @@
     },
     {
       "id": "centenaire",
-      "title": "Centenaire du Territore de Belfort",
+      "title": "Centenaire du Territoire de Belfort",
       "date": "2 novembre 2022",
       "lieu": "Salle des Fêtes, Belfort",
-      "description": "Le Territoire de Belfort fête ses 100 ans !",
-      "photo_cover": "/images/events/centenaire/affiche.jpg",
+      "description": [
+        "Ce spectacle exceptionnel pour les 100 ans du Territoire de Belfort sera une invitation à un voyage musical en version Rock Symphonique à travers le temps de 1922 à 2022. Nous partirons sur les traces de notre département lors de ce spectacle qui mèlera musique avec BestOff', théatre d'improvisation avec ImproTG et photographie avec Phot'Offemont"
+      ],
+      "photo_cover": "/images/events/centenaire/affiche.webp",
       "gallery_photos": [
         "/images/events/centenaire/galerie/Centenaire_1.webp",
         "/images/events/centenaire/galerie/Centenaire_2.webp",
@@ -90,7 +95,23 @@
       "date": "27 janvier 2019",
       "lieu": "Odyssée du Cirque, Bavillier",
       "description": "Cirque en musique avec Best Off'",
-      "photo_cover": "/images/events/odyssee/affiche.jpg"
-  }
+      "photo_cover": "/images/events/odyssee/affiche.webp"
+    },
+    {
+      "id": "haiti",
+      "title": "Tous unis pour Haïti",
+      "date": "6 mai 2017",
+      "lieu": "l'Arche, Bethoncourt",
+      "description": "Concert au profit de la Fondation Marianiste pour l'École de Pilette",
+      "photo_cover": "/images/events/haiti/affiche.webp"
+    },
+    {
+      "id": "nez-rouges",
+      "title": "Les nez rouges",
+      "date": "11 et 12 février 2017",
+      "lieu": "la MIEL, Offemont",
+      "description": "Concert au profit de l'assiciation Les nez rouges",
+      "photo_cover": "/images/events/nez-rouges/affiche.webp"
+    }
 ]
   

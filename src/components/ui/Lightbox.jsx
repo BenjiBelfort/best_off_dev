@@ -29,6 +29,18 @@ const Lightbox = ({ photos, currentIndex, closeLightbox, goToNext, goToPrev }) =
     touchStartX = null;
   };
 
+  const getFileName = (url) => {
+    if (!url) return 'Image';
+    // Gère les URLs complètes et les chemins relatifs
+    const filename = url.substring(url.lastIndexOf('/') + 1);
+    // Supprime les paramètres de requête s'ils existent (ex: ?v=123)
+    const cleanName = filename.split('?')[0];
+    // Supprime l'extension mais conserve les points dans le nom si besoin
+    return cleanName.lastIndexOf('.') > 0 
+      ? cleanName.substring(0, cleanName.lastIndexOf('.')) 
+      : cleanName;
+  };
+
   return (
     <div 
       ref={lightboxRef}
@@ -41,7 +53,7 @@ const Lightbox = ({ photos, currentIndex, closeLightbox, goToNext, goToPrev }) =
       <div className="relative" onClick={(e) => e.stopPropagation()}>
         <img 
           src={photos[currentIndex]} 
-          alt={`Photo ${currentIndex + 1}`} 
+          alt={getFileName(photos[currentIndex])}
           className="max-w-full max-h-screen mx-auto"
         />
       </div>
@@ -53,12 +65,12 @@ const Lightbox = ({ photos, currentIndex, closeLightbox, goToNext, goToPrev }) =
       >
         ×
       </button>
-
       {/* Flèche gauche - Position responsive */}
       <button 
         onClick={(e) => { e.stopPropagation(); goToPrev(); }}
         className="absolute bottom-5 left-10 transform md:left-20 md:top-1/2 md:-translate-y-1/2
-                   text-white text-5xl transition-transform hover:scale-110 cursor-pointer text-shadow"
+                    p-4 w-16 h-16 rounded-full
+                    text-white text-5xl transition-transform hover:scale-110 cursor-pointer text-shadow"
       >
         ‹
       </button>
@@ -67,7 +79,8 @@ const Lightbox = ({ photos, currentIndex, closeLightbox, goToNext, goToPrev }) =
       <button 
         onClick={(e) => { e.stopPropagation(); goToNext(); }}
         className="absolute bottom-5 right-10 transform md:right-20 md:top-1/2 md:-translate-y-1/2
-                   text-white text-5xl transition-transform hover:scale-110 cursor-pointer text-shadow"
+                    p-4 w-16 h-16 rounded-full
+                    text-white text-5xl transition-transform hover:scale-110 cursor-pointer text-shadow"
       >
         ›
       </button>

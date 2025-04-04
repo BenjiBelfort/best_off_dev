@@ -23,8 +23,12 @@ const EventDetail = () => {
         />
         
         
-        <p className="text-xl mb-4">{event.date}</p>
-        <p className="text-lg mb-8">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-2">
+          <p className="text-base md:text-xl m-2 md:m-4 px-4 py-1 bg-slate-600 rounded-full w-full md:w-auto text-center">{event.date}</p>
+          <p className="text-base md:text-xl m-2 md:m-4 px-4 py-1 bg-slate-600 rounded-full w-full md:w-auto text-center">{event.lieu}</p>
+        </div>
+        <div className="w-[70%] h-px bg-red-300 mx-auto my-4"></div>
+        <p className="text-lg mb-8 mt-8">
           {Array.isArray(event.description)
             ? event.description.map((line, index) => (
                 <span key={index} className="block">
@@ -33,6 +37,7 @@ const EventDetail = () => {
               ))
             : event.description}
         </p>
+        <div className="w-[70%] h-px bg-red-300 mx-auto my-4"></div>
 
         {event.gallery_photos && (
           <div className="mb-8">
@@ -40,7 +45,14 @@ const EventDetail = () => {
             <Gallery photos={event.gallery_photos} />
           </div>
         )}
-
+        <div className="w-[70%] h-px bg-red-300 mx-auto my-4"></div>
+        {event.presse && (
+          <div className="mb-8">
+            <h4>Presse</h4>
+            <Gallery photos={event.presse} />
+          </div>
+        )}
+        <div className="w-[70%] h-px bg-red-300 mx-auto my-4"></div>
         {event.partenaires && (
           <div className="mb-8">
             <h4>Partenaires</h4>

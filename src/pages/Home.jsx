@@ -4,6 +4,8 @@ import MainImg from '../components/MainImg';
 import Actuality from "../components/ActualityComp";
 import Biographie from '../components/Biographie';
 import Separator from '../components/Separator';
+import eventsData from '../data/pastEvents.json';
+import Gallery from '../components/ui/Gallery';
 
 const Home = () => {
   const location = useLocation();
@@ -25,6 +27,11 @@ const Home = () => {
     }
   }, [location]);
 
+  // Récupérer quelques photos pour l'affichage dans Home (ex. celles du premier événement avec une galerie)
+  const galleryPhotos = eventsData
+    .filter(event => event.gallery_photos)
+    .flatMap(event => event.gallery_photos);
+
   return (
     <div>
       <MainImg />
@@ -33,6 +40,10 @@ const Home = () => {
         <Separator />
         <Biographie />
         <Separator />
+
+        {/* Affichage d'une partie de la galerie sur la page d'accueil */}
+        <h3>Galerie photos</h3>
+        <Gallery photos={galleryPhotos} seeMoreUrl="/galerie" />
       </div>
     </div>
   );

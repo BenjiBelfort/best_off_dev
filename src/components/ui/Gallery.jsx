@@ -1,13 +1,11 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import Lightbox from './Lightbox';
 import SeeMoreButton from './SeeMoreButton';
 
-const Gallery = ({ photos }) => {
-  // Gestion du nombre de colonnes en fonction de la taille de l'écran
+const Gallery = ({ photos, seeMoreUrl }) => {
   const [columns, setColumns] = useState(3);
-  // Affichage initial : 3 lignes
   const [rowsDisplayed, setRowsDisplayed] = useState(3);
-  // Gestion de l'état de la lightbox
   const [isLightboxOpen, setLightboxOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -56,26 +54,34 @@ const Gallery = ({ photos }) => {
     setCurrentIndex((currentIndex - 1 + photos.length) % photos.length);
   };
 
+  const getFileName = (url) => {
+    const filename = url.substring(url.lastIndexOf('/') + 1);
+    return filename.split('.')[0];
+  };
+
   return (
     <div>
-      <div className={`grid ${columns === 2 ? 'grid-cols-2' : 'grid-cols-3'} gap-4`}>
+      <div className={`grid ${columns === 2 ? 'grid-cols-2' : 'grid-cols-3'} gap-6`}>
         {photosToDisplay.map((photo, index) => (
-          <img
-            key={index}
-            src={photo}
-            alt={`Photo ${index + 1}`}
-            className="w-full h-32 object-cover cursor-pointer"
-            onClick={() => openLightbox(index)}
-          />
+          <div key={index} className="relative w-full aspect-square group overflow-hidden">
+            <img
+              src={photo}
+              alt={getFileName(photo)}
+              className="absolute inset-0 w-full h-full object-cover cursor-pointer transition-transform duration-300 group-hover:scale-105"
+              onClick={() => openLightbox(index)}
+            />
+          </div>
         ))}
       </div>
 
       {canShowMore && (
-        <SeeMoreButton 
-          onClick={handleShowMore}
-          // Vous pouvez surcharger le style si besoin avec :
-          // className="classes-personnalisees"
-        />
+        seeMoreUrl ? (
+          <Link to={seeMoreUrl}>
+            <SeeMoreButton />
+          </Link>
+        ) : (
+          <SeeMoreButton onClick={handleShowMore} />
+        )
       )}
 
       {isLightboxOpen && (

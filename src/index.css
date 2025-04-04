@@ -18,6 +18,7 @@
     text-align: center;
     padding: theme('spacing.6');
     margin-bottom: theme('spacing.3');
+    line-height: theme('lineHeight.tight');
   }
 
   h4 {
