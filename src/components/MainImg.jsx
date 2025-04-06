@@ -1,16 +1,24 @@
 const MainImg = () => {
   return (
-    <div className="relative w-full h-[80vh] bg-black">
-        <img src="/images/rideau-noir.webp" alt="rideaux noirs" className="w-full h-full object-cover"/>
+    <div className="relative w-full h-[80vh] bg-stone-900">
+      <div className="relative w-full h-full">
+        <img 
+          src="/images/rideau-noir.webp" 
+          alt="rideaux noirs" 
+          className="w-full h-full object-cover"
+        />
+        {/* Vignettage circulaire avec Tailwind */}
+        <div className="absolute inset-0 bg-gradient-to-t from-stone-900/100 to-transparent" />
+      </div>
 
-        <div className="absolute inset-0 flex flex-col items-center justify-center pb-[20px]">
-            <img 
-                src="/images/logo-BO.png" 
-                alt="Logo" 
-                className="max-w-xs md:max-w-sm lg:max-w-md"
-            />
-            <h2 className="text-white text-2xl md:text-3xl lg:text-4xl mt-5">ROCK SYMPHONIQUE</h2>
-        </div>
+      <div className="absolute inset-0 flex flex-col items-center justify-center pb-[20px]">
+        <img 
+          src="/images/logo-BO.png" 
+          alt="Logo" 
+          className="max-w-xs md:max-w-sm lg:max-w-md"
+        />
+        <h2 className="text-white text-2xl md:text-3xl lg:text-4xl mt-5 pb-7 border-b-1 border-red-300">ROCK SYMPHONIQUE</h2>
+      </div>
     </div>
   )
 }

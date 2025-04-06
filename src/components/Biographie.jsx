@@ -1,6 +1,6 @@
 const Biographie = () => {
     return (
-      <section id="biographie" className="scroll-mt-20">
+      <section id="biographie" className="scroll-mt-20 mx-auto max-w-2xl px-4 py-8">
           <h3>Biographie</h3>
           <p>L’alliance puissante du rock et de la symphonie au service de la musique et de la solidarité</p>
           <p>Fondé il y a dix ans à Offemont, BEST OFF' est bien plus qu’une formation musicale : c’est une expérience immersive où le rock symphonique rencontre les plus grands classiques français et anglo-saxons. Sous la direction passionnée de son fondateur et chef d’orchestre, Ronald BICIL, cet ensemble de 25 musiciens donne vie à des reprises magistrales, mêlant énergie rock et élégance orchestrale.</p>
@@ -12,6 +12,7 @@ const Biographie = () => {
           <p>En dix ans d’existence, BEST OFF' a su conquérir le public par son énergie communicative et son professionnalisme. Que ce soit dans des salles intimistes ou sur de grandes scènes, leur performance transporte les spectateurs, faisant revivre les classiques avec une intensité nouvelle.</p>
           <p>Sous l’impulsion de Roland CIBIL, BEST OFF' continue d’écrire son histoire, porté par une ambition simple : faire vibrer les cœurs et rassembler autour de la musique.</p>
           <p>BEST OFF' – Quand le rock rencontre la symphonie, pour le plaisir des oreilles et le soutien des plus démunis.</p>
+          <img className="mt-5" src="/images/events/centenaire/galerie/Centenaire_24.webp" alt="Best off en concert" />
       </section>
     );
   };

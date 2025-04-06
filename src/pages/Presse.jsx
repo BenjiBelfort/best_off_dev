@@ -1,11 +1,18 @@
-import React from 'react'
+import eventsData from '../data/pastEvents.json';
+import Gallery from '../components/ui/Gallery';
 
 const Presse = () => {
+  // Récupérer toutes les photos de la galerie
+  const allArticles = eventsData
+    .filter(event => event.presse) // Ne garder que les événements avec des photos
+    .flatMap(event => event.presse); // Extraire toutes les photos dans un seul tableau
+
   return (
-    <div>
-        <h2 className="text-5xl text-center">Presse</h2>
-        <p className="text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
+    <section className="container mx-auto">
+      <h3>Presse</h3>
+      {/* Affichage de la galerie avec toutes les photos */}
+      <Gallery photos={allArticles} />
+    </section>
   );
 };
 

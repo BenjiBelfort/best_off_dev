@@ -5,7 +5,7 @@ import Footer from "./Footer";
 
 const Layout = () => {
   return (
-    <div className="bg-black flex flex-col min-h-screen">
+    <div className="bg-stone-900 flex flex-col min-h-screen">
         <ScrollToTop />
         <Navbar />
             <main className="flex-grow">

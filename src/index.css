@@ -19,6 +19,7 @@
     padding: theme('spacing.6');
     margin-bottom: theme('spacing.3');
     line-height: theme('lineHeight.tight');
+    color: white;
   }
 
   h4 {
@@ -41,7 +42,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-primary);
-  color: white;
   font-weight: 100;
   /* font-weight: 500; Poids typographique pour les titres */
 }
