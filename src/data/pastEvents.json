@@ -26,14 +26,15 @@
 
       ],
       "presse": [
-        "/images/events/souviens-toi/presse/Article_centenaire_1.webp"
+        "/images/events/souviens-toi/presse/Article_centenaire_1.webp",
+        "/images/events/souviens-toi/presse/Article_centenaire_2.webp"
       ],
       "partenaires": {
-        "partenaire": ["eddanse", "mathildeadam"],
-        "institutionnel": ["mairieoffemont", "villebelfort", "departementterritoire"],
-        "or": ["milgred"],
-        "argent": ["coesio"],
-        "sponsor": ["comptoirremparts", "pflevents"]
+        "Partenaire": ["eddanse", "mathildeadam"],
+        "Institutionnel": ["mairieoffemont", "villebelfort", "departementterritoire"],
+        "Or": ["milgred"],
+        "Argent": ["coesio"],
+        "Sponsor": ["comptoirremparts", "pflevents"]
       }
     },
     {
@@ -76,11 +77,11 @@
         "/images/events/centenaire/galerie/Centenaire_28.webp"
       ],
       "partenaires": {
-        "partenaire": [],
-        "institutionnel": ["mairieoffemont", "villebelfort"],
-        "or": [],
-        "argent": [],
-        "sponsor": ["pflevents"]
+        "Partenaire": [],
+        "Institutionnel": ["mairieoffemont", "villebelfort"],
+        "Or": [],
+        "Argent": [],
+        "Sponsor": ["pflevents"]
       }
     },
     {

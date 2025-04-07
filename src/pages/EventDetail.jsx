@@ -1,6 +1,7 @@
 import { useParams, Link } from 'react-router-dom';
 import eventsData from '../data/pastEvents.json';
 import Gallery from '../components/ui/Gallery';
+import partnersData from '../data/parteners.json';
 
 const EventDetail = () => {
   const { id } = useParams();
@@ -56,23 +57,37 @@ const EventDetail = () => {
         {event.partenaires && (
           <div className="mb-8">
             <h4>Partenaires</h4>
-            {Object.entries(event.partenaires).map(([type, partenaires]) => (
-              partenaires.length > 0 && (
-                <div key={type} className="mb-4">
-                  <h3 className="text-lg font-semibold text-gray-300 capitalize mb-2">{type}</h3>
-                  <div className="flex flex-wrap gap-2">
-                    {partenaires.map((partenaire) => (
-                      <span 
-                        key={partenaire} 
-                        className="px-3 py-1 bg-gray-800 rounded-full text-sm text-gray-300"
-                      >
-                        {partenaire}
-                      </span>
+            {Object.entries(event.partenaires).map(([type, partenaires]) => {
+              const partenairesInfos = partnersData.filter(p => partenaires.includes(p.id));
+
+              return partenairesInfos.length > 0 && (
+                <div key={type} className="mb-6">
+                  <h4 className="text-lg mb-4">{type}s</h4>
+                  <div className="flex flex-wrap gap-4 justify-center">
+                    {partenairesInfos.map((partenaire) => (
+                      <div key={partenaire.id} className="flex flex-col items-center w-40">
+                        {partenaire.website ? (
+                          <a href={partenaire.website} target="_blank" rel="noopener noreferrer">
+                            <img
+                              src={partenaire.logo}
+                              alt={partenaire.name}
+                              className="h-28 object-contain mb-2 transition-transform duration-300 hover:scale-105"
+                            />
+                          </a>
+                        ) : (
+                          <img
+                            src={partenaire.logo}
+                            alt={partenaire.name}
+                            className="h-28 object-contain mb-2"
+                          />
+                        )}
+                        <span className="text-center text-sm text-white">{partenaire.name}</span>
+                      </div>
                     ))}
                   </div>
                 </div>
-              )
-            ))}
+              );
+            })}
           </div>
         )}
       </div>

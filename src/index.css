@@ -24,7 +24,9 @@
 
   h4 {
     font-size: theme('fontSize.3xl');
-    padding-bottom: theme('spacing.1');
+    padding-bottom: theme('spacing.3');
+    text-align: center;
+    color: white;
   }
 
   /* Version responsive avec @media */
