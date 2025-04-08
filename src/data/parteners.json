@@ -24,7 +24,7 @@
     },
     {
         "id": "comptoirremparts",
-        "name": "Comptoir des Remparts",
+        "name": "Le Comptoir des Remparts",
         "background": "white",
         "rank": "sponsor",
         "logo": "/images/partners/comptoir-des-remparts.gif",
@@ -66,6 +66,26 @@
         "rank": "partenaire",
         "logo": "/images/partners/Mathilde-Adam.png",
         "website": "https://mathilde-adam.fr/"
+    },
+    {
+        "id": "maidansansfrontieres",
+        "name": "Maïdan sans frontières",
+        "rank": "partenaire",
+        "logo": "/images/partners/logo_maidan.jpg",
+        "website": "https://www.facebook.com/maidansansfrontieres/"
+    },
+    {
+        "id": "unicef",
+        "name": "unicef",
+        "rank": "partenaire",
+        "logo": "/images/partners/UNICEF_Logo.png",
+        "website": "https://www.unicef.fr/"
+    },
+    {
+        "id": "francebleu",
+        "name": "France Bleu",
+        "logo": "/images/partners/France_Bleu.png",
+        "website": "https://www.francebleu.fr/"
     }
   ]
   

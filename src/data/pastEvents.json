@@ -1,5 +1,28 @@
 [
     {
+      "id": "chougalante-mars-2025",
+      "title": "Concert Rock Symphonique",
+      "date": "16 mars 2025",
+      "lieu": "Chougalante, Chèvremont",
+      "description": [
+      ],
+      "photo_cover": "/images/events/chougalante-mars-2025/affiche.webp",
+      "gallery_photos": [
+        "/images/events/chougalante-mars-2025/galerie/chougalante-mars-2025_1.webp",
+        "/images/events/chougalante-mars-2025/galerie/chougalante-mars-2025_2.webp",
+        "/images/events/chougalante-mars-2025/galerie/chougalante-mars-2025_3.webp",
+        "/images/events/chougalante-mars-2025/galerie/chougalante-mars-2025_4.webp",
+        "/images/events/chougalante-mars-2025/galerie/chougalante-mars-2025_5.webp",
+        "/images/events/chougalante-mars-2025/galerie/chougalante-mars-2025_6.webp",
+        "/images/events/chougalante-mars-2025/galerie/chougalante-mars-2025_7.webp",
+        "/images/events/chougalante-mars-2025/galerie/chougalante-mars-2025_8.webp",
+        "/images/events/chougalante-mars-2025/galerie/chougalante-mars-2025_9.webp",
+        "/images/events/chougalante-mars-2025/galerie/chougalante-mars-2025_10.webp"
+
+
+      ]
+    },
+    {
       "id": "souviens-toi",
       "title": "Souviens toi",
       "date": "29 et 30 juin 2024",
@@ -22,20 +45,68 @@
         "/images/events/souviens-toi/galerie/Souviens-toi_10.webp",
         "/images/events/souviens-toi/galerie/Souviens-toi_11.webp",
         "/images/events/souviens-toi/galerie/Souviens-toi_12.webp",
-        "/images/events/souviens-toi/galerie/Souviens-toi_13.webp"
+        "/images/events/souviens-toi/galerie/Souviens-toi_13.webp",
+        "/images/events/souviens-toi/galerie/Souviens-toi_14.webp"
 
       ],
       "presse": [
         "/images/events/souviens-toi/presse/Article_centenaire_1.webp",
-        "/images/events/souviens-toi/presse/Article_centenaire_2.webp"
+        "/images/events/souviens-toi/presse/Article_centenaire_2.webp",
+        "/images/events/souviens-toi/presse/Article_centenaire_3.webp"
       ],
       "partenaires": {
-        "Partenaire": ["eddanse", "mathildeadam"],
-        "Institutionnel": ["mairieoffemont", "villebelfort", "departementterritoire"],
-        "Or": ["milgred"],
-        "Argent": ["coesio"],
-        "Sponsor": ["comptoirremparts", "pflevents"]
+        "Partenaires": ["eddanse", "mathildeadam"],
+        "Institutionnels": ["mairieoffemont", "villebelfort", "departementterritoire"],
+        "Mécènes Or": ["milgred"],
+        "Mécènes Argent": ["coesio"],
+        "Sponsors": ["comptoirremparts", "pflevents"]
       }
+    },
+    {
+      "id": "montbouton",
+      "title": "Concert Rock Symphonique",
+      "date": "30 septembre 2023",
+      "lieu": "Salle du Plateau, Montbouton",
+      "description": [
+      ],
+      "photo_cover": "/images/events/montbouton/affiche.webp",
+      "gallery_photos":[
+        "/images/events/montbouton/galerie/Montbouton_1.webp",
+        "/images/events/montbouton/galerie/Montbouton_2.webp",
+        "/images/events/montbouton/galerie/Montbouton_3.webp",
+        "/images/events/montbouton/galerie/Montbouton_4.webp",
+        "/images/events/montbouton/galerie/Montbouton_5.webp",
+        "/images/events/montbouton/galerie/Montbouton_6.webp",
+        "/images/events/montbouton/galerie/Montbouton_7.webp",
+        "/images/events/montbouton/galerie/Montbouton_8.webp",
+        "/images/events/montbouton/galerie/Montbouton_9.webp",
+        "/images/events/montbouton/galerie/Montbouton_10.webp",
+        "/images/events/montbouton/galerie/Montbouton_11.webp",
+        "/images/events/montbouton/galerie/Montbouton_12.webp",
+        "/images/events/montbouton/galerie/Montbouton_13.webp",
+        "/images/events/montbouton/galerie/Montbouton_14.webp",
+        "/images/events/montbouton/galerie/Montbouton_15.webp",
+        "/images/events/montbouton/galerie/Montbouton_16.webp",
+        "/images/events/montbouton/galerie/Montbouton_17.webp",
+        "/images/events/montbouton/galerie/Montbouton_18.webp",
+        "/images/events/montbouton/galerie/Montbouton_19.webp",
+        "/images/events/montbouton/galerie/Montbouton_20.webp",
+        "/images/events/montbouton/galerie/Montbouton_21.webp",
+        "/images/events/montbouton/galerie/Montbouton_22.webp",
+        "/images/events/montbouton/galerie/Montbouton_23.webp",
+        "/images/events/montbouton/galerie/Montbouton_24.webp",
+        "/images/events/montbouton/galerie/Montbouton_25.webp",
+        "/images/events/montbouton/galerie/Montbouton_26.webp",
+        "/images/events/montbouton/galerie/Montbouton_27.webp",
+        "/images/events/montbouton/galerie/Montbouton_28.webp",
+        "/images/events/montbouton/galerie/Montbouton_29.webp",
+        "/images/events/montbouton/galerie/Montbouton_30.webp",
+        "/images/events/montbouton/galerie/Montbouton_31.webp"
+      ],
+      "presse": [
+        "/images/events/montbouton/presse/Article_Montbouton_1.webp",
+        "/images/events/montbouton/presse/Article_Montbouton_2.webp"
+      ]
     },
     {
       "id": "centenaire",
@@ -43,7 +114,7 @@
       "date": "2 novembre 2022",
       "lieu": "Salle des Fêtes, Belfort",
       "description": [
-        "Ce spectacle exceptionnel pour les 100 ans du Territoire de Belfort sera une invitation à un voyage musical en version Rock Symphonique à travers le temps de 1922 à 2022. Nous partirons sur les traces de notre département lors de ce spectacle qui mèlera musique avec BestOff', théatre d'improvisation avec ImproTG et photographie avec Phot'Offemont"
+        "Ce spectacle exceptionnel pour les 100 ans du Territoire de Belfort sera une invitation à un voyage musical en version Rock Symphonique à travers le temps de 1922 à 2022. Nous partirons sur les traces de notre département lors de ce spectacle qui mèlera musique avec BEST OFF', théatre d'improvisation avec ImproTG et photographie avec Phot'Offemont"
       ],
       "photo_cover": "/images/events/centenaire/affiche.webp",
       "gallery_photos": [
@@ -78,40 +149,107 @@
       ],
       "partenaires": {
         "Partenaire": [],
-        "Institutionnel": ["mairieoffemont", "villebelfort"],
+        "Institutionnels": ["mairieoffemont", "villebelfort"],
         "Or": [],
         "Argent": [],
-        "Sponsor": ["pflevents"]
+        "Sponsors": ["pflevents"]
       }
     },
     {
-        "id": "3",
-        "title": "Événement 3",
-        "date": "13 février 2020",
-        "description": "Description de l'événement 3"
+      "id": "ukraine",
+      "title": "Concerts solidaires pour l'Ukraine",
+      "date": "26 juin 2022",
+      "lieu": "la MIEL, Offemont",
+      "description": [
+        "BEST OFF’ et la Commune d'Offemont présentent les Concerts Solidaires pour l'Ukraine",
+        "BEST OFF’ invite des groupes locaux à se produire à la MIEL à Offemont avec le soutien de la Commune d'Offemont",
+        "La participation est libre, les recettes seront redistribuées à l'association Maïdan sans frontière"
+      ],
+      "photo_cover": "/images/events/ukraine/affiche.webp",
+      "partenaires": {
+        "Partenaires": ["maidansansfrontieres", "mairieoffemont"]
+      }
     },
     {
       "id": "odyssee",
       "title": "Odyssée du Cirque",
       "date": "27 janvier 2019",
-      "lieu": "Odyssée du Cirque, Bavillier",
-      "description": "Cirque en musique avec Best Off'",
+      "lieu": "Odyssée du Cirque, Héricourt",
+      "description": "BEST OFF' accompagne L'Odyssée du Cirque pour un spectacle inédit !",
       "photo_cover": "/images/events/odyssee/affiche.webp"
+    },
+    {
+      "id": "festivoff",
+      "title": "Festiv'Off",
+      "date": "15 juin 2019",
+      "lieu": "Parvis de la Mairie, Offemont",
+      "description": [
+        "Cette 4ème édition de la scène ouverte proposée par la commune d'Offemont et l'association BEST OFF' aura pour fil conducteur la langue française.",
+        "Ponctuée par un concours de poésie organisé dans les écoles primaires d'Offemont, divers artistes se produiront sur scène pour notre plus grand plaisir. La richesse de ces textes ancrés dans nos mémoires, la beauté des mélodies réveilleront de beaux souvenirs et seront mis en valeur par nos artistes invités.",
+        "Que ce Festiv'Off vous apporte la justesse des mots et la force des notes le temps d'un festival."
+      ],
+      "photo_cover": "/images/events/festivoff/affiche.webp",
+      "partenaires": {
+        "": ["mairieoffemont"]
+      }
+    },
+    {
+      "id": "unicef",
+      "title": "Concert au profit de l'UNICEF",
+      "date": "13 et 14 janvier 2018",
+      "lieu": "Maison du Peuple, Belfort",
+      "description": "Concert au profit de l'UNICEF, avec la participation d'un choeur d'enfants et les violons dansants du conservatoire Henri Dutilleux.",
+      "photo_cover": "/images/events/unicef/affiche.webp",
+      "gallery_photos": [
+        "/images/events/unicef/galerie/Unicef_1.webp",
+        "/images/events/unicef/galerie/Unicef_2.webp",
+        "/images/events/unicef/galerie/Unicef_3.webp",
+        "/images/events/unicef/galerie/Unicef_4.webp",
+        "/images/events/unicef/galerie/Unicef_5.webp",
+        "/images/events/unicef/galerie/Unicef_6.webp",
+        "/images/events/unicef/galerie/Unicef_7.webp",
+        "/images/events/unicef/galerie/Unicef_8.webp",
+        "/images/events/unicef/galerie/Unicef_9.webp",
+        "/images/events/unicef/galerie/Unicef_10.webp",
+        "/images/events/unicef/galerie/Unicef_11.webp",
+        "/images/events/unicef/galerie/Unicef_12.webp",
+        "/images/events/unicef/galerie/Unicef_13.webp",
+        "/images/events/unicef/galerie/Unicef_14.webp",
+        "/images/events/unicef/galerie/Unicef_15.webp",
+        "/images/events/unicef/galerie/Unicef_16.webp",
+        "/images/events/unicef/galerie/Unicef_17.webp",
+        "/images/events/unicef/galerie/Unicef_18.webp",
+        "/images/events/unicef/galerie/Unicef_19.webp",
+        "/images/events/unicef/galerie/Unicef_20.webp",
+        "/images/events/unicef/galerie/Unicef_21.webp",
+        "/images/events/unicef/galerie/Unicef_22.webp",
+        "/images/events/unicef/galerie/Unicef_23.webp",
+        "/images/events/unicef/galerie/Unicef_24.webp",
+        "/images/events/unicef/galerie/Unicef_25.webp",
+        "/images/events/unicef/galerie/Unicef_26.webp"
+      ],
+      "partenaires": {
+        "Partenaire": ["unicef", "francebleu"],
+        "Institutionnels": ["mairieoffemont", "villebelfort"],
+        "Or": [],
+        "Argent": [],
+        "Sponsors": []
+      }
     },
     {
       "id": "haiti",
       "title": "Tous unis pour Haïti",
       "date": "6 mai 2017",
       "lieu": "l'Arche, Bethoncourt",
-      "description": "Concert au profit de la Fondation Marianiste pour l'École de Pilette",
+      "description": "Deuxième concert caritatif du groupe BEST OFF'. Après les Nez Rouges, c'est pour l'école de Pilette à Haïti que nous jouons. L'entrée est à 10€. Cette fois ci, ce sont les élèves de la classe de Maggy, l'une de nos chanteuses, qui chanteront avec nous. Ces enfants viennent tous de l'école Sainte-Marie à Belfort. Venez nombreux, et n'hésitez pas à partager !",
       "photo_cover": "/images/events/haiti/affiche.webp"
     },
     {
       "id": "nez-rouges",
-      "title": "Les nez rouges",
+      "title": "Les Nez Rouges",
       "date": "11 et 12 février 2017",
       "lieu": "la MIEL, Offemont",
-      "description": "Concert au profit de l'assiciation Les nez rouges",
+      "description": "Concert au profit de l'association Les Nez Rouges",
       "photo_cover": "/images/events/nez-rouges/affiche.webp"
     }
 ]

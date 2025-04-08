@@ -14,7 +14,7 @@
 
 @layer base {
   h3 {
-    font-size: theme('fontSize.5xl');
+    font-size: theme('fontSize.3xl');
     text-align: center;
     padding: theme('spacing.6');
     margin-bottom: theme('spacing.3');
@@ -32,6 +32,7 @@
   /* Version responsive avec @media */
   @media (min-width: 640px) { /* sm:640px par défaut dans Tailwind */
     h3 {
+      font-size: theme('fontSize.5xl');
       padding: theme('spacing.4');
     }
   }

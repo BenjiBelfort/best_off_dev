@@ -40,14 +40,14 @@ const Home = () => {
       <MainImg />
       <div className="container mx-auto">
         <Actuality />
-        <div className="max-w-4xl mx-auto px-4 h-px bg-red-300 my-6"></div>
+        <div className="w-[70%] h-px bg-red-300 mx-auto my-4"></div>
         <Biographie />
-        <div className="max-w-4xl h-px bg-red-300 mx-auto my-6"></div>
+        <div className="w-[70%] h-px bg-red-300 mx-auto my-4"></div>
 
         {/* Affichage d'une partie de la galerie sur la page d'accueil */}
         <h3>Galerie photos</h3>
         <Gallery photos={galleryPhotos} seeMoreUrl="/galerie" />
-        <div className="max-w-4xl h-px bg-red-300 mx-auto my-6"></div>
+        <div className="w-[70%] h-px bg-red-300 mx-auto my-4"></div>
         <h3>Presse</h3>
         <Gallery photos={galleryArticles} seeMoreUrl="/presse" />
       </div>

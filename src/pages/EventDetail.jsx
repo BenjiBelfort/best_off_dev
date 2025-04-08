@@ -2,7 +2,8 @@ import { useParams, Link } from 'react-router-dom';
 import eventsData from '../data/pastEvents.json';
 import Gallery from '../components/ui/Gallery';
 import partnersData from '../data/parteners.json';
-import CardPartner from '../components/ui/CardPartner'; // Import du nouveau composant
+import CardPartner from '../components/ui/CardPartner';
+import StickyBackLink from '../components/ui/StickyBackLink';
 
 const EventDetail = () => {
   const { id } = useParams();
@@ -13,9 +14,7 @@ const EventDetail = () => {
 
   return (
     <section className="container mx-auto max-w-2xl px-4 py-8">
-      <Link to="/archives" className="text-white hover:text-red-300 mb-4 inline-block">
-        ← Retour aux archives
-      </Link>
+      <StickyBackLink />
 
       <div className="max-w-2xl mx-auto">
         <h3>{event.title}</h3>
@@ -79,7 +78,7 @@ const EventDetail = () => {
                   return (
                     partenairesInfos.length > 0 && (
                       <div key={type} className="mb-6">
-                        <h4 className="text-lg mb-4 capitalize">{type}s</h4>
+                        <h4 className="text-lg mb-4 capitalize">{type}</h4>
                         <div className="flex flex-wrap gap-4 justify-center">
                           {partenairesInfos.map((partenaire) => (
                             <CardPartner key={partenaire.id} partner={partenaire} />

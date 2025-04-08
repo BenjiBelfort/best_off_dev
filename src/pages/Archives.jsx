@@ -1,4 +1,4 @@
-import eventsData from '../data/pastEvents.json'; // Chemin vers votre fichier JSON
+import eventsData from '../data/pastEvents.json';
 import EventCard from '../components/EventCard';
 
 const Archives = () => {
