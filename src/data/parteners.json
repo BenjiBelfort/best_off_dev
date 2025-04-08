@@ -2,6 +2,7 @@
     {
         "id": "mairieoffemont",
         "name": "Mairie d'Offemont",
+        "background": "white",
         "rank": "institutionnel",
         "logo": "/images/partners/Mairie-Offemont.jpg",
         "website": "https://www.mairie-offemont.fr/"
@@ -9,6 +10,7 @@
     {
         "id": "villebelfort",
         "name": "Ville de Belfort",
+        "background": "white",
         "rank": "institutionnel",
         "logo": "/images/partners/ville-de-Belfort.png",
         "website": "https://www.belfort.fr/"
@@ -23,6 +25,7 @@
     {
         "id": "comptoirremparts",
         "name": "Comptoir des Remparts",
+        "background": "white",
         "rank": "sponsor",
         "logo": "/images/partners/comptoir-des-remparts.gif",
         "website": "https://comptoir-des-remparts.fr/"
@@ -30,6 +33,7 @@
     {
         "id": "pflevents",
         "name": "PFL Events",
+        "background": "white",
         "rank": "sponsor",
         "logo": "/images/partners/PFL-Event.png",
         "website": "https://www.pfl-events.com/"
@@ -37,6 +41,7 @@
     {
         "id": "milgred",
         "name": "MILGRED",
+        "background": "white",
         "rank": "or",
         "logo": "/images/partners/logomilgred.png",
         "website": "https://www.milgred.com/"

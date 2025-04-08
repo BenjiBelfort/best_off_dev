@@ -1,11 +1,29 @@
 const ActualityComp = () => {
   return (
-    <section id="actuality" className="scroll-mt-20">
-        <h3>Actualités</h3>
-        <p>Ici mettre affiche prochain concert</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem commodi beatae, itaque, neque aliquid officiis aut, cum eaque tempora soluta odio eveniet aspernatur hic corrupti non reprehenderit enim nesciunt excepturi.</p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore ullam repellat recusandae quod accusamus voluptates, nesciunt, autem voluptate ea assumenda aspernatur quo accusantium beatae sit reprehenderit porro labore! Dignissimos, rerum?</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat repellat praesentium soluta dolorem sed cupiditate, fuga cumque dicta vitae inventore odit officiis quibusdam placeat corporis quod commodi fugiat suscipit pariatur?</p>
+    <section id="actuality" className="scroll-mt-20 py-12 px-4 text-white">
+      <h3 className="text-3xl font-bold mb-6 text-center">Actualités</h3>
+
+      <div className="max-w-4xl mx-auto bg-stone-800 overflow-hidden">
+        {/* Affiche */}
+        <img
+          src="/images/affiche-prochain-spectacle.jpg" // remplace par le bon chemin
+          alt="Affiche prochain spectacle"
+          className="w-full h-64 object-cover"
+        />
+
+        {/* Contenu texte */}
+        <div className="p-6 space-y-4">
+          <h4>Nom du Spectacle</h4>
+          <p>Samedi 25 mai 2025 — Théâtre Municipal, Lyon</p>
+          <p>
+            Venez découvrir notre tout nouveau spectacle mêlant percussions, théâtre et visuels
+            immersifs. Une soirée inoubliable vous attend, entre rythme et émotion.
+          </p>
+          <p>
+            Réservez vos places dès maintenant et plongez dans une performance unique en son genre !
+          </p>
+        </div>
+      </div>
     </section>
   );
 };
