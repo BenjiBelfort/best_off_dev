@@ -1,7 +1,7 @@
 import { useParams, Link } from 'react-router-dom';
 import eventsData from '../data/pastEvents.json';
 import Gallery from '../components/ui/Gallery';
-import partnersData from '../data/parteners.json';
+import partnersData from '../data/partners.json';
 import CardPartner from '../components/ui/CardPartner';
 import StickyBackLink from '../components/ui/StickyBackLink';
 
@@ -25,10 +25,10 @@ const EventDetail = () => {
         />
 
         <div className="flex flex-col md:flex-row justify-center items-center gap-2">
-          <p className="text-base md:text-xl m-2 md:m-4 px-4 py-1 bg-slate-600 rounded-full w-full md:w-auto text-center">
+          <p className="text-base md:text-xl m-2 md:m-4 px-4 py-1 bg-slate-600 w-full md:w-auto text-center">
             {event.date}
           </p>
-          <p className="text-base md:text-xl m-2 md:m-4 px-4 py-1 bg-slate-600 rounded-full w-full md:w-auto text-center">
+          <p className="text-base md:text-xl m-2 md:m-4 px-4 py-1 bg-slate-600 w-full md:w-auto text-center">
             {event.lieu}
           </p>
         </div>
@@ -70,6 +70,7 @@ const EventDetail = () => {
 
               <div className="mb-8">
                 <h4>Partenaires</h4>
+                <p className='text-center pb-4'>Ils nous ont soutenu pour {event.title} et nous les remercions</p>
                 {Object.entries(event.partenaires).map(([type, partenaires]) => {
                   const partenairesInfos = partnersData.filter((p) =>
                     partenaires.includes(p.id)

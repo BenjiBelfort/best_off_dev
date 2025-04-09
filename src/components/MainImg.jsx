@@ -1,6 +1,6 @@
 const MainImg = () => {
   return (
-    <div className="relative w-full h-[80vh] bg-stone-900">
+    <div className="relative w-full h-[100vh] bg-stone-900 -mt-16">
       <div className="relative w-full h-full">
         <img 
           src="/images/rideau-noir.webp" 
