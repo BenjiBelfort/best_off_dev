@@ -61,7 +61,7 @@ const Gallery = ({ photos, seeMoreUrl }) => {
 
   return (
     <div>
-      <div className={`grid ${columns === 2 ? 'grid-cols-2' : 'grid-cols-3'} gap-6`}>
+      <div className={`grid ${columns === 2 ? 'grid-cols-2' : 'grid-cols-3'} gap-4`}>
         {photosToDisplay.map((photo, index) => (
           <div key={index} className="relative w-full aspect-square group overflow-hidden">
             <img

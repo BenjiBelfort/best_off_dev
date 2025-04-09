@@ -1,10 +1,13 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import MainImg from '../components/MainImg';
+import Separator from '../components/ui/Separator';
 import Actuality from "../components/ActualityComp";
 import Biographie from '../components/Biographie';
 import eventsData from '../data/pastEvents.json';
 import Gallery from '../components/ui/Gallery';
+import PartnersComp from '../components/PartnersComp';
+import Contact from '../components/Contact';
 
 const Home = () => {
   const location = useLocation();
@@ -40,16 +43,18 @@ const Home = () => {
       <MainImg />
       <div className="container mx-auto">
         <Actuality />
-        <div className="w-[70%] h-px bg-red-300 mx-auto my-4"></div>
+        <Separator />
         <Biographie />
-        <div className="w-[70%] h-px bg-red-300 mx-auto my-4"></div>
-
-        {/* Affichage d'une partie de la galerie sur la page d'accueil */}
+        <Separator />
         <h3>Galerie photos</h3>
         <Gallery photos={galleryPhotos} seeMoreUrl="/galerie" />
-        <div className="w-[70%] h-px bg-red-300 mx-auto my-4"></div>
+        <Separator />
         <h3>Presse</h3>
         <Gallery photos={galleryArticles} seeMoreUrl="/presse" />
+        <Separator />
+        <PartnersComp />
+        <Separator />
+        <Contact />
       </div>
     </div>
   );

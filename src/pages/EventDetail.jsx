@@ -4,6 +4,7 @@ import Gallery from '../components/ui/Gallery';
 import partnersData from '../data/partners.json';
 import CardPartner from '../components/ui/CardPartner';
 import StickyBackLink from '../components/ui/StickyBackLink';
+import Separator from '../components/ui/Separator';
 
 const EventDetail = () => {
   const { id } = useParams();
@@ -44,7 +45,7 @@ const EventDetail = () => {
         
         {event.gallery_photos && event.gallery_photos.length > 0 && (
           <>
-            <div className="w-[70%] h-px bg-red-300 mx-auto my-4"></div>
+            <Separator />
 
             <div className="mb-8">
               <h4>Galerie Photos</h4>
@@ -55,7 +56,7 @@ const EventDetail = () => {
 
         {event.presse && event.presse.length > 0 && (
           <>
-            <div className="w-[70%] h-px bg-red-300 mx-auto my-4"></div>
+            <Separator />
             <div className="mb-8">
               <h4>Presse</h4>
               <Gallery photos={event.presse} />
@@ -66,7 +67,7 @@ const EventDetail = () => {
         {event.partenaires &&
           Object.values(event.partenaires).flat().length > 0 && (
             <>
-              <div className="w-[70%] h-px bg-red-300 mx-auto my-4"></div>
+              <Separator />
 
               <div className="mb-8">
                 <h4>Partenaires</h4>

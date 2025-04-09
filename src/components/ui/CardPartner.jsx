@@ -12,7 +12,7 @@ const CardPartner = ({ partner }) => {
       >
         <img
           src={partner.logo}
-          alt={partner.name}
+          alt={`${partner.name} logo`}
           className="max-w-full max-h-full object-contain p-2"
         />
       </div>

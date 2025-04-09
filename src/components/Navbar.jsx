@@ -60,19 +60,19 @@ const Navbar = () => {
           onClick={handleHomeClick} 
           className="hover:text-red-300 transition-colors"
         >
-          <h1 className="text-4xl">BEST OFF'</h1>
+          <h1 className="text-4xl relative z-1000">BEST OFF'</h1>
         </Link>
 
         {/* Liens Desktop */}
-        <div className="hidden lg:flex space-x-6">
+        <div className="hidden lg:flex space-x-6 justify-center items-center">
           <AnchorLink to="actuality" className="hover:text-red-300 transition-colors">Actualités</AnchorLink>
           <PageLink to="/archives" className="hover:text-red-300 transition-colors">Archives</PageLink>
           <PageLink to="/galerie" className="hover:text-red-300 transition-colors">Galerie</PageLink>
           <AnchorLink to="biographie" className="hover:text-red-300 transition-colors">Biographie</AnchorLink>
           <Link to="/presse" className="hover:text-red-300 transition-colors">Presse</Link>
-          <Link to="/partenaires" className="hover:text-red-300 transition-colors">Partenaires</Link>
-          <Link to="/auditions" className="hover:text-red-300 transition-colors">Auditions</Link>
-          <Link to="/contact" className="hover:text-red-300 transition-colors">Contact</Link>
+          <AnchorLink to="partners" className="hover:text-red-300 transition-colors">Partenaires</AnchorLink>
+          {/* <Link to="/auditions" className="hover:text-red-300 transition-colors">Auditions</Link> */}
+          <AnchorLink to="contact" className="hover:text-red-300 transition-colors rounded-full border-1 px-4 py-2">Contact</AnchorLink>
         </div>
 
         {/* Bouton menu mobile */}
@@ -110,9 +110,9 @@ const Navbar = () => {
             <Link to="/galerie" className="hover:text-red-300 text-lg" onClick={handleMobileLinkClick}>Galerie</Link>
             <AnchorLink to="biographie" className="hover:text-red-300 text-lg" onClick={handleMobileLinkClick}>Biographie</AnchorLink>
             <Link to="/presse" className="hover:text-red-300 text-lg" onClick={handleMobileLinkClick}>Presse</Link>
-            <Link to="/partenaires" className="hover:text-red-300 text-lg" onClick={handleMobileLinkClick}>Partenaires</Link>
-            <Link to="/auditions" className="hover:text-red-300 text-lg" onClick={handleMobileLinkClick}>Auditions</Link>
-            <Link to="/contact" className="hover:text-red-300 text-lg" onClick={handleMobileLinkClick}>Contact</Link>
+            <AnchorLink to="partners" className="hover:text-red-300 text-lg" onClick={handleMobileLinkClick}>Partenaires</AnchorLink>
+            {/* <Link to="/auditions" className="hover:text-red-300 text-lg" onClick={handleMobileLinkClick}>Auditions</Link> */}
+            <AnchorLink to="contact" className="hover:text-red-300 text-lg rounded-full border-1 px-4 py-2" onClick={handleMobileLinkClick}>Contact</AnchorLink>
           </div>
         </div>
       </div>
