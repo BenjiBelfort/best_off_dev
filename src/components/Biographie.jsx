@@ -11,6 +11,7 @@ const Biographie = () => {
           <p className="font-bold pt-2">Une décennie de passion et de partage</p>
           <p>En dix ans d’existence, BEST OFF' a su conquérir le public par son énergie communicative et son professionnalisme. Que ce soit dans des salles intimistes ou sur de grandes scènes, leur performance transporte les spectateurs, faisant revivre les classiques avec une intensité nouvelle.</p>
           <p>Sous l’impulsion de Roland CIBIL, BEST OFF' continue d’écrire son histoire, porté par une ambition simple : faire vibrer les cœurs et rassembler autour de la musique.</p>
+          <br />
           <p>BEST OFF' – Quand le rock rencontre la symphonie, pour le plaisir des oreilles et le soutien des plus démunis.</p>
           <img className="mt-5" src="/images/events/centenaire/galerie/Centenaire_24.webp" alt="Best off en concert" />
       </section>

@@ -1,6 +1,6 @@
 const MainImg = () => {
   return (
-    <div className="relative w-full h-[100vh] bg-stone-900 -mt-16">
+    <div className="relative w-full h-[100vh] bg-stone-900 -mt-18">
       <div className="relative w-full h-full">
         <img 
           src="/images/rideau-noir.webp" 
@@ -17,7 +17,7 @@ const MainImg = () => {
           alt="Logo" 
           className="max-w-xs md:max-w-sm lg:max-w-md"
         />
-        <h2 className="text-white text-2xl md:text-3xl lg:text-4xl mt-5 pb-7 border-b-1 border-red-300">ROCK SYMPHONIQUE</h2>
+        <h2 className="text-white text-center text-xl md:text-3xl lg:text-4xl mt-5 pb-4 md:pb-5 lg:pb-7 border-b-1 border-red-300">Quand le rock rencontre la symphonie</h2>
       </div>
     </div>
   )

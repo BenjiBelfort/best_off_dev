@@ -37,7 +37,6 @@ const Gallery = ({ photos, seeMoreUrl }) => {
   const openLightbox = (index) => {
     setCurrentIndex(index);
     setLightboxOpen(true);
-    // Désactivation du scroll en arrière-plan
     document.body.style.overflow = 'hidden';
   };
 

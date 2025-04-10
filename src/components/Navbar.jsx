@@ -72,7 +72,7 @@ const Navbar = () => {
           <Link to="/presse" className="hover:text-red-300 transition-colors">Presse</Link>
           <AnchorLink to="partners" offset={41} className="hover:text-red-300 transition-colors">Partenaires</AnchorLink>
           {/* <Link to="/auditions" className="hover:text-red-300 transition-colors">Auditions</Link> */}
-          <AnchorLink to="contact" offset={41} className="hover:text-red-300 transition-colors rounded-full border-1 px-4 py-2">Contact</AnchorLink>
+          <AnchorLink to="contact" offset={41} className="hover:text-red-300 transition-colors rounded-full border-1 bg-white/10 px-4 py-2">Contact</AnchorLink>
         </div>
 
         {/* Bouton menu mobile */}
@@ -112,7 +112,7 @@ const Navbar = () => {
             <Link to="/presse" className="hover:text-red-300 text-lg" onClick={handleMobileLinkClick}>Presse</Link>
             <AnchorLink to="partners" offset={41} className="hover:text-red-300 text-lg" onClick={handleMobileLinkClick}>Partenaires</AnchorLink>
             {/* <Link to="/auditions" className="hover:text-red-300 text-lg" onClick={handleMobileLinkClick}>Auditions</Link> */}
-            <AnchorLink to="contact" offset={41} className="hover:text-red-300 text-lg rounded-full border-1 px-4 py-2" onClick={handleMobileLinkClick}>Contact</AnchorLink>
+            <AnchorLink to="contact" offset={41} className="hover:text-red-300 text-lg rounded-full border-1 bg-white/10 px-4 py-2" onClick={handleMobileLinkClick}>Contact</AnchorLink>
           </div>
         </div>
       </div>
