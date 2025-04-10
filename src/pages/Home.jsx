@@ -1,3 +1,4 @@
+// Home.jsx
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import MainImg from '../components/MainImg';
@@ -11,25 +12,28 @@ import Contact from '../components/Contact';
 
 const Home = () => {
   const location = useLocation();
+  const defaultOffset = 20; // Valeur par défaut si aucun offset n'est passé
 
   useEffect(() => {
+    // Vérifie la présence d'une ancre dans l'URL ou dans le state
     const hash = window.location.hash.substring(1) || location.state?.scrollTo;
+    const offset = location.state?.offset ?? defaultOffset;
     
     if (hash) {
       const element = document.getElementById(hash);
       if (element) {
-        // Petit délai pour permettre le rendu
+        // Petit délai pour permettre le rendu de la section avant de scroller
         setTimeout(() => {
-          element.scrollIntoView({ 
-            behavior: 'smooth',
-            block: 'start' 
-          });
+          const top = element.getBoundingClientRect().top + window.scrollY - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
+          // Optionnel : mettre à jour l'URL avec l'ancre
+          window.history.replaceState({}, '', `#${hash}`);
         }, 50);
       }
     }
   }, [location]);
 
-  // Récupérer quelques photos pour l'affichage dans Home (ex. celles du premier événement avec une galerie)
+  // Préparation des données pour la galerie, etc.
   const galleryPhotos = eventsData
     .filter(event => event.gallery_photos)
     .flatMap(event => event.gallery_photos);

@@ -15,19 +15,36 @@ const Lightbox = ({ photos, currentIndex, closeLightbox, goToNext, goToPrev }) =
     return () => document.removeEventListener('keydown', handleKeyDown);
   }, [goToNext, goToPrev, closeLightbox]);
 
-  // Gestion du swipe tactile
-  let touchStartX = null;
+  // // Gestion du swipe tactile
+  // let touchStartX = null;
+  // let isPinching = false
 
-  const handleTouchStart = (e) => {
-    touchStartX = e.changedTouches[0].screenX;
-  };
-
-  const handleTouchEnd = (e) => {
-    const touchEndX = e.changedTouches[0].screenX;
-    if (touchStartX - touchEndX > 50) goToNext();
-    if (touchStartX - touchEndX < -50) goToPrev();
-    touchStartX = null;
-  };
+  // const handleTouchStart = (e) => {
+  //   if (e.touches.length === 2) {
+  //     isPinching = true;
+  //   } else if (e.touches.length === 1) {
+  //     touchStartX = e.touches[0].screenX;
+  //     isPinching = false;
+  //   }
+  // };
+  
+  // const handleTouchEnd = (e) => {
+  //   if (isPinching) {
+  //     // Ignore le swipe si l'utilisateur pinch
+  //     isPinching = false;
+  //     return;
+  //   }
+  
+  //   if (touchStartX === null) return;
+  
+  //   const touchEndX = e.changedTouches[0].screenX;
+  //   const deltaX = touchStartX - touchEndX;
+  
+  //   if (deltaX > 50) goToNext();
+  //   if (deltaX < -50) goToPrev();
+  
+  //   touchStartX = null;
+  // };
 
   const getFileName = (url) => {
     if (!url) return 'Image';
@@ -46,8 +63,8 @@ const Lightbox = ({ photos, currentIndex, closeLightbox, goToNext, goToPrev }) =
       ref={lightboxRef}
       className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50"
       onClick={closeLightbox}
-      onTouchStart={handleTouchStart}
-      onTouchEnd={handleTouchEnd}
+      // onTouchStart={handleTouchStart}
+      // onTouchEnd={handleTouchEnd}
     >
       {/* Conteneur image, arrête la propagation pour éviter la fermeture */}
       <div className="relative" onClick={(e) => e.stopPropagation()}>
@@ -61,9 +78,10 @@ const Lightbox = ({ photos, currentIndex, closeLightbox, goToNext, goToPrev }) =
       {/* Bouton de fermeture */}
       <button 
         onClick={(e) => { e.stopPropagation(); closeLightbox(); }} 
-        className="absolute top-5 right-10 md:right-20 text-white text-5xl transition-transform transform hover:scale-110 cursor-pointer text-shadow"
+        className="absolute top-5 right-10 md:right-20 text-white text-5xl transition-transform transform hover:scale-110 cursor-pointer text-shadow flex items-center gap-2"
       >
         ×
+        <span className="hidden md:inline text-lg text-white" text-shadow>Fermer (échap)</span>
       </button>
       {/* Flèche gauche - Position responsive */}
       <button 
