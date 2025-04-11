@@ -72,7 +72,7 @@ const Navbar = () => {
           <Link to="/presse" className="hover:text-red-300 transition-colors">Presse</Link>
           <AnchorLink to="partners" offset={41} className="hover:text-red-300 transition-colors">Partenaires</AnchorLink>
           {/* <Link to="/auditions" className="hover:text-red-300 transition-colors">Auditions</Link> */}
-          <AnchorLink to="contact" offset={41} className="hover:text-red-300 transition-colors rounded-full border-1 bg-white/10 px-4 py-2">Contact</AnchorLink>
+          <AnchorLink to="contact" offset={41} className="hover:text-red-300 transition-colors rounded-full border-1 bg-white/10 hover:bg-red-300/10 px-4 py-2">Contact</AnchorLink>
         </div>
 
         {/* Bouton menu mobile */}
@@ -101,7 +101,7 @@ const Navbar = () => {
 
         {/* Menu mobile */}
         <div className={`
-          lg:hidden fixed top-0 right-0 h-full w-64 bg-stone-950 shadow-lg transform transition-transform duration-300 ease-in-out z-40
+          lg:hidden fixed top-0 right-0 h-full w-64 md:w-80 bg-stone-800 shadow-lg transform transition-transform duration-300 ease-in-out z-40
           ${isOpen ? 'translate-x-0' : 'translate-x-full'}
         `}>
           <div className="flex flex-col items-start pt-20 pl-6 space-y-6">
@@ -112,7 +112,7 @@ const Navbar = () => {
             <Link to="/presse" className="hover:text-red-300 text-lg" onClick={handleMobileLinkClick}>Presse</Link>
             <AnchorLink to="partners" offset={41} className="hover:text-red-300 text-lg" onClick={handleMobileLinkClick}>Partenaires</AnchorLink>
             {/* <Link to="/auditions" className="hover:text-red-300 text-lg" onClick={handleMobileLinkClick}>Auditions</Link> */}
-            <AnchorLink to="contact" offset={41} className="hover:text-red-300 text-lg rounded-full border-1 bg-white/10 px-4 py-2" onClick={handleMobileLinkClick}>Contact</AnchorLink>
+            <AnchorLink to="contact" offset={41} className="hover:text-red-300 text-lg rounded-full border-1 bg-white/10 hover:bg-red-300/10 px-4 py-2" onClick={handleMobileLinkClick}>Contact</AnchorLink>
           </div>
         </div>
       </div>

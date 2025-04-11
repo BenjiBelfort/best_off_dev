@@ -52,7 +52,6 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   font-family: var(--font-secondary);
-  color: white;
 }
 
 /* 4. Classes utilitaires pour les polices */

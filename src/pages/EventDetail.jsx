@@ -14,7 +14,7 @@ const EventDetail = () => {
     return <div className="text-white text-center py-8">Événement non trouvé</div>;
 
   return (
-    <section className="container mx-auto max-w-2xl px-4 py-8">
+    <section className="container mx-auto max-w-2xl px-4 py-8  text-white">
       <StickyBackLink />
 
       <div className="max-w-2xl mx-auto">

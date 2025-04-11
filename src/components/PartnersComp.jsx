@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const PartnersComp = () => {
   return (
-    <section id="partners" className="scroll-mt-20 mx-auto max-w-3xl px-4 py-8">
+    <section id="partners" className="scroll-mt-20 mx-auto max-w-3xl px-4 py-8 text-white">
       <h3>Nos partenaires</h3>
       
       <p>
@@ -26,7 +26,7 @@ const PartnersComp = () => {
       <div className="flex justify-center mt-4 mb-6">
         <Link 
           to="/archives" 
-          className="px-4 py-2 mb-4 border-2 border-white text-white transition-transform transform hover:scale-110 cursor-pointer hover:border-red-300"
+          className="px-4 py-2 mb-4 border-2 border-white text-white transition-transform transform hover:scale-110 cursor-pointer hover:border-red-300 bg-white/10 hover:bg-red-300/10"
         >
           Voir les archives des concerts
         </Link>

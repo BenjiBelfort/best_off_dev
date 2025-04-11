@@ -14,7 +14,7 @@ const MainImg = () => {
       <div className="absolute inset-0 flex flex-col items-center justify-center pb-[20px]">
         <img 
           src="/images/logo-BO.png" 
-          alt="Logo" 
+          alt="Logo BEST OFF'" 
           className="max-w-xs md:max-w-sm lg:max-w-md"
         />
         <h2 className="text-white text-center text-xl md:text-3xl lg:text-4xl mt-5 pb-4 md:pb-5 lg:pb-7 border-b-1 border-red-300">Quand le rock rencontre la symphonie</h2>

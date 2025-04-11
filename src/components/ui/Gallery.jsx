@@ -39,7 +39,7 @@ const Gallery = ({ photos, seeMoreUrl }) => {
     setLightboxOpen(true);
     document.body.style.overflow = 'hidden';
   };
-
+  
   const closeLightbox = () => {
     setLightboxOpen(false);
     document.body.style.overflow = '';

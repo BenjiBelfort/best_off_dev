@@ -7,7 +7,7 @@ const Contact = () => {
           Contactez-nous par email à{" "}
           <a
             href="mailto:bestoffmusic90@gmail.com?subject=Demande%20d'information&body=Bonjour%20BEST%20OFF',%0A%0AJe%20souhaite%20obtenir%20plus%20d'informations%20sur..."
-            className="underline hover:text-gray-300"
+            className="underline hover:text-red-300"
           >
             bestoffmusic90@gmail.com
           </a>
