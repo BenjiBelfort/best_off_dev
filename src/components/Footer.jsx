@@ -6,10 +6,14 @@ const Footer = () => {
     return (
         <footer className="bg-stone-800 w-full p-4 mt-8">
             <div>
-                <h2 className="md:flex hidden text-stone-200 container mb-3 mx-auto">BEST OFF' - Quand le rock rencontre la symphonie</h2>
+                <h2 className="hidden md:block text-stone-200 text-center container mb-3 mx-auto">
+                    BEST OFF' - Quand le rock rencontre la symphonie
+                </h2>
             </div>
+
             <div className="h-px bg-stone-400 mx-auto container"></div>
-            <div className="text-stone-400 text-sm text-center flex flex-col items-center justify-center p-4 gap-1 sm:flex-row">
+
+            <div className="w-full container mx-auto flex flex-col md:flex-row justify-center sm:justify-start items-center md:items-start text-stone-400 text-sm text-center sm:text-left py-4 gap-1">
                 <p>&#169; {currentYear} - BEST OFF'.</p>
                 <p>Tous droits réservés.</p>
                 <a 
