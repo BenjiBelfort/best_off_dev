@@ -1,4 +1,3 @@
-// EventDetail.jsx
 import { useParams, Link } from 'react-router-dom';
 import eventsData from '../data/pastEvents.json';
 import Gallery from '../components/ui/Gallery';

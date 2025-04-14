@@ -1,5 +1,6 @@
 // Lightbox.jsx
 import { useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 
 const Lightbox = ({ photos, currentIndex, closeLightbox, goToNext, goToPrev, event }) => {
   const lightboxRef = useRef();
@@ -23,7 +24,7 @@ const Lightbox = ({ photos, currentIndex, closeLightbox, goToNext, goToPrev, eve
       ? cleanName.substring(0, cleanName.lastIndexOf('.')) 
       : cleanName;
   };
-
+  console.log("event dans Lightbox:", event);
   return (
     <div 
       ref={lightboxRef}
@@ -68,17 +69,20 @@ const Lightbox = ({ photos, currentIndex, closeLightbox, goToNext, goToPrev, eve
       </button>
 
       {/* Compteur d'images */}
-      <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 text-white text-lg bg-opacity-50 text-shadow">
+      <div className="absolute bottom-7.5 left-1/2 md:bottom-5 transform -translate-x-1/2 text-white text-xs md:text-base text-shadow">
         {currentIndex + 1} / {photos.length}
       </div>
 
       {/* Informations de l'événement */}
       {event && (
-        <div className="absolute bottom-5 left-10 text-white text-sm bg-gray-800 bg-opacity-75 p-2 rounded">
-          <div className="font-bold">{event.title}</div>
-          <div>{event.date}</div>
-          <div>{event.lieu}</div>
-        </div>
+        <Link 
+          to={`/archives/${event.id}`} 
+          className="absolute top-7 left-5 md:top-auto md:bottom-5 md:left-10 text-white text-xs md:text-base flex flex-col md:flex-row gap-1 text-shadow hover:text-red-300 transition-transform hover:scale-110 cursor-pointer"
+        >
+          <p className="font-bold">{event.title}</p>
+          <p className="hidden md:inline-block">-</p>
+          <p>{event.date}</p>
+        </Link>
       )}
     </div>
   );

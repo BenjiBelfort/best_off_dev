@@ -33,14 +33,31 @@ const Home = () => {
     }
   }, [location]);
 
-  // Préparation des données pour la galerie, etc.
   const galleryPhotos = eventsData
-    .filter(event => event.gallery_photos)
-    .flatMap(event => event.gallery_photos);
+  .filter(event => event.gallery_photos)
+  .flatMap(event =>
+    event.gallery_photos.map(photo => ({
+      src: photo,
+      event: {
+        title: event.title,
+        date: event.date,
+        lieu: event.lieu
+      }
+    }))
+  );
 
   const galleryArticles = eventsData
     .filter(event => event.presse)
-    .flatMap(event => event.presse);
+    .flatMap(event =>
+      event.presse.map(photo => ({
+        src: photo,
+        event: {
+          title: event.title,
+          date: event.date,
+          lieu: event.lieu
+        }
+      }))
+    );
 
   return (
     <div>

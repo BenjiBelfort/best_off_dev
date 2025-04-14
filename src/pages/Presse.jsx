@@ -5,8 +5,18 @@ const Presse = () => {
   // Récupérer toutes les photos de la galerie
   const allArticles = eventsData
     .filter(event => event.presse) // Ne garder que les événements avec des photos
-    .flatMap(event => event.presse); // Extraire toutes les photos dans un seul tableau
-
+    .flatMap(event => 
+      event.presse.map(photo => ({
+        src: photo,
+        event: {
+          id: event.id,
+          title: event.title,
+          date: event.date,
+          lieu: event.lieu,
+        }
+      }))
+    );
+  
   return (
     <section className="container mx-auto">
       <h3>Presse</h3>
