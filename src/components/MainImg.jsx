@@ -91,7 +91,7 @@ const MainImg = () => {
           {showCloseButton && (
             <button 
               onClick={(e) => { e.stopPropagation(); setIsModalOpen(false); }}
-              className="absolute top-5 right-10 md:right-20 text-white text-5xl transition-transform transform hover:scale-110 cursor-pointer text-shadow flex items-center gap-2"
+              className="absolute top-5 right-10 md:right-20 text-white text-5xl transition-transform transform hover:scale-110 cursor-pointer text-shadow flex items-center gap-2 animate-[fadeIn_3s_ease-out_forwards]"
               aria-label="Fermer la vidéo"
             >
               ×

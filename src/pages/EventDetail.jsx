@@ -1,3 +1,4 @@
+// EventDetail.jsx
 import { useParams, Link } from 'react-router-dom';
 import eventsData from '../data/pastEvents.json';
 import Gallery from '../components/ui/Gallery';
@@ -14,7 +15,7 @@ const EventDetail = () => {
     return <div className="text-white text-center py-8">Événement non trouvé</div>;
 
   return (
-    <section className="container mx-auto max-w-2xl px-4 py-8  text-white">
+    <section className="container mx-auto max-w-2xl px-4 py-8 text-white">
       <StickyBackLink />
 
       <div className="max-w-2xl mx-auto">
@@ -46,9 +47,9 @@ const EventDetail = () => {
         {event.gallery_photos && event.gallery_photos.length > 0 && (
           <>
             <Separator />
-
             <div className="mb-8">
               <h4>Galerie Photos</h4>
+              {/* Passage de l'objet event pour la lightbox */}
               <Gallery photos={event.gallery_photos} />
             </div>
           </>
@@ -68,10 +69,11 @@ const EventDetail = () => {
           Object.values(event.partenaires).flat().length > 0 && (
             <>
               <Separator />
-
               <div className="mb-8">
                 <h4>Partenaires</h4>
-                <p className='text-center pb-4'>Ils nous ont soutenu pour {event.title} et nous les remercions</p>
+                <p className="text-center pb-4">
+                  Ils nous ont soutenu pour {event.title} et nous les remercions
+                </p>
                 {Object.entries(event.partenaires).map(([type, partenaires]) => {
                   const partenairesInfos = partnersData.filter((p) =>
                     partenaires.includes(p.id)
