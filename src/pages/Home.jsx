@@ -1,5 +1,5 @@
 // Home.jsx
-import { useEffect } from 'react';
+import { useEffect, useMemo } from 'react';
 import { useLocation } from 'react-router-dom';
 import MainImg from '../components/MainImg';
 import Separator from '../components/ui/Separator';
@@ -33,19 +33,22 @@ const Home = () => {
     }
   }, [location]);
 
-  const galleryPhotos = eventsData
-  .filter(event => event.gallery_photos)
-  .flatMap(event =>
-    event.gallery_photos.map(photo => ({
-      src: photo,
-      event: {
-        id: event.id,
-        title: event.title,
-        date: event.date,
-        lieu: event.lieu
-      }
-    }))
-  );
+  const galleryPhotos = useMemo(() => {
+    const photos = eventsData
+      .filter(event => event.gallery_photos)
+      .flatMap(event =>
+        event.gallery_photos.map(photo => ({
+          src: photo,
+          event: {
+            id: event.id,
+            title: event.title,
+            date: event.date,
+            lieu: event.lieu
+          }
+        }))
+      );
+    return photos.sort(() => Math.random() - 0.5);
+  }, []);
 
   const galleryArticles = eventsData
     .filter(event => event.presse)

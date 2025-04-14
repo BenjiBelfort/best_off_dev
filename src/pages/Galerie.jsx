@@ -16,11 +16,13 @@ const Galerie = () => {
         }
       }))
     );
+  
+  const shuffledPhotos = [...allPhotos].sort(() => Math.random() - 0.5);
 
   return (
     <section className="container mx-auto">
       <h3>Galerie photos</h3>
-      <Gallery photos={allPhotos} />
+      <Gallery photos={shuffledPhotos} />
     </section>
   );
 };
