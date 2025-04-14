@@ -39,6 +39,7 @@ const Home = () => {
     event.gallery_photos.map(photo => ({
       src: photo,
       event: {
+        id: event.id,
         title: event.title,
         date: event.date,
         lieu: event.lieu
@@ -52,6 +53,7 @@ const Home = () => {
       event.presse.map(photo => ({
         src: photo,
         event: {
+          id: event.id,
           title: event.title,
           date: event.date,
           lieu: event.lieu
