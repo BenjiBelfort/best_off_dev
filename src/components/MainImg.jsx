@@ -78,7 +78,7 @@ const MainImg = () => {
           alt="Logo BEST OFF'" 
           className="max-w-xs md:max-w-sm lg:max-w-md mt-16"
         />
-        <h2 className="text-white text-center text-xl md:text-3xl lg:text-4xl mt-6 pb-4 md:border-b md:border-red-300">
+        <h2 className="text-white text-center text-xl md:text-3xl lg:text-4xl mt-4 mx-12 md:pb-4 md:border-b md:border-red-300">
           Quand le <span className='font-special text-4xl md:text-6xl lg:text-7xl'>Rock </span> rencontre la <span className='font-special text-4xl md:text-6xl lg:text-7xl'>Symphonie</span>
         </h2>
 
