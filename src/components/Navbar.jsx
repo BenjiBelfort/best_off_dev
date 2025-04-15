@@ -53,7 +53,7 @@ const Navbar = () => {
   const navBgClass = isHome && !scrolled ? 'bg-transparent' : 'bg-stone-950/80';
 
   return (
-    <nav className={`${navBgClass} text-white px-6 py-4 sticky top-0 z-50 transition-colors duration-300`}>
+    <nav className={`${navBgClass} text-white px-6 py-4 sticky top-0 z-50 transition-colors duration-1000`}>
       <div className="container mx-auto flex justify-between items-center">
         <Link 
           to="/" 

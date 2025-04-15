@@ -3,6 +3,20 @@ import { useState, useEffect } from 'react';
 const MainImg = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [showCloseButton, setShowCloseButton] = useState(false);
+  const [scrollY, setScrollY] = useState(0);
+  const scale = Math.max(0.85, 1 - scrollY * 0.0003);
+  const opacity = Math.max(0, 1 - scrollY * 0.002);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      setScrollY(scrollTop);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
 
   // Affiche le bouton de fermeture 3 secondes après l'ouverture
   useEffect(() => {
@@ -41,14 +55,22 @@ const MainImg = () => {
 
   return (
     <div className="relative w-full h-[100vh] bg-stone-900 -mt-18 overflow-hidden">
-      <div className="relative w-full h-full">
+      <div 
+        className="relative w-full h-full transition-transform duration-300 ease-out"
+        style={{
+          transform: `translateY(-${scrollY * 0.3}px) scale(${scale})`
+        }}
+      >
         <img 
           src="/images/rideau-noir.webp" 
           alt="rideaux noirs" 
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover transition-opacity duration-300"
+          style={{ opacity }}
         />
+        
         <div className="absolute inset-0 bg-gradient-to-t from-stone-900/100 to-transparent" />
       </div>
+
 
       <div className="absolute inset-0 flex flex-col items-center justify-center pb-[20px] opacity-0 animate-[fadeIn_3s_ease-out_forwards] z-10">
         <img 
@@ -56,8 +78,8 @@ const MainImg = () => {
           alt="Logo BEST OFF'" 
           className="max-w-xs md:max-w-sm lg:max-w-md mt-16"
         />
-        <h2 className="text-white text-center text-xl md:text-3xl lg:text-4xl mt-5 pb-4 md:pb-5 lg:pb-7 border-b border-red-300">
-          Quand le rock rencontre la symphonie
+        <h2 className="text-white text-center text-xl md:text-3xl lg:text-4xl mt-6 pb-4 md:border-b md:border-red-300">
+          Quand le <span className='font-special text-4xl md:text-6xl lg:text-7xl'>Rock </span> rencontre la <span className='font-special text-4xl md:text-6xl lg:text-7xl'>Symphonie</span>
         </h2>
 
           <div className="flex flex-col items-center mt-8 space-y-4 hover:scale-110 transition-transform duration-300 cursor-pointer">
