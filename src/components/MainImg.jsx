@@ -4,7 +4,7 @@ const MainImg = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [showCloseButton, setShowCloseButton] = useState(false);
   const [scrollY, setScrollY] = useState(0);
-  const scale = Math.max(0.85, 1 - scrollY * 0.0003);
+  const scale = Math.max(1, 1.20 - scrollY * 0.0003);
   const opacity = Math.max(0, 1 - scrollY * 0.002);
 
   useEffect(() => {
@@ -58,14 +58,14 @@ const MainImg = () => {
       <div 
         className="relative w-full h-full transition-transform duration-300 ease-out"
         style={{
-          transform: `translateY(-${scrollY * 0.3}px) scale(${scale})`
+          transform: `translateY(-${scrollY * 0.1}px) scale(${scale})`
         }}
       >
         <img 
           src="/images/rideau-noir.webp" 
           alt="rideaux noirs" 
           className="w-full h-full object-cover transition-opacity duration-300"
-          style={{ opacity }}
+          style={{ opacity, filter: 'blur(2px)' }}
         />
         
         <div className="absolute inset-0 bg-gradient-to-t from-stone-900/100 to-transparent" />
@@ -120,6 +120,13 @@ const MainImg = () => {
               <span className="hidden md:inline text-lg text-white text-shadow">Fermer (échap)</span>
             </button>
           )}
+
+          {/* Logo en bas à droite, visible uniquement sur tablette et plus */}
+          <img 
+            src="/logo-Best-Off.png" 
+            alt="Logo Best Off' pour Lightbox" 
+            className="hidden md:block absolute bottom-3 right-10 w-20"
+          />
         </div>
       )}
     </div>
