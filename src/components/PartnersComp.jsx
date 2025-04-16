@@ -40,9 +40,6 @@ const PartnersComp = () => {
           ♥︎ faire un don ♥︎
         </a>
       </div>
-
-
-
       <p className="font-bold text-center text-3xl">Merci pour votre engagement à nos côtés.</p>
     </section>
   );
