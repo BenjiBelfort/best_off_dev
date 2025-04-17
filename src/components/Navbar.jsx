@@ -58,7 +58,7 @@ const Navbar = () => {
         <Link 
           to="/" 
           onClick={handleHomeClick} 
-          className="hover:text-red-400 transition-colors"
+          className="hover:drop-shadow-[0_0_8px_white] transition-colors"
         >
           <h1 className="text-4xl relative z-1000">BEST OFF'</h1>
         </Link>

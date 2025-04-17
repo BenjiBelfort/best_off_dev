@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Biographie = () => {
     return (
       <section id="biographie" className="scroll-mt-20 mx-auto max-w-2xl px-4 py-8 text-white">
@@ -19,6 +21,10 @@ const Biographie = () => {
           <br />
           <p>BEST OFF' – Quand le rock rencontre la symphonie, pour le plaisir des oreilles et le soutien des plus démunis.</p>
           <img className="mt-5" src="/images/events/centenaire/galerie/Centenaire_24.webp" alt="Best off en concert" />
+          <Link to="/archives/centenaire" className="text-white text-center text-shadow hover:text-red-400 transition-transform hover:scale-110 cursor-pointer flex justify-center gap-1 mt-4">
+            <p className="font-bold">Centenaire</p>
+            <p> - 2 novembre 2022</p>
+          </Link>
       </section>
     );
   };
