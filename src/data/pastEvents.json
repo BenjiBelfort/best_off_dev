@@ -50,9 +50,9 @@
 
       ],
       "presse": [
-        "/images/events/souviens-toi/presse/Article_centenaire_1.webp",
-        "/images/events/souviens-toi/presse/Article_centenaire_2.webp",
-        "/images/events/souviens-toi/presse/Article_centenaire_3.webp"
+        "/images/events/souviens-toi/presse/Article_souviens-toi_1.webp",
+        "/images/events/souviens-toi/presse/Article_souviens-toi_2.webp",
+        "/images/events/souviens-toi/presse/Article_souviens-toi_3.webp"
       ],
       "partenaires": {
         "Partenaires": ["semonslespoir", "eddanse", "mathildeadam"],
@@ -149,11 +149,8 @@
         "/images/events/centenaire/galerie/Centenaire_28.webp"
       ],
       "partenaires": {
-        "Partenaire": [],
-        "Institutionnels": ["mairieoffemont", "villebelfort"],
-        "Or": [],
-        "Argent": [],
-        "Sponsors": ["pflevents"]
+        "Partenaires": ["improtg", "photoffemont"],
+        "Institutionnels": ["departementterritoire", "villebelfort", "mairieoffemont" ]
       }
     },
     {
@@ -162,9 +159,9 @@
       "date": "26 juin 2022",
       "lieu": "la MIEL, Offemont",
       "description": [
-        "BEST OFF’ et la Commune d'Offemont présentent les Concerts Solidaires pour l'Ukraine",
-        "BEST OFF’ invite des groupes locaux à se produire à la MIEL à Offemont avec le soutien de la Commune d'Offemont",
-        "La participation est libre, les recettes seront redistribuées à l'association Maïdan sans frontière"
+        "BEST OFF’ et la Commune d'Offemont présentent les Concerts Solidaires pour l'Ukraine.",
+        "BEST OFF’ invite des groupes locaux à se produire à la MIEL à Offemont avec le soutien de la Commune d'Offemont.",
+        "La participation est libre, les recettes seront redistribuées à l'association Maïdan sans frontière."
       ],
       "photo_cover": "/images/events/ukraine/affiche.webp",
       "presse": [
@@ -180,7 +177,19 @@
       "date": "27 janvier 2019",
       "lieu": "Odyssée du Cirque, Héricourt",
       "description": "BEST OFF' accompagne L'Odyssée du Cirque pour un spectacle inédit !",
-      "photo_cover": "/images/events/odyssee/affiche.webp"
+      "photo_cover": "/images/events/odyssee/affiche.webp",
+      "gallery_photos": [
+        "/images/events/odyssee/galerie/odyssee_1.webp",
+        "/images/events/odyssee/galerie/odyssee_2.webp",
+        "/images/events/odyssee/galerie/odyssee_3.webp",
+        "/images/events/odyssee/galerie/odyssee_4.webp",
+        "/images/events/odyssee/galerie/odyssee_5.webp",
+        "/images/events/odyssee/galerie/odyssee_6.webp",
+        "/images/events/odyssee/galerie/odyssee_7.webp"
+      ],
+      "partenaires": {
+        "Partenaires": ["odysseeducirque"]
+      }
     },
     {
       "id": "festivoff",
@@ -234,7 +243,8 @@
       ],
       "partenaires": {
         "Partenaire": ["unicef", "francebleu"],
-        "Institutionnels": ["mairieoffemont", "villebelfort"]
+        "Institutionnels": ["villebelfort", "mairieoffemont"],
+        "Sponsors": [ "bureauvallee", "comptoirremparts" ]
       }
     },
     {
@@ -251,7 +261,10 @@
       "date": "11 et 12 février 2017",
       "lieu": "la MIEL, Offemont",
       "description": "Concert au profit de l'association Les Nez Rouges",
-      "photo_cover": "/images/events/nez-rouges/affiche.webp"
+      "photo_cover": "/images/events/nez-rouges/affiche.webp",
+      "partenaires": {
+        "Partenaire": [ "lesnezrouges" ]
+      }
     }
 ]
   

@@ -58,21 +58,21 @@ const Navbar = () => {
         <Link 
           to="/" 
           onClick={handleHomeClick} 
-          className="hover:text-red-300 transition-colors"
+          className="hover:text-red-400 transition-colors"
         >
           <h1 className="text-4xl relative z-1000">BEST OFF'</h1>
         </Link>
 
         {/* Liens Desktop */}
         <div className="hidden lg:flex space-x-6 justify-center items-center">
-          <AnchorLink to="actuality" offset={25} className="hover:text-red-300 transition-colors">Actualités</AnchorLink>
-          <PageLink to="/archives" className="hover:text-red-300 transition-colors">Archives</PageLink>
-          <PageLink to="/galerie" className="hover:text-red-300 transition-colors">Galerie</PageLink>
-          <AnchorLink to="biographie" offset={41} className="hover:text-red-300 transition-colors">Biographie</AnchorLink>
-          <Link to="/presse" className="hover:text-red-300 transition-colors">Presse</Link>
-          <AnchorLink to="partners" offset={41} className="hover:text-red-300 transition-colors">Partenaires</AnchorLink>
-          {/* <Link to="/auditions" className="hover:text-red-300 transition-colors">Auditions</Link> */}
-          <AnchorLink to="contact" offset={41} className="hover:text-red-300 transition-colors rounded-full border-1 bg-white/10 hover:bg-red-300/10 px-4 py-2">Contact</AnchorLink>
+          <AnchorLink to="actuality" offset={25} className="hover:text-red-400 transition-colors">Actualités</AnchorLink>
+          <PageLink to="/archives" className="hover:text-red-400 transition-colors">Archives</PageLink>
+          <PageLink to="/galerie" className="hover:text-red-400 transition-colors">Galerie</PageLink>
+          <AnchorLink to="biographie" offset={41} className="hover:text-red-400 transition-colors">Biographie</AnchorLink>
+          <Link to="/presse" className="hover:text-red-400 transition-colors">Presse</Link>
+          <AnchorLink to="partners" offset={41} className="hover:text-red-400 transition-colors">Partenaires</AnchorLink>
+          {/* <Link to="/auditions" className="hover:text-red-400 transition-colors">Auditions</Link> */}
+          <AnchorLink to="contact" offset={41} className="hover:text-red-400 transition-colors rounded-full border-1 bg-white/10 hover:bg-red-400/10 px-4 py-2">Contact</AnchorLink>
         </div>
 
         {/* Bouton menu mobile */}
@@ -101,18 +101,18 @@ const Navbar = () => {
 
         {/* Menu mobile */}
         <div className={`
-          lg:hidden fixed top-0 right-0 h-full w-64 md:w-80 bg-stone-800 shadow-lg transform transition-transform duration-300 ease-in-out z-40
+          lg:hidden fixed top-0 right-0 h-full w-64 md:w-80 bg-stone-950 shadow-lg transform transition-transform duration-300 ease-in-out z-40
           ${isOpen ? 'translate-x-0' : 'translate-x-full'}
         `}>
           <div className="flex flex-col items-start pt-20 pl-6 space-y-6">
-            <AnchorLink to="actuality" offset={25} className="hover:text-red-300 text-lg" onClick={handleMobileLinkClick}>Actualités</AnchorLink>
-            <Link to="/archives" className="hover:text-red-300 text-lg" onClick={handleMobileLinkClick}>Archives</Link>
-            <Link to="/galerie" className="hover:text-red-300 text-lg" onClick={handleMobileLinkClick}>Galerie</Link>
-            <AnchorLink to="biographie" offset={41} className="hover:text-red-300 text-lg" onClick={handleMobileLinkClick}>Biographie</AnchorLink>
-            <Link to="/presse" className="hover:text-red-300 text-lg" onClick={handleMobileLinkClick}>Presse</Link>
-            <AnchorLink to="partners" offset={41} className="hover:text-red-300 text-lg" onClick={handleMobileLinkClick}>Partenaires</AnchorLink>
-            {/* <Link to="/auditions" className="hover:text-red-300 text-lg" onClick={handleMobileLinkClick}>Auditions</Link> */}
-            <AnchorLink to="contact" offset={41} className="hover:text-red-300 text-lg rounded-full border-1 bg-white/10 hover:bg-red-300/10 px-4 py-2" onClick={handleMobileLinkClick}>Contact</AnchorLink>
+            <AnchorLink to="actuality" offset={25} className="hover:text-red-400 text-lg" onClick={handleMobileLinkClick}>Actualités</AnchorLink>
+            <Link to="/archives" className="hover:text-red-400 text-lg" onClick={handleMobileLinkClick}>Archives</Link>
+            <Link to="/galerie" className="hover:text-red-400 text-lg" onClick={handleMobileLinkClick}>Galerie</Link>
+            <AnchorLink to="biographie" offset={41} className="hover:text-red-400 text-lg" onClick={handleMobileLinkClick}>Biographie</AnchorLink>
+            <Link to="/presse" className="hover:text-red-400 text-lg" onClick={handleMobileLinkClick}>Presse</Link>
+            <AnchorLink to="partners" offset={41} className="hover:text-red-400 text-lg" onClick={handleMobileLinkClick}>Partenaires</AnchorLink>
+            {/* <Link to="/auditions" className="hover:text-red-400 text-lg" onClick={handleMobileLinkClick}>Auditions</Link> */}
+            <AnchorLink to="contact" offset={41} className="hover:text-red-400 text-lg rounded-full border-1 bg-white/10 hover:bg-red-400/10 px-4 py-2" onClick={handleMobileLinkClick}>Contact</AnchorLink>
           </div>
         </div>
       </div>

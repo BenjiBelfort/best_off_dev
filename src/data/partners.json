@@ -382,5 +382,37 @@
       "rank": "sponsor",
       "logo": "/images/partners/au_fournil_de_francis.jpeg",
       "website": "https://www.facebook.com/aufournildefrancis/?locale=fr_FR"
+    },
+    {
+      "id": "photoffemont",
+      "name": "Phot'Offemont",
+      "background": "white",
+      "rank": "partenaire",
+      "logo": "/images/partners/logo-phot_Offemont.png",
+      "website": "https://www.photoffemont.com/"
+    },
+    {
+      "id": "improtg",
+      "name": "Impro TG",
+      "background": "white",
+      "rank": "partenaire",
+      "logo": "/images/partners/impro-tg-logo.png",
+      "website": "https://improtg.com/"
+    },
+    {
+      "id": "odysseeducirque",
+      "name": "Odyssée du Cirque",
+      "background": "",
+      "rank": "partenaire",
+      "logo": "/images/partners/logo-odyssee-du-cirque.png",
+      "website": "https://www.odysseeducirque.info/"
+    },
+    {
+      "id": "lesnezrouges",
+      "name": "Les Nez Rouges",
+      "background": "white",
+      "rank": "partenaire",
+      "logo": "/images/partners/logo-lnr.jpg",
+      "website": ""
     }
   ]

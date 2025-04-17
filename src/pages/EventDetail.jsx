@@ -74,9 +74,9 @@ const EventDetail = () => {
                   Ils nous ont soutenu pour {event.title} et nous les remercions
                 </p>
                 {Object.entries(event.partenaires).map(([type, partenaires]) => {
-                  const partenairesInfos = partnersData.filter((p) =>
-                    partenaires.includes(p.id)
-                  );
+                    const partenairesInfos = partenaires
+                    .map((id) => partnersData.find((p) => p.id === id))
+                    .filter(Boolean);
 
                   return (
                     partenairesInfos.length > 0 && (

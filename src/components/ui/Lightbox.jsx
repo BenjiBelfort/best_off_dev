@@ -77,7 +77,7 @@ const Lightbox = ({ photos, currentIndex, closeLightbox, goToNext, goToPrev, eve
       {event && (
         <Link 
           to={`/archives/${event.id}`} 
-          className="absolute top-7 left-5 md:top-auto md:bottom-5 md:left-10 text-white text-xs md:text-base flex flex-col md:flex-row gap-1 text-shadow hover:text-red-300 transition-transform hover:scale-110 cursor-pointer"
+          className="absolute top-7 left-5 md:top-auto md:bottom-5 md:left-10 text-white text-xs md:text-base flex flex-col md:flex-row gap-1 text-shadow hover:text-red-400 hover:bg-stone-950/90 transition-transform hover:scale-110 cursor-pointer"
         >
           <p className="font-bold">{event.title}</p>
           <p className="hidden md:inline-block">-</p>
