@@ -263,7 +263,8 @@
       "description": "Concert au profit de l'association Les Nez Rouges",
       "photo_cover": "/images/events/nez-rouges/affiche.webp",
       "partenaires": {
-        "Partenaire": [ "lesnezrouges" ]
+        "Partenaire": [ "lesnezrouges" ],
+        "Institutionnels": ["mairieoffemont"]
       }
     }
 ]

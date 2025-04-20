@@ -19,7 +19,7 @@ const Biographie = () => {
           <br />
           <p>Sous l’impulsion de Roland CIBIL, BEST OFF' continue d’écrire son histoire, porté par une ambition simple : faire vibrer les cœurs et rassembler autour de la musique.</p>
           <br />
-          <p>BEST OFF' – Quand le rock rencontre la symphonie, pour le plaisir des oreilles et le soutien des plus démunis.</p>
+          <p>BEST OFF' – Quand le <span className='font-special text-3xl'>Rock </span> rencontre la <span className='font-special text-3xl'>Symphonie</span>, pour le plaisir des oreilles et le soutien des plus démunis.</p>
           <img className="mt-5" src="/images/events/centenaire/galerie/Centenaire_24.webp" alt="Best off en concert" />
           <Link to="/archives/centenaire" className="text-white text-center text-shadow hover:text-red-400 transition-transform hover:scale-110 cursor-pointer flex justify-center gap-1 mt-4">
             <p className="font-bold">Centenaire</p>
