@@ -19,7 +19,7 @@ const StickyBackLink = () => {
       to="/archives"
       className={`sticky top-18 z-50 transition-all duration-300 text-white hover:text-red-400 ${
         isSticky
-          ? 'w-8 h-8 flex items-center justify-center bg-gray-400/60'
+          ? 'w-8 h-8 flex items-center justify-center bg-red-400/80 text-shadow hover:text-white'
           : 'px-4 py-2'
       }`}
     >

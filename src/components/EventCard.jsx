@@ -13,11 +13,20 @@ const EventCard = ({ event }) => {
           className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
         />
       </div>
-      <div className="absolute inset-0 bg-gradient-to-t from-black/100 to-transparent" />
-      <div className="text-white absolute bottom-0 left-0 right-0 p-4">
-        <h4 className="text-2xl pb-1 text-left">{event.title}</h4>
-        <p className="text-sm font-bold">{event.date}</p>
-        <p className="text-sm">{event.lieu}</p>
+
+      <div className="absolute inset-0 bg-gradient-to-b from-black/95 to-transparent" />
+
+      {/* Container texte avec layout haut-bas */}
+      <div className="absolute inset-0 flex flex-col justify-between p-4 text-white">
+        <div>
+          <h4 className="text-2xl pb-1 text-left">{event.title}</h4>
+          <p className="text-sm">{event.lieu}</p>
+          <p className="text-sm font-bold">{event.date}</p>
+        </div>
+
+        <div className="text-right">
+          <span className="text-sm text-shadow bg-red-400/80 px-2 py-1">lire la suite →</span>
+        </div>
       </div>
     </Link>
   );
