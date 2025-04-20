@@ -5,6 +5,7 @@ import MainImg from '../components/MainImg';
 import Separator from '../components/ui/Separator';
 import Actuality from "../components/ActualityComp";
 import Biographie from '../components/Biographie';
+import LatestEvents from '../components/LatestEvents';
 import eventsData from '../data/pastEvents.json';
 import Gallery from '../components/ui/Gallery';
 import PartnersComp from '../components/PartnersComp';
@@ -71,6 +72,8 @@ const Home = () => {
         <Actuality />
         <Separator />
         <Biographie />
+        <Separator />
+        <LatestEvents />
         <Separator />
         <h3>Galerie photos</h3>
         <Gallery photos={galleryPhotos} seeMoreUrl="/galerie" />

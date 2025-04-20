@@ -14,7 +14,7 @@ const EventCard = ({ event }) => {
         />
       </div>
 
-      <div className="absolute inset-0 bg-gradient-to-b from-black/95 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/100 to-transparent" />
 
       {/* Container texte avec layout haut-bas */}
       <div className="absolute inset-0 flex flex-col justify-between p-4 text-white">
