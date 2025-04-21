@@ -26,10 +26,10 @@ const EventDetail = () => {
         />
 
         <div className="flex flex-col md:flex-row justify-center items-center gap-2">
-          <p className="text-base md:text-xl m-2 md:m-4 px-4 py-1 bg-slate-600 w-full md:w-auto text-center">
+          <p className="text-base md:text-xl m-2 md:m-4 px-4 py-1 bg-slate-600 w-full md:w-auto text-center text-shadow">
             {event.date}
           </p>
-          <p className="text-base md:text-xl m-2 md:m-4 px-4 py-1 bg-slate-600 w-full md:w-auto text-center">
+          <p className="text-base md:text-xl m-2 md:m-4 px-4 py-1 bg-slate-600 w-full md:w-auto text-center text-shadow">
             {event.lieu}
           </p>
         </div>

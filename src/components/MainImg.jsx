@@ -78,9 +78,10 @@ const MainImg = () => {
           alt="Logo BEST OFF'" 
           className="max-w-xs md:max-w-sm lg:max-w-md mt-16"
         />
-        <h2 className="text-white text-center text-xl md:text-3xl lg:text-4xl mt-4 mx-12 md:pb-4 md:border-b md:border-red-400">
-          Quand le <span className='font-special text-4xl md:text-6xl lg:text-7xl'>Rock </span> rencontre la <span className='font-special text-4xl md:text-6xl lg:text-7xl'>Symphonie</span>
-        </h2>
+        <h2 className="relative text-white text-center text-xl md:text-3xl lg:text-4xl mt-4 mx-12 md:pb-4 gradient-underline">
+  Quand le <span className='font-special text-4xl md:text-6xl lg:text-7xl'>Rock </span>
+  rencontre la <span className='font-special text-4xl md:text-6xl lg:text-7xl'>Symphonie</span>
+</h2>
 
           <div className="flex flex-col items-center mt-8 space-y-4 hover:scale-110 transition-transform duration-300 cursor-pointer">
             {/* Triangle dans un cercle */}

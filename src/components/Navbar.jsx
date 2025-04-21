@@ -95,7 +95,7 @@ const Navbar = () => {
         {/* Overlay */}
         <div 
           className={`fixed inset-0 bg-black transition-opacity duration-300 z-30
-          ${isOpen ? 'opacity-80 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
+          ${isOpen ? 'opacity-90 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
           onClick={() => setIsOpen(false)}
         />
 
