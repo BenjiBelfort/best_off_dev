@@ -414,5 +414,197 @@
       "rank": "partenaire",
       "logo": "/images/partners/logo-lnr.jpg",
       "website": ""
+    },
+    {
+      "id": "vidalfrance",
+      "name": "LVidal France",
+      "background": "",
+      "rank": "sponsor",
+      "logo": "/images/partners/logo_vidal.png",
+      "website": "https://vidal-france.fr/"
+    },
+    {
+      "id": "abvm",
+      "name": "Association Belforttaine de Vol Moteur",
+      "background": "",
+      "rank": "sponsor",
+      "logo": "/images/partners/logo_abvm.png",
+      "website": "https://www.abvm.fr/"
+    },
+    {
+      "id": "mieuxzetre",
+      "name": "Mieux zêtre",
+      "background": "",
+      "rank": "sponsor",
+      "logo": "/images/partners/mieux-logo.png",
+      "website": "https://www.mieuxzetre.fr/"
+    },
+    {
+      "id": "larougemontoise",
+      "name": "La Rougemontoise",
+      "background": "",
+      "rank": "sponsor",
+      "logo": "/images/partners/rougemontoise.jpg",
+      "website": "https://www.facebook.com/p/La-Rougemontoise-100064329812883/?locale=fr_FR"
+    },
+    {
+      "id": "ronfort",
+      "name": "Pompes Funèbres Ronfort",
+      "background": "",
+      "rank": "sponsor",
+      "logo": "/images/partners/logo-ronfort.png",
+      "website": "https://pfronfort.fr/"
+    },
+    {
+      "id": "krisslaure",
+      "name": "Kriss-Laure",
+      "background": "",
+      "rank": "sponsor",
+      "logo": "/images/partners/LOGO_KRISS-LAURE.avif",
+      "website": "https://kriss-laure.com/"
+    },
+    {
+      "id": "knecht",
+      "name": "Primeur Knecht",
+      "background": "",
+      "rank": "sponsor",
+      "logo": "/images/partners/knecht-logo.png",
+      "website": "https://boutiqueknecht.fr/"
+    },
+    {
+      "id": "relaisdestroissapins",
+      "name": "Relais des Trois Sapins",
+      "background": "",
+      "rank": "sponsor",
+      "logo": "/images/partners/te_logo.png",
+      "website": "https://locator.totalenergies.com/NF029267?type=FUELING"
+    },
+    {
+      "id": "larosemontoise",
+      "name": "La Rosemontoise",
+      "background": "",
+      "rank": "sponsor",
+      "logo": "/images/partners/logo-rosemontoise.jpg",
+      "website": "https://www.facebook.com/p/Boulangerie-La-Rosemontoise-100043487125729/?locale=fr_FR"
+    },
+    {
+      "id": "casolimetallerie",
+      "name": "Casoli Métallerie",
+      "background": "",
+      "rank": "sponsor",
+      "logo": "/images/partners/casoli-logo.webp",
+      "website": "https://www.casoli-metallerie.fr/"
+    },
+    {
+      "id": "caropa",
+      "name": "Caropa",
+      "background": "white",
+      "rank": "sponsor",
+      "logo": "/images/partners/CAROPA_logo.webp",
+      "website": "https://www.caropa-carrelages.fr/"
+    },
+    {
+      "id": "aubergefrahier",
+      "name": "L'Auberge de Frahier",
+      "background": "",
+      "rank": "sponsor",
+      "logo": "/images/partners/logo-auberge-frahier.jpg",
+      "website": ""
+    },
+    {
+      "id": "formageriesylvie",
+      "name": "La Fromagerie Sylvie",
+      "background": "",
+      "rank": "sponsor",
+      "logo": "/images/partners/formagerie-sylvie.png",
+      "website": "http://lafromageriesylvieoffemont.com/"
+    },
+    {
+      "id": "bringelmateriaux",
+      "name": "Bringel Matériaux",
+      "background": "white",
+      "rank": "sponsor",
+      "logo": "/images/partners/bringel_logo.png",
+      "website": "https://bringel.fr/"
+    },
+    {
+      "id": "baumann",
+      "name": "Baumann chauffage",
+      "background": "white",
+      "rank": "sponsor",
+      "logo": "/images/partners/baumann-logo.png",
+      "website": "https://www.baumann-sa.fr/"
+    },
+    {
+      "id": "surlegreen",
+      "name": "Sur Le Green",
+      "background": "white",
+      "rank": "sponsor",
+      "logo": "/images/partners/logo-sur-le-green.png",
+      "website": "https://surlegreen.com/"
+    },
+    {
+      "id": "autosecurite",
+      "name": "Auto Sécurité",
+      "background": "",
+      "rank": "sponsor",
+      "logo": "/images/partners/logo-auto-secu.webp",
+      "website": "https://centre-controle-technique.autosecurite.com/bourgogne-franche-comte/territoire-de-belfort/denney/86b-avenue-dalsace"
+    },
+    {
+      "id": "estparquets",
+      "name": "Est Parquets",
+      "background": "",
+      "rank": "sponsor",
+      "logo": "/images/partners/logo-est-parquets.png",
+      "website": "https://www.est-parquets-haut-rhin.fr/"
+    },
+    {
+      "id": "hinteralfeld",
+      "name": "Ferme Auberge du Hinteralfeld",
+      "background": "",
+      "rank": "sponsor",
+      "logo": "/images/partners/logo-ferme-auberge.gif",
+      "website": "https://www.ferme-auberge-du-hinteralfeld.com/accueil/"
+    },
+    {
+      "id": "prevottraiteur",
+      "name": "Prevot Traiteur",
+      "background": "",
+      "rank": "sponsor",
+      "logo": "/images/partners/logo-prevot.png",
+      "website": "https://www.boucherie-traiteur-prevot.fr/"
+    },
+    {
+      "id": "editionsdulion",
+      "name": "Les Éditions du Lion",
+      "background": "white",
+      "rank": "sponsor",
+      "logo": "/images/partners/logo-editions-lion.avif",
+      "website": "https://www.leseditionsdulion.com/"
+    },
+    {
+      "id": "courtimm",
+      "name": "Courtimm",
+      "background": "white",
+      "rank": "sponsor",
+      "logo": "/images/partners/logo-courtimm.png",
+      "website": "https://courtimm.fr/"
+    },
+    {
+      "id": "vauban",
+      "name": "Pompes Funèbres Vauban",
+      "background": "",
+      "rank": "sponsor",
+      "logo": "/images/partners/logo-vauban.png",
+      "website": "https://www.pompes-funebres-vauban.fr/"
+    },
+    {
+      "id": "gambafreres",
+      "name": "Gamba Frères",
+      "background": "",
+      "rank": "sponsor",
+      "logo": "/images/partners/logo-gamba.jpg",
+      "website": ""
     }
   ]

@@ -4,7 +4,7 @@ const Biographie = () => {
     return (
       <section id="biographie" className="scroll-mt-20 mx-auto max-w-2xl px-4 py-8 text-white">
           <h3>Biographie</h3>
-          <p className="text-justify">L’alliance puissante du rock et de la symphonie au service de la musique et de la solidarité</p>
+          <p className="font-bold text-2xl">L’alliance puissante du rock et de la symphonie au service de la musique et de la solidarité</p>
           <br />
           <p className="text-justify">Fondé il y a dix ans à Offemont, BEST OFF' est bien plus qu’une formation musicale : c’est une expérience immersive où le rock symphonique rencontre les plus grands classiques français et anglo-saxons. Sous la direction passionnée de son fondateur et chef d’orchestre, Roland CIBIL, cet ensemble de 25 musiciens donne vie à des reprises magistrales, mêlant énergie rock et élégance orchestrale.</p>
           <br />

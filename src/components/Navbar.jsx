@@ -72,6 +72,14 @@ const Navbar = () => {
           <Link to="/presse" className="hover:text-red-400 transition-colors">Presse</Link>
           <AnchorLink to="partners" offset={41} className="hover:text-red-400 transition-colors">Partenaires</AnchorLink>
           {/* <Link to="/auditions" className="hover:text-red-400 transition-colors">Auditions</Link> */}
+          
+          <a href="https://www.instagram.com/bestoff90300/" target="_blank" rel="noopener noreferrer">
+            <img src="/instagram_blanc.png" alt="Instagram" className="w-6 h-6 hover:scale-110 transition-transform cursor-pointer" />
+          </a>
+          <a href="https://www.facebook.com/musicbestoff/" target="_blank" rel="noopener noreferrer">
+            <img src="/facebook_blanc.png" alt="Facebook" className="w-6 h-6 hover:scale-110 transition-transform cursor-pointer" />
+          </a>
+          
           <AnchorLink to="contact" offset={41} className="hover:text-red-400 transition-colors rounded-full border-1 bg-white/10 hover:bg-red-400/10 px-4 py-2">Contact</AnchorLink>
         </div>
 
@@ -112,6 +120,16 @@ const Navbar = () => {
             <Link to="/presse" className="hover:text-red-400 text-lg" onClick={handleMobileLinkClick}>Presse</Link>
             <AnchorLink to="partners" offset={41} className="hover:text-red-400 text-lg" onClick={handleMobileLinkClick}>Partenaires</AnchorLink>
             {/* <Link to="/auditions" className="hover:text-red-400 text-lg" onClick={handleMobileLinkClick}>Auditions</Link> */}
+            
+            <div className="flex space-x-4">
+  <a href="https://www.instagram.com/bestoff90300/" target="_blank" rel="noopener noreferrer">
+    <img src="/instagram_blanc.png" alt="Instagram" className="w-6 h-6 hover:scale-110 transition-transform cursor-pointer" />
+  </a>
+  <a href="https://www.facebook.com/musicbestoff/" target="_blank" rel="noopener noreferrer">
+    <img src="/facebook_blanc.png" alt="Facebook" className="w-6 h-6 hover:scale-110 transition-transform cursor-pointer" />
+  </a>
+</div>
+            
             <AnchorLink to="contact" offset={41} className="hover:text-red-400 text-lg rounded-full border-1 bg-white/10 hover:bg-red-400/10 px-4 py-2" onClick={handleMobileLinkClick}>Contact</AnchorLink>
           </div>
         </div>

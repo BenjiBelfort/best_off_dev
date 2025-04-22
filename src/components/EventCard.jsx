@@ -14,12 +14,12 @@ const EventCard = ({ event }) => {
         />
       </div>
 
-      <div className="absolute inset-0 bg-radial from-transparent from-10% to-black to-95%" />
+      <div className="absolute inset-0 bg-radial-[at_50%_90%] from-transparent to-black" />
 
       {/* Container texte avec layout haut-bas */}
       <div className="absolute inset-0 flex flex-col justify-between p-4 text-white">
         <div>
-          <h4 className="text-2xl pb-1 text-left">{event.title}</h4>
+          <h4 className="text-2xl pb-1 text-left text-shadow">{event.title}</h4>
           <p className="text-sm">{event.lieu}</p>
           <p className="text-sm font-bold">{event.date}</p>
         </div>

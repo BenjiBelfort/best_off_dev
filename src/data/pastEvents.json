@@ -18,9 +18,10 @@
         "/images/events/chougalante-mars-2025/galerie/chougalante-mars-2025_8.webp",
         "/images/events/chougalante-mars-2025/galerie/chougalante-mars-2025_9.webp",
         "/images/events/chougalante-mars-2025/galerie/chougalante-mars-2025_10.webp"
-
-
-      ]
+      ],
+      "partenaires": {
+        "Sponsors": [ "gambafreres" ]
+      }
     },
     {
       "id": "souviens-toi",
@@ -56,12 +57,12 @@
         "/images/events/souviens-toi/presse/Article_souviens-toi_3.webp"
       ],
       "partenaires": {
-        "Partenaires": ["semonslespoir", "eddanse", "mathildeadam"],
-        "Institutionnels": ["mairieoffemont", "villebelfort", "departementterritoire"],
-        "Mécènes Or": ["milgred", "eurocfd", "eurovisserie", "cgc", "romainbind", "citel"],
-        "Mécènes Argent": ["coesio", "mdte", "emsaudit", "exim", "developrh"],
+        "Partenaires": [ "semonslespoir", "eddanse", "mathildeadam"],
+        "Institutionnels": [ "mairieoffemont", "villebelfort", "departementterritoire"],
+        "Mécènes Or": [ "gambafreres", "milgred", "eurocfd", "eurovisserie", "cgc", "romainbind", "citel"],
+        "Mécènes Argent": [ "coesio", "mdte", "emsaudit", "exim", "developrh"],
         "Mécènes Philanthropiques": ["villemin"],
-        "Sponsors": ["comptoirremparts", "pflevents", "opticrondot", "levaldoyen", "mantey", "garagehirth", "jetpneus", "fermelapalouse", "lauthentique", "fromageriedesprairas", "burgerlabaroche", "lepinocchio", "menuiseriebehra", "coutureptiteschoses", "aufournildefrancis", "larrosoir", "studiobianchi", "prelude", "christellebaussier", "cavesdusalbert", "greencar", "saintchristophe", "passionautomobile", "pierrehenri", "hypnosur", "echaf90", "aubureau", "bureauvallee"]
+        "Sponsors": [ "comptoirremparts", "pflevents", "opticrondot", "levaldoyen", "mantey", "garagehirth", "jetpneus", "fermelapalouse", "lauthentique", "fromageriedesprairas", "burgerlabaroche", "lepinocchio", "menuiseriebehra", "coutureptiteschoses", "aufournildefrancis", "larrosoir", "studiobianchi", "prelude", "christellebaussier", "cavesdusalbert", "greencar", "saintchristophe", "passionautomobile", "pierrehenri", "hypnosur", "echaf90", "aubureau", "bureauvallee"]
       }
     },
     {
@@ -108,7 +109,10 @@
       "presse": [
         "/images/events/montbouton/presse/Article_Montbouton_1.webp",
         "/images/events/montbouton/presse/Article_Montbouton_2.webp"
-      ]
+      ],
+      "partenaires": {
+        "Sponsors": [ "gambafreres" ]
+      }
     },
     {
       "id": "centenaire",
@@ -151,7 +155,8 @@
       ],
       "partenaires": {
         "Partenaires": ["improtg", "photoffemont"],
-        "Institutionnels": ["departementterritoire", "villebelfort", "mairieoffemont" ]
+        "Institutionnels": ["departementterritoire", "villebelfort", "mairieoffemont" ],
+        "Sponsors" : [ "gambafreres" ]
       }
     },
     {
@@ -204,7 +209,8 @@
       ],
       "photo_cover": "/images/events/festivoff/affiche.webp",
       "partenaires": {
-        "": ["mairieoffemont"]
+        "Institutionnels": [ "mairieoffemont" ],
+        "Sponsors": [ "gambafreres", "vidalfrance", "aufournildefrancis", "abvm", "lepinocchio", "mieuxzetre", "larougemontoise", "ronfort", "krisslaure", "knecht", "relaisdestroissapins", "jetpneus", "larosemontoise", "casolimetallerie", "coutureptiteschoses", "caropa", "aubergefrahier", "formageriesylvie", "bringelmateriaux", "baumann", "surlegreen", "larrosoir", "autosecurite", "estparquets", "hinteralfeld", "christellebaussier", "prevottraiteur", "pierrehenri", "editionsdulion", "courtimm", "echaf90", "vauban" ]
       }
     },
     {
@@ -243,8 +249,8 @@
         "/images/events/unicef/galerie/Unicef_26.webp"
       ],
       "partenaires": {
-        "Partenaire": ["unicef", "francebleu"],
-        "Institutionnels": ["villebelfort", "mairieoffemont"],
+        "Partenaire": [ "unicef", "francebleu" ],
+        "Institutionnels": [ "villebelfort", "mairieoffemont" ],
         "Sponsors": [ "bureauvallee", "comptoirremparts" ]
       }
     },
@@ -265,7 +271,8 @@
       "photo_cover": "/images/events/nez-rouges/affiche.webp",
       "partenaires": {
         "Partenaire": [ "lesnezrouges" ],
-        "Institutionnels": ["mairieoffemont"]
+        "Institutionnels": [ "mairieoffemont" ],
+        "Sponsors": [ "gambafreres" ]
       }
     }
 ]
