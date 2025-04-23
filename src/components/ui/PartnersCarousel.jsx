@@ -16,9 +16,11 @@ const PartnersCarousel = () => {
   const wrapperRef = useRef(null);
   const pausedRef = useRef(false);
 
-  // Shuffle + duplication
+  // Shuffle + duplication (only partners of rank "partenaire")
   useEffect(() => {
-    const base = shuffle(partnersData);
+    // Filtrer les partenaires de rang "partenaire"
+    const filtered = partnersData.filter((p) => p.rank === "partenaire");
+    const base = shuffle(filtered);
     setLogos([...base, ...base]);
   }, []);
 
@@ -32,6 +34,7 @@ const PartnersCarousel = () => {
     let lastTime = performance.now();
     let raf;
 
+    // Position initiale au milieu pour boucler en douceur
     wrapper.style.transform = `translateX(${-totalScroll}px)`;
 
     const step = (now) => {
@@ -52,7 +55,7 @@ const PartnersCarousel = () => {
   if (!logos.length) return null;
 
   return (
-    <div className="relative overflow-hidden w-full h-32">
+    <div className="relative overflow-hidden w-full h-24">
       <div
         ref={wrapperRef}
         className="absolute left-0 top-0 flex items-center space-x-8"
@@ -61,9 +64,8 @@ const PartnersCarousel = () => {
         {logos.map((p, idx) => {
           const isHovered = hoveredId === p.id;
 
-          // mix de classes : taille fixe, group pour le img, bg si besoin, transition + scale sur le conteneur
           const boxClasses = [
-            "group",                    // permet group-hover: sur l'image
+            "group",
             "w-32 h-24 flex items-center justify-center flex-shrink-0",
             p.background === "white" && "bg-white p-1",
             "transition-transform duration-300",
@@ -72,7 +74,6 @@ const PartnersCarousel = () => {
             .filter(Boolean)
             .join(" ");
 
-          // si site web, on utilise <a>, sinon <div>
           const Wrapper = p.website ? "a" : "div";
           const wrapperProps = p.website
             ? { href: p.website, target: "_blank", rel: "noopener noreferrer" }
@@ -96,7 +97,7 @@ const PartnersCarousel = () => {
                 src={p.logo}
                 alt={p.name}
                 className="
-                  w-24 h-24 object-contain
+                  w-24 h-22 object-contain
                   filter grayscale group-hover:grayscale-0
                 "
               />

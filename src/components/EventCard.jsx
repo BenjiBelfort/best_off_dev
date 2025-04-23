@@ -4,13 +4,13 @@ const EventCard = ({ event }) => {
   return (
     <Link 
       to={`/archives/${event.id}`}
-      className="group relative block overflow-hidden transition-shadow duration-300"
+      className="group relative block overflow-hidden"
     >
       <div className="aspect-square">
         <img
           src={event.photo_cover || '/placeholder-event.jpg'}
           alt={event.photo_cover}
-          className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+          className="h-full w-full grayscale-50 group-hover:grayscale-0 object-cover transition-transform duration-300 group-hover:scale-105"
         />
       </div>
 

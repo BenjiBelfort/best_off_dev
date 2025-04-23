@@ -3,15 +3,15 @@
       "id": "mairieoffemont",
       "name": "Mairie d'Offemont",
       "background": "white",
-      "rank": "institutionnel",
+      "rank": "partenaire",
       "logo": "/images/partners/Mairie-Offemont.jpg",
       "website": "https://www.mairie-offemont.fr/"
     },
     {
       "id": "villebelfort",
       "name": "Ville de Belfort",
-      "background": "white",
-      "rank": "institutionnel",
+      "background": "",
+      "rank": "partenaire",
       "logo": "/images/partners/ville-de-Belfort.png",
       "website": "https://www.belfort.fr/"
     },
@@ -19,7 +19,7 @@
       "id": "departementterritoire",
       "name": "Département Territoire de Belfort",
       "background": "",
-      "rank": "institutionnel",
+      "rank": "partenaire",
       "logo": "/images/partners/departement.png",
       "website": "https://www.territoiredebelfort.fr/"
     },
@@ -51,7 +51,7 @@
       "id": "coesio",
       "name": "COÉSIO",
       "background": "",
-      "rank": "argent",
+      "rank": "partenaire",
       "logo": "/images/partners/COESIO_logo.png",
       "website": "https://www.coesio.fr/"
     },
@@ -75,7 +75,7 @@
       "id": "maidansansfrontieres",
       "name": "Maïdan sans frontières",
       "background": "",
-      "rank": "partenaire",
+      "rank": "",
       "logo": "/images/partners/logo_maidan.jpg",
       "website": "https://www.facebook.com/maidansansfrontieres/"
     },
@@ -195,7 +195,7 @@
       "id": "prelude",
       "name": "Prelude",
       "background": "",
-      "rank": "sponsor",
+      "rank": "partenaire",
       "logo": "/images/partners/logo-Prelude.png",
       "website": "https://prelude-conseil.fr/"
     },
@@ -211,7 +211,7 @@
       "id": "exim",
       "name": "Exim",
       "background": "",
-      "rank": "argent",
+      "rank": "partenaire",
       "logo": "/images/partners/logo-EXIM.png",
       "website": "https://www.facebook.com/eurlsiba/?locale=fr_FR"
     },
@@ -251,7 +251,7 @@
       "id": "jetpneus",
       "name": "Jet Pneus",
       "background": "",
-      "rank": "sponsor",
+      "rank": "partenaire",
       "logo": "/images/partners/jpneus.png",
       "website": ""
     },
@@ -275,7 +275,7 @@
       "id": "garagehirth",
       "name": "Garage Hirth Bertrand",
       "background": "",
-      "rank": "sponsor",
+      "rank": "partenaire",
       "logo": "/images/partners/Hirth-logo.svg",
       "website": "https://concessions.peugeot.fr/sickert/?location=SICKERT%7C0"
     },
@@ -291,7 +291,7 @@
       "id": "fromageriedesprairas",
       "name": "Fromagerie des Prairas",
       "background": "",
-      "rank": "sponsor",
+      "rank": "partenaire",
       "logo": "/images/partners/formagerie_des_prairas.png",
       "website": "https://www.bienvenue-a-la-ferme.com/bourgognefranchecomte/territoire-de-belfort/lepuix-neuf/ferme/fromagerie-des-prairas/560063"
     },
@@ -315,7 +315,7 @@
       "id": "eurocfd",
       "name": "EuroCFD",
       "background": "",
-      "rank": "or",
+      "rank": "partenaire",
       "logo": "/images/partners/EUROCFD_Group_transp.png",
       "website": "https://www.eurocfd.com/"
     },
@@ -323,7 +323,7 @@
       "id": "echaf90",
       "name": "Echaf 90",
       "background": "",
-      "rank": "sponsor",
+      "rank": "partenaire",
       "logo": "/images/partners/Echaf-90.png",
       "website": "https://www.facebook.com/p/Echaf90-100063752147972/"
     },
@@ -371,7 +371,7 @@
       "id": "bureauvallee",
       "name": "Bureau Vallée",
       "background": "",
-      "rank": "sponsor",
+      "rank": "partenaire",
       "logo": "/images/partners/bureau-vallee.png",
       "website": "https://magasins.bureau-vallee.fr/fr/france-33/territoire-de-belfort-90/danjoutin-90032/belfort-danjoutin-BV236"
     },
@@ -387,14 +387,14 @@
       "id": "photoffemont",
       "name": "Phot'Offemont",
       "background": "white",
-      "rank": "partenaire",
+      "rank": "",
       "logo": "/images/partners/logo-phot_Offemont.png",
       "website": "https://www.photoffemont.com/"
     },
     {
       "id": "improtg",
       "name": "Impro TG",
-      "background": "white",
+      "background": "",
       "rank": "partenaire",
       "logo": "/images/partners/impro-tg-logo.png",
       "website": "https://improtg.com/"
@@ -411,7 +411,7 @@
       "id": "lesnezrouges",
       "name": "Les Nez Rouges",
       "background": "white",
-      "rank": "partenaire",
+      "rank": "",
       "logo": "/images/partners/logo-lnr.jpg",
       "website": ""
     },
@@ -419,7 +419,7 @@
       "id": "vidalfrance",
       "name": "LVidal France",
       "background": "",
-      "rank": "sponsor",
+      "rank": "partenaire",
       "logo": "/images/partners/logo_vidal.png",
       "website": "https://vidal-france.fr/"
     },
@@ -427,7 +427,7 @@
       "id": "abvm",
       "name": "Association Belforttaine de Vol Moteur",
       "background": "",
-      "rank": "sponsor",
+      "rank": "partenaire",
       "logo": "/images/partners/logo_abvm.png",
       "website": "https://www.abvm.fr/"
     },
@@ -459,7 +459,7 @@
       "id": "krisslaure",
       "name": "Kriss-Laure",
       "background": "",
-      "rank": "sponsor",
+      "rank": "partenaire",
       "logo": "/images/partners/LOGO_KRISS-LAURE.avif",
       "website": "https://kriss-laure.com/"
     },
@@ -467,7 +467,7 @@
       "id": "knecht",
       "name": "Primeur Knecht",
       "background": "",
-      "rank": "sponsor",
+      "rank": "partenaire",
       "logo": "/images/partners/knecht-logo.png",
       "website": "https://boutiqueknecht.fr/"
     },
@@ -491,7 +491,7 @@
       "id": "casolimetallerie",
       "name": "Casoli Métallerie",
       "background": "",
-      "rank": "sponsor",
+      "rank": "partenaire",
       "logo": "/images/partners/casoli-logo.webp",
       "website": "https://www.casoli-metallerie.fr/"
     },
@@ -605,6 +605,14 @@
       "background": "",
       "rank": "sponsor",
       "logo": "/images/partners/logo-gamba.jpg",
+      "website": ""
+    },
+    {
+      "id": "christianmolle",
+      "name": "Christian Molle Immobilier",
+      "background": "",
+      "rank": "partenaire",
+      "logo": "/images/partners/logo-molle-immo.png",
       "website": ""
     }
   ]

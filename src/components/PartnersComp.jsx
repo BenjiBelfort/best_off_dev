@@ -19,7 +19,7 @@ const PartnersComp = () => {
         </p>
         <br />
         <p className="font-bold text-center px-8">
-          Retrouvez la liste de nos partenaires et les événements auxquels ils ont contribué dans les pages dédiées:
+          Retrouvez la liste de nos partenaires et les événements auxquels ils ont contribué dans les pages dédiées :
         </p>
       </div>
       <div className="flex justify-center mt-4">
@@ -42,7 +42,7 @@ const PartnersComp = () => {
           ♥︎ faire un don ♥︎
         </a>
       </div>
-      <p className="font-bold text-center text-3xl mb-12">Merci pour votre engagement à nos côtés.</p>
+      <p className="font-bold text-center text-2xl sm:text-3xl text-stone-200 mb-12">Merci pour votre engagement à nos côtés.</p>
       <PartnersCarousel />
     </section>
   );
