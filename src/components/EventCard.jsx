@@ -25,7 +25,7 @@ const EventCard = ({ event }) => {
         </div>
 
         <div className="text-right">
-          <span className="text-sm text-shadow bg-red-400/80 px-2 py-1">lire la suite →</span>
+          <span className="inline-block text-sm text-shadow bg-red-400/80 px-2 py-1 transition-transform duration-300 hover:scale-105">lire la suite →</span>
         </div>
       </div>
     </Link>
