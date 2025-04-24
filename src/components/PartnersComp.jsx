@@ -42,7 +42,7 @@ const PartnersComp = () => {
           ♥︎ faire un don ♥︎
         </a>
       </div>
-      <p className="font-bold text-center text-2xl sm:text-3xl text-stone-200 mb-12">Merci pour votre engagement à nos côtés.</p>
+      <p className="font-bold text-center text-2xl sm:text-3xl text-white mb-12">Merci pour votre engagement à nos côtés.</p>
       <PartnersCarousel />
     </section>
   );

@@ -54,7 +54,7 @@ const MainImg = () => {
   }, [isModalOpen]);
 
   return (
-    <div className="relative w-full h-[100vh] bg-stone-900 -mt-18 overflow-hidden">
+    <div className="relative w-full h-[100vh] bg-stone-800 -mt-18 overflow-hidden">
       <div 
         className="relative w-full h-full transition-transform duration-300 ease-out"
         style={{
@@ -68,7 +68,7 @@ const MainImg = () => {
           style={{ opacity, filter: 'blur(2px)' }}
         />
         
-        <div className="absolute inset-0 bg-gradient-to-t from-stone-900/100 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-stone-800/100 to-transparent" />
       </div>
 
 

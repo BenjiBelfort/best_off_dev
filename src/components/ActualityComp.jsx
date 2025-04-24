@@ -3,7 +3,7 @@ const ActualityComp = () => {
     <section id="actuality" className="scroll-mt-20 py-12 px-4 text-white">
       <h3>Actualités</h3>
 
-      <div className="max-w-5xl mx-auto bg-stone-800 overflow-hidden border-4 border-white flex flex-col md:flex-row">
+      <div className="max-w-5xl mx-auto bg-slate-800 overflow-hidden border-4 border-white flex flex-col md:flex-row">
         {/* Affiche */}
         <img
           src="/images/events/affiche.webp"

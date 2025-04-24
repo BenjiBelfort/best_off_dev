@@ -99,6 +99,7 @@ const PartnersCarousel = () => {
                 className="
                   w-24 h-22 object-contain
                   filter grayscale group-hover:grayscale-0
+                  transition-filter duration-500 ease-in-out 
                 "
               />
             </Wrapper>
@@ -107,8 +108,8 @@ const PartnersCarousel = () => {
       </div>
 
       {/* Dégradés aux extrémités */}
-      <div className="pointer-events-none absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-stone-900 to-transparent" />
-      <div className="pointer-events-none absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-stone-900 to-transparent" />
+      <div className="pointer-events-none absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-stone-800 to-transparent" />
+      <div className="pointer-events-none absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-stone-800 to-transparent" />
     </div>
   );
 };
