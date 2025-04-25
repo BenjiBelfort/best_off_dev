@@ -4,7 +4,7 @@ const Footer = () => {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="bg-stone-900 w-full p-4 mt-8">
+        <footer className="bg-stone-800 w-full p-4 mt-8">
             <div>
                 <h2 className="hidden md:block text-stone-300 text-center container mb-3 mx-auto">
                     BEST OFF' - Quand le <span className='font-special text-3xl'>Rock </span> rencontre la <span className='font-special text-3xl'>Symphonie</span>

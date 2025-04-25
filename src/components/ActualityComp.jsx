@@ -26,7 +26,9 @@ const ActualityComp = () => {
             Avant la fermeture de la salle de la MIEL pour travaux, nous vous proposons un concert unique.
           </p>
           <p className="text-center">
-            Venez nombreux écouter notre répertoire de musique <span className='font-special text-3xl'> Rock</span> et <span className='font-special text-3xl'> Symphonique</span>.
+            Venez nombreux écouter notre répertoire de musique
+            <br />
+            <span className='font-special text-3xl'>Rock </span> et <span className='font-special text-3xl'> Symphonique</span>.
           </p>
           <p className="text-center">
             Plongez dans notre univers et vivez une expérience unique !
