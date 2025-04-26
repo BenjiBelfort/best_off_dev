@@ -24,7 +24,15 @@ const Lightbox = ({ photos, currentIndex, closeLightbox, goToNext, goToPrev, eve
       ? cleanName.substring(0, cleanName.lastIndexOf('.')) 
       : cleanName;
   };
-  console.log("event dans Lightbox:", event);
+
+  const underlineAnimation = `
+  after:absolute after:left-1/2 after:bottom-0
+  after:transform after:-translate-x-1/2 after:origin-center
+  after:h-[2px] after:w-0 after:bg-red-400
+  after:transition-all after:duration-300
+  hover:after:w-full
+`;
+
   return (
     <div 
       ref={lightboxRef}
@@ -75,9 +83,9 @@ const Lightbox = ({ photos, currentIndex, closeLightbox, goToNext, goToPrev, eve
 
       {/* Informations de l'événement */}
       {event && (
-        <Link 
-          to={`/archives/${event.id}`} 
-          className="absolute top-7 left-5 md:top-auto md:bottom-5 md:left-10 text-white text-xs md:text-base flex flex-col md:flex-row gap-1 text-shadow hover:text-red-400 hover:bg-stone-950/90 transition-transform hover:scale-110 cursor-pointer"
+        <Link
+          to={`/archives/${event.id}`}
+          className={`absolute top-7 left-5 md:top-auto md:bottom-5 md:left-10 text-white text-xs md:text-base flex flex-col md:flex-row gap-1 text-shadow cursor-pointer ${underlineAnimation}`}
         >
           <p className="font-bold">{event.title}</p>
           <p className="hidden md:inline-block">-</p>

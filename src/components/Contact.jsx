@@ -1,6 +1,6 @@
 const Contact = () => {
     return (
-      <section id="contact" className="scroll-mt-20 mx-auto max-w-3xl px-4 py-8 text-center text-white">
+      <section id="contact" className="scroll-mt-20 mx-auto max-w-3xl px-4 py-8 text-center text-white h-[70vh]">
         <h3>Contact</h3>
   
         <p className="mb-2">
@@ -12,6 +12,8 @@ const Contact = () => {
             bestoffmusic90@gmail.com
           </a>
         </p>
+        <p>Préssident de l'association : Roland CIBIL</p>
+        <p>06 77 26 87 32</p>
   
         <p className="mb-4 mt-4">et retrouvez-nous sur les réseaux sociaux :</p>
   

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import AnimatedLink from "../components/ui/AnimatedLink";
 
 const Biographie = () => {
     return (
@@ -20,12 +21,17 @@ const Biographie = () => {
           <p className="text-justify">Sous l’impulsion de Roland CIBIL, BEST OFF' continue d’écrire son histoire, porté par une ambition simple : faire vibrer les cœurs et rassembler autour de la musique.</p>
           <br />
           <p className="text-center font-primary text-3xl pb-1.5">BEST OFF'</p>
-          <p className="text-justify">Quand le <span className='font-special text-3xl'>Rock </span> rencontre la <span className='font-special text-3xl'>Symphonie</span>, pour le plaisir des oreilles et le soutien des plus démunis.</p>
+          <p className="text-justify">Quand le <span className='font-special text-3xl'>Rock </span> rencontre la <span className='font-special text-3xl'>Symphonie</span>, pour le plaisir des sens.</p>
           <img className="mt-5" src="/images/events/centenaire/galerie/Centenaire_24.webp" alt="Best off en concert" />
-          <Link to="/archives/centenaire" className="text-white text-center text-shadow hover:text-red-400 transition-transform hover:scale-110 cursor-pointer flex justify-center gap-1 mt-4">
-            <p className="font-bold">Centenaire</p>
-            <p> - 2 novembre 2022</p>
-          </Link>
+          <div className="flex justify-center mt-4">
+            <AnimatedLink 
+              to="/archives/centenaire" 
+              className="text-white text-shadow transition-transform cursor-pointer flex gap-1"
+            >
+              <span className="font-bold">Centenaire</span>
+              <span>- 2 novembre 2022</span>
+            </AnimatedLink>
+          </div>
       </section>
     );
   };

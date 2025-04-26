@@ -1,138 +1,196 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+import AnimatedLink from "../components/ui/AnimatedLink";
 import AnchorLink from '../components/ui/AnchorLink';
-import PageLink from '../components/ui/PageLink';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [currentSection, setCurrentSection] = useState(null);
   const location = useLocation();
-
   const isHome = location.pathname === '/';
 
-  // Scroll detection uniquement sur la page d'accueil
+  // 1. Scroll + détection de section
   useEffect(() => {
     if (!isHome) {
       setScrolled(true);
       return;
     }
-
     const handleScroll = () => {
       setScrolled(window.scrollY > 10);
+      const sections = ["actuality", "biographie", "partners", "contact"];
+      let found = null;
+      for (const id of sections) {
+        const el = document.getElementById(id);
+        if (el) {
+          const { top, bottom } = el.getBoundingClientRect();
+          if (top <= 100 && bottom >= 100) {
+            found = id;
+            break;
+          }
+        }
+      }
+      setCurrentSection(found);
     };
-
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // au cas où on arrive déjà scrollé
-
+    handleScroll();
     return () => window.removeEventListener('scroll', handleScroll);
   }, [isHome]);
 
-  // Empêche le scroll quand le menu mobile est ouvert
+  // 2. Bloquer scroll quand menu mobile ouvert
   useEffect(() => {
     document.body.style.overflow = isOpen ? 'hidden' : 'auto';
-    return () => {
-      document.body.style.overflow = 'auto';
-    };
+    return () => { document.body.style.overflow = 'auto'; };
   }, [isOpen]);
 
   const handleHomeClick = (e) => {
-    if (location.pathname === '/') {
+    if (isHome) {
       e.preventDefault();
       window.scrollTo({ top: 0, behavior: 'smooth' });
       window.history.replaceState({}, '', '/');
     }
     setIsOpen(false);
   };
+  const handleMobileLinkClick = () => setIsOpen(false);
 
-  const handleMobileLinkClick = () => {
-    setIsOpen(false);
-    
-  };
-
-  // Détermine la classe de fond selon le contexte
+  // 3. Fonctions utilitaires
   const navBgClass = isHome && !scrolled ? 'bg-transparent' : 'bg-stone-950/80';
+  const isPageActive = (path) => (
+    location.pathname === path ||
+    location.pathname.startsWith(path.endsWith('/') ? path : path + '/')
+  );
+  const isSectionActive = (section) => isHome && currentSection === section;
+
+  // 4. Classes pour le bouton Contact
+  const contactBaseClass = `
+    text-lg rounded-full border border-white bg-white/10
+    px-4 py-2 transition-all duration-300
+    hover:border-red-400 hover:bg-red-400/10 hover:drop-shadow-[0_0_6px_#f87171]
+  `;
+  const contactActiveClass = `
+    border-red-400 bg-red-400/10 drop-shadow-[0_0_6px_#f87171]
+  `;
+
+  const activeUnderlineClass = `
+    relative after:absolute after:left-1/2 after:bottom-0
+    after:transform after:-translate-x-1/2 after:origin-center
+    after:h-[2px] after:w-full after:bg-red-400
+  `;
 
   return (
     <nav className={`${navBgClass} text-white px-6 py-4 sticky top-0 z-50 transition-colors duration-1000`}>
       <div className="container mx-auto flex justify-between items-center">
-        <Link 
-          to="/" 
-          onClick={handleHomeClick} 
+        {/* Logo / Home */}
+        <Link
+          to="/"
+          onClick={handleHomeClick}
           className="hover:drop-shadow-[0_0_8px_white] transition-colors"
         >
-          <h1 className="text-4xl relative z-1000">BEST OFF'</h1>
+          <h1 className="text-4xl relative z-10">BEST OFF'</h1>
         </Link>
 
-        {/* Liens Desktop */}
-        <div className="hidden lg:flex space-x-6 justify-center items-center">
-          <AnchorLink to="actuality" offset={25} className="hover:text-red-400 transition-colors">Actualités</AnchorLink>
-          <PageLink to="/archives" className="hover:text-red-400 transition-colors">Archives</PageLink>
-          <PageLink to="/galerie" className="hover:text-red-400 transition-colors">Galerie</PageLink>
-          <AnchorLink to="biographie" offset={41} className="hover:text-red-400 transition-colors">Biographie</AnchorLink>
-          <Link to="/presse" className="hover:text-red-400 transition-colors">Presse</Link>
-          <AnchorLink to="partners" offset={41} className="hover:text-red-400 transition-colors">Partenaires</AnchorLink>
-          {/* <Link to="/auditions" className="hover:text-red-400 transition-colors">Auditions</Link> */}
-          
-          <a href="https://www.instagram.com/bestoff90300/" target="_blank" rel="noopener noreferrer">
-            <img src="/instagram_blanc.png" alt="Instagram" className="w-6 h-6 hover:scale-110 transition-transform cursor-pointer" />
+        {/* Desktop */}
+        <div className="hidden lg:flex space-x-6 items-center">
+          {/* Scroll vers “Actualités” */}
+          <AnimatedLink
+            to="actuality"
+            offset={25}
+            className={isSectionActive('actuality') ? activeUnderlineClass : ''}
+          >
+            Actualités
+          </AnimatedLink>
+
+          {/* Pages Archives / Galerie / Presse */}
+          <AnimatedLink
+            to="/archives"
+            className={isPageActive('/archives') ? activeUnderlineClass : ''}
+          >
+            Archives
+          </AnimatedLink>
+          <AnimatedLink
+            to="/galerie"
+            className={isPageActive('/galerie') ? activeUnderlineClass : ''}
+          >
+            Galerie
+          </AnimatedLink>
+          <AnimatedLink
+            to="/presse"
+            className={isPageActive('/presse') ? activeUnderlineClass : ''}
+          >
+            Presse
+          </AnimatedLink>
+
+          {/* Scroll vers “Biographie” et “Partenaires” */}
+          <AnimatedLink
+            to="biographie"
+            offset={41}
+            className={isSectionActive('biographie') ? activeUnderlineClass : ''}
+          >
+            Biographie
+          </AnimatedLink>
+          <AnimatedLink
+            to="partners"
+            offset={41}
+            className={isSectionActive('partners') ? activeUnderlineClass : ''}
+          >
+            Partenaires
+          </AnimatedLink>
+
+          {/* Réseaux */}
+          <a href="https://instagram.com/bestoff90300/" target="_blank" rel="noopener noreferrer">
+            <img src="/instagram_blanc.png" alt="Instagram" className="w-6 h-6 hover:scale-110 transition-transform" />
           </a>
-          <a href="https://www.facebook.com/musicbestoff/" target="_blank" rel="noopener noreferrer">
-            <img src="/facebook_blanc.png" alt="Facebook" className="w-6 h-6 hover:scale-110 transition-transform cursor-pointer" />
+          <a href="https://facebook.com/musicbestoff/" target="_blank" rel="noopener noreferrer">
+            <img src="/facebook_blanc.png" alt="Facebook" className="w-6 h-6 hover:scale-110 transition-transform" />
           </a>
-          
-          <AnchorLink to="contact" offset={41} className="hover:text-red-400 transition-colors rounded-full border-1 bg-white/10 hover:bg-red-400/10 px-4 py-2">Contact</AnchorLink>
+
+          {/* Bouton Contact */}
+          <AnchorLink
+            to="contact"
+            offset={41}
+            className={`${contactBaseClass} ${isSectionActive('contact') ? contactActiveClass : ''}`}
+          >
+            Contact
+          </AnchorLink>
         </div>
 
-        {/* Bouton menu mobile */}
-        <button 
-          onClick={() => setIsOpen(!isOpen)} 
-          className="lg:hidden focus:outline-none z-50 cursor-pointer"
-          aria-label="Menu mobile"
+        {/* Mobile Hamburger */}
+        <button
+          className="lg:hidden flex flex-col justify-between w-10 h-7 relative z-50 focus:outline-none cursor-pointer"
+          onClick={() => setIsOpen(!isOpen)}
         >
-          {isOpen ? (
-            <svg className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          ) : (
-            <svg className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
-            </svg>
-          )}
+          <span className={`block h-1 w-full bg-white rounded transition-all duration-300 ease-in-out ${isOpen ? 'rotate-45 translate-y-3' : ''}`} />
+          <span className={`block h-1 w-full bg-white rounded transition-all duration-300 ease-in-out ${isOpen ? 'opacity-0 translate-x-3' : ''}`} />
+          <span className={`block h-1 w-full bg-white rounded transition-all duration-300 ease-in-out ${isOpen ? '-rotate-45 -translate-y-3' : ''}`} />
         </button>
 
         {/* Overlay */}
-        <div 
-          className={`fixed inset-0 bg-black transition-opacity duration-300 z-30
-          ${isOpen ? 'opacity-90 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
+        <div
+          className={`fixed inset-0 backdrop-blur-md bg-black/20 transition-opacity duration-300 z-30
+            ${isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
           onClick={() => setIsOpen(false)}
         />
 
-        {/* Menu mobile */}
-        <div className={`
-          lg:hidden fixed top-0 right-0 h-full w-64 md:w-80 bg-stone-950 shadow-lg transform transition-transform duration-300 ease-in-out z-40
-          ${isOpen ? 'translate-x-0' : 'translate-x-full'}
-        `}>
-          <div className="flex flex-col items-start pt-20 pl-6 space-y-6">
-            <AnchorLink to="actuality" offset={25} className="hover:text-red-400 text-lg" onClick={handleMobileLinkClick}>Actualités</AnchorLink>
-            <Link to="/archives" className="hover:text-red-400 text-lg" onClick={handleMobileLinkClick}>Archives</Link>
-            <Link to="/galerie" className="hover:text-red-400 text-lg" onClick={handleMobileLinkClick}>Galerie</Link>
-            <AnchorLink to="biographie" offset={41} className="hover:text-red-400 text-lg" onClick={handleMobileLinkClick}>Biographie</AnchorLink>
-            <Link to="/presse" className="hover:text-red-400 text-lg" onClick={handleMobileLinkClick}>Presse</Link>
-            <AnchorLink to="partners" offset={41} className="hover:text-red-400 text-lg" onClick={handleMobileLinkClick}>Partenaires</AnchorLink>
-            {/* <Link to="/auditions" className="hover:text-red-400 text-lg" onClick={handleMobileLinkClick}>Auditions</Link> */}
-            
-            <div className="flex space-x-4">
+        {/* Mobile Menu */}
+        {isOpen && (
+          <div className="fixed inset-0 bg-stone-950/50 flex flex-col items-center justify-center space-y-6 text-xl z-40 fade-slide">
+            <AnimatedLink to="actuality" offset={25} className={isSectionActive('actuality') ? activeUnderlineClass : ''} onClick={handleMobileLinkClick}>Actualités</AnimatedLink>
+            <AnimatedLink to="/archives" className={isPageActive('/archives') ? activeUnderlineClass : ''} onClick={handleMobileLinkClick}>Archives</AnimatedLink>
+            <AnimatedLink to="/galerie" className={isPageActive('/galerie') ? activeUnderlineClass : ''} onClick={handleMobileLinkClick}>Galerie</AnimatedLink>
+            <AnimatedLink to="biographie" offset={41} className={isSectionActive('biographie') ? activeUnderlineClass : ''} onClick={handleMobileLinkClick}>Biographie</AnimatedLink>
+            <AnimatedLink to="/presse" className={isPageActive('/presse') ? activeUnderlineClass : ''} onClick={handleMobileLinkClick}>Presse</AnimatedLink>
+            <AnimatedLink to="partners" offset={41} className={isSectionActive('partners') ? activeUnderlineClass : ''} onClick={handleMobileLinkClick}>Partenaires</AnimatedLink>
+            <div className="flex space-x-6">
               <a href="https://www.instagram.com/bestoff90300/" target="_blank" rel="noopener noreferrer">
-                <img src="/instagram_blanc.png" alt="Instagram" className="w-8 h-8 hover:scale-110 transition-transform cursor-pointer" />
+                <img src="/instagram_blanc.png" alt="Instagram" className="w-8 h-8 hover:scale-110 transition-transform" />
               </a>
               <a href="https://www.facebook.com/musicbestoff/" target="_blank" rel="noopener noreferrer">
-                <img src="/facebook_blanc.png" alt="Facebook" className="w-8 h-8 hover:scale-110 transition-transform cursor-pointer" />
+                <img src="/facebook_blanc.png" alt="Facebook" className="w-8 h-8 hover:scale-110 transition-transform" />
               </a>
             </div>
-            
-            <AnchorLink to="contact" offset={41} className="hover:text-red-400 text-lg rounded-full border-1 bg-white/10 hover:bg-red-400/10 px-4 py-2" onClick={handleMobileLinkClick}>Contact</AnchorLink>
+            <AnchorLink to="contact" offset={41} className={`${contactBaseClass} ${isSectionActive('contact') ? contactActiveClass : ''}`} onClick={handleMobileLinkClick}>Contact</AnchorLink>
           </div>
-        </div>
+        )}
       </div>
     </nav>
   );
