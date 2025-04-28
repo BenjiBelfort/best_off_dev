@@ -49,9 +49,9 @@ const ActualityComp = () => {
         <h3>Actualités</h3>
 
         {/* Zone principale texte + affiche */}
-        <div className="flex flex-col-reverse md:flex-row max-w-6xl mx-auto">
+        <div className="flex flex-col-reverse md:flex-row max-w-6xl mx-auto  -rotate-2">
           {/* Partie gauche - Texte */}
-          <div className="w-full md:w-1/2 p-8 flex flex-col justify-between -rotate-2 text-shadow">
+          <div className="w-full md:w-1/2 p-8 flex flex-col justify-between text-shadow">
           <p className="text-3xl md:text-6xl mb-4 text-left font-extrabold">Êtes-vous prêt ?</p>
 
             <div className='text-justify md:text-left md:text-xl'>

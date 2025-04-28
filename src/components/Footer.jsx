@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import MentionsLegalesModal from "./ui/MentionsLegalesModal";
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
@@ -16,6 +16,7 @@ const Footer = () => {
             <div className="w-full container mx-auto flex flex-col md:flex-row justify-center sm:justify-start items-center md:items-start text-stone-400 text-sm text-center sm:text-left py-4 gap-1">
                 <p>&#169; {currentYear} - BEST OFF'.</p>
                 <p>Tous droits réservés.</p>
+                <MentionsLegalesModal />
                 <a 
                     href="https://benji-belfort-portfolio.netlify.app/" 
                     target="_blank" 
