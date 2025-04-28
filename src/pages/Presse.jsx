@@ -1,5 +1,7 @@
 import eventsData from '../data/pastEvents.json';
 import Gallery from '../components/ui/Gallery';
+import LatestEvents from '../components/LatestEvents';
+import Separator from '../components/ui/Separator';
 
 const Presse = () => {
   // Récupérer toutes les photos de la galerie
@@ -22,6 +24,8 @@ const Presse = () => {
       <h3>Presse</h3>
       {/* Affichage de la galerie avec toutes les photos */}
       <Gallery photos={allArticles} />
+      <Separator />
+      <LatestEvents />
     </section>
   );
 };

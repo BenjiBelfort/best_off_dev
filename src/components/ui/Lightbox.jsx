@@ -64,14 +64,14 @@ const Lightbox = ({ photos, currentIndex, closeLightbox, goToNext, goToPrev, eve
       {/* Flèches de navigation */}
       <button 
         onClick={(e) => { e.stopPropagation(); goToPrev(); }}
-        className="absolute bottom-5 left-10 transform md:left-20 md:top-1/2 md:-translate-y-1/2 p-4 w-16 h-16 rounded-full text-white text-5xl transition-transform hover:scale-110 cursor-pointer text-shadow"
+        className="absolute bottom-5 left-10 transform md:left-20 md:top-1/2 md:-translate-y-1/2 p-4 w-16 h-16 rounded-full text-white text-5xl transition-transform hover:scale-110 cursor-pointer text-shadow focus:outline-none"
       >
         ‹
       </button>
 
       <button 
         onClick={(e) => { e.stopPropagation(); goToNext(); }}
-        className="absolute bottom-5 right-10 transform md:right-20 md:top-1/2 md:-translate-y-1/2 p-4 w-16 h-16 rounded-full text-white text-5xl transition-transform hover:scale-110 cursor-pointer text-shadow"
+        className="absolute bottom-5 right-10 transform md:right-20 md:top-1/2 md:-translate-y-1/2 p-4 w-16 h-16 rounded-full text-white text-5xl transition-transform hover:scale-110 cursor-pointer text-shadow focus:outline-none"
       >
         ›
       </button>

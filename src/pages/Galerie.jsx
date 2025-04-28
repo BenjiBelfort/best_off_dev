@@ -1,10 +1,18 @@
+import { useState } from 'react';
 import eventsData from '../data/pastEvents.json';
 import Gallery from '../components/ui/Gallery';
 import LatestEvents from '../components/LatestEvents';
 import Separator from '../components/ui/Separator';
+import { 
+  GiPerspectiveDiceSixFacesRandom,
+  GiPerspectiveDiceOne,
+  GiPerspectiveDiceTwo,
+  GiPerspectiveDiceThree,
+  GiPerspectiveDiceFour,
+  GiPerspectiveDiceSix,
+} from "react-icons/gi";
 
 const Galerie = () => {
-  // On construit un tableau d'objets { src, event } pour chaque photo
   const allPhotos = eventsData
     .filter(event => event.gallery_photos)
     .flatMap(event => 
@@ -18,12 +26,55 @@ const Galerie = () => {
         }
       }))
     );
+
+  const [shuffledPhotos, setShuffledPhotos] = useState(() => 
+    [...allPhotos].sort(() => Math.random() - 0.5)
+  );
+
+  const [DiceIcon, setDiceIcon] = useState(() => GiPerspectiveDiceSixFacesRandom);
+
+  const [isRotating, setIsRotating] = useState(false);
+
+  const reshufflePhotos = () => {
+    setIsRotating(true);
   
-  const shuffledPhotos = [...allPhotos].sort(() => Math.random() - 0.5);
+    setTimeout(() => {
+      setShuffledPhotos([...allPhotos].sort(() => Math.random() - 0.5));
+  
+      const diceIcons = [
+        GiPerspectiveDiceOne,
+        GiPerspectiveDiceTwo,
+        GiPerspectiveDiceThree,
+        GiPerspectiveDiceFour,
+        GiPerspectiveDiceSix,
+      ];
+  
+      const currentIcon = DiceIcon;
+      const availableIcons = diceIcons.filter(icon => icon !== currentIcon);
+      const randomIndex = Math.floor(Math.random() * availableIcons.length);
+      const newIcon = availableIcons[randomIndex];
+  
+      setDiceIcon(() => newIcon);
+  
+      setIsRotating(false);
+    }, 450); // Durée de la rotation
+  };
+  
+  
 
   return (
     <section className="container mx-auto">
       <h3>Galerie photos</h3>
+      <div className="flex justify-center mb-8">
+        <button 
+          onClick={reshufflePhotos}
+          className="bg-transparent text-yellow-50 font-semibold cursor-pointer"
+        >
+          <DiceIcon 
+            className={`text-white text-5xl transition-transform duration-450 ${isRotating ? 'rotate-[360deg]' : ''} hover:scale-110`} 
+          />
+        </button>
+      </div>
       <Gallery photos={shuffledPhotos} />
       <Separator />
       <LatestEvents />

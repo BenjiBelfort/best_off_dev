@@ -7,15 +7,16 @@ const Contact = () => {
           Contactez-nous par email à{" "}
           <a
             href="mailto:bestoffmusic90@gmail.com?subject=Demande%20d'information&body=Bonjour%20BEST%20OFF',%0A%0AJe%20souhaite%20obtenir%20plus%20d'informations%20sur..."
-            className="underline hover:text-red-400"
+            className="underline decoration-red-400 hover:text-red-400"
           >
             bestoffmusic90@gmail.com
           </a>
         </p>
-        <p>Président de l'association : Roland CIBIL</p>
+        <p className="mt-4">Président de l'association :</p>
+        <p className="font-bold">Roland CIBIL</p>
         <p>06 77 26 87 32</p>
   
-        <p className="mb-4 mt-4">et retrouvez-nous sur les réseaux sociaux :</p>
+        <p className="my-4">et retrouvez-nous sur les réseaux sociaux :</p>
   
         <div className="flex justify-center gap-6 pt-6">
           <a

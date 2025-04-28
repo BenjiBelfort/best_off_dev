@@ -51,12 +51,22 @@ const ActualityComp = () => {
         {/* Zone principale texte + affiche */}
         <div className="flex flex-col-reverse md:flex-row max-w-6xl mx-auto  -rotate-2">
           {/* Partie gauche - Texte */}
-          <div className="w-full md:w-1/2 p-8 flex flex-col justify-between text-shadow">
-          <p className="text-3xl md:text-6xl mb-4 text-left font-extrabold">Vous êtes prêt ?</p>
+          <div className="w-full md:w-1/2 p-8 flex flex-col justify-between">
+          <p className="text-3xl md:text-6xl mb-4 text-left font-extrabold bg-gradient-to-r from-orange-50 via-white to-yellow-50 bg-clip-text text-transparent">
+            Vous êtes prêt ?
+          </p>
 
             <div className='text-justify md:text-left md:text-xl'>
               <p className="mb-4">
-                Dans le cadre de la fête de la commune d'Offemont, et avant la fermeture de la salle de la MIEL pour rénovation, nous avons le plaisir de vous présenter un concert exclusif.
+                Dans le cadre de la{' '}
+                <a
+                  href="https://www.mairie-offemont.fr/fr/services/evenements?indexes%5B0%5D=7#:~:text=La%20Commune%20d'Offemont%20donne,%C3%A0%20partir%20de%2014%20h."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline decoration-red-400 hover:text-red-400"
+                >
+                  fête de la commune d'Offemont
+                </a>, et avant la fermeture de la salle de la MIEL pour rénovation, nous avons le plaisir de vous présenter un concert exclusif.
               </p>
               <p className="mb-4">
                 Venez écouter notre répertoire enrichi de nouveaux titres.
@@ -69,6 +79,7 @@ const ActualityComp = () => {
               </p>
             </div>
           </div>
+
 
           {/* Partie droite - Affiche */}
           <div className="w-full md:w-1/2 p-4 flex justify-center items-centerk">
@@ -112,3 +123,4 @@ const ActualityComp = () => {
 };
 
 export default ActualityComp;
+
