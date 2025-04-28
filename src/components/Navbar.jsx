@@ -107,6 +107,16 @@ const Navbar = () => {
           >
             Archives
           </AnimatedLink>
+
+          <AnimatedLink
+            to="biographie"
+            offset={41}
+            className={isSectionActive('biographie') ? activeUnderlineClass : ''}
+          >
+            Biographie
+          </AnimatedLink>
+
+
           <AnimatedLink
             to="/galerie"
             className={isPageActive('/galerie') ? activeUnderlineClass : ''}
@@ -120,14 +130,6 @@ const Navbar = () => {
             Presse
           </AnimatedLink>
 
-          {/* Scroll vers “Biographie” et “Partenaires” */}
-          <AnimatedLink
-            to="biographie"
-            offset={41}
-            className={isSectionActive('biographie') ? activeUnderlineClass : ''}
-          >
-            Biographie
-          </AnimatedLink>
           <AnimatedLink
             to="partners"
             offset={41}
@@ -176,8 +178,8 @@ const Navbar = () => {
           <div className="fixed inset-0 bg-stone-950/50 flex flex-col items-center justify-center space-y-6 text-xl z-40 fade-slide">
             <AnimatedLink to="actuality" offset={25} className={isSectionActive('actuality') ? activeUnderlineClass : ''} onClick={handleMobileLinkClick}>Actualités</AnimatedLink>
             <AnimatedLink to="/archives" className={isPageActive('/archives') ? activeUnderlineClass : ''} onClick={handleMobileLinkClick}>Archives</AnimatedLink>
-            <AnimatedLink to="/galerie" className={isPageActive('/galerie') ? activeUnderlineClass : ''} onClick={handleMobileLinkClick}>Galerie</AnimatedLink>
             <AnimatedLink to="biographie" offset={41} className={isSectionActive('biographie') ? activeUnderlineClass : ''} onClick={handleMobileLinkClick}>Biographie</AnimatedLink>
+            <AnimatedLink to="/galerie" className={isPageActive('/galerie') ? activeUnderlineClass : ''} onClick={handleMobileLinkClick}>Galerie</AnimatedLink>
             <AnimatedLink to="/presse" className={isPageActive('/presse') ? activeUnderlineClass : ''} onClick={handleMobileLinkClick}>Presse</AnimatedLink>
             <AnimatedLink to="partners" offset={41} className={isSectionActive('partners') ? activeUnderlineClass : ''} onClick={handleMobileLinkClick}>Partenaires</AnimatedLink>
             <div className="flex space-x-6">

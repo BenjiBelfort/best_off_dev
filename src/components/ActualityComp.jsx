@@ -51,7 +51,7 @@ const ActualityComp = () => {
         {/* Zone principale texte + affiche */}
         <div className="flex flex-col-reverse md:flex-row max-w-6xl mx-auto">
           {/* Partie gauche - Texte */}
-          <div className="w-full md:w-1/2 p-8 flex flex-col justify-between">
+          <div className="w-full md:w-1/2 p-8 flex flex-col justify-between -rotate-2 text-shadow">
           <p className="text-3xl md:text-6xl mb-4 text-left font-extrabold">Êtes-vous prêt ?</p>
 
             <div className='text-justify md:text-left md:text-xl'>
@@ -92,13 +92,13 @@ const ActualityComp = () => {
           </div>
 
           {/* Compte à rebours */}
-          <div className="flex justify-center gap-8 my-12">
+          <div className="flex justify-center gap-8 md:gap-12 my-12">
             {["Jours", "Heures", "Minutes", "Secondes"].map((label, idx) => (
               <div key={label} className="flex flex-col items-center">
-                <span className="text-4xl md:text-5xl font-bold">
+                <span className="text-4xl md:text-5xl font-bold text-shadow pb-1">
                   {Object.values(timeLeft)[idx]}
                 </span>
-                <span className="uppercase text-sm">{label}</span>
+                <span className="uppercase text-sm text-shadow">{label}</span>
               </div>
             ))}
           </div>
