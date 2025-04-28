@@ -68,8 +68,8 @@ const Home = () => {
   return (
     <div>
       <MainImg />
-      <div className="container mx-auto">
-        <Actuality />
+      <Actuality />
+        <div className="container mx-auto">
         <Separator />
         <Biographie />
         <Separator />

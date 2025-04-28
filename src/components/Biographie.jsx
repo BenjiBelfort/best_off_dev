@@ -22,14 +22,14 @@ const Biographie = () => {
           <br />
           <p className="text-center font-primary text-3xl pb-1.5">BEST OFF'</p>
           <p className="text-justify">Quand le <span className='font-special text-3xl'>Rock </span> rencontre la <span className='font-special text-3xl'>Symphonie</span>, pour le plaisir des sens.</p>
-          <img className="mt-5" src="/images/events/centenaire/galerie/Centenaire_24.webp" alt="Best off en concert" />
+          <img className="mt-5" src="/images/events/chougalante-mars-2025/galerie/chougalante-mars-2025_3.webp" alt="Best off en concert" />
           <div className="flex justify-center mt-4">
             <AnimatedLink 
-              to="/archives/centenaire" 
+              to="/archives/chougalante-mars-2025" 
               className="text-white text-shadow transition-transform cursor-pointer flex gap-1"
             >
-              <span className="font-bold">Centenaire</span>
-              <span>- 2 novembre 2022</span>
+              <span className="font-bold">Concert Rock Symphonique</span>
+              <span>- 16 mars 2025</span>
             </AnimatedLink>
           </div>
       </section>

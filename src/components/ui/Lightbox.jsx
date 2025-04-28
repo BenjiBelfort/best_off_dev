@@ -97,7 +97,7 @@ const Lightbox = ({ photos, currentIndex, closeLightbox, goToNext, goToPrev, eve
       <img 
         src="/logo-Best-Off.png" 
         alt="Logo Best Off' pour Lightbox" 
-        className="hidden md:block absolute bottom-3 right-10 w-20"
+        className="hidden md:block absolute bottom-3 right-10 w-20 logo-shadow"
       />
     </div>
   );

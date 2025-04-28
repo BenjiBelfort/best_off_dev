@@ -63,7 +63,7 @@ const Navbar = () => {
 
   // 4. Classes pour le bouton Contact
   const contactBaseClass = `
-    text-lg rounded-full border border-white bg-white/10
+    text-lg rounded-full border bg-white/10
     px-4 py-2 transition-all duration-300
     hover:border-red-400 hover:bg-red-400/10 hover:drop-shadow-[0_0_6px_#f87171]
   `;
@@ -86,7 +86,7 @@ const Navbar = () => {
           onClick={handleHomeClick}
           className="hover:drop-shadow-[0_0_8px_white] transition-colors"
         >
-          <h1 className="text-4xl relative z-10">BEST OFF'</h1>
+          <h1 className="text-4xl relative z-60">BEST OFF'</h1>
         </Link>
 
         {/* Desktop */}

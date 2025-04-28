@@ -190,7 +190,9 @@
       "title": "Odyssée du Cirque",
       "date": "27 janvier 2019",
       "lieu": "Odyssée du Cirque, Héricourt",
-      "description": "BEST OFF' accompagne L'Odyssée du Cirque pour un spectacle inédit !",
+      "description": [
+        "BEST OFF' accompagne L'Odyssée du Cirque pour un spectacle inédit !"
+      ],
       "photo_cover": "/images/events/odyssee/affiche.webp",
       "gallery_photos": [
         "/images/events/odyssee/galerie/odyssee_1.webp",
@@ -267,8 +269,10 @@
       "title": "Tous unis pour Haïti",
       "date": "6 mai 2017",
       "lieu": "l'Arche, Bethoncourt",
-      "description": "Deuxième concert caritatif du groupe BEST OFF'. Après les Nez Rouges, c'est pour l'école de Pilette à Haïti que nous jouons. L'entrée est à 10€. Cette fois ci, ce sont les élèves de la classe de Maggy, l'une de nos chanteuses, qui chanteront avec nous. Ces enfants viennent tous de l'école Sainte-Marie à Belfort. Venez nombreux, et n'hésitez pas à partager !",
-      "photo_cover": "/images/events/haiti/affiche.webp"
+      "description": [
+        "Deuxième concert caritatif du groupe BEST OFF'. Après les Nez Rouges, c'est pour l'école de Pilette à Haïti que nous jouons. L'entrée est à 10€. Cette fois ci, ce sont les élèves de la classe de Maggy, l'une de nos chanteuses, qui chanteront avec nous. Ces enfants viennent tous de l'école Sainte-Marie à Belfort."
+      ],
+        "photo_cover": "/images/events/haiti/affiche.webp"
     },
     {
       "id": "nez-rouges",
