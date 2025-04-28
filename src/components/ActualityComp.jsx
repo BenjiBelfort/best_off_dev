@@ -52,20 +52,20 @@ const ActualityComp = () => {
         <div className="flex flex-col-reverse md:flex-row max-w-6xl mx-auto  -rotate-2">
           {/* Partie gauche - Texte */}
           <div className="w-full md:w-1/2 p-8 flex flex-col justify-between text-shadow">
-          <p className="text-3xl md:text-6xl mb-4 text-left font-extrabold">Êtes-vous prêt ?</p>
+          <p className="text-3xl md:text-6xl mb-4 text-left font-extrabold">Vous êtes prêt ?</p>
 
             <div className='text-justify md:text-left md:text-xl'>
               <p className="mb-4">
-                Dans le cadre de la fête de la commune d'Offemont, et avant la fermeture de la salle de la MIEL pour rénovation, nous avons le plaisir de vous présenter un concert unique.
+                Dans le cadre de la fête de la commune d'Offemont, et avant la fermeture de la salle de la MIEL pour rénovation, nous avons le plaisir de vous présenter un concert exclusif.
               </p>
               <p className="mb-4">
                 Venez écouter notre répertoire enrichi de nouveaux titres.
               </p>
               <p>
-                Plongez dans notre univers et vivez une expérience unique&nbsp;!
+                Plongez dans notre univers et vivez une expérience&nbsp;unique&nbsp;!
               </p>
               <p className='mt-4'>
-                Quand le <span className='font-special text-3xl md:text-4xl'>Rock </span> rencontre la <span className='font-special text-3xl md:text-4xl'>Symphonie</span>
+                Quand le <span className='font-special text-3xl md:text-4xl'>Rock </span> rencontre la <span className='font-special text-3xl md:text-4xl'>Symphonie !</span>
               </p>
             </div>
           </div>
@@ -75,24 +75,27 @@ const ActualityComp = () => {
             <img
               src="/images/events/affiche.webp"
               alt="Affiche prochain spectacle"
-              className="w-full max-w-sm border-4 border-white shadow-2xl object-cover"
+              className="w-full max-w-sm border-4 lg:border-6 border-white shadow-2xl object-cover logo-shadow"
             />
           </div>
         </div>
 
         {/* Partie centrale - Lieu, date et compte à rebours */}
         <div className="mt-12 flex flex-col items-center gap-6">
-          <div className="flex flex-col md:flex-row justify-center items-center gap-2">
-            <p className="text-base md:text-xl m-2 md:m-4 px-6 py-2 bg-linear-75 from-slate-500 to-slate-600 w-full md:w-auto text-center text-shadow">
+          <div className="text-yellow-50 flex flex-col md:flex-row justify-center items-center gap-2">
+            <p className="text-base md:text-xl m-2 md:m-4 px-6 py-2 bg-linear-75 from-slate-500 to-slate-600 w-full md:w-auto text-center text-shadow logo-shadow">
               la MIEL, Offemont
             </p>
-            <p className="text-base md:text-xl m-2 md:m-4 px-6 py-2 bg-linear-75 from-slate-500 to-slate-600 w-full md:w-auto text-center text-shadow">
+            <p className="text-base md:text-xl m-2 md:m-4 px-6 py-2 bg-linear-75 from-slate-500 to-slate-600 w-full md:w-auto text-center text-shadow logo-shadow">
               Samedi 28 juin 2025
+            </p>
+            <p className="text-base md:text-xl m-2 md:m-4 px-6 py-2 bg-linear-75 from-slate-500 to-slate-600 w-full md:w-auto text-center text-shadow logo-shadow">
+              Entrée libre
             </p>
           </div>
 
           {/* Compte à rebours */}
-          <div className="flex justify-center gap-8 md:gap-12 my-12">
+          <div className="flex justify-center gap-8 md:gap-12 my-8">
             {["Jours", "Heures", "Minutes", "Secondes"].map((label, idx) => (
               <div key={label} className="flex flex-col items-center">
                 <span className="text-4xl md:text-5xl font-bold text-shadow pb-1">

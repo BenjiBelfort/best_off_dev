@@ -54,7 +54,7 @@ const Navbar = () => {
   const handleMobileLinkClick = () => setIsOpen(false);
 
   // 3. Fonctions utilitaires
-  const navBgClass = isHome && !scrolled ? 'bg-transparent' : 'bg-stone-950/80';
+  const navBgClass = isHome && !scrolled ? 'bg-transparent' : 'bg-stone-950/85';
   const isPageActive = (path) => (
     location.pathname === path ||
     location.pathname.startsWith(path.endsWith('/') ? path : path + '/')

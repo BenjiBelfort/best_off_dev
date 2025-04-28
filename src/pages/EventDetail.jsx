@@ -25,7 +25,7 @@ const EventDetail = () => {
           className="w-full h-full object-cover mb-6"
         />
 
-        <div className="flex flex-col md:flex-row justify-center items-center gap-2">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-2 text-yellow-50">
           <p className="text-base md:text-xl m-2 md:m-4 px-4 py-1 bg-linear-75 from-slate-500 to-slate-600 w-full md:w-auto text-center text-shadow">
             {event.date}
           </p>
