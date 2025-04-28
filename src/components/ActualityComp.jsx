@@ -75,7 +75,7 @@ const ActualityComp = () => {
             <img
               src="/images/events/affiche.webp"
               alt="Affiche prochain spectacle"
-              className="w-full max-w-sm border-2 border-white shadow-2xl object-cover"
+              className="w-full max-w-sm border-4 border-white shadow-2xl object-cover"
             />
           </div>
         </div>
