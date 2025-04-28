@@ -31,7 +31,6 @@ const ActualityComp = () => {
       return () => clearInterval(intervalId);
     }, [targetDate]);
 
-
   return (
     <section id="actuality" className="relative scroll-mt-20 py-12 px-4 text-white">
       {/* Image de fond */}
@@ -66,7 +65,7 @@ const ActualityComp = () => {
                 Plongez dans notre univers et vivez une expérience unique&nbsp;!
               </p>
               <p className='mt-4'>
-                Quand le <span className='font-special text-3xl'>Rock </span> rencontre la <span className='font-special text-3xl'>Symphonie</span>
+                Quand le <span className='font-special text-3xl md:text-4xl'>Rock </span> rencontre la <span className='font-special text-3xl md:text-4xl'>Symphonie</span>
               </p>
             </div>
           </div>
@@ -83,17 +82,17 @@ const ActualityComp = () => {
 
         {/* Partie centrale - Lieu, date et compte à rebours */}
         <div className="mt-12 flex flex-col items-center gap-6">
-          <div className="flex flex-col md:flex-row items-center justify-center gap-4">
-            <p className="px-6 py-2 bg-gradient-to-r from-slate-500 to-slate-600 text-xl text-center shadow-md">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-2">
+            <p className="text-base md:text-xl m-2 md:m-4 px-6 py-2 bg-linear-75 from-slate-500 to-slate-600 w-full md:w-auto text-center text-shadow">
               la MIEL, Offemont
             </p>
-            <p className="px-6 py-2 bg-gradient-to-r from-slate-500 to-slate-600 text-xl text-center shadow-md">
+            <p className="text-base md:text-xl m-2 md:m-4 px-6 py-2 bg-linear-75 from-slate-500 to-slate-600 w-full md:w-auto text-center text-shadow">
               Samedi 28 juin 2025
             </p>
           </div>
 
           {/* Compte à rebours */}
-          <div className="flex justify-center gap-8 mt-4">
+          <div className="flex justify-center gap-8 my-12">
             {["Jours", "Heures", "Minutes", "Secondes"].map((label, idx) => (
               <div key={label} className="flex flex-col items-center">
                 <span className="text-4xl md:text-5xl font-bold">
