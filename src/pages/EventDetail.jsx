@@ -33,7 +33,7 @@ const EventDetail = () => {
             {event.lieu}
           </p>
         </div>
-        <p className="text-lg mb-8 mt-8">
+        <p className="text-lg mb-8 mt-8 hyphens-auto">
           {Array.isArray(event.description)
             ? event.description.map((line, index) => (
                 <span key={index} className="block">

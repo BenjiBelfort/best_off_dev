@@ -49,14 +49,14 @@ const ActualityComp = () => {
         <h3>Actualités</h3>
 
         {/* Zone principale texte + affiche */}
-        <div className="flex flex-col-reverse md:flex-row max-w-6xl mx-auto  -rotate-2">
+        <div className="flex flex-col-reverse md:flex-row max-w-6xl mx-auto -rotate-2">
           {/* Partie gauche - Texte */}
           <div className="w-full md:w-1/2 p-8 flex flex-col justify-between">
           <h2 className="text-3xl md:text-6xl mb-4 text-left font-extrabold font-secondary bg-gradient-to-r from-orange-50 via-white to-yellow-50 bg-clip-text text-transparent">
             Vous êtes prêt ?
           </h2>
 
-            <div className='text-justify md:text-left md:text-xl'>
+            <div className='text-justify hyphens-auto md:text-left md:text-xl'>
               <p className="mb-4">
                 Dans le cadre de la{' '}
                 <a

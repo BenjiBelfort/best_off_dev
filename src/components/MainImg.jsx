@@ -64,7 +64,7 @@ const MainImg = () => {
         <img 
           src="/images/rideau-noir.webp" 
           alt="rideaux noirs" 
-          className="w-full h-full object-cover transition-opacity duration-300"
+          className="w-full h-full object-cover transition-opacity duration-300 logo-shadow"
           style={{ opacity, filter: 'blur(2px)' }}
         />
         

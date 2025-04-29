@@ -5,7 +5,7 @@ const PartnersComp = () => {
   return (
     <section id="partners" className="scroll-mt-20 mx-auto max-w-5xl px-4 py-8 text-white">
       <h3>Nos partenaires</h3>
-      <div className="mx-auto max-w-3xl">
+      <div className="mx-auto max-w-3xl hyphens-auto">
         <p>
           L'ensemble de BEST OFF' tient à exprimer sa profonde gratitude à tous les partenaires qui nous accompagnent. Grâce à votre soutien, nous avons la possibilité de concrétiser nos projets musicaux et solidaires, en mettant la musique au service de grandes causes.
         </p>
