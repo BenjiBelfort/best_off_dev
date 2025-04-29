@@ -6,15 +6,15 @@ const PartnersComp = () => {
     <section id="partners" className="scroll-mt-20 mx-auto max-w-5xl px-4 py-8 text-white">
       <h3>Nos partenaires</h3>
       <div className="mx-auto max-w-3xl">
-        <p className="text-justify">
+        <p>
           L'ensemble de BEST OFF' tient à exprimer sa profonde gratitude à tous les partenaires qui nous accompagnent. Grâce à votre soutien, nous avons la possibilité de concrétiser nos projets musicaux et solidaires, en mettant la musique au service de grandes causes.
         </p>
         <br />
-        <p className="text-justify">
+        <p>
           Votre aide précieuse nous permet d’organiser des concerts au profit d’associations caritatives, de développer des actions locales et de porter plus loin notre engagement en faveur des plus démunis. Chaque partenariat est un moteur pour aller plus loin, plus fort, ensemble.
         </p>
         <br />
-        <p className="text-justify">
+        <p>
           Nous croyons au pouvoir de la musique pour rassembler, émouvoir et agir. Et c’est avec le soutien indéfectible de nos partenaires que cette mission prend tout son sens.
         </p>
         <br />

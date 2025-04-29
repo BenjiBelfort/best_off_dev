@@ -36,7 +36,7 @@ const EventDetail = () => {
         <p className="text-lg mb-8 mt-8">
           {Array.isArray(event.description)
             ? event.description.map((line, index) => (
-                <span key={index} className="block text-justify">
+                <span key={index} className="block">
                   {line}
                 </span>
               ))
