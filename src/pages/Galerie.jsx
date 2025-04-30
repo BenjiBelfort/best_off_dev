@@ -36,6 +36,11 @@ const Galerie = () => {
   const [isRotating, setIsRotating] = useState(false);
 
   const reshufflePhotos = () => {
+    // Déclenche une vibration légère (100 ms)
+    if (navigator.vibrate) {
+      navigator.vibrate(100);
+    }
+  
     setIsRotating(true);
   
     setTimeout(() => {
@@ -55,10 +60,10 @@ const Galerie = () => {
       const newIcon = availableIcons[randomIndex];
   
       setDiceIcon(() => newIcon);
-  
       setIsRotating(false);
-    }, 450); // Durée de la rotation
+    }, 450);
   };
+  
   
   
 
