@@ -3,7 +3,7 @@
       "id": "chougalante-mars-2025",
       "title": "Concert Rock Symphonique",
       "date": "16 mars 2025",
-      "lieu": "Chougalante, Chèvremont",
+      "lieu": "Chougalante - Chèvremont",
       "description": [
       ],
       "photo_cover": "/images/events/chougalante-mars-2025/affiche.webp",
@@ -27,7 +27,7 @@
       "id": "souviens-toi",
       "title": "Souviens toi",
       "date": "29 et 30 juin 2024",
-      "lieu": "Maison du Peuple, Belfort",
+      "lieu": "Maison du Peuple - Belfort",
       "description": [
         "L’histoire : deux personnages, la danse et la musique, se remémorent leurs différentes rencontres au travers d’un musée élaboré et créé pour laisser une trace de ces très beaux moments. Ils se retrouvent après une longue période de repos devant ce lieu qui deviendra, ils l’espèrent, mythique… Ce spectacle, dynamique, haut en couleurs vous replongera dans des souvenirs cinématographiques.",
         "Venez nombreux revivre ces scènes de films et clips connus...",
@@ -56,7 +56,8 @@
         "/images/events/souviens-toi/galerie/Souviens-toi_19.webp",
         "/images/events/souviens-toi/galerie/Souviens-toi_20.webp",
         "/images/events/souviens-toi/galerie/Souviens-toi_21.webp",
-        "/images/events/souviens-toi/galerie/Souviens-toi_22.webp"
+        "/images/events/souviens-toi/galerie/Souviens-toi_22.webp",
+        "/images/events/souviens-toi/galerie/Souviens-toi_23.webp"
 
       ],
       "presse": [
@@ -77,7 +78,7 @@
       "id": "montbouton",
       "title": "Concert Rock Symphonique",
       "date": "30 septembre 2023",
-      "lieu": "Salle du Plateau, Montbouton",
+      "lieu": "salle du Plateau - Montbouton",
       "description": [
       ],
       "photo_cover": "/images/events/montbouton/affiche.webp",
@@ -126,7 +127,7 @@
       "id": "centenaire",
       "title": "Centenaire du Territoire de Belfort",
       "date": "2 novembre 2022",
-      "lieu": "Salle des Fêtes, Belfort",
+      "lieu": "salle des Fêtes - Belfort",
       "description": [
         "Ce spectacle exceptionnel pour les 100 ans du Territoire de Belfort sera une invitation à un voyage musical en version Rock Symphonique à travers le temps de 1922 à 2022. Nous partirons sur les traces de notre département lors de ce spectacle qui mèlera musique avec BEST OFF', théatre d'improvisation avec ImproTG et photographie avec Phot'Offemont"
       ],
@@ -171,7 +172,7 @@
       "id": "ukraine",
       "title": "Concerts solidaires pour l'Ukraine",
       "date": "26 juin 2022",
-      "lieu": "la MIEL, Offemont",
+      "lieu": "la MIEL - Offemont",
       "description": [
         "BEST OFF’ et la Commune d'Offemont présentent les Concerts Solidaires pour l'Ukraine.",
         "BEST OFF’ invite des groupes locaux à se produire à la MIEL à Offemont avec le soutien de la Commune d'Offemont.",
@@ -189,7 +190,7 @@
       "id": "odyssee",
       "title": "Odyssée du Cirque",
       "date": "27 janvier 2019",
-      "lieu": "Odyssée du Cirque, Héricourt",
+      "lieu": "Odyssée du Cirque - Héricourt",
       "description": [
         "BEST OFF' accompagne L'Odyssée du Cirque pour un spectacle inédit !"
       ],
@@ -211,7 +212,7 @@
       "id": "festivoff",
       "title": "Festiv'Off",
       "date": "15 juin 2019",
-      "lieu": "Parvis de la Mairie, Offemont",
+      "lieu": "parvis de la Mairie - Offemont",
       "description": [
         "Cette 4ème édition de la scène ouverte proposée par la commune d'Offemont et l'association BEST OFF' aura pour fil conducteur la langue française.",
         "Ponctuée par un concours de poésie organisé dans les écoles primaires d'Offemont, divers artistes se produiront sur scène pour notre plus grand plaisir. La richesse de ces textes ancrés dans nos mémoires, la beauté des mélodies réveilleront de beaux souvenirs et seront mis en valeur par nos artistes invités.",
@@ -227,7 +228,7 @@
       "id": "unicef",
       "title": "Concert au profit de l'unicef",
       "date": "13 et 14 janvier 2018",
-      "lieu": "Maison du Peuple, Belfort",
+      "lieu": "Maison du Peuple - Belfort",
       "description": "Concert au profit de l'unicef, avec la participation d'un choeur d'enfants et les violons dansants du conservatoire Henri Dutilleux.",
       "photo_cover": "/images/events/unicef/affiche.webp",
       "gallery_photos": [
@@ -268,7 +269,7 @@
       "id": "haiti",
       "title": "Tous unis pour Haïti",
       "date": "6 mai 2017",
-      "lieu": "l'Arche, Bethoncourt",
+      "lieu": "l'Arche - Bethoncourt",
       "description": [
         "Deuxième concert caritatif du groupe BEST OFF'. Après les Nez Rouges, c'est pour l'école de Pilette à Haïti que nous jouons. L'entrée est à 10€. Cette fois ci, ce sont les élèves de la classe de Maggy, l'une de nos chanteuses, qui chanteront avec nous. Ces enfants viennent tous de l'école Sainte-Marie à Belfort."
       ],
@@ -278,7 +279,7 @@
       "id": "nez-rouges",
       "title": "Les Nez Rouges",
       "date": "11 et 12 février 2017",
-      "lieu": "la MIEL, Offemont",
+      "lieu": "la MIEL - Offemont",
       "description": "Concert au profit de l'association Les Nez Rouges",
       "photo_cover": "/images/events/nez-rouges/affiche.webp",
       "partenaires": {

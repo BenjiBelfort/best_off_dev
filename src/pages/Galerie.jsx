@@ -36,10 +36,6 @@ const Galerie = () => {
   const [isRotating, setIsRotating] = useState(false);
 
   const reshufflePhotos = () => {
-    // Déclenche une vibration légère (100 ms)
-    if (navigator.vibrate) {
-      navigator.vibrate(100);
-    }
   
     setIsRotating(true);
   
@@ -63,9 +59,6 @@ const Galerie = () => {
       setIsRotating(false);
     }, 450);
   };
-  
-  
-  
 
   return (
     <section className="container mx-auto">

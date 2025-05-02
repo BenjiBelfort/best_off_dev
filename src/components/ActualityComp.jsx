@@ -49,29 +49,29 @@ const ActualityComp = () => {
         <h3>Actualités</h3>
 
         {/* Zone principale texte + affiche */}
-        <div className="flex flex-col-reverse md:flex-row max-w-6xl mx-auto -rotate-2">
+        <div className="flex flex-col-reverse md:flex-row max-w-6xl mx-auto -rotate-1 md:-rotate-2">
           {/* Partie gauche - Texte */}
           <div className="w-full md:w-1/2 p-8 flex flex-col justify-between">
           <h2 className="text-3xl md:text-6xl mb-4 text-left font-extrabold font-secondary bg-gradient-to-r from-orange-50 via-white to-yellow-50 bg-clip-text text-transparent">
             Vous êtes prêt ?
           </h2>
 
-            <div className='text-justify hyphens-auto md:text-left md:text-xl'>
-              <p className="mb-4">
+            <div className='text-justify md:text-left md:text-xl'>
+              <p className="mb-4 hyphens-auto">
                 Dans le cadre de la{' '}
                 <a
                   href="https://www.mairie-offemont.fr/fr/services/evenements?indexes%5B0%5D=7#:~:text=La%20Commune%20d'Offemont%20donne,%C3%A0%20partir%20de%2014%20h."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="underline decoration-red-400 hover:text-red-400"
+                  className="underline decoration-fuchsia-500 font-bold"
                 >
                   fête de la commune d'Offemont
                 </a>, et avant la fermeture de la salle de la MIEL pour rénovation, nous avons le plaisir de vous présenter un concert exclusif.
               </p>
-              <p className="mb-4">
-                Venez écouter notre répertoire enrichi de nouveaux titres.
+              <p className="mb-4 hyphens-auto">
+                Venez écouter notre répertoire enrichi de nouveaux titres dans une ambiance conviviale et festive.
               </p>
-              <p>
+              <p className=' hyphens-auto'>
                 Plongez dans notre univers et vivez une expérience&nbsp;unique&nbsp;!
               </p>
               <p className='mt-4'>
@@ -82,11 +82,11 @@ const ActualityComp = () => {
 
 
           {/* Partie droite - Affiche */}
-          <div className="w-full md:w-1/2 p-4 flex justify-center items-centerk">
+          <div className="w-full md:w-1/2 p-4 flex justify-center items-centerk logo-shadow">
             <img
               src="/images/events/affiche.webp"
               alt="Affiche prochain spectacle"
-              className="w-full max-w-sm border-4 lg:border-6 border-white shadow-2xl object-cover logo-shadow"
+              className="w-full max-w-sm border-4 lg:border-6 border-white shadow-2xl object-cover"
             />
           </div>
         </div>
@@ -94,14 +94,17 @@ const ActualityComp = () => {
         {/* Partie centrale - Lieu, date et compte à rebours */}
         <div className="mt-12 flex flex-col items-center gap-6">
           <div className="text-yellow-50 flex flex-col md:flex-row justify-center items-center gap-2">
-            <p className="text-base md:text-xl m-2 md:m-4 px-6 py-2 bg-linear-75 from-slate-500 to-slate-600 w-full md:w-auto text-center text-shadow logo-shadow">
-              la MIEL, Offemont
+            <p className="text-base md:text-xl m-1 md:m-2 px-6 py-2 bg-linear-75 from-slate-500 to-slate-600 w-full md:w-auto text-center text-shadow logo-shadow">
+              la MIEL - Offemont
             </p>
-            <p className="text-base md:text-xl m-2 md:m-4 px-6 py-2 bg-linear-75 from-slate-500 to-slate-600 w-full md:w-auto text-center text-shadow logo-shadow">
-              Samedi 28 juin 2025
+            <p className="text-base md:text-xl m-1 md:m-2 px-6 py-2 bg-linear-75 from-slate-500 to-slate-600 w-full md:w-auto text-center text-shadow logo-shadow">
+              samedi 28 juin 2025
             </p>
-            <p className="text-base md:text-xl m-2 md:m-4 px-6 py-2 bg-linear-75 from-slate-500 to-slate-600 w-full md:w-auto text-center text-shadow logo-shadow">
-              Entrée libre
+            <p className="text-base md:text-xl m-1 md:m-2 px-6 py-2 bg-linear-75 from-slate-500 to-slate-600 w-full md:w-auto text-center text-shadow logo-shadow">
+              20:00
+            </p>
+            <p className="text-base md:text-xl m-1 md:m-2 px-6 py-2 bg-linear-75 from-slate-500 to-slate-600 w-full md:w-auto text-center text-shadow logo-shadow">
+              entrée libre
             </p>
           </div>
 
