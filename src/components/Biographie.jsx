@@ -21,7 +21,7 @@ const Biographie = () => {
           <p className="hyphens-auto">Sous l’impulsion de Roland CIBIL, BEST OFF' continue d’écrire son histoire, porté par une ambition simple : faire vibrer les cœurs et rassembler autour de la musique.</p>
           <br />
           <p className="text-center font-primary text-3xl pb-1.5">BEST OFF'</p>
-          <p className="text-center">Quand le <span className='font-special text-3xl'>Rock </span> rencontre la <span className='font-special text-3xl'>Symphonie</span>, pour le plaisir des sens</p>
+          <p className="text-center">Quand le <span className='font-special text-3xl'>Rock </span> rencontre la <span className='font-special text-3xl'>Symphonie </span> pour le plaisir des sens</p>
           <img className="mt-5" src="/images/events/chougalante-mars-2025/galerie/chougalante-mars-2025_3.webp" alt="Best off en concert" />
           <div className="flex justify-center w-full pt-4">
             <AnimatedLink 

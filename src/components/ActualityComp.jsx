@@ -53,7 +53,7 @@ const ActualityComp = () => {
           {/* Partie gauche - Texte */}
           <div className="w-full md:w-1/2 p-8 flex flex-col justify-between">
           <h2 className="text-3xl md:text-6xl mb-4 text-left font-extrabold font-secondary bg-gradient-to-r from-orange-50 via-white to-yellow-50 bg-clip-text text-transparent">
-            Vous êtes prêt ?
+            êtes-vous prêt ?
           </h2>
 
             <div className='text-justify md:text-left md:text-xl'>

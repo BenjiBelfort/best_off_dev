@@ -29,4 +29,9 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           server-dir: ${{ secrets.FTP_PATH }}
-          local-dir: dist/
+          local-dir: dist
+          dangerous-clean-slate: false  # ⚠️ Ne pas tout effacer avant
+          exclude: |
+            **/.git*
+            **/.DS_Store
+          dry-run: false

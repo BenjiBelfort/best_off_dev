@@ -64,7 +64,7 @@ const MainImg = () => {
         <img 
           src="/images/rideau-noir.webp" 
           alt="rideaux noirs" 
-          className="w-full h-full object-cover transition-opacity duration-300 logo-shadow"
+          className="w-full h-full object-cover transition-opacity duration-300"
           style={{ opacity, filter: 'blur(2px)' }}
         />
         
@@ -76,7 +76,7 @@ const MainImg = () => {
         <img 
           src="/images/logo-BO.png" 
           alt="Logo BEST OFF'" 
-          className="max-w-xs md:max-w-sm lg:max-w-md mt-16"
+          className="max-w-xs md:max-w-sm lg:max-w-md mt-16 logo-shadow"
         />
         <h2 className="relative text-white text-center text-xl md:text-3xl lg:text-4xl mt-4 mx-12 md:pb-4 gradient-underline">
           Quand le <span className='font-special text-4xl md:text-6xl lg:text-7xl'>Rock </span>
