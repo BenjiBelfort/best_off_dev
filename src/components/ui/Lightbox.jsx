@@ -43,7 +43,7 @@ const Lightbox = ({ photos, currentIndex, closeLightbox, goToNext, goToPrev, eve
       <div className="relative" onClick={(e) => e.stopPropagation()}>
         <img 
           src={photos[currentIndex].src || photos[currentIndex]}
-          alt={getFileName(photos[currentIndex].src || photos[currentIndex])}
+          alt={`${getFileName(photos[currentIndex].src || photos[currentIndex])} - BEST OFF' rock symphonique`}
           className="max-w-full max-h-screen mx-auto"
         />
       </div>

@@ -33,14 +33,14 @@ const PartnersComp = () => {
           Voir les archives des concerts
         </Link>
 
-        <a 
+        {/* <a 
           href="https://www.helloasso.com/associations/best-off/formulaires/2/widget?_gl=1%2a1fljjrq%2a_gcl_aw%2aR0NMLjE3NDQ3MzAwMjYuQ2owS0NRandoX2lfQmhDekFSSXNBTmltZW9HYVlOMXZyNlVRT1UxRlAzY0RJdzFNa1l5WmxhYldOd21zeW5CVXFtdTNhWmRLeE9Ra08yNGFBdktNRUFMd193Y0I.%2a_gcl_au%2aMTExOTkxNzY2MS4xNzQxMTc3MDg0"
           target="_blank" 
           rel="noopener noreferrer"
           className="w-full max-w-sm text-center px-4 py-2 mb-4 border-2 border-white text-white transition-transform transform hover:scale-110 cursor-pointer hover:border-red-400 bg-white/10 hover:bg-red-400/10"
         >
           ♥︎ faire un don ♥︎
-        </a>
+        </a> */}
       </div>
       <p className="font-bold text-center text-2xl sm:text-3xl text-white mb-12">Merci pour votre engagement à nos côtés.</p>
       <PartnersCarousel />

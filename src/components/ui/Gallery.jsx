@@ -57,7 +57,7 @@ const Gallery = ({ photos, seeMoreUrl, event }) => {
           <div key={index} className="relative w-full aspect-square group overflow-hidden">
             <img
               src={getPhotoSrc(photo)}
-              alt={getFileName(getPhotoSrc(photo))}
+              alt={`${getFileName(getPhotoSrc(photo))} - rock symphonique`}
               className="absolute inset-0 w-full h-full object-cover cursor-pointer transition-transform duration-300 group-hover:scale-105"
               onClick={() => openLightbox(index)}
             />
