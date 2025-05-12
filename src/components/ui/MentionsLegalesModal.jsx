@@ -71,6 +71,12 @@ const MentionsLegalesModal = () => {
                         <p>
                             Ce site utilise des cookies pour améliorer votre expérience et réaliser des statistiques de fréquentation. Vous pouvez accepter ou refuser les cookies en modifiant les paramètres de votre navigateur.
                         </p> */}
+
+                              <img 
+                                src="/logo-Best-Off.webp" 
+                                alt="Logo Best Off' pour Lightbox" 
+                                className="w-20 mx-auto"
+                            />
                     </div>
                 </div>
             )}

@@ -74,7 +74,7 @@ const MainImg = () => {
 
       <div className="absolute inset-0 flex flex-col items-center justify-center pb-[20px] opacity-0 animate-[fadeIn_3s_ease-out_forwards] z-10">
         <img 
-          src="/images/logo-BO.png" 
+          src="/images/logo-BO.webp" 
           alt="Logo BEST OFF'" 
           className="max-w-xs md:max-w-sm lg:max-w-md mt-16 logo-shadow"
         />
@@ -124,7 +124,7 @@ const MainImg = () => {
 
           {/* Logo en bas à droite, visible uniquement sur tablette et plus */}
           <img 
-            src="/logo-Best-Off.png" 
+            src="/logo-Best-Off.webp" 
             alt="Logo Best Off' pour Lightbox" 
             className="hidden md:block absolute bottom-3 right-10 w-20"
           />
