@@ -1,4 +1,6 @@
 import { useState, useEffect, useMemo } from 'react';
+import AnimatedLink from './ui/AnimatedLink';
+import { FaArrowRight } from "react-icons/fa";
 
 const ActualityComp = () => {
     // Date cible du concert (ajustez l'heure si nécessaire)
@@ -49,14 +51,14 @@ const ActualityComp = () => {
         <h3>Actualités</h3>
 
         {/* Zone principale texte + affiche */}
-        <div className="flex flex-col-reverse md:flex-row max-w-6xl mx-auto md:-rotate-2">
+        <div className="flex flex-col-reverse lg:flex-row items-center max-w-6xl mx-auto lg:-rotate-2">
           {/* Partie gauche - Texte */}
-          <div className="w-full md:w-1/2 p-8 flex flex-col justify-between">
+          <div className="w-full lg:w-1/2 p-8 flex flex-col justify-between">
           <h2 className="text-3xl md:text-6xl mb-4 text-left font-extrabold font-secondary bg-gradient-to-r from-orange-50 via-white to-yellow-50 bg-clip-text text-transparent">
-            êtes-vous prêt ?
+          On est show! Et vous?
           </h2>
 
-            <div className='text-justify md:text-left md:text-xl'>
+            <div className='text-justify lg:text-left lg:text-xl'>
               <p className="mb-4 hyphens-auto">
                 Dans le cadre de la{' '}
                 <a
@@ -93,7 +95,7 @@ const ActualityComp = () => {
 
         {/* Partie centrale - Lieu, date et compte à rebours */}
         <div className="mt-12 flex flex-col items-center gap-6">
-          <div className="text-yellow-50 flex flex-col md:flex-row justify-center items-center gap-2">
+          <div className="text-yellow-50 flex flex-col lg:flex-row justify-center items-center gap-2">
             <p className="text-base md:text-xl m-1 md:m-2 px-6 py-2 bg-linear-75 from-slate-500 to-slate-600 w-full md:w-auto text-center text-shadow logo-shadow">
               la MIEL - Offemont
             </p>
@@ -119,6 +121,10 @@ const ActualityComp = () => {
               </div>
             ))}
           </div>
+          <a href="https://fb.me/e/2blyMrQ7Je" target='_blank' rel='noopener noreferrer' className='text-xl inline-flex items-center gap-2 hover:tracking-widest transition-all duration-300 relative after:absolute after:left-1/2 after:bottom-0 after:transform after:-translate-x-1/2 after:origin-center after:h-[2px] after:w-0 after:bg-red-400 after:transition-all after:duration-300 hover:after:w-full'>
+            Voir l'événement sur FaceBook
+            <FaArrowRight className='hidden sm:block'/>
+          </a>
         </div>
       </div>
     </section>
@@ -126,4 +132,3 @@ const ActualityComp = () => {
 };
 
 export default ActualityComp;
-

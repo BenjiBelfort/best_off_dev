@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import AnimatedLink from "../components/ui/AnimatedLink";
 import AnchorLink from '../components/ui/AnchorLink';
+import { FaInstagramSquare, FaFacebookSquare } from "react-icons/fa";
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -140,10 +142,10 @@ const Navbar = () => {
 
           {/* Réseaux */}
           <a href="https://instagram.com/bestoff90300/" target="_blank" rel="noopener noreferrer">
-            <img src="/instagram_blanc.png" alt="Instagram" className="w-6 h-6 hover:scale-110 transition-transform" />
+            <FaInstagramSquare className="w-6 h-6 hover:scale-110 transition-transform" />
           </a>
           <a href="https://facebook.com/musicbestoff/" target="_blank" rel="noopener noreferrer">
-            <img src="/facebook_blanc.png" alt="Facebook" className="w-6 h-6 hover:scale-110 transition-transform" />
+            <FaFacebookSquare className="w-6 h-6 hover:scale-110 transition-transform" />
           </a>
 
           {/* Bouton Contact */}
@@ -185,10 +187,10 @@ const Navbar = () => {
             <AnimatedLink to="partners" offset={41} className={isSectionActive('partners') ? activeUnderlineClass : ''} onClick={handleMobileLinkClick}>Partenaires</AnimatedLink>
             <div className="flex space-x-6">
               <a href="https://www.instagram.com/bestoff90300/" target="_blank" rel="noopener noreferrer">
-                <img src="/instagram_blanc.png" alt="Instagram" className="w-8 h-8 hover:scale-110 transition-transform" />
+                <FaInstagramSquare className="w-8 h-8 hover:scale-110 transition-transform" />
               </a>
               <a href="https://www.facebook.com/musicbestoff/" target="_blank" rel="noopener noreferrer">
-                <img src="/facebook_blanc.png" alt="Facebook" className="w-8 h-8 hover:scale-110 transition-transform" />
+                <FaFacebookSquare className="w-8 h-8 hover:scale-110 transition-transform" />
               </a>
             </div>
             <AnchorLink to="contact" offset={41} className={`${contactBaseClass} ${isSectionActive('contact') ? contactActiveClass : ''}`} onClick={handleMobileLinkClick}>Contact</AnchorLink>

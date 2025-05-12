@@ -13,19 +13,39 @@ import {
 } from "react-icons/gi";
 
 const Galerie = () => {
-  const allPhotos = eventsData
-    .filter(event => event.gallery_photos)
-    .flatMap(event => 
-      event.gallery_photos.map(photo => ({
-        src: photo,
+  const allPhotos = eventsData.flatMap(event => {
+    const photos = [];
+  
+    if (event.photo_cover) {
+      photos.push({
+        src: event.photo_cover,
+        type: 'cover',
         event: {
           id: event.id,
           title: event.title,
           date: event.date,
           lieu: event.lieu,
         }
-      }))
-    );
+      });
+    }
+  
+    if (event.gallery_photos) {
+      photos.push(
+        ...event.gallery_photos.map(photo => ({
+          src: photo,
+          type: 'gallery',
+          event: {
+            id: event.id,
+            title: event.title,
+            date: event.date,
+            lieu: event.lieu,
+          }
+        }))
+      );
+    }
+  
+    return photos;
+  });
 
   const [shuffledPhotos, setShuffledPhotos] = useState(() => 
     [...allPhotos].sort(() => Math.random() - 0.5)

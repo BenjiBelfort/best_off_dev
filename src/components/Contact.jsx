@@ -1,3 +1,5 @@
+import { FaInstagramSquare, FaFacebookSquare } from "react-icons/fa";
+
 const Contact = () => {
     return (
       <section id="contact" className="scroll-mt-20 mx-auto max-w-3xl px-4 py-8 text-center text-white h-[70vh]">
@@ -24,9 +26,7 @@ const Contact = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              src="/instagram_blanc.png"
-              alt="Instagram"
+            <FaInstagramSquare
               className="w-8 h-8 hover:scale-110 transition-transform cursor-pointer"
             />
           </a>
@@ -35,9 +35,7 @@ const Contact = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              src="/facebook_blanc.png"
-              alt="Facebook"
+            <FaFacebookSquare
               className="w-8 h-8 hover:scale-110 transition-transform cursor-pointer"
             />
           </a>
