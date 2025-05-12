@@ -51,15 +51,15 @@ const ActualityComp = () => {
         <h3>Actualités</h3>
 
         {/* Zone principale texte + affiche */}
-        <div className="flex flex-col-reverse lg:flex-row items-center max-w-6xl mx-auto lg:-rotate-2">
+        <div className="flex flex-col-reverse lg:flex-row max-w-6xl mx-auto lg:-rotate-2">
           {/* Partie gauche - Texte */}
-          <div className="w-full lg:w-1/2 p-8 flex flex-col justify-between">
+          <div className="w-full lg:w-1/2 px-8 flex flex-col justify-around">
           <h2 className="text-3xl md:text-6xl mb-4 text-left font-extrabold font-secondary bg-gradient-to-r from-orange-50 via-white to-yellow-50 bg-clip-text text-transparent">
-          On est show! Et vous?
+          On est show!<br />Et vous?
           </h2>
 
-            <div className='text-justify lg:text-left lg:text-xl'>
-              <p className="mb-4 hyphens-auto">
+            <div className='lg:text-left lg:text-xl'>
+              <p className="mb-4">
                 Dans le cadre de la{' '}
                 <a
                   href="https://www.mairie-offemont.fr/fr/services/evenements?indexes%5B0%5D=7#:~:text=La%20Commune%20d'Offemont%20donne,%C3%A0%20partir%20de%2014%20h."
@@ -70,10 +70,10 @@ const ActualityComp = () => {
                   fête de la commune d'Offemont
                 </a>, et avant la fermeture de la salle de la MIEL pour rénovation, nous avons le plaisir de vous présenter un concert exclusif.
               </p>
-              <p className="mb-4 hyphens-auto">
+              <p className="mb-4">
                 Venez écouter notre répertoire enrichi de nouveaux titres dans une ambiance conviviale et festive.
               </p>
-              <p className=' hyphens-auto'>
+              <p>
                 Plongez dans notre univers et vivez une expérience&nbsp;unique&nbsp;!
               </p>
               <p className='mt-4'>
@@ -84,7 +84,7 @@ const ActualityComp = () => {
 
 
           {/* Partie droite - Affiche */}
-          <div className="w-full md:w-1/2 p-4 flex justify-center items-centerk logo-shadow">
+          <div className="w-full md:w-1/2 p-4 flex justify-center items-centerk logo-shadow mx-auto">
             <img
               src="/images/events/affiche.webp"
               alt="Affiche prochain spectacle"
@@ -121,7 +121,7 @@ const ActualityComp = () => {
               </div>
             ))}
           </div>
-          <a href="https://fb.me/e/2blyMrQ7Je" target='_blank' rel='noopener noreferrer' className='text-xl inline-flex items-center gap-2 hover:tracking-widest transition-all duration-300 relative after:absolute after:left-1/2 after:bottom-0 after:transform after:-translate-x-1/2 after:origin-center after:h-[2px] after:w-0 after:bg-red-400 after:transition-all after:duration-300 hover:after:w-full'>
+          <a href="https://fb.me/e/2blyMrQ7Je" target='_blank' rel='noopener noreferrer' className='text-xl inline-flex items-center gap-2 hover:tracking-wide hover:scale-115 transition-all duration-300 relative after:absolute after:left-1/2 after:bottom-0 after:transform after:-translate-x-1/2 after:origin-center after:h-[2px] after:w-0 after:bg-red-400 after:transition-all after:duration-300 hover:after:w-full'>
             Voir l'événement sur FaceBook
             <FaArrowRight className='hidden sm:block'/>
           </a>
