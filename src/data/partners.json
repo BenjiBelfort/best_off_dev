@@ -11,7 +11,7 @@
     "id": "villebelfort",
     "name": "Ville de Belfort",
     "background": "",
-    "rank": "institutionnel",
+    "rank": "partenaire",
     "logo": "/images/partners/ville-de-Belfort.png",
     "website": "https://www.belfort.fr/"
   },
@@ -19,7 +19,7 @@
     "id": "departementterritoire",
     "name": "Département Territoire de Belfort",
     "background": "",
-    "rank": "institutionnel",
+    "rank": "partenaire",
     "logo": "/images/partners/departement.png",
     "website": "https://www.territoiredebelfort.fr/"
   },
@@ -51,7 +51,7 @@
     "id": "coesio",
     "name": "COÉSIO",
     "background": "",
-    "rank": "argent",
+    "rank": "partenaire",
     "logo": "/images/partners/COESIO_logo.webp",
     "website": "https://www.coesio.fr/"
   },
@@ -75,7 +75,7 @@
     "id": "maidansansfrontieres",
     "name": "Maïdan sans frontières",
     "background": "",
-    "rank": "partenaire",
+    "rank": "",
     "logo": "/images/partners/logo_maidan.jpg",
     "website": "https://www.facebook.com/maidansansfrontieres/"
   },
@@ -115,7 +115,7 @@
     "id": "semonslespoir",
     "name": "Semons l'Espoir",
     "background": "white",
-    "rank": "partenaire",
+    "rank": "",
     "logo": "/images/partners/Semons-l'espoir.jpg",
     "website": "https://www.semonslespoir.asso.fr/"
   },
@@ -195,7 +195,7 @@
     "id": "prelude",
     "name": "Prelude",
     "background": "",
-    "rank": "sponsor",
+    "rank": "partenaire",
     "logo": "/images/partners/logo-Prelude.webp",
     "website": "https://prelude-conseil.fr/"
   },
@@ -251,7 +251,7 @@
     "id": "jetpneus",
     "name": "Jet Pneus",
     "background": "",
-    "rank": "sponsor",
+    "rank": "partenaire",
     "logo": "/images/partners/jpneus.webp",
     "website": ""
   },
@@ -275,7 +275,7 @@
     "id": "garagehirth",
     "name": "Garage Hirth Bertrand",
     "background": "",
-    "rank": "sponsor",
+    "rank": "partenaire",
     "logo": "/images/partners/Hirth-logo.svg",
     "website": "https://concessions.peugeot.fr/sickert/?location=SICKERT%7C0"
   },
@@ -387,7 +387,7 @@
     "id": "photoffemont",
     "name": "Phot'Offemont",
     "background": "white",
-    "rank": "partenaire",
+    "rank": "",
     "logo": "/images/partners/logo-phot_Offemont.png",
     "website": "https://www.photoffemont.com/"
   },
@@ -395,7 +395,7 @@
     "id": "improtg",
     "name": "Impro TG",
     "background": "white",
-    "rank": "partenaire",
+    "rank": "",
     "logo": "/images/partners/impro-tg-logo.png",
     "website": "https://improtg.com/"
   },
@@ -411,7 +411,7 @@
     "id": "lesnezrouges",
     "name": "Les Nez Rouges",
     "background": "white",
-    "rank": "partenaire",
+    "rank": "",
     "logo": "/images/partners/logo-lnr.jpg",
     "website": ""
   },
@@ -419,7 +419,7 @@
     "id": "vidalfrance",
     "name": "Vidal",
     "background": "",
-    "rank": "sponsor",
+    "rank": "partenaire",
     "logo": "/images/partners/logo_vidal.webp",
     "website": "https://vidal-france.fr/"
   },
@@ -467,7 +467,7 @@
     "id": "knecht",
     "name": "Primeur Knecht",
     "background": "",
-    "rank": "sponsor",
+    "rank": "partenaire",
     "logo": "/images/partners/knecht-logo.png",
     "website": "https://boutiqueknecht.fr/"
   },
@@ -675,7 +675,7 @@
     "id": "bolloreenergy",
     "name": "Bolloré Energy",
     "background": "",
-    "rank": "sponsor",
+    "rank": "",
     "logo": "/images/partners/Bollore_energy-logo.webp",
     "website": "https://www.bollore-energy.com/"
   },
@@ -707,7 +707,7 @@
     "id": "jardonschmitt",
     "name": "Jardon-Schmitt",
     "background": "",
-    "rank": "sponsor",
+    "rank": "partenaire",
     "logo": "/images/partners/logo-jardon.webp",
     "website": "https://jardon-schmitt.edan.io/"
   },
@@ -715,7 +715,7 @@
     "id": "tntevents",
     "name": "TNT Events",
     "background": "",
-    "rank": "sponsor",
+    "rank": "partenaire",
     "logo": "/images/partners/logo-tnt.avif",
     "website": "https://www.tnt-events.fr/"
   }
