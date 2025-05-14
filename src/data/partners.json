@@ -10,7 +10,7 @@
   {
     "id": "villebelfort",
     "name": "Ville de Belfort",
-    "background": "white",
+    "background": "",
     "rank": "institutionnel",
     "logo": "/images/partners/ville-de-Belfort.png",
     "website": "https://www.belfort.fr/"
@@ -404,7 +404,7 @@
     "name": "Odyssée du Cirque",
     "background": "",
     "rank": "partenaire",
-    "logo": "/images/partners/llogo-odyssee-du-cirque.webp",
+    "logo": "/images/partners/logo-odyssee-du-cirque.webp",
     "website": "https://www.odysseeducirque.info/"
   },
   {
