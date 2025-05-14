@@ -1,618 +1,722 @@
 [
-    {
-      "id": "mairieoffemont",
-      "name": "Mairie d'Offemont",
-      "background": "white",
-      "rank": "partenaire",
-      "logo": "/images/partners/Mairie-Offemont.jpg",
-      "website": "https://www.mairie-offemont.fr/"
-    },
-    {
-      "id": "villebelfort",
-      "name": "Ville de Belfort",
-      "background": "",
-      "rank": "partenaire",
-      "logo": "/images/partners/ville-de-Belfort.png",
-      "website": "https://www.belfort.fr/"
-    },
-    {
-      "id": "departementterritoire",
-      "name": "Département Territoire de Belfort",
-      "background": "",
-      "rank": "partenaire",
-      "logo": "/images/partners/departement.png",
-      "website": "https://www.territoiredebelfort.fr/"
-    },
-    {
-      "id": "comptoirremparts",
-      "name": "Le Comptoir des Remparts",
-      "background": "white",
-      "rank": "sponsor",
-      "logo": "/images/partners/comptoir-des-remparts.gif",
-      "website": "https://comptoir-des-remparts.fr/"
-    },
-    {
-      "id": "pflevents",
-      "name": "PFL Events",
-      "background": "white",
-      "rank": "sponsor",
-      "logo": "/images/partners/PFL-Event.png",
-      "website": "https://www.pfl-events.com/"
-    },
-    {
-      "id": "milgred",
-      "name": "MILGRED",
-      "background": "white",
-      "rank": "or",
-      "logo": "/images/partners/logomilgred.png",
-      "website": "https://www.milgred.com/"
-    },
-    {
-      "id": "coesio",
-      "name": "COÉSIO",
-      "background": "",
-      "rank": "partenaire",
-      "logo": "/images/partners/COESIO_logo.png",
-      "website": "https://www.coesio.fr/"
-    },
-    {
-      "id": "eddanse",
-      "name": "EDDANSE",
-      "background": "",
-      "rank": "partenaire",
-      "logo": "/images/partners/EDDanse.png",
-      "website": "https://dansebelfort.fr/"
-    },
-    {
-      "id": "mathildeadam",
-      "name": "Mathilde Adam",
-      "background": "",
-      "rank": "partenaire",
-      "logo": "/images/partners/Mathilde-Adam.png",
-      "website": "https://mathilde-adam.fr/"
-    },
-    {
-      "id": "maidansansfrontieres",
-      "name": "Maïdan sans frontières",
-      "background": "",
-      "rank": "",
-      "logo": "/images/partners/logo_maidan.jpg",
-      "website": "https://www.facebook.com/maidansansfrontieres/"
-    },
-    {
-      "id": "unicef",
-      "name": "unicef",
-      "background": "",
-      "rank": "partenaire",
-      "logo": "/images/partners/UNICEF_Logo.png",
-      "website": "https://www.unicef.fr/"
-    },
-    {
-      "id": "francebleu",
-      "name": "France Bleu",
-      "background": "",
-      "rank": "partenaire",
-      "logo": "/images/partners/France_Bleu.png",
-      "website": "https://www.francebleu.fr/"
-    },
-    {
-      "id": "mdte",
-      "name": "MDTE",
-      "background": "white",
-      "rank": "argent",
-      "logo": "/images/partners/mdte-logo.png",
-      "website": "https://www.mdte.fr/"
-    },
-    {
-      "id": "emsaudit",
-      "name": "EMS Audit",
-      "background": "white",
-      "rank": "argent",
-      "logo": "/images/partners/emsaudit.png",
-      "website": "http://www.emsaudit.com/"
-    },
-    {
-      "id": "semonslespoir",
-      "name": "Semons l'Espoir",
-      "background": "white",
-      "rank": "partenaire",
-      "logo": "/images/partners/Semons-l'espoir.jpg",
-      "website": "https://www.semonslespoir.asso.fr/"
-    },
-    {
-      "id": "studiobianchi",
-      "name": "Studio BIANCHI",
-      "background": "white",
-      "rank": "sponsor",
-      "logo": "/images/partners/studio_bianchi.jpeg",
-      "website": ""
-    },
-    {
-      "id": "romainbind",
-      "name": "Romain BIND photographie",
-      "background": "white",
-      "rank": "or",
-      "logo": "/images/partners/romain-bind.jpeg",
-      "website": "https://www.rbphoto.fr/"
-    },
-    {
-      "id": "coutureptiteschoses",
-      "name": "Couture P'tites Choses",
-      "background": "white",
-      "rank": "sponsor",
-      "logo": "/images/partners/ptites_choses.jpeg",
-      "website": "https://www.facebook.com/CoutureEtPtitesChoses/?locale=fr_FR"
-    },
-    {
-      "id": "lepinocchio",
-      "name": "Le Pinocchio",
-      "background": "",
-      "rank": "sponsor",
-      "logo": "/images/partners/Pinocchio.png",
-      "website": ""
-    },
-    {
-      "id": "passionautomobile",
-      "name": "Passion Automobile",
-      "background": "white",
-      "rank": "sponsor",
-      "logo": "/images/partners/passion-automobiles-logo.jpeg",
-      "website": "https://www.passionautomobiles.fr/fr/"
-    },
-    {
-      "id": "opticrondot",
-      "name": "Optic RONDOT",
-      "background": "white",
-      "rank": "sponsor",
-      "logo": "/images/partners/Optic-rondot.jpeg",
-      "website": "https://www.optic-rondot.fr/"
-    },
-    {
-      "id": "menuiseriebehra",
-      "name": "Menuiserie René BEHRA",
-      "background": "white",
-      "rank": "sponsor",
-      "logo": "/images/partners/Menuiserie_Behra.png",
-      "website": ""
-    },
-    {
-      "id": "villemin",
-      "name": "M. Villemin",
-      "background": "",
-      "rank": "philanthrope",
-      "logo": "/images/partners/mecene_philanthropique.png",
-      "website": "https://fr.wikipedia.org/wiki/Philanthropie"
-    },
-    {
-      "id": "mantey",
-      "name": "MANTEY",
-      "background": "white",
-      "rank": "sponsor",
-      "logo": "/images/partners/mantey-logo.png",
-      "website": "https://patisserie-mantey.fr/"
-    },
-    {
-      "id": "prelude",
-      "name": "Prelude",
-      "background": "",
-      "rank": "partenaire",
-      "logo": "/images/partners/logo-Prelude.png",
-      "website": "https://prelude-conseil.fr/"
-    },
-    {
-      "id": "pierrehenri",
-      "name": "Vins Pierre Henri",
-      "background": "white",
-      "rank": "sponsor",
-      "logo": "/images/partners/logo-pierre-henri-1.png",
-      "website": ""
-    },
-    {
-      "id": "exim",
-      "name": "Exim",
-      "background": "",
-      "rank": "partenaire",
-      "logo": "/images/partners/logo-EXIM.png",
-      "website": "https://www.facebook.com/eurlsiba/?locale=fr_FR"
-    },
-    {
-      "id": "citel",
-      "name": "CITEL",
-      "background": "white",
-      "rank": "or",
-      "logo": "/images/partners/logo-citele.png",
-      "website": "https://groupe-citele.com/"
-    },
-    {
-      "id": "levaldoyen",
-      "name": "Le Valdoyen",
-      "background": "",
-      "rank": "sponsor",
-      "logo": "/images/partners/levaldoyen.jpeg",
-      "website": "https://www.facebook.com/lenouveauValdoyen/?locale=fr_FR"
-    },
-    {
-      "id": "lauthentique",
-      "name": "L'authentique",
-      "background": "",
-      "rank": "sponsor",
-      "logo": "/images/partners/lauthentique.jpeg",
-      "website": ""
-    },
-    {
-      "id": "larrosoir",
-      "name": "L'arrosoir",
-      "background": "",
-      "rank": "sponsor",
-      "logo": "/images/partners/L_arrosoir.png",
-      "website": "https://www.facebook.com/LArrosoir.Fleuriste.90/?locale=fr_FR"
-    },
-    {
-      "id": "jetpneus",
-      "name": "Jet Pneus",
-      "background": "",
-      "rank": "partenaire",
-      "logo": "/images/partners/jpneus.png",
-      "website": ""
-    },
-    {
-      "id": "hypnosur",
-      "name": "Hypnosur",
-      "background": "",
-      "rank": "sponsor",
-      "logo": "/images/partners/hypnosur-logo.png",
-      "website": "https://www.hypnosur.fr/"
-    },
-    {
-      "id": "saintchristophe",
-      "name": "Saint Christophe",
-      "background": "",
-      "rank": "sponsor",
-      "logo": "/images/partners/hotel-saint-christophe.jpeg",
-      "website": "https://www.hotelsaintchristophe.com/fr"
-    },
-    {
-      "id": "garagehirth",
-      "name": "Garage Hirth Bertrand",
-      "background": "",
-      "rank": "partenaire",
-      "logo": "/images/partners/Hirth-logo.svg",
-      "website": "https://concessions.peugeot.fr/sickert/?location=SICKERT%7C0"
-    },
-    {
-      "id": "greencar",
-      "name": "Green Car",
-      "background": "",
-      "rank": "sponsor",
-      "logo": "/images/partners/Green-Car.jpeg",
-      "website": ""
-    },
-    {
-      "id": "fromageriedesprairas",
-      "name": "Fromagerie des Prairas",
-      "background": "",
-      "rank": "partenaire",
-      "logo": "/images/partners/formagerie_des_prairas.png",
-      "website": "https://www.bienvenue-a-la-ferme.com/bourgognefranchecomte/territoire-de-belfort/lepuix-neuf/ferme/fromagerie-des-prairas/560063"
-    },
-    {
-      "id": "fermelapalouse",
-      "name": "Ferme la palouse",
-      "background": "white",
-      "rank": "sponsor",
-      "logo": "/images/partners/ferme_la_palouse.png",
-      "website": "https://fermelapalouse.fr/"
-    },
-    {
-      "id": "eurovisserie",
-      "name": "Euro Visserie",
-      "background": "white",
-      "rank": "or",
-      "logo": "/images/partners/Eurovisserie-logo.jpeg",
-      "website": "https://eurovisserie.fr/"
-    },
-    {
-      "id": "eurocfd",
-      "name": "EuroCFD",
-      "background": "",
-      "rank": "partenaire",
-      "logo": "/images/partners/EUROCFD_Group_transp.png",
-      "website": "https://www.eurocfd.com/"
-    },
-    {
-      "id": "echaf90",
-      "name": "Echaf 90",
-      "background": "",
-      "rank": "partenaire",
-      "logo": "/images/partners/Echaf-90.png",
-      "website": "https://www.facebook.com/p/Echaf90-100063752147972/"
-    },
-    {
-      "id": "developrh",
-      "name": "Dévelop'RH",
-      "background": "white",
-      "rank": "argent",
-      "logo": "/images/partners/DevelopRH_logo.jpg",
-      "website": ""
-    },
-    {
-      "id": "christellebaussier",
-      "name": "Christelle Baussier",
-      "background": "",
-      "rank": "sponsor",
-      "logo": "/images/partners/christelle_beaussier.png",
-      "website": "https://christellebeaussier.fr/"
-    },
-    {
-      "id": "cgc",
-      "name": "CGC",
-      "background": "white",
-      "rank": "or",
-      "logo": "/images/partners/CGC.png",
-      "website": ""
-    },
-    {
-      "id": "burgerlabaroche",
-      "name": "Burger La Baroche",
-      "background": "white",
-      "rank": "sponsor",
-      "logo": "/images/partners/burger_la_baroche.jpeg",
-      "website": "https://www.facebook.com/p/Burger-la-Baroche-100083054181030/"
-    },
-    {
-      "id": "aubureau",
-      "name": "Au bureau",
-      "background": "",
-      "rank": "sponsor",
-      "logo": "/images/partners/bureau.jpeg",
-      "website": "https://www.aubureau.fr/restaurant-brasserie/AB_Belfort/"
-    },
-    {
-      "id": "bureauvallee",
-      "name": "Bureau Vallée",
-      "background": "",
-      "rank": "partenaire",
-      "logo": "/images/partners/bureau-vallee.png",
-      "website": "https://magasins.bureau-vallee.fr/fr/france-33/territoire-de-belfort-90/danjoutin-90032/belfort-danjoutin-BV236"
-    },
-    {
-      "id": "aufournildefrancis",
-      "name": "Au fournil de Francis",
-      "background": "",
-      "rank": "sponsor",
-      "logo": "/images/partners/au_fournil_de_francis.jpeg",
-      "website": "https://www.facebook.com/aufournildefrancis/?locale=fr_FR"
-    },
-    {
-      "id": "photoffemont",
-      "name": "Phot'Offemont",
-      "background": "white",
-      "rank": "",
-      "logo": "/images/partners/logo-phot_Offemont.png",
-      "website": "https://www.photoffemont.com/"
-    },
-    {
-      "id": "improtg",
-      "name": "Impro TG",
-      "background": "",
-      "rank": "partenaire",
-      "logo": "/images/partners/impro-tg-logo.png",
-      "website": "https://improtg.com/"
-    },
-    {
-      "id": "odysseeducirque",
-      "name": "Odyssée du Cirque",
-      "background": "",
-      "rank": "partenaire",
-      "logo": "/images/partners/logo-odyssee-du-cirque.png",
-      "website": "https://www.odysseeducirque.info/"
-    },
-    {
-      "id": "lesnezrouges",
-      "name": "Les Nez Rouges",
-      "background": "white",
-      "rank": "",
-      "logo": "/images/partners/logo-lnr.jpg",
-      "website": ""
-    },
-    {
-      "id": "vidalfrance",
-      "name": "LVidal France",
-      "background": "",
-      "rank": "partenaire",
-      "logo": "/images/partners/logo_vidal.png",
-      "website": "https://vidal-france.fr/"
-    },
-    {
-      "id": "abvm",
-      "name": "Association Belforttaine de Vol Moteur",
-      "background": "",
-      "rank": "partenaire",
-      "logo": "/images/partners/logo_abvm.png",
-      "website": "https://www.abvm.fr/"
-    },
-    {
-      "id": "mieuxzetre",
-      "name": "Mieux zêtre",
-      "background": "",
-      "rank": "sponsor",
-      "logo": "/images/partners/mieux-logo.png",
-      "website": "https://www.mieuxzetre.fr/"
-    },
-    {
-      "id": "larougemontoise",
-      "name": "La Rougemontoise",
-      "background": "",
-      "rank": "sponsor",
-      "logo": "/images/partners/rougemontoise.jpg",
-      "website": "https://www.facebook.com/p/La-Rougemontoise-100064329812883/?locale=fr_FR"
-    },
-    {
-      "id": "ronfort",
-      "name": "Pompes Funèbres Ronfort",
-      "background": "",
-      "rank": "sponsor",
-      "logo": "/images/partners/logo-ronfort.png",
-      "website": "https://pfronfort.fr/"
-    },
-    {
-      "id": "krisslaure",
-      "name": "Kriss-Laure",
-      "background": "",
-      "rank": "partenaire",
-      "logo": "/images/partners/LOGO_KRISS-LAURE.avif",
-      "website": "https://kriss-laure.com/"
-    },
-    {
-      "id": "knecht",
-      "name": "Primeur Knecht",
-      "background": "",
-      "rank": "partenaire",
-      "logo": "/images/partners/knecht-logo.png",
-      "website": "https://boutiqueknecht.fr/"
-    },
-    {
-      "id": "relaisdestroissapins",
-      "name": "Relais des Trois Sapins",
-      "background": "",
-      "rank": "sponsor",
-      "logo": "/images/partners/te_logo.png",
-      "website": "https://locator.totalenergies.com/NF029267?type=FUELING"
-    },
-    {
-      "id": "larosemontoise",
-      "name": "La Rosemontoise",
-      "background": "",
-      "rank": "sponsor",
-      "logo": "/images/partners/logo-rosemontoise.jpg",
-      "website": "https://www.facebook.com/p/Boulangerie-La-Rosemontoise-100043487125729/?locale=fr_FR"
-    },
-    {
-      "id": "casolimetallerie",
-      "name": "Casoli Métallerie",
-      "background": "",
-      "rank": "partenaire",
-      "logo": "/images/partners/casoli-logo.webp",
-      "website": "https://www.casoli-metallerie.fr/"
-    },
-    {
-      "id": "caropa",
-      "name": "Caropa",
-      "background": "white",
-      "rank": "sponsor",
-      "logo": "/images/partners/CAROPA_logo.webp",
-      "website": "https://www.caropa-carrelages.fr/"
-    },
-    {
-      "id": "aubergefrahier",
-      "name": "L'Auberge de Frahier",
-      "background": "",
-      "rank": "sponsor",
-      "logo": "/images/partners/logo-auberge-frahier.jpg",
-      "website": ""
-    },
-    {
-      "id": "formageriesylvie",
-      "name": "La Fromagerie Sylvie",
-      "background": "",
-      "rank": "sponsor",
-      "logo": "/images/partners/formagerie-sylvie.png",
-      "website": "http://lafromageriesylvieoffemont.com/"
-    },
-    {
-      "id": "bringelmateriaux",
-      "name": "Bringel Matériaux",
-      "background": "white",
-      "rank": "sponsor",
-      "logo": "/images/partners/bringel_logo.png",
-      "website": "https://bringel.fr/"
-    },
-    {
-      "id": "baumann",
-      "name": "Baumann chauffage",
-      "background": "white",
-      "rank": "sponsor",
-      "logo": "/images/partners/baumann-logo.png",
-      "website": "https://www.baumann-sa.fr/"
-    },
-    {
-      "id": "surlegreen",
-      "name": "Sur Le Green",
-      "background": "white",
-      "rank": "sponsor",
-      "logo": "/images/partners/logo-sur-le-green.png",
-      "website": "https://surlegreen.com/"
-    },
-    {
-      "id": "autosecurite",
-      "name": "Auto Sécurité",
-      "background": "",
-      "rank": "sponsor",
-      "logo": "/images/partners/logo-auto-secu.webp",
-      "website": "https://centre-controle-technique.autosecurite.com/bourgogne-franche-comte/territoire-de-belfort/denney/86b-avenue-dalsace"
-    },
-    {
-      "id": "estparquets",
-      "name": "Est Parquets",
-      "background": "",
-      "rank": "sponsor",
-      "logo": "/images/partners/logo-est-parquets.png",
-      "website": "https://www.est-parquets-haut-rhin.fr/"
-    },
-    {
-      "id": "hinteralfeld",
-      "name": "Ferme Auberge du Hinteralfeld",
-      "background": "",
-      "rank": "sponsor",
-      "logo": "/images/partners/logo-ferme-auberge.gif",
-      "website": "https://www.ferme-auberge-du-hinteralfeld.com/accueil/"
-    },
-    {
-      "id": "prevottraiteur",
-      "name": "Prevot Traiteur",
-      "background": "",
-      "rank": "sponsor",
-      "logo": "/images/partners/logo-prevot.png",
-      "website": "https://www.boucherie-traiteur-prevot.fr/"
-    },
-    {
-      "id": "editionsdulion",
-      "name": "Les Éditions du Lion",
-      "background": "white",
-      "rank": "sponsor",
-      "logo": "/images/partners/logo-editions-lion.avif",
-      "website": "https://www.leseditionsdulion.com/"
-    },
-    {
-      "id": "courtimm",
-      "name": "Courtimm",
-      "background": "white",
-      "rank": "sponsor",
-      "logo": "/images/partners/logo-courtimm.png",
-      "website": "https://courtimm.fr/"
-    },
-    {
-      "id": "vauban",
-      "name": "Pompes Funèbres Vauban",
-      "background": "",
-      "rank": "sponsor",
-      "logo": "/images/partners/logo-vauban.png",
-      "website": "https://www.pompes-funebres-vauban.fr/"
-    },
-    {
-      "id": "gambafreres",
-      "name": "Gamba Frères",
-      "background": "",
-      "rank": "sponsor",
-      "logo": "/images/partners/logo-gamba.jpg",
-      "website": ""
-    },
-    {
-      "id": "christianmolle",
-      "name": "Christian Molle Immobilier",
-      "background": "",
-      "rank": "partenaire",
-      "logo": "/images/partners/logo-molle-immo.png",
-      "website": ""
-    }
-  ]
+  {
+    "id": "mairieoffemont",
+    "name": "Mairie d'Offemont",
+    "background": "white",
+    "rank": "institutionnel",
+    "logo": "/images/partners/Mairie-Offemont.jpg",
+    "website": "https://www.mairie-offemont.fr/"
+  },
+  {
+    "id": "villebelfort",
+    "name": "Ville de Belfort",
+    "background": "white",
+    "rank": "institutionnel",
+    "logo": "/images/partners/ville-de-Belfort.png",
+    "website": "https://www.belfort.fr/"
+  },
+  {
+    "id": "departementterritoire",
+    "name": "Département Territoire de Belfort",
+    "background": "",
+    "rank": "institutionnel",
+    "logo": "/images/partners/departement.png",
+    "website": "https://www.territoiredebelfort.fr/"
+  },
+  {
+    "id": "comptoirremparts",
+    "name": "Le Comptoir des Remparts",
+    "background": "white",
+    "rank": "sponsor",
+    "logo": "/images/partners/comptoir-des-remparts.gif",
+    "website": "https://comptoir-des-remparts.fr/"
+  },
+  {
+    "id": "pflevents",
+    "name": "PFL Events",
+    "background": "white",
+    "rank": "sponsor",
+    "logo": "/images/partners/PFL-Event.webp",
+    "website": "https://www.pfl-events.com/"
+  },
+  {
+    "id": "milgred",
+    "name": "MILGRED",
+    "background": "white",
+    "rank": "or",
+    "logo": "/images/partners/logomilgred.png",
+    "website": "https://www.milgred.com/"
+  },
+  {
+    "id": "coesio",
+    "name": "COÉSIO",
+    "background": "",
+    "rank": "argent",
+    "logo": "/images/partners/COESIO_logo.webp",
+    "website": "https://www.coesio.fr/"
+  },
+  {
+    "id": "eddanse",
+    "name": "EDDANSE",
+    "background": "",
+    "rank": "partenaire",
+    "logo": "/images/partners/EDDanse.png",
+    "website": "https://dansebelfort.fr/"
+  },
+  {
+    "id": "mathildeadam",
+    "name": "Mathilde Adam",
+    "background": "",
+    "rank": "partenaire",
+    "logo": "/images/partners/Mathilde-Adam.png",
+    "website": "https://mathilde-adam.fr/"
+  },
+  {
+    "id": "maidansansfrontieres",
+    "name": "Maïdan sans frontières",
+    "background": "",
+    "rank": "partenaire",
+    "logo": "/images/partners/logo_maidan.jpg",
+    "website": "https://www.facebook.com/maidansansfrontieres/"
+  },
+  {
+    "id": "unicef",
+    "name": "unicef",
+    "background": "",
+    "rank": "partenaire",
+    "logo": "/images/partners/UNICEF_Logo.webp",
+    "website": "https://www.unicef.fr/"
+  },
+  {
+    "id": "francebleu",
+    "name": "France Bleu",
+    "background": "",
+    "rank": "partenaire",
+    "logo": "/images/partners/France_Bleu.png",
+    "website": "https://www.francebleu.fr/"
+  },
+  {
+    "id": "mdte",
+    "name": "MDTE",
+    "background": "white",
+    "rank": "argent",
+    "logo": "/images/partners/mdte-logo.png",
+    "website": "https://www.mdte.fr/"
+  },
+  {
+    "id": "emsaudit",
+    "name": "EMS Audit",
+    "background": "white",
+    "rank": "argent",
+    "logo": "/images/partners/emsaudit.png",
+    "website": "http://www.emsaudit.com/"
+  },
+  {
+    "id": "semonslespoir",
+    "name": "Semons l'Espoir",
+    "background": "white",
+    "rank": "partenaire",
+    "logo": "/images/partners/Semons-l'espoir.jpg",
+    "website": "https://www.semonslespoir.asso.fr/"
+  },
+  {
+    "id": "studiobianchi",
+    "name": "Studio BIANCHI",
+    "background": "white",
+    "rank": "sponsor",
+    "logo": "/images/partners/studio_bianchi.jpeg",
+    "website": ""
+  },
+  {
+    "id": "romainbind",
+    "name": "Romain BIND photographie",
+    "background": "white",
+    "rank": "or",
+    "logo": "/images/partners/romain-bind.jpeg",
+    "website": "https://www.rbphoto.fr/"
+  },
+  {
+    "id": "coutureptiteschoses",
+    "name": "Couture P'tites Choses",
+    "background": "white",
+    "rank": "sponsor",
+    "logo": "/images/partners/ptites_choses.jpeg",
+    "website": "https://www.facebook.com/CoutureEtPtitesChoses/?locale=fr_FR"
+  },
+  {
+    "id": "lepinocchio",
+    "name": "Le Pinocchio",
+    "background": "",
+    "rank": "sponsor",
+    "logo": "/images/partners/Pinocchio.webp",
+    "website": ""
+  },
+  {
+    "id": "passionautomobile",
+    "name": "Passion Automobile",
+    "background": "white",
+    "rank": "sponsor",
+    "logo": "/images/partners/passion-automobiles-logo.jpeg",
+    "website": "https://www.passionautomobiles.fr/fr/"
+  },
+  {
+    "id": "opticrondot",
+    "name": "Optic RONDOT",
+    "background": "white",
+    "rank": "sponsor",
+    "logo": "/images/partners/Optic-rondot.jpeg",
+    "website": "https://www.optic-rondot.fr/"
+  },
+  {
+    "id": "menuiseriebehra",
+    "name": "Menuiserie René BEHRA",
+    "background": "white",
+    "rank": "sponsor",
+    "logo": "/images/partners/Menuiserie_Behra.webp",
+    "website": ""
+  },
+  {
+    "id": "villemin",
+    "name": "M. Villemin",
+    "background": "",
+    "rank": "philanthrope",
+    "logo": "/images/partners/mecene_philanthropique.png",
+    "website": "https://fr.wikipedia.org/wiki/Philanthropie"
+  },
+  {
+    "id": "mantey",
+    "name": "MANTEY",
+    "background": "white",
+    "rank": "sponsor",
+    "logo": "/images/partners/mantey-logo.webp",
+    "website": "https://patisserie-mantey.fr/"
+  },
+  {
+    "id": "prelude",
+    "name": "Prelude",
+    "background": "",
+    "rank": "sponsor",
+    "logo": "/images/partners/logo-Prelude.webp",
+    "website": "https://prelude-conseil.fr/"
+  },
+  {
+    "id": "pierrehenri",
+    "name": "Vins Pierre Henri",
+    "background": "white",
+    "rank": "sponsor",
+    "logo": "/images/partners/logo-pierre-henri-1.png",
+    "website": ""
+  },
+  {
+    "id": "exim",
+    "name": "Exim",
+    "background": "",
+    "rank": "argent",
+    "logo": "/images/partners/logo-EXIM.png",
+    "website": "https://www.facebook.com/eurlsiba/?locale=fr_FR"
+  },
+  {
+    "id": "citel",
+    "name": "CITEL",
+    "background": "white",
+    "rank": "or",
+    "logo": "/images/partners/logo-citele.png",
+    "website": ""
+  },
+  {
+    "id": "levaldoyen",
+    "name": "Le Valdoyen",
+    "background": "",
+    "rank": "sponsor",
+    "logo": "/images/partners/levaldoyen.webp",
+    "website": "https://www.facebook.com/lenouveauValdoyen/?locale=fr_FR"
+  },
+  {
+    "id": "lauthentique",
+    "name": "L'authentique",
+    "background": "",
+    "rank": "sponsor",
+    "logo": "/images/partners/lauthentique.webp",
+    "website": ""
+  },
+  {
+    "id": "larrosoir",
+    "name": "L'arrosoir",
+    "background": "",
+    "rank": "sponsor",
+    "logo": "/images/partners/L_arrosoir.webp",
+    "website": "https://www.facebook.com/LArrosoir.Fleuriste.90/?locale=fr_FR"
+  },
+  {
+    "id": "jetpneus",
+    "name": "Jet Pneus",
+    "background": "",
+    "rank": "sponsor",
+    "logo": "/images/partners/jpneus.webp",
+    "website": ""
+  },
+  {
+    "id": "hypnosur",
+    "name": "Hypnosur",
+    "background": "",
+    "rank": "sponsor",
+    "logo": "/images/partners/hypnosur-logo.png",
+    "website": "https://www.hypnosur.fr/"
+  },
+  {
+    "id": "saintchristophe",
+    "name": "Saint Christophe",
+    "background": "",
+    "rank": "sponsor",
+    "logo": "/images/partners/hotel-saint-christophe.webp",
+    "website": "https://www.hotelsaintchristophe.com/fr"
+  },
+  {
+    "id": "garagehirth",
+    "name": "Garage Hirth Bertrand",
+    "background": "",
+    "rank": "sponsor",
+    "logo": "/images/partners/Hirth-logo.svg",
+    "website": "https://concessions.peugeot.fr/sickert/?location=SICKERT%7C0"
+  },
+  {
+    "id": "greencar",
+    "name": "Green Car",
+    "background": "",
+    "rank": "sponsor",
+    "logo": "/images/partners/Green-Car.jpeg",
+    "website": ""
+  },
+  {
+    "id": "fromageriedesprairas",
+    "name": "Fromagerie des Prairas",
+    "background": "",
+    "rank": "sponsor",
+    "logo": "/images/partners/formagerie_des_prairas.png",
+    "website": "https://www.bienvenue-a-la-ferme.com/bourgognefranchecomte/territoire-de-belfort/lepuix-neuf/ferme/fromagerie-des-prairas/560063"
+  },
+  {
+    "id": "fermelapalouse",
+    "name": "Ferme la palouse",
+    "background": "white",
+    "rank": "sponsor",
+    "logo": "/images/partners/ferme_la_palouse.webp",
+    "website": "https://fermelapalouse.fr/"
+  },
+  {
+    "id": "eurovisserie",
+    "name": "Euro Visserie",
+    "background": "white",
+    "rank": "or",
+    "logo": "/images/partners/Eurovisserie-logo.jpeg",
+    "website": ""
+  },
+  {
+    "id": "eurocfd",
+    "name": "EuroCFD",
+    "background": "",
+    "rank": "or",
+    "logo": "/images/partners/EUROCFD_Group_transp.webp",
+    "website": "https://www.eurocfd.com/"
+  },
+  {
+    "id": "echaf90",
+    "name": "Echaf 90",
+    "background": "",
+    "rank": "sponsor",
+    "logo": "/images/partners/Echaf-90.webp",
+    "website": "https://www.facebook.com/p/Echaf90-100063752147972/"
+  },
+  {
+    "id": "developrh",
+    "name": "Dévelop'RH",
+    "background": "white",
+    "rank": "argent",
+    "logo": "/images/partners/DevelopRH_logo.jpg",
+    "website": ""
+  },
+  {
+    "id": "christellebaussier",
+    "name": "Christelle Baussier",
+    "background": "",
+    "rank": "sponsor",
+    "logo": "/images/partners/christelle_beaussier.webp",
+    "website": "https://christellebeaussier.fr/"
+  },
+  {
+    "id": "cgc",
+    "name": "CGC",
+    "background": "white",
+    "rank": "or",
+    "logo": "/images/partners/CGC.png",
+    "website": ""
+  },
+  {
+    "id": "burgerlabaroche",
+    "name": "Burger La Baroche",
+    "background": "white",
+    "rank": "sponsor",
+    "logo": "/images/partners/burger_la_baroche.jpeg",
+    "website": "https://www.facebook.com/p/Burger-la-Baroche-100083054181030/"
+  },
+  {
+    "id": "aubureau",
+    "name": "Au bureau",
+    "background": "",
+    "rank": "sponsor",
+    "logo": "/images/partners/bureau.webp",
+    "website": "https://www.aubureau.fr/restaurant-brasserie/AB_Belfort/"
+  },
+  {
+    "id": "bureauvallee",
+    "name": "Bureau Vallée",
+    "background": "",
+    "rank": "sponsor",
+    "logo": "/images/partners/bureau-vallee.png",
+    "website": "https://magasins.bureau-vallee.fr/fr/france-33/territoire-de-belfort-90/danjoutin-90032/belfort-danjoutin-BV236"
+  },
+  {
+    "id": "aufournildefrancis",
+    "name": "Au fournil de Francis",
+    "background": "",
+    "rank": "sponsor",
+    "logo": "/images/partners/au_fournil_de_francis.jpeg",
+    "website": "https://www.facebook.com/aufournildefrancis/?locale=fr_FR"
+  },
+  {
+    "id": "photoffemont",
+    "name": "Phot'Offemont",
+    "background": "white",
+    "rank": "partenaire",
+    "logo": "/images/partners/logo-phot_Offemont.png",
+    "website": "https://www.photoffemont.com/"
+  },
+  {
+    "id": "improtg",
+    "name": "Impro TG",
+    "background": "white",
+    "rank": "partenaire",
+    "logo": "/images/partners/impro-tg-logo.png",
+    "website": "https://improtg.com/"
+  },
+  {
+    "id": "odysseeducirque",
+    "name": "Odyssée du Cirque",
+    "background": "",
+    "rank": "partenaire",
+    "logo": "/images/partners/llogo-odyssee-du-cirque.webp",
+    "website": "https://www.odysseeducirque.info/"
+  },
+  {
+    "id": "lesnezrouges",
+    "name": "Les Nez Rouges",
+    "background": "white",
+    "rank": "partenaire",
+    "logo": "/images/partners/logo-lnr.jpg",
+    "website": ""
+  },
+  {
+    "id": "vidalfrance",
+    "name": "Vidal",
+    "background": "",
+    "rank": "sponsor",
+    "logo": "/images/partners/logo_vidal.webp",
+    "website": "https://vidal-france.fr/"
+  },
+  {
+    "id": "abvm",
+    "name": "Association Belforttaine de Vol Moteur",
+    "background": "",
+    "rank": "sponsor",
+    "logo": "/images/partners/logo_abvm.png",
+    "website": "https://www.abvm.fr/"
+  },
+  {
+    "id": "mieuxzetre",
+    "name": "Mieux zêtre",
+    "background": "",
+    "rank": "sponsor",
+    "logo": "/images/partners/mieux-logo.png",
+    "website": "https://www.mieuxzetre.fr/"
+  },
+  {
+    "id": "larougemontoise",
+    "name": "La Rougemontoise",
+    "background": "",
+    "rank": "sponsor",
+    "logo": "/images/partners/rougemontoise.webp",
+    "website": "https://www.facebook.com/p/La-Rougemontoise-100064329812883/?locale=fr_FR"
+  },
+  {
+    "id": "ronfort",
+    "name": "Pompes Funèbres Ronfort",
+    "background": "",
+    "rank": "sponsor",
+    "logo": "/images/partners/logo-ronfort.webp",
+    "website": "https://pfronfort.fr/"
+  },
+  {
+    "id": "krisslaure",
+    "name": "Kriss-Laure",
+    "background": "",
+    "rank": "sponsor",
+    "logo": "/images/partners/LOGO_KRISS-LAURE.avif",
+    "website": "https://kriss-laure.com/"
+  },
+  {
+    "id": "knecht",
+    "name": "Primeur Knecht",
+    "background": "",
+    "rank": "sponsor",
+    "logo": "/images/partners/knecht-logo.png",
+    "website": "https://boutiqueknecht.fr/"
+  },
+  {
+    "id": "relaisdestroissapins",
+    "name": "Relais des Trois Sapins",
+    "background": "",
+    "rank": "sponsor",
+    "logo": "/images/partners/te_logo.png",
+    "website": "https://locator.totalenergies.com/NF029267?type=FUELING"
+  },
+  {
+    "id": "larosemontoise",
+    "name": "La Rosemontoise",
+    "background": "",
+    "rank": "sponsor",
+    "logo": "/images/partners/logo-rosemontoise.webp",
+    "website": "https://www.facebook.com/p/Boulangerie-La-Rosemontoise-100043487125729/?locale=fr_FR"
+  },
+  {
+    "id": "casolimetallerie",
+    "name": "Casoli Métallerie",
+    "background": "",
+    "rank": "sponsor",
+    "logo": "/images/partners/casoli-logo.webp",
+    "website": "https://www.casoli-metallerie.fr/"
+  },
+  {
+    "id": "caropa",
+    "name": "Caropa",
+    "background": "white",
+    "rank": "sponsor",
+    "logo": "/images/partners/CAROPA_logo.webp",
+    "website": "https://www.caropa-carrelages.fr/"
+  },
+  {
+    "id": "aubergefrahier",
+    "name": "L'Auberge de Frahier",
+    "background": "",
+    "rank": "sponsor",
+    "logo": "/images/partners/logo-auberge-frahier.jpg",
+    "website": ""
+  },
+  {
+    "id": "formageriesylvie",
+    "name": "La Fromagerie Sylvie",
+    "background": "",
+    "rank": "sponsor",
+    "logo": "/images/partners/fromagerie-sylvie.webp",
+    "website": "http://lafromageriesylvieoffemont.com/"
+  },
+  {
+    "id": "bringelmateriaux",
+    "name": "Bringel Matériaux",
+    "background": "white",
+    "rank": "sponsor",
+    "logo": "/images/partners/bringel_logo.png",
+    "website": "https://bringel.fr/"
+  },
+  {
+    "id": "baumann",
+    "name": "Baumann chauffage",
+    "background": "white",
+    "rank": "sponsor",
+    "logo": "/images/partners/baumann-logo.png",
+    "website": "https://www.baumann-sa.fr/"
+  },
+  {
+    "id": "surlegreen",
+    "name": "Sur Le Green",
+    "background": "white",
+    "rank": "sponsor",
+    "logo": "/images/partners/logo-sur-le-green.png",
+    "website": "https://surlegreen.com/"
+  },
+  {
+    "id": "galletnicolas",
+    "name": "Gallet Nicolas",
+    "background": "",
+    "rank": "sponsor",
+    "logo": "/images/partners/Gallet-logo.jpg",
+    "website": "https://www.ngallet.fr/"
+  },
+  {
+    "id": "protectferm",
+    "name": "Protect-Ferm",
+    "background": "white",
+    "rank": "sponsor",
+    "logo": "/images/partners/ProtectFerm.png",
+    "website": "https://www.protectferm.fr/"
+  },
+  {
+    "id": "christianmolle",
+    "name": "Christian Molle Immobilier",
+    "background": "",
+    "rank": "sponsor",
+    "logo": "/images/partners/logo-molle-immo.png",
+    "website": "https://www.christianmolleimmobilier.fr/"
+  },
+  {
+    "id": "autosecurite",
+    "name": "Auto Sécurité",
+    "background": "",
+    "rank": "sponsor",
+    "logo": "/images/partners/logo-auto-secu.webp",
+    "website": "https://centre-controle-technique.autosecurite.com/bourgogne-franche-comte/territoire-de-belfort/denney/86b-avenue-dalsace"
+  },
+  {
+    "id": "estparquets",
+    "name": "Est Parquets",
+    "background": "",
+    "rank": "sponsor",
+    "logo": "/images/partners/logo-est-parquets.png",
+    "website": "https://www.est-parquets-haut-rhin.fr/"
+  },
+  {
+    "id": "hinteralfeld",
+    "name": "Ferme Auberge du Hinteralfeld",
+    "background": "",
+    "rank": "sponsor",
+    "logo": "/images/partners/logo-ferme-auberge.gif",
+    "website": "https://www.ferme-auberge-du-hinteralfeld.com/accueil/"
+  },
+  {
+    "id": "prevottraiteur",
+    "name": "Prevot Traiteur",
+    "background": "",
+    "rank": "sponsor",
+    "logo": "/images/partners/logo-prevot.png",
+    "website": "https://www.boucherie-traiteur-prevot.fr/"
+  },
+  {
+    "id": "editionsdulion",
+    "name": "Les Éditions du Lion",
+    "background": "white",
+    "rank": "sponsor",
+    "logo": "/images/partners/logo-editions-lion.avif",
+    "website": "https://www.leseditionsdulion.com/"
+  },
+  {
+    "id": "courtimm",
+    "name": "Courtimm",
+    "background": "white",
+    "rank": "sponsor",
+    "logo": "/images/partners/logo-courtimm.png",
+    "website": "https://courtimm.fr/"
+  },
+  {
+    "id": "vauban",
+    "name": "Pompes Funèbres Vauban",
+    "background": "",
+    "rank": "sponsor",
+    "logo": "/images/partners/logo-vauban.png",
+    "website": "https://www.pompes-funebres-vauban.fr/"
+  },
+  {
+    "id": "gambafreres",
+    "name": "Gamba Frères",
+    "background": "",
+    "rank": "sponsor",
+    "logo": "/images/partners/logo-gamba.webp",
+    "website": ""
+  },
+  {
+    "id": "hem",
+    "name": "HEM Informatique",
+    "background": "",
+    "rank": "sponsor",
+    "logo": "/images/partners/HEM-logo.jpeg",
+    "website": ""
+  },
+  {
+    "id": "legendhair",
+    "name": "Legend'Hair",
+    "background": "",
+    "rank": "sponsor",
+    "logo": "/images/partners/legend-hair-logo.webp",
+    "website": "https://www.fresha.com/fr/lvp/legendhair-rue-aristide-briand-offemont-jwwnG4"
+  },
+  {
+    "id": "phservice",
+    "name": "PH Service",
+    "background": "",
+    "rank": "sponsor",
+    "logo": "/images/partners/ph-service-logo.webp",
+    "website": ""
+  },
+  {
+    "id": "lorigan",
+    "name": "L'Origan",
+    "background": "",
+    "rank": "sponsor",
+    "logo": "/images/partners/LOrigan-logo.webp",
+    "website": "https://www.facebook.com/p/L-Origan-sermamagny-100063532932404/?locale=fr_FR"
+  },
+  {
+    "id": "guitarenovo",
+    "name": "Guitare Novo",
+    "background": "",
+    "rank": "sponsor",
+    "logo": "/images/partners/guitare-novo-logo.webp",
+    "website": "https://www.facebook.com/GuitareNovo?locale=fr_FR"
+  },
+  {
+    "id": "bolloreenergy",
+    "name": "Bolloré Energy",
+    "background": "",
+    "rank": "sponsor",
+    "logo": "/images/partners/Bollore_energy-logo.webp",
+    "website": "https://www.bollore-energy.com/"
+  },
+  {
+    "id": "cotefleurs",
+    "name": "Côté Fleurs",
+    "background": "",
+    "rank": "sponsor",
+    "logo": "/images/partners/cote-fleur-logo.webp",
+    "website": "https://www.facebook.com/COTEFLEURS.fr/?locale=fr_FR"
+  },
+  {
+    "id": "flashanimation",
+    "name": "Flash Animation",
+    "background": "",
+    "rank": "sponsor",
+    "logo": "/images/partners/flash-animation-logo.webp",
+    "website": ""
+  },
+  {
+    "id": "cemstehlin",
+    "name": "CEM Stehlin",
+    "background": "",
+    "rank": "sponsor",
+    "logo": "/images/partners/CEM-Stehlin-logo.webp",
+    "website": ""
+  },
+  {
+    "id": "jardonschmitt",
+    "name": "Jardon-Schmitt",
+    "background": "",
+    "rank": "sponsor",
+    "logo": "/images/partners/logo-jardon.webp",
+    "website": "https://jardon-schmitt.edan.io/"
+  },
+  {
+    "id": "tntevents",
+    "name": "TNT Events",
+    "background": "",
+    "rank": "sponsor",
+    "logo": "/images/partners/logo-tnt.avif",
+    "website": "https://www.tnt-events.fr/"
+  }
+]

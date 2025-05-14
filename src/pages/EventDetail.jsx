@@ -5,6 +5,8 @@ import partnersData from '../data/partners.json';
 import CardPartner from '../components/ui/CardPartner';
 import StickyBackLink from '../components/ui/StickyBackLink';
 import Separator from '../components/ui/Separator';
+import { MdPlace } from "react-icons/md";
+import { BsCalendarHeartFill } from "react-icons/bs";
 
 const EventDetail = () => {
   const { id } = useParams();
@@ -26,12 +28,12 @@ const EventDetail = () => {
         />
 
         <div className="flex flex-col md:flex-row justify-center items-center gap-2 text-yellow-50">
-          <p className="text-base md:text-xl m-2 md:m-4 px-4 py-1 bg-linear-75 from-slate-500 to-slate-600 w-full md:w-auto text-center text-shadow">
-            {event.date}
-          </p>
-          <p className="text-base md:text-xl m-2 md:m-4 px-4 py-1 bg-linear-75 from-slate-500 to-slate-600 w-full md:w-auto text-center text-shadow">
-            {event.lieu}
-          </p>
+        <p className="flex justify-center items-center gap-2 text-base md:text-xl m-2 md:m-4 px-4 py-1 bg-linear-75 from-slate-500 to-slate-600 w-full md:w-auto  text-shadow">
+          <BsCalendarHeartFill /> {event.date}
+        </p>
+        <p className="flex justify-center items-center gap-2 text-base md:text-xl m-2 md:m-4 px-4 py-1 bg-linear-75 from-slate-500 to-slate-600 w-full md:w-auto  text-shadow">
+          <MdPlace /> {event.lieu}
+        </p>
         </div>
         <p className="text-lg mb-8 mt-8 hyphens-auto">
           {Array.isArray(event.description)

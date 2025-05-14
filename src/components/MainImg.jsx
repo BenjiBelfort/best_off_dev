@@ -54,7 +54,7 @@ const MainImg = () => {
   }, [isModalOpen]);
 
   return (
-    <div className="relative w-full h-[100vh] bg-stone-900 -mt-18 overflow-hidden">
+    <div className="relative w-full h-[100vh] bg-stone-900 -mt-20 overflow-hidden">
       <div 
         className="relative w-full h-full transition-transform duration-300 ease-out"
         style={{
