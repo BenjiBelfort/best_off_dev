@@ -1,6 +1,10 @@
 import { useState, useEffect, useMemo } from 'react';
 import AnimatedLink from './ui/AnimatedLink';
-import { FaArrowRight } from "react-icons/fa";
+import { FaArrowRight, FaGlassMartiniAlt } from "react-icons/fa";
+import { MdPlace } from "react-icons/md";
+import { BsCalendarHeartFill } from "react-icons/bs";
+import { GoClockFill } from "react-icons/go";
+import { FaTicket } from "react-icons/fa6";
 
 const ActualityComp = () => {
     // Date cible du concert (ajustez l'heure si nécessaire)
@@ -96,17 +100,21 @@ const ActualityComp = () => {
         {/* Partie centrale - Lieu, date et compte à rebours */}
         <div className="mt-12 flex flex-col items-center gap-6">
           <div className="text-yellow-50 flex flex-col lg:flex-row justify-center items-center gap-2">
-            <p className="text-base md:text-xl m-1 md:m-2 px-6 py-2 bg-linear-75 from-slate-500 to-slate-600 w-full md:w-auto text-center text-shadow logo-shadow">
-              la MIEL - Offemont
+
+            <p className="flex justify-center items-center gap-2 text-base md:text-xl m-1 md:m-2 px-6 py-2 bg-linear-75 from-slate-500 to-slate-600 w-full md:w-auto text-center text-shadow logo-shadow">
+              <BsCalendarHeartFill />samedi 28 juin 2025
             </p>
-            <p className="text-base md:text-xl m-1 md:m-2 px-6 py-2 bg-linear-75 from-slate-500 to-slate-600 w-full md:w-auto text-center text-shadow logo-shadow">
-              samedi 28 juin 2025
+            <p className="flex justify-center items-center gap-2 text-base md:text-xl m-1 md:m-2 px-6 py-2 bg-linear-75 from-slate-500 to-slate-600 w-full md:w-auto text-center text-shadow logo-shadow">
+              <MdPlace />la MIEL - Offemont
             </p>
-            <p className="text-base md:text-xl m-1 md:m-2 px-6 py-2 bg-linear-75 from-slate-500 to-slate-600 w-full md:w-auto text-center text-shadow logo-shadow">
-              20:00
+            <p className="flex justify-center items-center gap-2 text-base md:text-xl m-1 md:m-2 px-6 py-2 bg-linear-75 from-slate-500 to-slate-600 w-full md:w-auto text-center text-shadow logo-shadow">
+              <GoClockFill />20:00
             </p>
-            <p className="text-base md:text-xl m-1 md:m-2 px-6 py-2 bg-linear-75 from-slate-500 to-slate-600 w-full md:w-auto text-center text-shadow logo-shadow">
-              entrée libre
+            <p className="flex justify-center items-center gap-2 text-base md:text-xl m-1 md:m-2 px-6 py-2 bg-linear-75 from-slate-500 to-slate-600 w-full md:w-auto text-center text-shadow logo-shadow">
+              <FaTicket />entrée libre
+            </p>
+            <p className="flex justify-center items-center gap-2 text-base md:text-xl m-1 md:m-2 px-6 py-2 bg-linear-75 from-slate-500 to-slate-600 w-full md:w-auto text-center text-shadow logo-shadow">
+              <FaGlassMartiniAlt />buvette
             </p>
           </div>
 
