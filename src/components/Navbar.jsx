@@ -141,10 +141,10 @@ const Navbar = () => {
           </AnimatedLink>
 
           {/* Réseaux */}
-          <a href="https://instagram.com/bestoff90300/" target="_blank" rel="noopener noreferrer">
+          <a href="https://instagram.com/bestoff90300/" target="_blank" rel="noopener noreferrer" aria-label="Visitez notre page Instagram">
             <FaInstagramSquare className="w-6 h-6 hover:scale-110 transition-transform" />
           </a>
-          <a href="https://facebook.com/musicbestoff/" target="_blank" rel="noopener noreferrer">
+          <a href="https://facebook.com/musicbestoff/" target="_blank" rel="noopener noreferrer" aria-label="Suivez-nous sur Facebook">
             <FaFacebookSquare className="w-6 h-6 hover:scale-110 transition-transform" />
           </a>
 
@@ -186,10 +186,10 @@ const Navbar = () => {
             <AnimatedLink to="/presse" className={isPageActive('/presse') ? activeUnderlineClass : ''} onClick={handleMobileLinkClick}>Presse</AnimatedLink>
             <AnimatedLink to="partners" offset={41} className={isSectionActive('partners') ? activeUnderlineClass : ''} onClick={handleMobileLinkClick}>Partenaires</AnimatedLink>
             <div className="flex space-x-6">
-              <a href="https://www.instagram.com/bestoff90300/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/bestoff90300/" target="_blank" rel="noopener noreferrer" aria-label="Visitez notre page Instagram">
                 <FaInstagramSquare className="w-8 h-8 hover:scale-110 transition-transform" />
               </a>
-              <a href="https://www.facebook.com/musicbestoff/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/musicbestoff/" target="_blank" rel="noopener noreferrer" aria-label="Suivez-nous sur Facebook">
                 <FaFacebookSquare className="w-8 h-8 hover:scale-110 transition-transform" />
               </a>
             </div>

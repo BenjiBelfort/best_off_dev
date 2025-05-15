@@ -62,8 +62,10 @@ const MainImg = () => {
         }}
       >
         <img 
-          src="/images/rideau-noir.webp" 
-          alt="rideaux noirs" 
+          src="/images/rideau-noir.webp"
+          alt="rideaux noirs"
+          width="1041"
+          height="686"
           className="w-full h-full object-cover transition-opacity duration-300"
           style={{ opacity, filter: 'blur(2px)' }}
         />
@@ -75,7 +77,9 @@ const MainImg = () => {
       <div className="absolute inset-0 flex flex-col items-center justify-center pb-[20px] opacity-0 animate-[fadeIn_3s_ease-out_forwards] z-10">
         <img 
           src="/images/logo-BO.webp" 
-          alt="Logo BEST OFF'" 
+          alt="Logo BEST OFF'"
+          width="459"
+          height="476"
           className="max-w-xs md:max-w-sm lg:max-w-md mt-16 logo-shadow"
         />
         <h2 className="relative text-white text-center text-xl md:text-3xl lg:text-4xl mt-4 mx-12 md:pb-4 gradient-underline">

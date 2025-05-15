@@ -44,7 +44,9 @@ const ActualityComp = () => {
         {/* Image */}
         <img
           src="/images/actu-pic.webp"
-          alt=""
+          alt="Photo coulisse avant un spectacle"
+          width="1200"
+          height="900"
           className="w-full h-full xl: object-cover brightness-70"
         />
 
@@ -92,6 +94,8 @@ const ActualityComp = () => {
             <img
               src="/images/events/affiche.webp"
               alt="Affiche prochain spectacle"
+              width="565"
+              height="800"
               className="w-full max-w-sm border-4 lg:border-6 border-white shadow-2xl object-cover"
             />
           </div>
