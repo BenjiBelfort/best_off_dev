@@ -22,7 +22,13 @@ const Biographie = () => {
           <br />
           <p className="text-center font-primary text-3xl pb-1.5">BEST OFF'</p>
           <p className="text-center">Quand le <span className='font-special text-3xl'>Rock </span> rencontre la <span className='font-special text-3xl'>Symphonie </span> pour le plaisir des sens</p>
-          <img className="mt-5" src="/images/events/chougalante-mars-2025/galerie/chougalante-mars-2025_3.webp" alt="Best off en concert" />
+          <img
+            className="mt-5"
+            src="/images/events/chougalante-mars-2025/galerie/chougalante-mars-2025_3.webp"
+            alt="Best off en concert"
+            width="1200"
+            height="800"
+          />
           <div className="flex justify-center w-full pt-4">
             <AnimatedLink 
               to="/archives/chougalante-mars-2025" 
