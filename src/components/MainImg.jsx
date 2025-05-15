@@ -5,7 +5,6 @@ const MainImg = () => {
   const [showCloseButton, setShowCloseButton] = useState(false);
   const [scrollY, setScrollY] = useState(0);
   const scale = Math.max(1, 1.20 - scrollY * 0.0003);
-  const opacity = Math.max(0, 1 - scrollY * 0.002);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -66,8 +65,10 @@ const MainImg = () => {
           alt="rideaux noirs"
           width="1041"
           height="686"
-          className="w-full h-full object-cover transition-opacity duration-300"
-          style={{ opacity, filter: 'blur(2px)' }}
+          loading="eager"
+          fetchpriority="high"
+          className="w-full h-full object-cover"
+          
         />
         
         <div className="absolute inset-0 bg-gradient-to-t from-stone-900/100 to-transparent" />

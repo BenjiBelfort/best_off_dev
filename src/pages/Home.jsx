@@ -1,15 +1,17 @@
 // Home.jsx
+import React, { Suspense, lazy } from 'react';
 import { useEffect, useMemo } from 'react';
 import { useLocation } from 'react-router-dom';
 import MainImg from '../components/MainImg';
 import Separator from '../components/ui/Separator';
 import Actuality from "../components/ActualityComp";
-import Biographie from '../components/Biographie';
-import LatestEvents from '../components/LatestEvents';
 import eventsData from '../data/pastEvents.json';
-import Gallery from '../components/ui/Gallery';
-import PartnersComp from '../components/PartnersComp';
 import Contact from '../components/Contact';
+
+const Biographie = lazy(() => import('../components/Biographie'));
+const LatestEvents = lazy(() => import('../components/LatestEvents'));
+const Gallery = lazy(() => import('../components/ui/Gallery'));
+const PartnersComp = lazy(() => import('../components/PartnersComp'));
 
 const Home = () => {
   const location = useLocation();
@@ -71,17 +73,25 @@ const Home = () => {
       <Actuality />
         <div className="container mx-auto">
         <Separator />
-        <Biographie />
+        <Suspense fallback={<div>Chargement...</div>}>
+          <Biographie />
+        </Suspense>
         <Separator />
-        <LatestEvents />
+        <Suspense fallback={<div>Chargement...</div>}>
+          <LatestEvents />
+        </Suspense>
         <Separator />
         <h3>Galerie photos</h3>
-        <Gallery photos={galleryPhotos} seeMoreUrl="/galerie" />
+        <Suspense fallback={<div>Chargement...</div>}>
+          <Gallery photos={galleryPhotos} seeMoreUrl="/galerie" />
+        </Suspense>
         <Separator />
         <h3>Presse</h3>
         <Gallery photos={galleryArticles} seeMoreUrl="/presse" />
         <Separator />
-        <PartnersComp />
+        <Suspense fallback={<div>Chargement...</div>}>
+          <PartnersComp />
+        </Suspense>
         <Separator />
         <Contact />
       </div>
