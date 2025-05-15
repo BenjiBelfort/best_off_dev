@@ -134,7 +134,7 @@ const ActualityComp = () => {
             ))}
           </div>
           <a href="https://fb.me/e/2blyMrQ7Je" target='_blank' rel='noopener noreferrer' className='text-xl inline-flex items-center gap-2 hover:tracking-wide hover:scale-115 transition-all duration-300 relative after:absolute after:left-1/2 after:bottom-0 after:transform after:-translate-x-1/2 after:origin-center after:h-[2px] after:w-0 after:bg-red-400 after:transition-all after:duration-300 hover:after:w-full'>
-            Voir l'événement sur FaceBook
+            Voir l'événement sur Facebook
             <FaArrowRight className='hidden sm:block'/>
           </a>
         </div>

@@ -28,8 +28,8 @@ const MentionsLegalesModal = () => {
 
             {/* Modale */}
             {isOpen && (
-                <div className="fixed inset-0 z-50 backdrop-blur-md bg-black/20 flex items-center justify-center">
-                    <div className="bg-black text-white max-w-3xl w-full p-8 relative overflow-y-auto max-h-[90vh]">
+                <div className="fixed inset-0 z-50 backdrop-blur-md bg-stone-900/20 flex items-center justify-center">
+                    <div className="bg-stone-950 text-white max-w-3xl w-full p-8 relative overflow-y-auto max-h-[90vh]">
 
                         {/* Bouton de fermeture */}
                         <button
@@ -47,6 +47,7 @@ const MentionsLegalesModal = () => {
                             Association BEST OFF'<br/>
                             Adresse : 28 rue des Eygras - 90300 OFFEMONT<br/>
                             Responsable de la publication : Roland CIBIL<br/>
+                            Développement web : Benjamin TISSERAND<br/>
                             Contact : bestoffmusic90@gmail.com<br/>
                             Tél : 06 77 26 87 32
                         </p>

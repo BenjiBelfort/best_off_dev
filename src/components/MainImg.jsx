@@ -4,9 +4,6 @@ const MainImg = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [showCloseButton, setShowCloseButton] = useState(false);
 
-
-
-
   // Affiche le bouton de fermeture 3 secondes après l'ouverture
   useEffect(() => {
     let timer;
@@ -53,7 +50,7 @@ const MainImg = () => {
           width="1041"
           height="686"
           loading="eager"
-          fetchpriority="high"
+          fetchPriority="high"
           className="w-full h-full object-cover bg-stone-900"
           
         />
