@@ -3,18 +3,8 @@ import { useState, useEffect } from 'react';
 const MainImg = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [showCloseButton, setShowCloseButton] = useState(false);
-  const [scrollY, setScrollY] = useState(0);
-  const scale = Math.max(1, 1.20 - scrollY * 0.0003);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      setScrollY(scrollTop);
-    };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
 
   // Affiche le bouton de fermeture 3 secondes après l'ouverture
@@ -55,10 +45,7 @@ const MainImg = () => {
   return (
     <div className="relative w-full h-[100vh] bg-stone-900 -mt-20 overflow-hidden">
       <div 
-        className="relative w-full h-full transition-transform duration-300 ease-out"
-        style={{
-          transform: `scale(${scale})`
-        }}
+        className="relative w-full h-full"
       >
         <img 
           src="/images/rideau-noir.webp"
@@ -67,7 +54,7 @@ const MainImg = () => {
           height="686"
           loading="eager"
           fetchpriority="high"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover bg-stone-900"
           
         />
         
