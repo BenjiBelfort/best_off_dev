@@ -1,4 +1,4 @@
-import { useParams, Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import eventsData from '../data/pastEvents.json';
 import Gallery from '../components/ui/Gallery';
 import partnersData from '../data/partners.json';
@@ -24,16 +24,16 @@ const EventDetail = () => {
         <img
           src={event.photo_cover || '/placeholder-event.jpg'}
           alt={event.title}
-          className="w-full h-full object-cover mb-6"
+          className="w-96 object-cover mb-6 mx-auto border-4 lg:border-6 border-white border-white"
         />
 
         <div className="flex flex-col md:flex-row justify-center items-center gap-2 text-yellow-50">
-        <p className="flex justify-center items-center gap-2 text-base md:text-xl m-2 md:m-4 px-4 py-1 bg-linear-75 from-slate-500 to-slate-600 w-full md:w-auto text-shadow">
-          <BsCalendarHeartFill /> {event.date}
-        </p>
-        <p className="flex justify-center items-center gap-2 text-base md:text-xl m-2 md:m-4 px-4 py-1 bg-linear-75 from-slate-500 to-slate-600 w-full md:w-auto text-shadow">
-          <MdPlace /> {event.lieu}
-        </p>
+          <p className="text-center flex justify-center items-center gap-2 text-base md:text-xl m-2 md:m-4 px-4 py-1 bg-linear-75 from-slate-500 to-slate-600 w-full md:w-auto text-shadow">
+            <BsCalendarHeartFill /> {event.date}
+          </p>
+          <p className="text-center flex justify-center items-center gap-2 text-base md:text-xl m-2 md:m-4 px-4 py-1 bg-linear-75 from-slate-500 to-slate-600 w-full md:w-auto text-shadow">
+            <MdPlace /> {event.lieu}
+          </p>
         </div>
         <p className="text-lg mb-8 mt-8 hyphens-auto">
           {Array.isArray(event.description)

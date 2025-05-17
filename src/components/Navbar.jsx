@@ -160,13 +160,13 @@ const Navbar = () => {
 
         {/* Mobile Hamburger */}
         <button
-          className="lg:hidden flex flex-col justify-between w-10 h-7 relative z-50 focus:outline-none cursor-pointer"
+          className="lg:hidden flex flex-col justify-between w-8 h-6 relative z-50 focus:outline-none cursor-pointer"
           onClick={() => setIsOpen(!isOpen)}
         >
           <span className="sr-only">{isOpen ? 'Fermer le menu' : 'Ouvrir le menu'}</span>
-          <span className={`block h-1 w-full bg-white rounded transition-all duration-300 ease-in-out ${isOpen ? 'rotate-45 translate-y-3' : ''}`} />
-          <span className={`block h-1 w-full bg-white rounded transition-all duration-300 ease-in-out ${isOpen ? 'opacity-0 translate-x-3' : ''}`} />
-          <span className={`block h-1 w-full bg-white rounded transition-all duration-300 ease-in-out ${isOpen ? '-rotate-45 -translate-y-3' : ''}`} />
+          <span className={`block h-0.5 w-full bg-white rounded transition-all duration-300 ease-in-out ${isOpen ? 'rotate-45 translate-y-2.5' : ''}`} />
+          <span className={`block h-0.5 w-full bg-white rounded transition-all duration-300 ease-in-out ${isOpen ? 'opacity-0 translate-x-3' : ''}`} />
+          <span className={`block h-0.5 w-full bg-white rounded transition-all duration-300 ease-in-out ${isOpen ? '-rotate-45 -translate-y-3' : ''}`} />
         </button>
 
         {/* Overlay */}
