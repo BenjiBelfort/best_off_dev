@@ -7,7 +7,7 @@ const PartnersComp = () => {
       <h3>Nos partenaires</h3>
       <div className="mx-auto max-w-3xl hyphens-auto">
         <p>
-          L'ensemble de BEST OFF' tient à exprimer sa profonde gratitude à tous les partenaires qui nous accompagnent. Grâce à votre soutien, nous avons la possibilité de concrétiser nos projets musicaux et solidaires, en mettant la musique au service de grandes causes.
+          L'ensemble BEST OFF' tient à exprimer sa profonde gratitude à tous les partenaires qui nous accompagnent. Grâce à votre soutien, nous avons la possibilité de concrétiser nos projets musicaux et solidaires, en mettant la musique au service de grandes causes.
         </p>
         <br />
         <p>
