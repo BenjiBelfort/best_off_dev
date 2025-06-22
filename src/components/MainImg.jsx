@@ -69,7 +69,8 @@ const MainImg = () => {
         />
         <h2 className="relative text-white text-center text-xl md:text-3xl lg:text-4xl mt-4 mx-12 md:pb-4 gradient-underline">
           Quand le <span className='font-special text-4xl md:text-6xl lg:text-7xl'>Rock </span>
-          rencontre la <span className='font-special text-4xl md:text-6xl lg:text-7xl'>Symphonie</span>
+          rencontre la <span className='font-special text-4xl md:text-6xl lg:text-7xl'>Symphonie </span>
+          pour la solidarité
         </h2>
 
           <div className="flex flex-col items-center mt-8 space-y-4 hover:scale-110 transition-transform duration-300 cursor-pointer">
