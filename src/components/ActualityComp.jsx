@@ -57,7 +57,9 @@ const ActualityComp = () => {
         <h3>Actualités</h3>
 
         {/* Zone principale texte + affiche */}
-        <div className="flex flex-col-reverse lg:flex-row max-w-6xl mx-auto lg:-rotate-2">
+        <div
+          className="flex flex-col-reverse lg:flex-row max-w-6xl mx-auto lg:-rotate-2"
+        >
           {/* Partie gauche - Texte */}
           <div className="w-full lg:w-1/2 px-8 flex flex-col justify-around">
           <h2 className="text-3xl md:text-6xl mb-4 text-left font-extrabold font-secondary bg-gradient-to-r from-orange-50 via-white to-yellow-50 bg-clip-text text-transparent">
