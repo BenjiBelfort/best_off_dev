@@ -25,15 +25,25 @@ const ActualityComp = () => {
       const intervalId = setInterval(() => {
         const now = new Date();
         const diff = targetDate - now;
-  
-        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-        const minutes = Math.floor((diff / (1000 * 60)) % 60);
-        const seconds = Math.floor((diff / 1000) % 60);
-  
-        setTimeLeft({ days, hours, minutes, seconds });
+
+        if (diff <= 0) {
+          setTimeLeft({
+            days: 0,
+            hours: 0,
+            minutes: 0,
+            seconds: 0,
+          });
+          clearInterval(intervalId); // Arrête le timer une fois arrivé
+        } else {
+          const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+          const minutes = Math.floor((diff / (1000 * 60)) % 60);
+          const seconds = Math.floor((diff / 1000) % 60);
+
+          setTimeLeft({ days, hours, minutes, seconds });
+        }
       }, 1000);
-  
+
       return () => clearInterval(intervalId);
     }, [targetDate]);
 
