@@ -712,6 +712,14 @@
     "website": "https://jardon-schmitt.edan.io/"
   },
   {
+    "id": "cpep",
+    "name": "CPEP!",
+    "background": "",
+    "rank": "partenaire",
+    "logo": "/images/partners/cpep.webp",
+    "website": "https://www.cpep.fr"
+  },
+  {
     "id": "tntevents",
     "name": "TNT Events",
     "background": "",
