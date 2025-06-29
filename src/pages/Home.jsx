@@ -70,7 +70,7 @@ const Home = () => {
   return (
     <div>
       <MainImg />
-      <Actuality />
+      {/* <Actuality /> */}
         <div className="container mx-auto">
         <Separator />
         <Suspense fallback={<div>Chargement...</div>}>

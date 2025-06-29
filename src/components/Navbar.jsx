@@ -94,13 +94,14 @@ const Navbar = () => {
         {/* Desktop */}
         <div className="hidden lg:flex space-x-6 items-center">
           {/* Scroll vers “Actualités” */}
-          <AnimatedLink
+          <span className="text-gray-400 cursor-default">Actualités</span>
+          {/* <AnimatedLink
             to="actuality"
             offset={25}
             className={isSectionActive('actuality') ? activeUnderlineClass : ''}
           >
             Actualités
-          </AnimatedLink>
+          </AnimatedLink> */}
 
           {/* Pages Archives / Galerie / Presse */}
           <AnimatedLink
@@ -179,7 +180,8 @@ const Navbar = () => {
         {/* Mobile Menu */}
         {isOpen && (
           <div className="fixed inset-0 bg-stone-950/50 flex flex-col items-center justify-center space-y-6 text-xl z-40 fade-slide">
-            <AnimatedLink to="actuality" offset={25} className={isSectionActive('actuality') ? activeUnderlineClass : ''} onClick={handleMobileLinkClick}>Actualités</AnimatedLink>
+            <span className="text-gray-400 text-xl cursor-default">Actualités</span>
+            {/* <AnimatedLink to="actuality" offset={25} className={isSectionActive('actuality') ? activeUnderlineClass : ''} onClick={handleMobileLinkClick}>Actualités</AnimatedLink> */}
             <AnimatedLink to="/archives" className={isPageActive('/archives') ? activeUnderlineClass : ''} onClick={handleMobileLinkClick}>Archives</AnimatedLink>
             <AnimatedLink to="biographie" offset={41} className={isSectionActive('biographie') ? activeUnderlineClass : ''} onClick={handleMobileLinkClick}>Biographie</AnimatedLink>
             <AnimatedLink to="/galerie" className={isPageActive('/galerie') ? activeUnderlineClass : ''} onClick={handleMobileLinkClick}>Galerie</AnimatedLink>

@@ -1,5 +1,23 @@
 [
     {
+      "id": "fete-commune-2025",
+      "title": "Concert Rock Symphonique",
+      "date": "28 juin 2025",
+      "lieu": "la MIEL - Offemont",
+      "description": [
+        "Dans le cadre de la fête de la commune d'Offemont, et avant la fermeture de la salle de la MIEL pour rénovation, nous avons le plaisir de vous présenter un concert exclusif.",
+        "Venez écouter notre répertoire enrichi de nouveaux titres dans une ambiance conviviale et festive.",
+        "Plongez dans notre univers et vivez une expérience unique"
+      ],
+      "photo_cover": "/images/events/fete-commune-2025/affiche.webp",
+      "gallery_photos": [
+
+      ],
+      "partenaires": {
+        "Sponsors": [ "mairieoffemont", "gambafreres", "cpep" ]
+      }
+    },
+    {
       "id": "chougalante-mars-2025",
       "title": "Concert Rock Symphonique",
       "date": "16 mars 2025",
