@@ -24,7 +24,7 @@ const EventDetail = () => {
         <img
           src={event.photo_cover || '/placeholder-event.jpg'}
           alt={event.title}
-          className="w-96 object-cover mb-6 mx-auto border-4 lg:border-6 border-white border-white"
+          className="w-100 object-cover mb-6 mx-auto border-4 lg:border-8 border-white"
         />
 
         <div className="flex flex-col md:flex-row justify-center items-center gap-2 text-yellow-50">
