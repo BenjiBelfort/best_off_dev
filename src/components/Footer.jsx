@@ -6,8 +6,19 @@ const Footer = () => {
     return (
         <footer className="bg-stone-800 w-full p-4 mt-8">
             <div>
-                <h2 className="md:block text-stone-300 text-center container mb-3 mx-auto">
-                    BEST OFF' - Quand le <span className='font-special text-3xl'>Rock </span> rencontre la <span className='font-special text-3xl'>Symphonie </span> pour la solidarité
+                <h2 className="text-stone-300 text-center container mb-3 mx-auto">
+                    {/* Affichage mobile */}
+                    <span className="block md:hidden">
+                        <div className="text-lg font-bold">BEST OFF'</div>
+                        <div>
+                        Quand le <span className="font-special text-3xl">Rock </span> rencontre la <span className="font-special text-3xl">Symphonie</span>
+                        </div>
+                    </span>
+
+                    {/* Affichage desktop */}
+                    <span className="hidden md:inline">
+                        BEST OFF' - Quand le <span className="font-special text-3xl">Rock </span> rencontre la <span className="font-special text-3xl">Symphonie</span>
+                    </span>
                 </h2>
             </div>
 
