@@ -1,19 +1,62 @@
-import { useParams } from 'react-router-dom';
-import eventsData from '../data/pastEvents.json';
-import Gallery from '../components/ui/Gallery';
-import partnersData from '../data/partners.json';
-import CardPartner from '../components/ui/CardPartner';
-import StickyBackLink from '../components/ui/StickyBackLink';
-import Separator from '../components/ui/Separator';
-import { MdPlace } from "react-icons/md";
-import { BsCalendarHeartFill } from "react-icons/bs";
+import { useEffect, useMemo, useState } from 'react'
+import { useParams } from 'react-router-dom'
+import eventsData from '../data/pastEvents.json'
+import partnersData from '../data/partners.json'
+import Gallery from '../components/ui/Gallery'
+import CardPartner from '../components/ui/CardPartner'
+import StickyBackLink from '../components/ui/StickyBackLink'
+import Separator from '../components/ui/Separator'
+import { MdPlace } from "react-icons/md"
+import { BsCalendarHeartFill } from "react-icons/bs"
+import MdxProvider from '../mdx/MdxProvider'
+
+// Indexe tous les MDX présents sous /content/events (chemin RELATIF à CE fichier)
+const mdxModules = import.meta.glob('../content/events/*.mdx')
 
 const EventDetail = () => {
-  const { id } = useParams();
-  const event = eventsData.find((e) => e.id === id);
+  const { id } = useParams()
+  const event = useMemo(() => eventsData.find((e) => e.id === id), [id])
 
-  if (!event)
-    return <div className="text-white text-center py-8">Événement non trouvé</div>;
+  const [MDXContent, setMDXContent] = useState(null)
+  const [mdxMeta, setMdxMeta] = useState(null)
+
+  useEffect(() => {
+    setMDXContent(null)
+    if (!id) return
+    const path = `../content/events/${id}.mdx`
+    const loader = mdxModules[path]
+    if (loader) {
+      loader()
+        .then((mod) => {
+          setMDXContent(() => mod.default)
+          setMdxMeta(mod.meta || null)
+        })
+        .catch(() => {
+          setMDXContent(null)
+          setMdxMeta(null)
+        })
+    }
+  }, [id])
+
+  // SEO: maj <title> + meta description depuis le MDX (ou fallback JSON)
+  useEffect(() => {
+    if (!event) return
+
+    const title = `${mdxMeta?.seoTitle || event.title} | Best Off`
+    document.title = title
+
+    if (mdxMeta?.seoDescription) {
+      let tag = document.querySelector('meta[name="description"]')
+      if (!tag) {
+        tag = document.createElement('meta')
+        tag.setAttribute('name', 'description')
+        document.head.appendChild(tag)
+      }
+      tag.setAttribute('content', mdxMeta.seoDescription)
+    }
+  }, [mdxMeta, event])
+
+  if (!event) return <div className="text-white text-center py-8">Événement non trouvé</div>
 
   return (
     <section className="container mx-auto max-w-2xl px-4 py-8 text-white">
@@ -35,22 +78,29 @@ const EventDetail = () => {
             <MdPlace /> {event.lieu}
           </p>
         </div>
-        <p className="text-lg mb-8 mt-8 hyphens-auto">
-          {Array.isArray(event.description)
-            ? event.description.map((line, index) => (
-                <span key={index} className="block">
-                  {line}
-                </span>
-              ))
-            : event.description}
-        </p>
-        
+
+        {/* Contenu riche via MDX si dispo, sinon fallback JSON */}
+        <div className="mt-8">
+          <MdxProvider>
+            {MDXContent ? (
+              <MDXContent />
+            ) : Array.isArray(event.description) ? (
+              <div className="text-lg">
+                {event.description.map((line, i) => (
+                  <p key={i} className="mb-3 hyphens-auto">{line}</p>
+                ))}
+              </div>
+            ) : (
+              <p className="text-lg hyphens-auto">{event.description}</p>
+            )}
+          </MdxProvider>
+        </div>
+
         {event.gallery_photos && event.gallery_photos.length > 0 && (
           <>
             <Separator />
             <div className="mb-8">
               <h4>Galerie Photos</h4>
-              {/* Passage de l'objet event pour la lightbox */}
               <Gallery photos={event.gallery_photos} />
             </div>
           </>
@@ -66,39 +116,36 @@ const EventDetail = () => {
           </>
         )}
 
-        {event.partenaires &&
-          Object.values(event.partenaires).flat().length > 0 && (
-            <>
-              <Separator />
-              <div className="mb-8">
-                <h4>Partenaires</h4>
-                <p className="text-center pb-4">
-                  Ils nous ont soutenu pour {event.title} et nous les remercions
-                </p>
-                {Object.entries(event.partenaires).map(([type, partenaires]) => {
-                    const partenairesInfos = partenaires
-                    .map((id) => partnersData.find((p) => p.id === id))
-                    .filter(Boolean);
+        {event.partenaires && Object.values(event.partenaires).flat().length > 0 && (
+          <>
+            <Separator />
+            <div className="mb-8">
+              <h4>Partenaires</h4>
+              <p className="text-center pb-4">
+                Ils nous ont soutenu pour {event.title} et nous les remercions
+              </p>
+              {Object.entries(event.partenaires).map(([type, partenaires]) => {
+                const partenairesInfos = partenaires
+                  .map((pid) => partnersData.find((p) => p.id === pid))
+                  .filter(Boolean)
 
-                  return (
-                    partenairesInfos.length > 0 && (
-                      <div key={type} className="mb-6">
-                        <h4 className="text-lg mb-4 capitalize">{type}</h4>
-                        <div className="flex flex-wrap gap-4 justify-center">
-                          {partenairesInfos.map((partenaire) => (
-                            <CardPartner key={partenaire.id} partner={partenaire} />
-                          ))}
-                        </div>
-                      </div>
-                    )
-                  );
-                })}
-              </div>
-            </>
-          )}
+                return partenairesInfos.length > 0 && (
+                  <div key={type} className="mb-6">
+                    <h4 className="text-lg mb-4 capitalize">{type}</h4>
+                    <div className="flex flex-wrap gap-4 justify-center">
+                      {partenairesInfos.map((partenaire) => (
+                        <CardPartner key={partenaire.id} partner={partenaire} />
+                      ))}
+                    </div>
+                  </div>
+                )
+              })}
+            </div>
+          </>
+        )}
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default EventDetail;
+export default EventDetail
