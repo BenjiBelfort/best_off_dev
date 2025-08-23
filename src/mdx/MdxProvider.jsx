@@ -1,6 +1,7 @@
 // src/mdx/MdxProvider.jsx
 import { MDXProvider } from '@mdx-js/react'
 import Separator from '../components/ui/Separator.jsx'
+import { Link as RouterLink } from 'react-router-dom'
 
 function Callout({ children }) {
   return (
