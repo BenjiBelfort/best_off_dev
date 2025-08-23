@@ -1,4 +1,5 @@
-import React, { Suspense, lazy } from 'react';
+// src/App.jsx
+import { Suspense, lazy } from 'react';
 import { Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";

@@ -4,7 +4,7 @@ import { useEffect, useMemo } from 'react';
 import { useLocation } from 'react-router-dom';
 import MainImg from '../components/MainImg';
 import Separator from '../components/ui/Separator';
-import Actuality from "../components/ActualityComp";
+// import Actuality from "../components/ActualityComp";
 import eventsData from '../data/pastEvents.json';
 import Contact from '../components/Contact';
 
@@ -15,7 +15,7 @@ const PartnersComp = lazy(() => import('../components/PartnersComp'));
 
 const Home = () => {
   const location = useLocation();
-  const defaultOffset = 20; // Valeur par défaut si aucun offset n'est passé
+  const defaultOffset = 20;
 
   useEffect(() => {
     // Vérifie la présence d'une ancre dans l'URL ou dans le state

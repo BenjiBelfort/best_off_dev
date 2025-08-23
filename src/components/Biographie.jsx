@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import AnimatedLink from "../components/ui/AnimatedLink";
 
 const Biographie = () => {

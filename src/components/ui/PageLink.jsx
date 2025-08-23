@@ -1,3 +1,4 @@
+// src/components/ui/PageLink.jsx
 import { Link } from 'react-router-dom';
 
 const PageLink = ({ to, children, className, onClick, ...props }) => {

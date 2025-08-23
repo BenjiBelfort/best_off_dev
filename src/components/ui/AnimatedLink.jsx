@@ -1,3 +1,4 @@
+// src/components/ui/AnimatedLink.jsx
 import AnchorLink from './AnchorLink';
 import PageLink from './PageLink';
 
