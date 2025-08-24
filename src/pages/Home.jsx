@@ -4,7 +4,7 @@ import { useEffect, useMemo } from 'react';
 import { useLocation } from 'react-router-dom';
 import MainImg from '../components/MainImg';
 import Separator from '../components/ui/Separator';
-// import Actuality from "../components/ActualityComp";
+import Actuality from "../components/ActualityComp";
 import eventsData from '../data/pastEvents.json';
 import Contact from '../components/Contact';
 
@@ -12,6 +12,7 @@ const Biographie = lazy(() => import('../components/Biographie'));
 const LatestEvents = lazy(() => import('../components/LatestEvents'));
 const Gallery = lazy(() => import('../components/ui/Gallery'));
 const PartnersComp = lazy(() => import('../components/PartnersComp'));
+const Recruitment = lazy(() => import('../components/Recruitment'));
 
 const Home = () => {
   const location = useLocation();
@@ -70,7 +71,7 @@ const Home = () => {
   return (
     <div>
       <MainImg />
-      {/* <Actuality /> */}
+      <Actuality />
         <div className="container mx-auto">
         <Separator />
         <Suspense fallback={<div>Chargement...</div>}>
@@ -88,6 +89,11 @@ const Home = () => {
         <Separator />
         <h3>Presse</h3>
         <Gallery photos={galleryArticles} seeMoreUrl="/presse" />
+        <Separator />
+        <h3>Recrutement</h3>
+        <Suspense fallback={<div>Chargement...</div>}>
+          <Recruitment />
+        </Suspense>
         <Separator />
         <Suspense fallback={<div>Chargement...</div>}>
           <PartnersComp />

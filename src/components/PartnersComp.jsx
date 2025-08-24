@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import PartnersCarousel from "./ui/PartnersCarousel";
+import { FaArrowRight } from "react-icons/fa";
 
 const PartnersComp = () => {
   return (
@@ -32,6 +33,19 @@ const PartnersComp = () => {
         >
           Voir les archives des concerts
         </Link>
+
+          {/* Appels à l’action */}
+          <div className="flex flex-col sm:flex-row gap-4 items-center">
+            <a
+              href="https://www.afm-telethon.fr/fr/evenement-telethon"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 text-lg font-semibold bg-yellow-300 text-stone-900 hover:bg-yellow-200 hover:tracking-wide hover:scale-105 transition-all duration-300 shadow-lg"
+            >
+              Faire un don au Téléthon
+              <FaArrowRight className="hidden sm:block" />
+            </a>
+          </div>
 
         {/* <a 
           href="https://www.helloasso.com/associations/best-off/formulaires/2/widget?_gl=1%2a1fljjrq%2a_gcl_aw%2aR0NMLjE3NDQ3MzAwMjYuQ2owS0NRandoX2lfQmhDekFSSXNBTmltZW9HYVlOMXZyNlVRT1UxRlAzY0RJdzFNa1l5WmxhYldOd21zeW5CVXFtdTNhWmRLeE9Ra08yNGFBdktNRUFMd193Y0I.%2a_gcl_au%2aMTExOTkxNzY2MS4xNzQxMTc3MDg0"
