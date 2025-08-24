@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { FaArrowRight } from "react-icons/fa";
 import { MdPlace } from "react-icons/md";
 import { BsCalendarHeartFill } from "react-icons/bs";
@@ -28,25 +29,47 @@ const ActualityComp = () => {
     "url": "https://bestoffmusic.fr/#actuality"
   };
 
+  // --- Tableau d’images pour le diaporama
+  const images = [
+    "/images/events/fete-commune-2025/galerie/fete-commune-2025_18.webp",
+    "/images/events/chougalante-mars-2025/galerie/chougalante-mars-2025_3.webp",
+    "/images/events/fete-commune-2025/galerie/fete-commune-2025_10.webp",
+    "/images/events/montbouton/galerie/Montbouton_30.webp",
+    "/images/events/montbouton/galerie/Montbouton_22.webp",
+    "/images/events/souviens-toi/galerie/Souviens-toi_13.webp",
+    "/images/events/montbouton/galerie/Montbouton_7.webp",
+    "/images/events/souviens-toi/galerie/Souviens-toi_3.webp"
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % images.length);
+    }, 5000); // toutes les 5 secondes
+    return () => clearInterval(interval);
+  }, [images.length]);
+
   return (
-    <section id="actuality" className="relative scroll-mt-28 md:scroll-mt-36 py-12 px-4 text-white">
+    <section id="actuality" className="relative scroll-mt-28 md:scroll-mt-36 py-12 px-4 text-white overflow-hidden">
       {/* JSON-LD */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(eventLd) }}
       />
 
-      {/* Image de fond */}
+      {/* Image de fond en fondu */}
       <div className="absolute inset-0">
-        <img
-          src="/images/events/fete-commune-2025/galerie/fete-commune-2025_10.webp"
-          alt="Best Off' en concert — ambiance scène"
-          width="1200"
-          height="900"
-          className="w-full h-full object-cover brightness-70"
-          fetchPriority="high"
-          decoding="async"
-        />
+        {images.map((img, index) => (
+          <img
+            key={index}
+            src={img}
+            alt={`Fond ${index + 1}`}
+            className={`absolute inset-0 w-full h-full object-cover brightness-70 transition-opacity duration-2000 ${
+              index === currentIndex ? "opacity-100" : "opacity-0"
+            }`}
+          />
+        ))}
         <div className="absolute inset-0 bg-radial from-transparent to-stone-900" />
       </div>
 
@@ -54,14 +77,14 @@ const ActualityComp = () => {
         <h3>Actualités</h3>
 
         {/* Zone principale texte + visuel */}
-        <div className="flex flex-col-reverse lg:flex-row max-w-6xl mx-auto">
+        <div className="flex flex-col-reverse lg:flex-row max-w-6xl mx-auto lg:-rotate-2">
           {/* Texte */}
           <div className="w-full lg:w-1/2 px-8 flex flex-col justify-around">
             <h2 className="text-3xl md:text-6xl mb-4 text-left font-extrabold font-secondary bg-gradient-to-r from-orange-50 via-white to-yellow-50 bg-clip-text text-transparent">
               Best Off joue pour le Téléthon
             </h2>
 
-            <div className="lg:text-left lg:text-xl">
+            <div className="lg:text-left lg:text-xl text-shadow">
               <p className="mb-4">
                 On remet le son au <strong>Gymnase d’Offemont</strong> pour une soirée
                 100% good vibes… et 100% utile. Venez nombreux : plus on est de fous, plus on lève de fonds !

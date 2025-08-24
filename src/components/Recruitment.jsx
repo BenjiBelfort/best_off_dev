@@ -25,7 +25,7 @@ const Recruitment = () => {
           {roles.map(({ title, detail }) => (
             <div
               key={title}
-              className="w-64 flex flex-col justify-between bg-stone-800/70 border border-white/10 rounded-2xl p-6 text-center"
+              className="w-64 flex flex-col justify-between bg-stone-800/70 border border-white/10 p-6 text-center"
             >
               <h4 className="text-2xl font-bold text-white mb-4">{title}</h4>
               <p className="text-xs text-stone-400 mt-auto">{detail}</p>

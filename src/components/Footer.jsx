@@ -50,18 +50,18 @@ const Footer = () => {
         {/* Baseline + pitch clair */}
         <div className="text-center mb-6">
           {/* Mobile */}
-          <p className="md:hidden">
-            <span className="block text-lg font-bold tracking-wide">BEST OFF'</span>
+          <h2 className="md:hidden">
+            <span className="block text-lg tracking-wide">BEST OFF'</span>
             <span>
               Quand le <span className="font-special text-3xl">Rock </span>
               rencontre la <span className="font-special text-3xl">Symphonie</span>
             </span>
-          </p>
+          </h2>
           {/* Desktop */}
-          <p className="hidden md:block text-xl">
+          <h2 className="hidden md:block text-xl">
             BEST OFF' — Quand le <span className="font-special text-3xl">Rock </span>
             rencontre la <span className="font-special text-3xl">Symphonie</span>
-          </p>
+          </h2>
         </div>
 
         <div className="h-px bg-radial from-stone-300/80 to-transparent mx-auto mb-8" />
