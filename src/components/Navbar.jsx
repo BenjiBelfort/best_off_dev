@@ -136,7 +136,7 @@ const Navbar = () => {
 
           <AnimatedLink
             to="recrutement"
-            offset={180}
+            offset={41}
             className={isSectionActive('recrutement') ? activeUnderlineClass : ''}
           >
             Recrutement
@@ -195,7 +195,7 @@ const Navbar = () => {
             <AnimatedLink to="biographie" offset={41} className={isSectionActive('biographie') ? activeUnderlineClass : ''} onClick={handleMobileLinkClick}>Biographie</AnimatedLink>
             <AnimatedLink to="/galerie" className={isPageActive('/galerie') ? activeUnderlineClass : ''} onClick={handleMobileLinkClick}>Galerie</AnimatedLink>
             <AnimatedLink to="/presse" className={isPageActive('/presse') ? activeUnderlineClass : ''} onClick={handleMobileLinkClick}>Presse</AnimatedLink>
-            <AnimatedLink to="recrutement" offset={170} className={isSectionActive('recrutement') ? activeUnderlineClass : ''} onClick={handleMobileLinkClick}>Recrutement</AnimatedLink>
+            <AnimatedLink to="recrutement" offset={41} className={isSectionActive('recrutement') ? activeUnderlineClass : ''} onClick={handleMobileLinkClick}>Recrutement</AnimatedLink>
             <AnimatedLink to="partners" offset={41} className={isSectionActive('partners') ? activeUnderlineClass : ''} onClick={handleMobileLinkClick}>Partenaires</AnimatedLink>
             <div className="flex space-x-6">
               <a href="https://www.instagram.com/bestoff90300/" target="_blank" rel="noopener noreferrer" aria-label="Visitez notre page Instagram">

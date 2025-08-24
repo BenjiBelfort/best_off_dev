@@ -2,23 +2,52 @@ import { FaArrowRight } from "react-icons/fa";
 import { MdPlace } from "react-icons/md";
 import { BsCalendarHeartFill } from "react-icons/bs";
 import { GoClockFill } from "react-icons/go";
-// import { FaTicket } from "react-icons/fa6"; // décommenter si besoin
-// import { FaGlassMartiniAlt } from "react-icons/fa"; // décommenter si besoin
 
 const ActualityComp = () => {
+  // --- JSON-LD MusicEvent
+  const eventLd = {
+    "@context": "https://schema.org",
+    "@type": "MusicEvent",
+    "name": "Best Off' pour le Téléthon",
+    "description": "Concert caritatif Best Off' au profit du Téléthon. Entrée libre, dons sur place et sur le site du Téléthon.",
+    "startDate": "2025-12-06T20:00:00+01:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "isAccessibleForFree": true,
+    "location": {
+      "@type": "Place",
+      "name": "Gymnase d’Offemont",
+      "address": { "@type": "PostalAddress", "addressLocality": "Offemont", "addressCountry": "FR" }
+    },
+    "performer": { "@type": "MusicGroup", "name": "Best Off'" },
+    "organizer": { "@type": "Organization", "name": "AFM-Téléthon" },
+    "image": [
+      "https://bestoffmusic.fr/images/events/fete-commune-2025/galerie/fete-commune-2025_10.webp",
+      "https://bestoffmusic.fr/images/Logo_Telethon_France.png"
+    ],
+    "url": "https://bestoffmusic.fr/#actuality"
+  };
+
   return (
-    <section id="actuality" className="relative scroll-mt-20 py-12 px-4 text-white">
+    <section id="actuality" className="relative scroll-mt-28 md:scroll-mt-36 py-12 px-4 text-white">
+      {/* JSON-LD */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(eventLd) }}
+      />
+
       {/* Image de fond */}
       <div className="absolute inset-0">
         <img
-          // src="/images/actu-pic.webp"
           src="/images/events/fete-commune-2025/galerie/fete-commune-2025_10.webp"
-          alt="Ambiance concert Best Off"
+          alt="Best Off' en concert — ambiance scène"
           width="1200"
           height="900"
           className="w-full h-full object-cover brightness-70"
+          fetchPriority="high"
+          decoding="async"
         />
-        <div className="absolute inset-0 bg-radial from-transparent to-stone-900"></div>
+        <div className="absolute inset-0 bg-radial from-transparent to-stone-900" />
       </div>
 
       <div className="relative z-10">
@@ -35,8 +64,7 @@ const ActualityComp = () => {
             <div className="lg:text-left lg:text-xl">
               <p className="mb-4">
                 On remet le son au <strong>Gymnase d’Offemont</strong> pour une soirée
-                100% good vibes… et 100% utile.
-                Venez nombreux : plus on est de fous, plus on lève de fonds !
+                100% good vibes… et 100% utile. Venez nombreux : plus on est de fous, plus on lève de fonds !
               </p>
               <p className="mb-4">
                 Au programme : notre set Best Off boosté, des reprises qui font
@@ -58,11 +86,12 @@ const ActualityComp = () => {
               <div className="h-72 p-6 flex flex-col justify-center items-center gap-4 bg-white">
                 <img
                   src="/images/Logo_Telethon_France.png"
-                  alt="Logo Téléthon France"
+                  alt="Logo officiel AFM-Téléthon"
                   width="360"
                   height="180"
                   className="w-56 h-auto object-contain"
                   loading="lazy"
+                  decoding="async"
                 />
                 <p className="text-stone-700 text-center text-sm">
                   Concert caritatif au profit du <strong>Téléthon</strong> — merci pour votre soutien 💛
@@ -76,24 +105,19 @@ const ActualityComp = () => {
         <div className="mt-12 flex flex-col items-center gap-6">
           <div className="text-yellow-50 flex flex-col lg:flex-row justify-center items-center gap-2">
             <p className="flex justify-center items-center gap-2 text-base md:text-xl m-1 md:m-2 px-6 py-2 bg-linear-75 from-slate-500 to-slate-600 w-full md:w-auto text-center text-shadow logo-shadow">
-              <BsCalendarHeartFill /> samedi 6 décembre 2025
+              <BsCalendarHeartFill />
+              <time dateTime="2025-12-06">samedi 6 décembre 2025</time>
             </p>
             <p className="flex justify-center items-center gap-2 text-base md:text-xl m-1 md:m-2 px-6 py-2 bg-linear-75 from-slate-500 to-slate-600 w-full md:w-auto text-center text-shadow logo-shadow">
               <MdPlace /> Gymnase d’Offemont
             </p>
             <p className="flex justify-center items-center gap-2 text-base md:text-xl m-1 md:m-2 px-6 py-2 bg-linear-75 from-slate-500 to-slate-600 w-full md:w-auto text-center text-shadow logo-shadow">
-              <GoClockFill /> 20:00
+              <GoClockFill />
+              <time dateTime="20:00">20:00</time>
             </p>
-            {/* Décommente si besoin */}
-            {/* <p className="flex justify-center items-center gap-2 text-base md:text-xl m-1 md:m-2 px-6 py-2 bg-linear-75 from-slate-500 to-slate-600 w-full md:w-auto text-center text-shadow logo-shadow">
-              <FaTicket /> entrée libre
-            </p>
-            <p className="flex justify-center items-center gap-2 text-base md:text-xl m-1 md:m-2 px-6 py-2 bg-linear-75 from-slate-500 to-slate-600 w-full md:w-auto text-center text-shadow logo-shadow">
-              <FaGlassMartiniAlt /> buvette
-            </p> */}
           </div>
 
-          {/* Appels à l’action */}
+          {/* Appel à l’action */}
           <div className="flex flex-col sm:flex-row gap-4 items-center">
             <a
               href="https://www.afm-telethon.fr/fr/evenement-telethon"
@@ -106,7 +130,6 @@ const ActualityComp = () => {
             </a>
           </div>
 
-          {/* Mini note rassurante / fun */}
           <p className="text-sm text-stone-200 text-center max-w-3xl">
             Pas besoin de confettis, on s’occupe du show. Vous, venez avec vos amis, votre meilleure voix,
             et votre plus beau geste pour le <strong>Téléthon</strong>.

@@ -50,9 +50,9 @@ const MainImg = () => {
           width="1041"
           height="686"
           loading="eager"
-          fetchPriority="high"
           className="w-full h-full object-cover bg-stone-900"
-          
+          fetchPriority="high"
+          decoding="async"
         />
         
         <div className="absolute inset-0 bg-gradient-to-t from-stone-900/100 to-transparent" />

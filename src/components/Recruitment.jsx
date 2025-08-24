@@ -6,7 +6,8 @@ const Recruitment = () => {
   ];
 
   return (
-    <section id="recrutement" className="scroll-mt-45 mx-auto max-w-5xl px-4 py-8">
+    <section id="recrutement" className="scroll-mt-20 mx-auto max-w-5xl px-4 py-8">
+        <h3>Recrutement</h3>
       <p className="text-white text-center mb-10">
         BEST OFF' recrute pour renforcer l’équipe musicale !{" "}
         Si tu as la motivation et l’envie de partager la scène, rejoins-nous

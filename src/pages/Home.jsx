@@ -90,7 +90,6 @@ const Home = () => {
         <h3>Presse</h3>
         <Gallery photos={galleryArticles} seeMoreUrl="/presse" />
         <Separator />
-        <h3>Recrutement</h3>
         <Suspense fallback={<div>Chargement...</div>}>
           <Recruitment />
         </Suspense>
