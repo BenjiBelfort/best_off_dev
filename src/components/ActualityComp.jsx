@@ -1,8 +1,11 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { FaArrowRight } from "react-icons/fa";
 import { MdPlace } from "react-icons/md";
 import { BsCalendarHeartFill } from "react-icons/bs";
 import { GoClockFill } from "react-icons/go";
+
+const MOBILE_QUERY = "(max-width: 767px)";
+const REDUCED_MOTION_QUERY = "(prefers-reduced-motion: reduce)";
 
 const ActualityComp = () => {
   // --- JSON-LD MusicEvent
@@ -29,8 +32,9 @@ const ActualityComp = () => {
     "url": "https://bestoffmusic.fr/#actuality"
   };
 
-  // --- Tableau d’images pour le diaporama
-  const images = [
+    // --- Images Desktop (existant)
+  const imagesDesktop = useMemo(() => ([
+    "/images/actu-pic.webp",
     "/images/events/fete-commune-2025/galerie/fete-commune-2025_18.webp",
     "/images/events/chougalante-mars-2025/galerie/chougalante-mars-2025_3.webp",
     "/images/events/fete-commune-2025/galerie/fete-commune-2025_10.webp",
@@ -38,17 +42,59 @@ const ActualityComp = () => {
     "/images/events/montbouton/galerie/Montbouton_22.webp",
     "/images/events/souviens-toi/galerie/Souviens-toi_13.webp",
     "/images/events/montbouton/galerie/Montbouton_7.webp",
-    "/images/events/souviens-toi/galerie/Souviens-toi_3.webp"
-  ];
+    "/images/events/souviens-toi/galerie/Souviens-toi_3.webp",
+    "/images/events/centenaire/galerie/Centenaire_12.webp"
+  ]), []);
 
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const imagesMobile = useMemo(() => ([
+    "/images/actu-pic.webp",
+    "/images/events/souviens-toi/galerie/Souviens-toi_12.webp",
+    "/images/actu-pic2.webp",
+    "/images/events/montbouton/galerie/Montbouton_22.webp",
+    "/images/events/odyssee/galerie/odyssee_3.webp",
+    "/images/actu-pic3.webp",
+    "/images/events/souviens-toi/galerie/Souviens-toi_5.webp",
+    "/images/events/centenaire/galerie/Centenaire_16.webp"
+  ]), []);
+
+  const [isMobile, setIsMobile] = useState(false);
+  const [reducedMotion, setReducedMotion] = useState(false);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % images.length);
-    }, 5000); // toutes les 5 secondes
-    return () => clearInterval(interval);
-  }, [images.length]);
+      if (typeof window === "undefined") return;
+      const mm = window.matchMedia(MOBILE_QUERY);
+      const rm = window.matchMedia(REDUCED_MOTION_QUERY);
+      const apply = () => setIsMobile(mm.matches);
+      const applyRM = () => setReducedMotion(rm.matches);
+      apply();
+      applyRM();
+      mm.addEventListener?.("change", apply);
+      rm.addEventListener?.("change", applyRM);
+      return () => {
+        mm.removeEventListener?.("change", apply);
+        rm.removeEventListener?.("change", applyRM);
+      };
+    }, []);
+
+    // --- Choix du set d'images selon device
+    const images = isMobile ? imagesMobile : imagesDesktop;
+
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    // Reset index si on change de liste (mobile <-> desktop)
+    useEffect(() => {
+      if (currentIndex >= images.length) setCurrentIndex(0);
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [images]);
+
+    // Slideshow (pause si prefers-reduced-motion)
+    useEffect(() => {
+      if (reducedMotion || images.length <= 1) return;
+      const interval = setInterval(() => {
+        setCurrentIndex((prev) => (prev + 1) % images.length);
+      }, 5000);
+      return () => clearInterval(interval);
+    }, [images, reducedMotion]);
 
   return (
     <section id="actuality" className="relative scroll-mt-28 md:scroll-mt-36 py-12 px-4 text-white overflow-hidden">
@@ -58,16 +104,19 @@ const ActualityComp = () => {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(eventLd) }}
       />
 
-      {/* Image de fond en fondu */}
+      {/* Fond en fondu (mobile/desktop auto) */}
       <div className="absolute inset-0">
         {images.map((img, index) => (
           <img
-            key={index}
+            key={`${img}-${index}`}
             src={img}
             alt={`Fond ${index + 1}`}
-            className={`absolute inset-0 w-full h-full object-cover brightness-70 transition-opacity duration-2000 ${
+            className={`absolute inset-0 w-full h-full object-cover brightness-70 transition-opacity duration-1000 ${
               index === currentIndex ? "opacity-100" : "opacity-0"
             }`}
+            decoding="async"
+            loading={index === 0 ? "eager" : "lazy"}
+            fetchPriority={index === 0 ? "high" : "auto"}
           />
         ))}
         <div className="absolute inset-0 bg-radial from-transparent to-stone-900" />
@@ -80,8 +129,8 @@ const ActualityComp = () => {
         <div className="flex flex-col-reverse lg:flex-row max-w-6xl mx-auto lg:-rotate-2">
           {/* Texte */}
           <div className="w-full lg:w-1/2 px-8 flex flex-col justify-around">
-            <h2 className="text-3xl md:text-6xl mb-4 text-left font-extrabold font-secondary bg-gradient-to-r from-orange-50 via-white to-yellow-50 bg-clip-text text-transparent">
-              Best Off joue pour le Téléthon
+            <h2 className="text-2xl md:text-5xl mb-4 text-left font-extrabold font-secondary bg-gradient-to-r from-orange-50 via-white to-yellow-50 bg-clip-text text-transparent">
+              BEST OFF' joue pour le Téléthon !
             </h2>
 
             <div className="lg:text-left lg:text-xl text-shadow">
@@ -90,7 +139,7 @@ const ActualityComp = () => {
                 100% good vibes… et 100% utile. Venez nombreux : plus on est de fous, plus on lève de fonds !
               </p>
               <p className="mb-4">
-                Au programme : notre set Best Off boosté, des reprises qui font
+                Au programme : notre set BEST OFF' boosté, des reprises qui font
                 chanter, et une ambiance chaleureuse au profit du <strong>Téléthon</strong>.
               </p>
               <p className="mb-4">
