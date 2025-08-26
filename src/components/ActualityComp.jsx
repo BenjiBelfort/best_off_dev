@@ -92,7 +92,7 @@ const ActualityComp = () => {
       if (reducedMotion || images.length <= 1) return;
       const interval = setInterval(() => {
         setCurrentIndex((prev) => (prev + 1) % images.length);
-      }, 5000);
+      }, 6000);
       return () => clearInterval(interval);
     }, [images, reducedMotion]);
 
@@ -111,7 +111,7 @@ const ActualityComp = () => {
             key={`${img}-${index}`}
             src={img}
             alt={`Fond ${index + 1}`}
-            className={`absolute inset-0 w-full h-full object-cover brightness-70 transition-opacity duration-1000 ${
+            className={`absolute inset-0 w-full h-full object-cover brightness-70 transition-opacity duration-3000 ${
               index === currentIndex ? "opacity-100" : "opacity-0"
             }`}
             decoding="async"
