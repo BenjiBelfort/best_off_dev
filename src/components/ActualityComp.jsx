@@ -8,29 +8,48 @@ const MOBILE_QUERY = "(max-width: 767px)";
 const REDUCED_MOTION_QUERY = "(prefers-reduced-motion: reduce)";
 
 const ActualityComp = () => {
-  // --- JSON-LD MusicEvent
-  const eventLd = {
-    "@context": "https://schema.org",
-    "@type": "MusicEvent",
-    "name": "Best Off' pour le Téléthon",
-    "description": "Concert caritatif Best Off' au profit du Téléthon. Entrée libre, dons sur place et sur le site du Téléthon.",
-    "startDate": "2025-12-06T20:00:00+01:00",
-    "eventStatus": "https://schema.org/EventScheduled",
-    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-    "isAccessibleForFree": true,
-    "location": {
-      "@type": "Place",
-      "name": "Gymnase d’Offemont",
-      "address": { "@type": "PostalAddress", "addressLocality": "Offemont", "addressCountry": "FR" }
-    },
-    "performer": { "@type": "MusicGroup", "name": "Best Off'" },
-    "organizer": { "@type": "Organization", "name": "AFM-Téléthon" },
-    "image": [
-      "https://bestoffmusic.fr/images/events/fete-commune-2025/galerie/fete-commune-2025_10.webp",
-      "https://bestoffmusic.fr/images/Logo_Telethon_France.png"
-    ],
-    "url": "https://bestoffmusic.fr/#actuality"
-  };
+  // --- JSON-LD MusicEvent (corrigé pour GSC)
+    const eventLd = {
+      "@context": "https://schema.org",
+      "@type": "MusicEvent",
+      "name": "Best Off' pour le Téléthon",
+      "description": "Concert caritatif Best Off' au profit du Téléthon. Entrée libre, dons sur place et sur le site du Téléthon.",
+      "startDate": "2025-12-06T20:00:00+01:00",
+      "endDate": "2025-12-06T22:30:00+01:00", // <-- ajouté
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "isAccessibleForFree": true,
+      "location": {
+        "@type": "Place",
+        "name": "Gymnase d’Offemont",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Offemont",
+          "postalCode": "90300",
+          "addressCountry": "FR"
+        }
+      },
+      "performer": { "@type": "MusicGroup", "name": "Best Off'" },
+      "organizer": {
+        "@type": "Organization",
+        "name": "AFM-Téléthon",
+        "url": "https://www.afm-telethon.fr/" // <-- ajouté
+      },
+      "image": [
+        "https://bestoffmusic.fr/images/events/fete-commune-2025/galerie/fete-commune-2025_10.webp",
+        "https://bestoffmusic.fr/images/Logo_Telethon_France.png"
+      ],
+      "url": "https://bestoffmusic.fr/#actuality",
+      "offers": { // <-- ajouté
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "url": "https://bestoffmusic.fr/#actuality",
+        "validFrom": "2025-10-01T00:00:00+02:00" // optionnel, garde ou supprime
+      }
+    };
+
 
     // --- Images Desktop (existant)
   const imagesDesktop = useMemo(() => ([

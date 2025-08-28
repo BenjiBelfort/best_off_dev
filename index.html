@@ -41,33 +41,44 @@
     <link rel="manifest" href="/site.webmanifest" />
 
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "MusicGroup",
-        "name": "Best Off'",
-        "description": "Groupe de rock symphonique, Best Off’ reprend les standards de la musique pop/rock en version symphonique avec des compositions originales.",
-        "url": "https://bestoffmusic.fr/",
-        "image": "https://bestoffmusic.fr/hero.webp",
-        "logo": "https://bestoffmusic.fr/favicon-96x96.png",
-        "sameAs": [
-          "https://www.facebook.com/musicbestoff/",
-          "https://www.instagram.com/bestoff90300/"
-        ],
-        "genre": "Rock Symphonique",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Belfort",
-          "postalCode": "90000",
-          "addressCountry": "FR"
-        },
-        "member": [
-          {
-            "@type": "Person",
-            "name": "Roland Cibil"
-          }
-        ]
-      }
+    {
+      "@context": "https://schema.org",
+      "@type": "MusicGroup",
+      "@id": "https://bestoffmusic.fr/#musicgroup",
+      "name": "Best Off'",
+      "description": "Groupe de rock symphonique, Best Off’ reprend les standards de la musique pop/rock en version symphonique avec des compositions originales.",
+      "url": "https://bestoffmusic.fr/",
+      "image": "https://bestoffmusic.fr/hero.webp",
+      "logo": "https://bestoffmusic.fr/logo-192x192.png",
+      "sameAs": [
+        "https://www.facebook.com/musicbestoff/",
+        "https://www.instagram.com/bestoff90300/"
+      ],
+      "genre": ["Rock", "Symphonique"],
+      "foundingDate": "2015",
+      "foundingLocation": {
+        "@type": "Place",
+        "name": "Belfort, France"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Belfort",
+        "postalCode": "90000",
+        "addressCountry": "FR"
+      },
+      "contactPoint": [{
+        "@type": "ContactPoint",
+        "contactType": "booking",
+        "url": "https://bestoffmusic.fr/#contact",
+        "availableLanguage": ["fr"]
+      }],
+      "member": [{
+        "@type": "Person",
+        "name": "Roland Cibil"
+      }]
+    }
     </script>
+
     <meta name="google-site-verification" content="lYazQEmQVZ-CCXMafpwnDiGWSmrwljU7ZlYu_z6Dbak" />
   </head>
   <body>

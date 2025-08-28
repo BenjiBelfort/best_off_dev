@@ -11,6 +11,7 @@ const Footer = () => {
     "@graph": [
       {
         "@type": "MusicGroup",
+        "@id": "https://bestoffmusic.fr/#musicgroup",
         "name": "BEST OFF'",
         "url": "https://bestoffmusic.fr/",
         "genre": ["Rock", "Symphonique"],
@@ -18,6 +19,8 @@ const Footer = () => {
           "https://www.instagram.com/bestoff90300/",
           "https://www.facebook.com/musicbestoff/"
         ],
+        "image": "https://bestoffmusic.fr/images/logo-BO.webp", // ← remplace si besoin
+        "logo": "https://bestoffmusic.fr/images/logo-BO.webp",
         "contactPoint": [
           {
             "@type": "ContactPoint",
@@ -29,17 +32,29 @@ const Footer = () => {
       },
       {
         "@type": "WebSite",
+        "@id": "https://bestoffmusic.fr/#website",
         "name": "BEST OFF'",
         "url": "https://bestoffmusic.fr/",
         "inLanguage": "fr-FR",
+        "publisher": { "@id": "https://bestoffmusic.fr/#musicgroup" },
         "potentialAction": {
-          "@type": "Action",
+          "@type": "ContactAction",
           "name": "Nous contacter",
           "target": "https://bestoffmusic.fr/#contact"
         }
+      },
+      {
+        "@type": "ContactPage",
+        "@id": "https://bestoffmusic.fr/#contact",
+        "name": "Contact",
+        "url": "https://bestoffmusic.fr/#contact",
+        "inLanguage": "fr-FR",
+        "isPartOf": { "@id": "https://bestoffmusic.fr/#website" },
+        "about": { "@id": "https://bestoffmusic.fr/#musicgroup" }
       }
     ]
   };
+
 
   return (
     <footer className="bg-stone-800 text-stone-300 w-full mt-8" role="contentinfo">
