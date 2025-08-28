@@ -1,3 +1,5 @@
+// src/components/ActualityComp.jsx
+
 import { useState, useEffect, useMemo } from "react";
 import { FaArrowRight } from "react-icons/fa";
 import { MdPlace } from "react-icons/md";
