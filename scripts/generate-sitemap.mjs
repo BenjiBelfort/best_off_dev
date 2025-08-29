@@ -4,21 +4,21 @@ import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const BASE = 'https://bestoffmusic.fr';
+const BASE = (process.env.SITE_BASE || 'https://bestoffmusic.fr').replace(/\/+$/, '');
 
 // Routes statiques
 const staticRoutes = [
-  { path: '/', priority: 1.0, changefreq: 'weekly' },
-  { path: '/archives', priority: 0.8, changefreq: 'weekly' },
-  { path: '/galerie', priority: 0.8, changefreq: 'monthly' },
-  { path: '/presse',  priority: 0.8, changefreq: 'monthly' }
+  { path: '/',         priority: 1.0, changefreq: 'weekly'  },
+  { path: '/archives', priority: 0.8, changefreq: 'weekly'  },
+  { path: '/galerie',  priority: 0.8, changefreq: 'monthly' },
+  { path: '/presse',   priority: 0.8, changefreq: 'monthly' }
 ];
 
 const eventsPath = resolve(__dirname, '../src/data/pastEvents.json');
 const outPath    = resolve(__dirname, '../public/sitemap.xml');
 
 const today = new Date().toISOString().slice(0,10);
-const ns = `xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"`;
+const ns = `xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"`; // 👈 plus de xmlns:image ici
 
 function toISODate(d) {
   if (!d) return today;
@@ -27,7 +27,7 @@ function toISODate(d) {
   return isNaN(dt) ? today : dt.toISOString().slice(0,10);
 }
 function escapeXml(s) {
-  return s
+  return String(s)
     .replaceAll('&', '&amp;')
     .replaceAll('<', '&lt;')
     .replaceAll('>', '&gt;')
@@ -45,15 +45,7 @@ const eventUrls = events
     const slug = ev.slug || ev.id;
     const loc = `${BASE}/archives/${slug}`;
     const lastmod = toISODate(ev.lastmod || ev.endDate || ev.isoDate);
-    // Images pour image sitemap inline (optionnel ici)
-    const imgs = Array.isArray(ev.images) && ev.images.length
-      ? ev.images
-      : (ev.photo_cover ? [ev.photo_cover] : []);
-    const imageUrls = imgs.map(src => src.startsWith('http') ? src : `${BASE}${src}`);
-
-    return {
-      loc, priority: 0.7, changefreq: 'yearly', lastmod, images: imageUrls
-    };
+    return { loc, priority: 0.7, changefreq: 'yearly', lastmod };
   });
 
 const all = [
@@ -61,8 +53,7 @@ const all = [
     loc: `${BASE}${r.path}`,
     priority: r.priority,
     changefreq: r.changefreq,
-    lastmod: today,
-    images: []
+    lastmod: today
   })),
   ...eventUrls
 ];
@@ -77,13 +68,10 @@ ${unique.map(u => `  <url>
     <loc>${escapeXml(u.loc)}</loc>
     <priority>${u.priority.toFixed(1)}</priority>
     <changefreq>${u.changefreq}</changefreq>
-    <lastmod>${u.lastmod}</lastmod>${u.images.map(img => `
-    <image:image>
-      <image:loc>${escapeXml(img)}</image:loc>
-    </image:image>`).join('')}
+    <lastmod>${u.lastmod}</lastmod>
   </url>`).join('\n')}
 </urlset>\n`;
 
 await mkdir(dirname(outPath), { recursive: true });
 await writeFile(outPath, xml, 'utf8');
-console.log(`✅ sitemap.xml généré → public/sitemap.xml (${unique.length} URLs)`);
+console.log(`✅ sitemap.xml généré → public/sitemap.xml (${unique.length} URLs, sans images)`);

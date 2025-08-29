@@ -3,17 +3,91 @@
   <url>
     <loc>https://bestoffmusic.fr/</loc>
     <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <lastmod>2025-08-29</lastmod>
+  </url>
+  <url>
+    <loc>https://bestoffmusic.fr/archives</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+    <lastmod>2025-08-29</lastmod>
   </url>
   <url>
     <loc>https://bestoffmusic.fr/galerie</loc>
     <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2025-08-29</lastmod>
   </url>
   <url>
     <loc>https://bestoffmusic.fr/presse</loc>
     <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2025-08-29</lastmod>
   </url>
-    <url>
-    <loc>https://bestoffmusic.fr/archives</loc>
-    <priority>0.8</priority>
+  <url>
+    <loc>https://bestoffmusic.fr/archives/fete-commune-2025</loc>
+    <priority>0.7</priority>
+    <changefreq>yearly</changefreq>
+    <lastmod>2025-06-28</lastmod>
+  </url>
+  <url>
+    <loc>https://bestoffmusic.fr/archives/chougalante-mars-2025</loc>
+    <priority>0.7</priority>
+    <changefreq>yearly</changefreq>
+    <lastmod>2025-03-16</lastmod>
+  </url>
+  <url>
+    <loc>https://bestoffmusic.fr/archives/souviens-toi</loc>
+    <priority>0.7</priority>
+    <changefreq>yearly</changefreq>
+    <lastmod>2024-06-30</lastmod>
+  </url>
+  <url>
+    <loc>https://bestoffmusic.fr/archives/montbouton</loc>
+    <priority>0.7</priority>
+    <changefreq>yearly</changefreq>
+    <lastmod>2023-09-30</lastmod>
+  </url>
+  <url>
+    <loc>https://bestoffmusic.fr/archives/centenaire</loc>
+    <priority>0.7</priority>
+    <changefreq>yearly</changefreq>
+    <lastmod>2022-11-02</lastmod>
+  </url>
+  <url>
+    <loc>https://bestoffmusic.fr/archives/ukraine-2022</loc>
+    <priority>0.7</priority>
+    <changefreq>yearly</changefreq>
+    <lastmod>2022-06-26</lastmod>
+  </url>
+  <url>
+    <loc>https://bestoffmusic.fr/archives/odyssee-cirque-2019</loc>
+    <priority>0.7</priority>
+    <changefreq>yearly</changefreq>
+    <lastmod>2019-01-27</lastmod>
+  </url>
+  <url>
+    <loc>https://bestoffmusic.fr/archives/festivoff-2019</loc>
+    <priority>0.7</priority>
+    <changefreq>yearly</changefreq>
+    <lastmod>2019-06-15</lastmod>
+  </url>
+  <url>
+    <loc>https://bestoffmusic.fr/archives/unicef-2018</loc>
+    <priority>0.7</priority>
+    <changefreq>yearly</changefreq>
+    <lastmod>2018-01-14</lastmod>
+  </url>
+  <url>
+    <loc>https://bestoffmusic.fr/archives/haiti-2017</loc>
+    <priority>0.7</priority>
+    <changefreq>yearly</changefreq>
+    <lastmod>2017-05-06</lastmod>
+  </url>
+  <url>
+    <loc>https://bestoffmusic.fr/archives/nez-rouges-2017</loc>
+    <priority>0.7</priority>
+    <changefreq>yearly</changefreq>
+    <lastmod>2017-02-12</lastmod>
   </url>
 </urlset>

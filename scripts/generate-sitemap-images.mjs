@@ -36,7 +36,10 @@ const urls = events.filter(ev => ev.index !== false).map(ev => {
   // Dédup
   const uniq = [...new Set(images)];
   return { loc, images: uniq };
-});
+})
+
+  // ne garde que les pages qui ont au moins 1 image
+  .filter(u => u.images.length > 0);
 
 const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset ${ns}>
