@@ -8,7 +8,7 @@ const PressKit = () => {
       id="press-kit"
       className="scroll-mt-20 mx-auto max-w-3xl px-4 text-center text-white mb-24"
     >
-      <h3>Press Kit</h3>
+      <h3>Press kit</h3>
 
       <p className="mb-6 text-white">
         Retrouvez ici notre dossier de presse complet et nos logos officiels,
