@@ -223,7 +223,7 @@ const ActualityComp = () => {
             </a>
           </div>
 
-          <p className="text-sm text-stone-200 text-center max-w-3xl">
+          <p className="text-sm text-stone-200 text-center max-w-3xl text-shadow">
             Pas besoin de confettis, on s’occupe du show. Vous, venez avec vos amis, votre meilleure voix,
             et votre plus beau geste pour le <strong>Téléthon</strong>.
           </p>

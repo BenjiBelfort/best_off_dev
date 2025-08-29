@@ -1,0 +1,17 @@
+/* TEAM */
+Site owner: Best Off Music
+Location: Belfort, France
+Developer: Benjamin Tisserand
+Contact: contact@bestoffmusic.fr
+
+/* SITE */
+Last update: 2025-08-29
+Language: French [fr]
+Doctype: HTML5
+Framework: React
+Styling: TailwindCSS
+Hosting: OVH
+
+/* CREDITS */
+Musique et solidarite
+Merci a l open source community

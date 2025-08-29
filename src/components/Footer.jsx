@@ -187,6 +187,14 @@ const Footer = () => {
                             robots.txt
                         </a>
                     </li>
+                    <li>
+                        <a
+                            href="/humans.txt"
+                            className="hover:text-red-400 transition-colors duration-300 cursor-pointer"
+                        >
+                            humans.txt ♥
+                        </a>
+                    </li>
                 </ul>
                 </details>
             </ul>
