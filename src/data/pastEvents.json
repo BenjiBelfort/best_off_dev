@@ -1,15 +1,31 @@
 [
     {
       "id": "fete-commune-2025",
+      "slug": "fete-commune-2025",
       "title": "Concert Rock Symphonique",
+      "seoTitle": "Best Off’ — Concert rock symphonique à la MIEL (Offemont) — 28 juin 2025",
+      "seoDescription": "Concert exclusif à la MIEL (Offemont) pour la fête de la commune. Répertoire enrichi, ambiance conviviale et festive.",
       "date": "28 juin 2025",
+      "isoDate": "2025-06-28",
+      "endDate": "2025-06-28",
+      "lastmod": "2025-06-28",
       "lieu": "la MIEL - Offemont",
+      "location": {
+        "venue": "la MIEL",
+        "city": "Offemont",
+        "country": "France"
+      },
       "description": [
         "Dans le cadre de la fête de la commune d'Offemont, et avant la fermeture de la salle de la MIEL pour rénovation, nous avons le plaisir de vous présenter un concert exclusif.",
         "Venez écouter notre répertoire enrichi de nouveaux titres dans une ambiance conviviale et festive.",
         "Plongez dans notre univers et vivez une expérience unique !"
       ],
       "photo_cover": "/images/events/fete-commune-2025/affiche.webp",
+      "images": [
+        "/images/events/fete-commune-2025/affiche.webp",
+        "/images/events/fete-commune-2025/galerie/fete-commune-2025_1.webp",
+        "/images/events/fete-commune-2025/galerie/fete-commune-2025_2.webp"
+      ],
       "gallery_photos": [
         "/images/events/fete-commune-2025/galerie/fete-commune-2025_1.webp",
         "/images/events/fete-commune-2025/galerie/fete-commune-2025_2.webp",
@@ -31,15 +47,28 @@
         "/images/events/fete-commune-2025/galerie/fete-commune-2025_18.webp"
       ],
       "partenaires": {
-        "Sponsors": [ "mairieoffemont", "gambafreres", "cpep" ]
-      }
+        "Sponsors": ["mairieoffemont", "gambafreres", "cpep"]
+      },
+      "index": true
     },
     {
       "id": "chougalante-mars-2025",
+      "slug": "chougalante-mars-2025",
       "title": "Concert Rock Symphonique",
+      "seoTitle": "Concert Rock Symphonique — Chougalante, Chèvremont (16 mars 2025)",
+      "seoDescription": "Best Off’ en concert rock symphonique à la Chougalante (Chèvremont) le 16 mars 2025. Un show puissant mêlant grands standards et énergie live. Infos et photos.",
       "date": "16 mars 2025",
+      "isoDate": "2025-03-16",
+      "endDate": "2025-03-16",
+      "lastmod": "2025-03-16",
       "lieu": "Chougalante - Chèvremont",
+      "location": {
+        "venue": "Chougalante",
+        "city": "Chèvremont",
+        "country": "France"
+      },
       "description": [
+        "Best Off’ en concert à la Chougalante de Chèvremont pour une soirée rock symphonique pleine d’énergie."
       ],
       "photo_cover": "/images/events/chougalante-mars-2025/affiche.webp",
       "gallery_photos": [
@@ -55,20 +84,36 @@
         "/images/events/chougalante-mars-2025/galerie/chougalante-mars-2025_10.webp"
       ],
       "partenaires": {
-        "Sponsors": [ "gambafreres", "cpep" ]
+        "Sponsors": ["gambafreres", "cpep"]
       }
     },
     {
       "id": "souviens-toi",
+      "slug": "souviens-toi",
       "title": "Souviens toi",
+      "seoTitle": "Best Off’ — Souviens-toi (Maison du Peuple, Belfort) — 29–30 juin 2024",
+      "seoDescription": "Spectacle dynamique et haut en couleurs, inspiré du cinéma, au profit de l’association Semons l’Espoir. Photos, presse et partenaires.",
       "date": "29 et 30 juin 2024",
+      "isoDate": "2024-06-29",
+      "endDate": "2024-06-30",
+      "lastmod": "2024-06-30",
       "lieu": "Maison du Peuple - Belfort",
+      "location": {
+        "venue": "Maison du Peuple",
+        "city": "Belfort",
+        "country": "France"
+      },
       "description": [
         "L’histoire : deux personnages, la danse et la musique, se remémorent leurs différentes rencontres au travers d’un musée élaboré et créé pour laisser une trace de ces très beaux moments. Ils se retrouvent après une longue période de repos devant ce lieu qui deviendra, ils l’espèrent, mythique… Ce spectacle, dynamique, haut en couleurs vous replongera dans des souvenirs cinématographiques.",
         "Venez nombreux revivre ces scènes de films et clips connus...",
         "Concert chorégraphié en faveur de l'association caritative SEMONS L’ESPOIR"
       ],
       "photo_cover": "/images/events/souviens-toi/affiche.webp",
+      "images": [
+        "/images/events/souviens-toi/affiche.webp",
+        "/images/events/souviens-toi/galerie/Souviens-toi_1.webp",
+        "/images/events/souviens-toi/galerie/Souviens-toi_2.webp"
+      ],
       "gallery_photos": [
         "/images/events/souviens-toi/galerie/Souviens-toi_1.webp",
         "/images/events/souviens-toi/galerie/Souviens-toi_2.webp",
@@ -101,23 +146,42 @@
         "/images/events/souviens-toi/presse/Article_souviens-toi_3.webp"
       ],
       "partenaires": {
-        "Partenaires": [ "semonslespoir", "eddanse", "mathildeadam"],
-        "Institutionnels": [ "mairieoffemont", "villebelfort", "departementterritoire"],
-        "Mécènes Or": [ "echaf90", "gambafreres", "milgred", "eurocfd", "eurovisserie", "cgc", "romainbind", "citel"],
-        "Mécènes Argent": [ "coesio", "mdte", "emsaudit", "exim", "developrh"],
+        "Partenaires": ["semonslespoir", "eddanse", "mathildeadam"],
+        "Institutionnels": ["mairieoffemont", "villebelfort", "departementterritoire"],
+        "Mécènes Or": ["echaf90", "gambafreres", "milgred", "eurocfd", "eurovisserie", "cgc", "romainbind", "citel"],
+        "Mécènes Argent": ["coesio", "mdte", "emsaudit", "exim", "developrh"],
         "Mécènes Philanthropiques": ["villemin"],
-        "Sponsors": [ "comptoirremparts", "pflevents", "opticrondot", "levaldoyen", "mantey", "garagehirth", "jetpneus", "fermelapalouse", "lauthentique", "fromageriedesprairas", "burgerlabaroche", "lepinocchio", "menuiseriebehra", "coutureptiteschoses", "aufournildefrancis", "larrosoir", "studiobianchi", "prelude", "christellebaussier", "cavesdusalbert", "greencar", "saintchristophe", "passionautomobile", "pierrehenri", "hypnosur", "aubureau", "bureauvallee"]
-      }
+        "Sponsors": ["comptoirremparts", "pflevents", "opticrondot", "levaldoyen", "mantey", "garagehirth", "jetpneus", "fermelapalouse", "lauthentique", "fromageriedesprairas", "burgerlabaroche", "lepinocchio", "menuiseriebehra", "coutureptiteschoses", "aufournildefrancis", "larrosoir", "studiobianchi", "prelude", "christellebaussier", "cavesdusalbert", "greencar", "saintchristophe", "passionautomobile", "pierrehenri", "hypnosur", "aubureau", "bureauvallee"]
+      },
+      "index": true
     },
     {
       "id": "montbouton",
+      "slug": "montbouton",
       "title": "Concert Rock Symphonique",
+      "seoTitle": "Best Off’ — Concert rock symphonique à Montbouton — 30 septembre 2023",
+      "seoDescription": "Concert rock symphonique à la salle du Plateau (Montbouton) le 30 septembre 2023. Best Off’ en live avec un répertoire énergique et symphonique.",
       "date": "30 septembre 2023",
+      "isoDate": "2023-09-30",
+      "endDate": "2023-09-30",
+      "lastmod": "2023-09-30",
       "lieu": "salle du Plateau - Montbouton",
+      "location": {
+        "venue": "Salle du Plateau",
+        "city": "Montbouton",
+        "country": "France"
+      },
       "description": [
+        "Best Off’ en concert rock symphonique à Montbouton, dans l’ambiance unique de la salle du Plateau.",
+        "Un spectacle mêlant énergie, émotions et grands classiques revisités."
       ],
       "photo_cover": "/images/events/montbouton/affiche.webp",
-      "gallery_photos":[
+      "images": [
+        "/images/events/montbouton/affiche.webp",
+        "/images/events/montbouton/galerie/Montbouton_1.webp",
+        "/images/events/montbouton/galerie/Montbouton_2.webp"
+      ],
+      "gallery_photos": [
         "/images/events/montbouton/galerie/Montbouton_1.webp",
         "/images/events/montbouton/galerie/Montbouton_2.webp",
         "/images/events/montbouton/galerie/Montbouton_3.webp",
@@ -155,18 +219,36 @@
         "/images/events/montbouton/presse/Article_Montbouton_2.webp"
       ],
       "partenaires": {
-        "Sponsors": [ "gambafreres" ]
-      }
+        "Sponsors": ["gambafreres"]
+      },
+      "index": true
     },
     {
       "id": "centenaire",
+      "slug": "centenaire",
       "title": "Centenaire du Territoire de Belfort",
+      "seoTitle": "Best Off’ — Centenaire du Territoire de Belfort (Belfort) — 2 novembre 2022",
+      "seoDescription": "Spectacle exceptionnel pour les 100 ans du Territoire de Belfort : un voyage musical rock symphonique à travers le temps, avec ImproTG et Phot’Offemont.",
       "date": "2 novembre 2022",
-      "lieu": "salle des Fêtes - Belfort",
+      "isoDate": "2022-11-02",
+      "endDate": "2022-11-02",
+      "lastmod": "2022-11-02",
+      "lieu": "Salle des Fêtes - Belfort",
+      "location": {
+        "venue": "Salle des Fêtes",
+        "city": "Belfort",
+        "country": "France"
+      },
       "description": [
-        "Ce spectacle exceptionnel pour les 100 ans du Territoire de Belfort sera une invitation à un voyage musical en version Rock Symphonique à travers le temps de 1922 à 2022. Nous partirons sur les traces de notre département lors de ce spectacle qui mèlera musique avec BEST OFF', théatre d'improvisation avec ImproTG et photographie avec Phot'Offemont"
+        "Spectacle exceptionnel pour les 100 ans du Territoire de Belfort : un voyage musical en version Rock Symphonique à travers le temps de 1922 à 2022.",
+        "BEST OFF’ accompagné d’ImproTG (théâtre d’improvisation) et Phot’Offemont (photographie)."
       ],
       "photo_cover": "/images/events/centenaire/affiche.webp",
+      "images": [
+        "/images/events/centenaire/affiche.webp",
+        "/images/events/centenaire/galerie/Centenaire_1.webp",
+        "/images/events/centenaire/galerie/Centenaire_2.webp"
+      ],
       "gallery_photos": [
         "/images/events/centenaire/galerie/Centenaire_1.webp",
         "/images/events/centenaire/galerie/Centenaire_2.webp",
@@ -199,38 +281,71 @@
       ],
       "partenaires": {
         "Partenaires": ["improtg", "photoffemont"],
-        "Institutionnels": ["departementterritoire", "villebelfort", "mairieoffemont" ],
-        "Sponsors" : [ "gambafreres" ]
-      }
+        "Institutionnels": ["departementterritoire", "villebelfort", "mairieoffemont"],
+        "Sponsors": ["gambafreres"]
+      },
+      "index": true
     },
     {
       "id": "ukraine",
+      "slug": "ukraine-2022",
       "title": "Concerts solidaires pour l'Ukraine",
+      "seoTitle": "Best Off’ — Concerts solidaires pour l’Ukraine (Offemont) — 26 juin 2022",
+      "seoDescription": "Concerts solidaires organisés à la MIEL (Offemont) en soutien à l’Ukraine, avec des groupes locaux. Participation libre au profit de Maïdan sans Frontière.",
       "date": "26 juin 2022",
+      "isoDate": "2022-06-26",
+      "endDate": "2022-06-26",
+      "lastmod": "2022-06-26",
       "lieu": "la MIEL - Offemont",
+      "location": {
+        "venue": "la MIEL",
+        "city": "Offemont",
+        "country": "France"
+      },
       "description": [
         "BEST OFF’ et la Commune d'Offemont présentent les Concerts Solidaires pour l'Ukraine.",
-        "BEST OFF’ invite des groupes locaux à se produire à la MIEL à Offemont avec le soutien de la Commune d'Offemont.",
-        "La participation est libre, les recettes seront redistribuées à l'association Maïdan sans frontière."
+        "BEST OFF’ invite des groupes locaux à se produire à la MIEL avec le soutien de la Commune d'Offemont.",
+        "La participation est libre, les recettes seront reversées à l'association Maïdan sans Frontière."
       ],
       "photo_cover": "/images/events/ukraine/affiche.webp",
+      "images": [
+        "/images/events/ukraine/affiche.webp",
+        "/images/events/ukraine/presse/Article_Ukraine.webp"
+      ],
       "presse": [
         "/images/events/ukraine/presse/Article_Ukraine.webp"
       ],
       "partenaires": {
         "Partenaires": ["maidansansfrontieres", "mairieoffemont"],
-        "Sponsors": [ "gambafreres" ]
-      }
+        "Sponsors": ["gambafreres"]
+      },
+      "index": true
     },
     {
       "id": "odyssee",
+      "slug": "odyssee-cirque-2019",
       "title": "Odyssée du Cirque",
+      "seoTitle": "Best Off’ — Odyssée du Cirque (Héricourt) — 27 janvier 2019",
+      "seoDescription": "Participation de Best Off’ à l’Odyssée du Cirque à Héricourt, un spectacle inédit mêlant musique et arts du cirque.",
       "date": "27 janvier 2019",
+      "isoDate": "2019-01-27",
+      "endDate": "2019-01-27",
+      "lastmod": "2019-01-27",
       "lieu": "Odyssée du Cirque - Héricourt",
+      "location": {
+        "venue": "Odyssée du Cirque",
+        "city": "Héricourt",
+        "country": "France"
+      },
       "description": [
         "BEST OFF' accompagne L'Odyssée du Cirque pour un spectacle inédit !"
       ],
       "photo_cover": "/images/events/odyssee/affiche.webp",
+      "images": [
+        "/images/events/odyssee/affiche.webp",
+        "/images/events/odyssee/galerie/odyssee_1.webp",
+        "/images/events/odyssee/galerie/odyssee_2.webp"
+      ],
       "gallery_photos": [
         "/images/events/odyssee/galerie/odyssee_1.webp",
         "/images/events/odyssee/galerie/odyssee_2.webp",
@@ -242,32 +357,75 @@
       ],
       "partenaires": {
         "Partenaires": ["odysseeducirque"],
-        "Sponsors": [ "gambafreres" ]
-      }
+        "Sponsors": ["gambafreres"]
+      },
+      "index": true
     },
     {
       "id": "festivoff",
+      "slug": "festivoff-2019",
       "title": "Festiv'Off",
+      "seoTitle": "Best Off’ — Festiv’Off (Offemont) — 15 juin 2019",
+      "seoDescription": "4ème édition du Festiv’Off à Offemont : scène ouverte autour de la langue française, concours de poésie et performances musicales variées.",
       "date": "15 juin 2019",
+      "isoDate": "2019-06-15",
+      "endDate": "2019-06-15",
+      "lastmod": "2019-06-15",
       "lieu": "parvis de la Mairie - Offemont",
+      "location": {
+        "venue": "Parvis de la Mairie",
+        "city": "Offemont",
+        "country": "France"
+      },
       "description": [
         "Cette 4ème édition de la scène ouverte proposée par la commune d'Offemont et l'association BEST OFF' aura pour fil conducteur la langue française.",
-        "Ponctuée par un concours de poésie organisé dans les écoles primaires d'Offemont, divers artistes se produiront sur scène pour notre plus grand plaisir. La richesse de ces textes ancrés dans nos mémoires, la beauté des mélodies réveilleront de beaux souvenirs et seront mis en valeur par nos artistes invités.",
+        "Ponctuée par un concours de poésie organisé dans les écoles primaires d'Offemont, divers artistes se produiront sur scène pour notre plus grand plaisir.",
+        "La richesse de ces textes ancrés dans nos mémoires, la beauté des mélodies réveilleront de beaux souvenirs et seront mis en valeur par nos artistes invités.",
         "Que ce Festiv'Off vous apporte la justesse des mots et la force des notes le temps d'un festival."
       ],
       "photo_cover": "/images/events/festivoff/affiche.webp",
+      "images": [
+        "/images/events/festivoff/affiche.webp"
+      ],
       "partenaires": {
-        "Institutionnels": [ "mairieoffemont" ],
-        "Sponsors": [ "gambafreres", "echaf90", "vidalfrance", "aufournildefrancis", "abvm", "lepinocchio", "mieuxzetre", "larougemontoise", "ronfort", "krisslaure", "knecht", "relaisdestroissapins", "jetpneus", "larosemontoise", "casolimetallerie", "coutureptiteschoses", "caropa", "aubergefrahier", "formageriesylvie", "bringelmateriaux", "baumann", "surlegreen", "larrosoir", "autosecurite", "estparquets", "hinteralfeld", "christellebaussier", "prevottraiteur", "pierrehenri", "editionsdulion", "courtimm", "vauban", "christianmolle" ]
-      }
+        "Institutionnels": ["mairieoffemont"],
+        "Sponsors": [
+          "gambafreres", "echaf90", "vidalfrance", "aufournildefrancis", "abvm",
+          "lepinocchio", "mieuxzetre", "larougemontoise", "ronfort", "krisslaure",
+          "knecht", "relaisdestroissapins", "jetpneus", "larosemontoise", "casolimetallerie",
+          "coutureptiteschoses", "caropa", "aubergefrahier", "formageriesylvie", "bringelmateriaux",
+          "baumann", "surlegreen", "larrosoir", "autosecurite", "estparquets",
+          "hinteralfeld", "christellebaussier", "prevottraiteur", "pierrehenri", "editionsdulion",
+          "courtimm", "vauban", "christianmolle"
+        ]
+      },
+      "index": true
     },
     {
       "id": "unicef",
-      "title": "Concert au profit de l'unicef",
+      "slug": "unicef-2018",
+      "title": "Concert au profit de l’UNICEF",
+      "seoTitle": "Best Off’ — Concert au profit de l’UNICEF (Maison du Peuple, Belfort) — 13 & 14 janvier 2018",
+      "seoDescription": "Concert caritatif au profit de l’UNICEF à la Maison du Peuple de Belfort. Avec un chœur d’enfants et les violons dansants du conservatoire Henri Dutilleux.",
       "date": "13 et 14 janvier 2018",
+      "isoDate": "2018-01-13",
+      "endDate": "2018-01-14",
+      "lastmod": "2018-01-14",
       "lieu": "Maison du Peuple - Belfort",
-      "description": "Concert au profit de l'unicef, avec la participation d'un choeur d'enfants et les violons dansants du conservatoire Henri Dutilleux.",
+      "location": {
+        "venue": "Maison du Peuple",
+        "city": "Belfort",
+        "country": "France"
+      },
+      "description": [
+        "Concert au profit de l’UNICEF, avec la participation d’un chœur d’enfants et les violons dansants du conservatoire Henri Dutilleux."
+      ],
       "photo_cover": "/images/events/unicef/affiche.webp",
+      "images": [
+        "/images/events/unicef/affiche.webp",
+        "/images/events/unicef/galerie/Unicef_1.webp",
+        "/images/events/unicef/galerie/Unicef_2.webp"
+      ],
       "gallery_photos": [
         "/images/events/unicef/galerie/Unicef_1.webp",
         "/images/events/unicef/galerie/Unicef_2.webp",
@@ -297,36 +455,94 @@
         "/images/events/unicef/galerie/Unicef_26.webp"
       ],
       "partenaires": {
-        "Partenaire": [ "unicef", "francebleu" ],
-        "Institutionnels": [ "villebelfort", "mairieoffemont" ],
-        "Sponsors": [ "gambafreres", "bureauvallee", "comptoirremparts" ]
-      }
+        "Partenaires": ["unicef", "francebleu"],
+        "Institutionnels": ["villebelfort", "mairieoffemont"],
+        "Sponsors": ["gambafreres", "bureauvallee", "comptoirremparts"]
+      },
+      "index": true
     },
     {
       "id": "haiti",
+      "slug": "haiti-2017",
       "title": "Tous unis pour Haïti",
+      "seoTitle": "Best Off’ — Concert caritatif « Tous unis pour Haïti » (Bethoncourt) — 6 mai 2017",
+      "seoDescription": "Concert caritatif au profit de l’école de Pilette (Haïti). Avec la participation des élèves de la classe de Maggy et l’école Sainte-Marie de Belfort.",
       "date": "6 mai 2017",
+      "isoDate": "2017-05-06",
+      "endDate": "2017-05-06",
+      "lastmod": "2017-05-06",
       "lieu": "l'Arche - Bethoncourt",
+      "location": {
+        "venue": "l'Arche",
+        "city": "Bethoncourt",
+        "country": "France"
+      },
       "description": [
-        "Deuxième concert caritatif du groupe BEST OFF'. Après les Nez Rouges, c'est pour l'école de Pilette à Haïti que nous jouons. L'entrée est à 10€. Cette fois ci, ce sont les élèves de la classe de Maggy, l'une de nos chanteuses, qui chanteront avec nous. Ces enfants viennent tous de l'école Sainte-Marie à Belfort."
+        "Deuxième concert caritatif du groupe BEST OFF’. Après les Nez Rouges, c'est pour l’école de Pilette à Haïti que nous jouons. L’entrée est à 10€. Cette fois-ci, ce sont les élèves de la classe de Maggy, l’une de nos chanteuses, qui chanteront avec nous. Ces enfants viennent tous de l’école Sainte-Marie à Belfort."
       ],
       "photo_cover": "/images/events/haiti/affiche.webp",
+      "images": [
+        "/images/events/haiti/affiche.webp"
+      ],
       "partenaires": {
-        "Sponsors": [ "gambafreres" ]
-      }
+        "Sponsors": ["gambafreres"]
+      },
+      "index": true
     },
     {
       "id": "nez-rouges",
+      "slug": "nez-rouges-2017",
       "title": "Les Nez Rouges",
+      "seoTitle": "Best Off’ — Concert caritatif « Les Nez Rouges » (Offemont) — 11–12 février 2017",
+      "seoDescription": "Concert caritatif organisé à la MIEL (Offemont) au profit de l’association Les Nez Rouges. Avec le soutien de nombreux partenaires et sponsors locaux.",
       "date": "11 et 12 février 2017",
+      "isoDate": "2017-02-11",
+      "endDate": "2017-02-12",
+      "lastmod": "2017-02-12",
       "lieu": "la MIEL - Offemont",
-      "description": "Concert au profit de l'association Les Nez Rouges",
+      "location": {
+        "venue": "la MIEL",
+        "city": "Offemont",
+        "country": "France"
+      },
+      "description": [
+        "Concert caritatif au profit de l’association Les Nez Rouges, organisé à la MIEL (Offemont)."
+      ],
       "photo_cover": "/images/events/nez-rouges/affiche.webp",
+      "images": [
+        "/images/events/nez-rouges/affiche.webp"
+      ],
       "partenaires": {
-        "Partenaire": [ "lesnezrouges" ],
-        "Institutionnels": [ "mairieoffemont" ],
-        "Sponsors": [ "gambafreres", "christianmolle", "hem", "legendhair", "phservice", "lorigan", "guitarenovo", "surlegreen", "bolloreenergy", "cotefleurs", "pierrehenri", "photoffemont", "flashanimation", "cemstehlin", "jetpneus", "eurocfd", "caropa", "aufournildefrancis", "aubergefrahier", "relaisdestroissapins", "coutureptiteschoses", "jardonschmitt", "tntevents", "garagehirth" ]
-      }
+        "Partenaire": ["lesnezrouges"],
+        "Institutionnels": ["mairieoffemont"],
+        "Sponsors": [
+          "gambafreres",
+          "christianmolle",
+          "hem",
+          "legendhair",
+          "phservice",
+          "lorigan",
+          "guitarenovo",
+          "surlegreen",
+          "bolloreenergy",
+          "cotefleurs",
+          "pierrehenri",
+          "photoffemont",
+          "flashanimation",
+          "cemstehlin",
+          "jetpneus",
+          "eurocfd",
+          "caropa",
+          "aufournildefrancis",
+          "aubergefrahier",
+          "relaisdestroissapins",
+          "coutureptiteschoses",
+          "jardonschmitt",
+          "tntevents",
+          "garagehirth"
+        ]
+      },
+      "index": true
     }
 ]
   

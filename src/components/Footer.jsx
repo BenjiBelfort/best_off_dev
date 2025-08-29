@@ -112,7 +112,16 @@ const Footer = () => {
                 </a>
               </li>
 
-                <li><a href="/#recrutement" className="hover:text-red-400 transition-colors duration-300 cursor-pointer">Recrutement</a></li>
+              <li><a href="/#recrutement" className="hover:text-red-400 transition-colors duration-300 cursor-pointer">Recrutement</a></li>
+
+              <li>
+                <Link
+                  to="/presse#press-kit"
+                  className="hover:text-red-400 transition-colors duration-300 cursor-pointer"
+                >
+                  Dossier de presse
+                </Link>
+              </li>
 
               <li>
                 <a

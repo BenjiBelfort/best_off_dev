@@ -2,8 +2,12 @@ name: Deploy to OVH
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-bestoffmusic
+  cancel-in-progress: true
 
 jobs:
   build-and-deploy:
@@ -11,15 +15,27 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
-      - name: Generate sitemap
+      # ⚠️ Assure-toi que ton script génère bien les fichiers dans public/
+      # ex: public/sitemap.xml et public/sitemap-images.xml
+      - name: Generate sitemaps
+        env:
+          BASE_URL: https://bestoffmusic.fr
         run: npm run sitemap
 
       - name: Build site with Vite
+        env:
+          NODE_ENV: production
         run: npm run build
 
       - name: Deploy to OVH via FTP
@@ -30,8 +46,9 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           server-dir: ${{ secrets.FTP_PATH }}
           local-dir: dist/
-          dangerous-clean-slate: false  # ⚠️ Ne pas tout effacer avant
+          dangerous-clean-slate: false
           exclude: |
             **/.git*
             **/.DS_Store
-          dry-run: false
+            **/node_modules/**
+            **/.github/**
