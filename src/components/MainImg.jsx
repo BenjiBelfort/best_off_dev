@@ -53,6 +53,7 @@ const MainImg = () => {
           className="w-full h-full object-cover bg-stone-900"
           fetchPriority="high"
           decoding="async"
+          style={{ aspectRatio: '16 / 9' }}
         />
         
         <div className="absolute inset-0 bg-gradient-to-t from-stone-900/100 to-transparent" />
@@ -114,7 +115,7 @@ const MainImg = () => {
           {/* Logo en bas à droite, visible uniquement sur tablette et plus */}
           <img 
             src="/logo-Best-Off.webp" 
-            alt="Logo Best Off' pour Lightbox" 
+            alt="Logo BEST OFF' pour Lightbox" 
             className="hidden md:block absolute bottom-3 right-10 w-20"
           />
         </div>

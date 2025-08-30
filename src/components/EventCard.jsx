@@ -4,7 +4,7 @@ const EventCard = ({ event }) => {
   return (
     <Link 
       to={`/archives/${event.id}`}
-      className="group relative block overflow-hidden"
+      className="group relative block overflow-hidden cover-shadow"
     >
       <div className="aspect-[3/4]">
         <img

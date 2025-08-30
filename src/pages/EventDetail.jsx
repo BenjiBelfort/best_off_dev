@@ -16,6 +16,12 @@ import MdxProvider from '../mdx/MdxProvider';
 const mdxModules = import.meta.glob('../content/events/*.mdx');
 const BASE = 'https://bestoffmusic.fr';
 
+const absolutize = (u) => {
+  if (!u) return null;
+  if (u.startsWith('http://') || u.startsWith('https://')) return u;
+  return `${BASE}${u.startsWith('/') ? '' : '/'}${u}`;
+};
+
 export default function EventDetail() {
   const { id } = useParams();
 
@@ -52,19 +58,25 @@ export default function EventDetail() {
     return <div className="text-white text-center py-8">Événement non trouvé</div>;
   }
 
-  // ------- SEO -------
-  // 🔥 Correction ici : canonical basé sur slug si dispo
+// ------- SEO -------
   const slugOrId = event.slug || id;
   const url = `${BASE}/archives/${slugOrId}`;
 
+  // 1) Choix de l'image de partage : mdx > affiche > cover > hero
+  const rawImage =
+    mdxMeta?.ogImage || event.affiche || event.photo_cover || '/hero.webp';
+
+  // 2) Forcer une URL absolue
+  const image = absolutize(rawImage);
+
   const title =
-    (mdxMeta?.seoTitle || event.seoTitle || event.title) + ' | Best Off’';
+    (mdxMeta?.seoTitle || event.seoTitle || event.title) + ' | BEST OFF’';
+
   const description =
     mdxMeta?.seoDescription ||
     event.seoDescription ||
     (Array.isArray(event.description) ? event.description[0] : event.description) ||
     `${event.title} — ${event.lieu} — ${event.date}`;
-  const image = event.photo_cover || `${BASE}/hero.webp`;
 
   return (
     <>
@@ -97,7 +109,7 @@ export default function EventDetail() {
           <img
             src={event.photo_cover || '/placeholder-event.jpg'}
             alt={event.title}
-            className="w-100 object-cover mb-6 mx-auto border-4 lg:border-8 border-white"
+            className="w-100 object-cover mb-6 mx-auto border-4 lg:border-8 border-white cover-shadow"
           />
 
           <div className="flex flex-col md:flex-row justify-center items-center gap-2 text-yellow-50">
@@ -131,7 +143,7 @@ export default function EventDetail() {
             <>
               <Separator />
               <div className="mb-8">
-                <h4>Galerie Photos</h4>
+                <h4>Galerie photos</h4>
                 <Gallery photos={event.gallery_photos} />
               </div>
             </>

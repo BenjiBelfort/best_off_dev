@@ -75,7 +75,7 @@ const MentionsLegalesModal = () => {
 
                               <img 
                                 src="/logo-Best-Off.webp" 
-                                alt="Logo Best Off' pour Lightbox" 
+                                alt="Logo BEST OFF' pour Lightbox" 
                                 className="w-20 mx-auto"
                             />
                     </div>

@@ -14,8 +14,8 @@ const ActualityComp = () => {
     const eventLd = {
       "@context": "https://schema.org",
       "@type": "MusicEvent",
-      "name": "Best Off' pour le Téléthon",
-      "description": "Concert caritatif Best Off' au profit du Téléthon. Entrée libre, dons sur place et sur le site du Téléthon.",
+      "name": "BEST OFF' pour le Téléthon",
+      "description": "Concert caritatif BEST OFF' au profit du Téléthon. Entrée libre, dons sur place et sur le site du Téléthon.",
       "startDate": "2025-12-06T20:00:00+01:00",
       "endDate": "2025-12-06T22:30:00+01:00", // <-- ajouté
       "eventStatus": "https://schema.org/EventScheduled",
@@ -31,7 +31,7 @@ const ActualityComp = () => {
           "addressCountry": "FR"
         }
       },
-      "performer": { "@type": "MusicGroup", "name": "Best Off'" },
+      "performer": { "@type": "MusicGroup", "name": "BEST OFF'" },
       "organizer": {
         "@type": "Organization",
         "name": "AFM-Téléthon",
@@ -172,7 +172,7 @@ const ActualityComp = () => {
 
           {/* Visuel / Affiche en attente */}
           <div className="w-full md:w-1/2 p-4 flex justify-center items-center logo-shadow mx-auto">
-            <div className="w-full max-w-sm border-4 lg:border-6 border-white shadow-2xl bg-white/90 backdrop-blur-sm overflow-hidden">
+            <div className="w-full max-w-sm border-4 lg:border-6 border-white cover-shadow bg-white/90 backdrop-blur-sm overflow-hidden">
               <div className="p-4 bg-gradient-to-br from-yellow-200 via-pink-200 to-cyan-200 text-stone-900 text-center font-semibold">
                 Affiche en préparation
               </div>

@@ -1,5 +1,5 @@
 /* TEAM */
-Site owner: Best Off Music
+Site owner: BEST OFF Music
 Location: Belfort, France
 Developer: Benjamin Tisserand
 Contact: contact@bestoffmusic.fr

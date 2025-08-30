@@ -11,18 +11,18 @@ const Archives = () => {
   return (
     <>
       {/* === Balises head spécifiques à /archives === */}
-      <Title>Archives — Best Off’</Title>
+      <Title>Archives — BEST OFF’</Title>
       <Meta
         name="description"
-        content="Découvrez les archives des concerts passés de Best Off’, groupe de rock symphonique basé à Belfort."
+        content="Découvrez les archives des concerts passés de BEST OFF’, groupe de rock symphonique basé à Belfort."
       />
       <LinkTag rel="canonical" href={url} />
 
       {/* Open Graph */}
-      <Meta property="og:title" content="Archives — Best Off’" />
+      <Meta property="og:title" content="Archives — BEST OFF’" />
       <Meta
         property="og:description"
-        content="Photos, dates et lieux des concerts passés de Best Off’."
+        content="Photos, dates et lieux des concerts passés de BEST OFF’."
       />
       <Meta property="og:type" content="website" />
       <Meta property="og:url" content={url} />
@@ -31,10 +31,10 @@ const Archives = () => {
 
       {/* Twitter */}
       <Meta name="twitter:card" content="summary_large_image" />
-      <Meta name="twitter:title" content="Archives — Best Off’" />
+      <Meta name="twitter:title" content="Archives — BEST OFF’" />
       <Meta
         name="twitter:description"
-        content="Retrouvez toutes les archives des concerts passés de Best Off’."
+        content="Retrouvez toutes les archives des concerts passés de BEST OFF’."
       />
       <Meta name="twitter:image" content={`${BASE}/hero.webp`} />
 

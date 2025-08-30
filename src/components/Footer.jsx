@@ -161,7 +161,7 @@ const Footer = () => {
                     href="https://benji-belfort-portfolio.netlify.app/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-yellow-400 transition-colors duration-300 cursor-pointer"
+                    className="hover:text-orange-300 transition-colors duration-300 cursor-pointer"
                     >
                     Dev par Benji Belfort
                     </a>

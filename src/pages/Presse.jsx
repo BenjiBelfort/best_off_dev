@@ -30,18 +30,18 @@ export default function Presse() {
   return (
     <>
       {/* === Balises head spécifiques à /presse === */}
-      <Title>Presse — Best Off’ (dossier & articles)</Title>
+      <Title>Presse — BEST OFF’ (dossier & articles)</Title>
       <Meta
         name="description"
-        content="Espace presse Best Off’ : dossier de presse, visuels HD, articles et contacts médias."
+        content="Espace presse BEST OFF’ : dossier de presse, visuels HD, articles et contacts médias."
       />
       <LinkTag rel="canonical" href={url} />
 
       {/* Open Graph */}
-      <Meta property="og:title" content="Presse — Best Off’" />
+      <Meta property="og:title" content="Presse — BEST OFF’" />
       <Meta
         property="og:description"
-        content="Dossier de presse, visuels HD et publications médias autour de Best Off’."
+        content="Dossier de presse, visuels HD et publications médias autour de BEST OFF’."
       />
       <Meta property="og:type" content="website" />
       <Meta property="og:url" content={url} />
@@ -50,7 +50,7 @@ export default function Presse() {
 
       {/* Twitter */}
       <Meta name="twitter:card" content="summary_large_image" />
-      <Meta name="twitter:title" content="Presse — Best Off’" />
+      <Meta name="twitter:title" content="Presse — BEST OFF’" />
       <Meta
         name="twitter:description"
         content="Dossier de presse, visuels HD et articles."

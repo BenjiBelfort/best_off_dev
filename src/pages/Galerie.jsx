@@ -48,18 +48,18 @@ export default function Galerie() {
   return (
     <>
       {/* head spécifique */}
-      <Title>Galerie photos — Best Off’</Title>
-      <Meta name="description" content="Découvrez les photos des concerts de Best Off’, groupe de rock symphonique à Belfort." />
+      <Title>Galerie photos — BEST OFF’</Title>
+      <Meta name="description" content="Découvrez les photos des concerts de BEST OFF’, groupe de rock symphonique à Belfort." />
       <LinkTag rel="canonical" href={url} />
-      <Meta property="og:title" content="Galerie photos — Best Off’" />
+      <Meta property="og:title" content="Galerie photos — BEST OFF’" />
       <Meta property="og:description" content="Retour en images sur nos concerts et évènements." />
       <Meta property="og:type" content="website" />
       <Meta property="og:url" content={url} />
       <Meta property="og:image" content={`${BASE}/hero.webp`} />
       <Meta property="og:locale" content="fr_FR" />
       <Meta name="twitter:card" content="summary_large_image" />
-      <Meta name="twitter:title" content="Galerie photos — Best Off’" />
-      <Meta name="twitter:description" content="Photos des concerts et coulisses de Best Off’." />
+      <Meta name="twitter:title" content="Galerie photos — BEST OFF’" />
+      <Meta name="twitter:description" content="Photos des concerts et coulisses de BEST OFF’." />
       <Meta name="twitter:image" content={`${BASE}/hero.webp`} />
 
       {/* contenu */}

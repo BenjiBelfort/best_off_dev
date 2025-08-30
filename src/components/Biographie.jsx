@@ -24,7 +24,7 @@ const Biographie = () => {
           <img
             className="mt-5"
             src="/images/events/chougalante-mars-2025/galerie/chougalante-mars-2025_3.webp"
-            alt="Best off en concert"
+            alt="BEST OFF' en concert"
             width="1200"
             height="800"
           />

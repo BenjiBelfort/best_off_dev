@@ -96,7 +96,7 @@ const Lightbox = ({ photos, currentIndex, closeLightbox, goToNext, goToPrev, eve
       {/* Logo en bas à droite, visible uniquement sur tablette et plus */}
       <img 
         src="/logo-Best-Off.webp" 
-        alt="Logo Best Off' pour Lightbox" 
+        alt="Logo BEST OFF' pour Lightbox" 
         className="hidden md:block absolute bottom-3 right-10 w-20 logo-shadow"
       />
     </div>
