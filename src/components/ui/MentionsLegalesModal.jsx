@@ -44,13 +44,24 @@ const MentionsLegalesModal = () => {
 
                         <p className="mb-2"><strong>Éditeur du site :</strong></p>
                         <p className="mb-4">
-                            Association BEST OFF'<br/>
-                            Adresse : 28 rue des Eygras - 90300 OFFEMONT<br/>
-                            Responsable de la publication : Roland CIBIL<br/>
-                            Développement web : Benjamin TISSERAND<br/>
-                            Contact : bestoffmusic90@gmail.com<br/>
-                            Tél : 06 77 26 87 32
+                        <strong>Association BEST OFF'</strong><br/>
+                        Adresse : 28 rue des Eygras - 90300 OFFEMONT<br/>
+                        SIREN : 828 353 052<br/>
+                        Responsable de la publication : Roland CIBIL<br/>
+                        Développement web :{" "}
+                        <a
+                            href="https://benji-belfort-portfolio.netlify.app/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="hover:text-orange-300 transition-colors duration-300 cursor-pointer"
+                            aria-label="Voir le portfolio de Benjamin TISSERAND (nouvelle fenêtre)"
+                        >
+                            Benjamin TISSERAND
+                        </a><br/>
+                        Contact : <a href="mailto:bestoffmusic90@gmail.com" className="underline decoration-red-400 hover:text-red-400">bestoffmusic90@gmail.com</a><br/>
+                        Tél : 06 77 26 87 32
                         </p>
+
 
                         <p className="mb-2"><strong>Hébergement :</strong></p>
                         <p className="mb-4">

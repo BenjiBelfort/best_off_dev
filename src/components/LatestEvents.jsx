@@ -22,7 +22,7 @@ const LatestEvents = () => {
   return (
     <section id="latest-events" className="container mx-auto my-8">
       <h3>Derniers concerts</h3>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="px-12 grid grid-cols-1 sm:grid-cols-3 gap-8">
         {latest.map(event => (
           <EventCard key={event.id} event={event} />
         ))}
