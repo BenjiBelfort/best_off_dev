@@ -1,12 +1,18 @@
 # =========================
-# 1) HTTPS forcé (ton code)
+# 1) HTTPS forcé
 # =========================
 RewriteEngine On
 RewriteCond %{ENV:HTTPS} !on
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
+# =========================
+# 2) Rediriger index.html -> /
+# =========================
+RewriteCond %{THE_REQUEST} "index\.html"
+RewriteRule ^index\.html$ / [R=301,L]
+
 # =======================================
-# 2) COMPRESSION (Brotli/Gzip si dispo)
+# 3) COMPRESSION (Brotli/Gzip si dispo)
 # =======================================
 <IfModule mod_brotli.c>
   AddOutputFilterByType BROTLI_COMPRESS text/html text/plain text/css application/javascript text/javascript application/json image/svg+xml
@@ -16,7 +22,7 @@ RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 </IfModule>
 
 # =======================================================
-# 3) CORS pour polices (évite les erreurs cross-origin)
+# 4) CORS pour polices (évite erreurs cross-origin)
 # =======================================================
 <IfModule mod_headers.c>
   <FilesMatch "\.(?:woff2|woff|ttf|otf)$">
@@ -25,27 +31,26 @@ RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 </IfModule>
 
 # ==========================================================
-# 4) CACHING (HTML court / assets hashés long / images moyen)
+# 5) CACHING (HTML court / assets hashés long / images moyen)
 # ==========================================================
 <IfModule mod_headers.c>
 <IfModule mod_expires.c>
 
-  # 4.1 HTML : pas de cache agressif (SPA = index.html)
+  # HTML : pas de cache agressif
   <FilesMatch "\.html?$">
     ExpiresActive On
     ExpiresDefault "access plus 0 seconds"
     Header set Cache-Control "max-age=0, must-revalidate"
   </FilesMatch>
 
-  # 4.2 JSON/manifest (si tu en sers) : court
+  # JSON / manifest
   <FilesMatch "\.(?:json|webmanifest)$">
     ExpiresActive On
     ExpiresDefault "access plus 1 hour"
     Header set Cache-Control "public, max-age=3600"
   </FilesMatch>
 
-  # 4.3 ASSETS Vite hashés (ex: /assets/index-0ZEqNHxd.js|css) => 1 an + immutable
-  # On détecte la présence d’un hash par un tiret + 8+ caractères alphanum/underscore
+  # JS/CSS hashés (Vite)
   SetEnvIf Request_URI "^/assets/.+\-[A-Za-z0-9_-]{8,}\.(?:js|css)$" is_hashed_asset=1
   <FilesMatch "\.(?:js|mjs|css)$">
     Header set Cache-Control "public, max-age=31536000, immutable" env=is_hashed_asset
@@ -53,29 +58,28 @@ RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
     ExpiresDefault "access plus 1 year"
   </FilesMatch>
 
-  # 4.4 Polices (self-host) => 1 an + immutable
+  # Polices
   <FilesMatch "\.(?:woff2|woff|ttf|otf)$">
     Header set Cache-Control "public, max-age=31536000, immutable"
     ExpiresActive On
     ExpiresDefault "access plus 1 year"
   </FilesMatch>
 
-  # 4.5 Images “stables” (galerie / presse / partners / images)
-  #    => 30 jours (+ revalidation douce)
+  # Images génériques (galerie / presse / partners / images)
   <FilesMatch "\.(?:avif|webp|jpg|jpeg|png|gif|svg)$">
     Header set Cache-Control "public, max-age=2592000, stale-while-revalidate=86400"
     ExpiresActive On
     ExpiresDefault "access plus 30 days"
   </FilesMatch>
 
-  # 4.6 Images versionnées explicitement (ex: affiche-v3.webp) => 1 an + immutable
+  # Images versionnées (ex: affiche-v2.webp) => 1 an immutable
   <FilesMatch ".*-v[0-9]+\.(?:avif|webp|jpg|jpeg|png|svg)$">
     Header set Cache-Control "public, max-age=31536000, immutable"
     ExpiresActive On
     ExpiresDefault "access plus 1 year"
   </FilesMatch>
 
-  # 4.7 Service worker (si présent) : toujours frais
+  # Service worker (si tu en utilises)
   <Files sw.js>
     Header set Cache-Control "no-cache, must-revalidate"
   </Files>
@@ -84,9 +88,8 @@ RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 </IfModule>
 
 # ======================================================
-# 5) SPA fallback (ton code) — après car fichiers réels
+# 6) SPA fallback (routes React)
 # ======================================================
-# Si le fichier ou répertoire n'existe pas, renvoyer index.html
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^ index.html [QSA,L]

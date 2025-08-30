@@ -97,6 +97,7 @@ const MainImg = () => {
             src="/videos/intro.mp4"
             controls
             autoPlay
+            preload="none"
             className="max-h-[90vh] w-[90%] sm:w-auto"
           />
 
@@ -115,7 +116,10 @@ const MainImg = () => {
           {/* Logo en bas à droite, visible uniquement sur tablette et plus */}
           <img 
             src="/logo-Best-Off.webp" 
-            alt="Logo BEST OFF' pour Lightbox" 
+            alt="Logo BEST OFF' pour Lightbox"
+            width="500" height="500"  // si tu as les dimensions réelles, mets-les
+            loading="lazy"
+            decoding="async"
             className="hidden md:block absolute bottom-3 right-10 w-20"
           />
         </div>

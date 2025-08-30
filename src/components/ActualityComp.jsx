@@ -26,6 +26,7 @@ const ActualityComp = () => {
         "name": "Gymnase d’Offemont",
         "address": {
           "@type": "PostalAddress",
+          "streetAddress": "28 rue des Eygras",
           "addressLocality": "Offemont",
           "postalCode": "90300",
           "addressCountry": "FR"
