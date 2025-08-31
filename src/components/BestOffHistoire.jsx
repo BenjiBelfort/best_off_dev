@@ -30,7 +30,7 @@ const BestOffHistoire = () => {
         {/* Desktop : image à gauche */}
         <figure className="hidden sm:block sm:col-span-2">
           <img
-            src="/images/Dune-soundtrack-by-Toto.jpg"
+            src="/images/toto.webp"
             alt="Bande originale de Dune par Toto — inspiration rock symphonique"
             width={800}
             height={800}
@@ -38,7 +38,8 @@ const BestOffHistoire = () => {
             className="w-full h-auto cover-shadow"
           />
           <figcaption className="mt-4 text-sm text-white/70 text-center italic">
-            Toto – <span className="whitespace-nowrap">*Dune OST*</span>
+            Bobby Kimball Classic Toto Hits <br />
+            (with the Frankfurt Rock Orchestra)
           </figcaption>
         </figure>
 
@@ -68,7 +69,7 @@ const BestOffHistoire = () => {
 
           <figure className="my-8">
             <img
-              src="/images/Dune-soundtrack-by-Toto.jpg"
+              src="/images/toto.webp"
               alt="Bande originale de Dune par Toto — inspiration rock symphonique"
               width={800}
               height={800}
@@ -76,7 +77,8 @@ const BestOffHistoire = () => {
               className="w-full h-auto"
             />
             <figcaption className="mt-2 text-sm text-white/70 text-center italic">
-              Toto – <span className="whitespace-nowrap">*Dune OST*</span>
+                          Bobby Kimball Classic Toto Hits <br />
+            (with the Frankfurt Rock Orchestra)
             </figcaption>
           </figure>
 
