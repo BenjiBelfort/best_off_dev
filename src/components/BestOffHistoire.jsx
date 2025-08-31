@@ -29,14 +29,19 @@ const BestOffHistoire = () => {
       <div className="sm:mt-6 grid grid-cols-1 sm:grid-cols-5 gap-12 items-center mb-8">
         {/* Desktop : image à gauche */}
         <figure className="hidden sm:block sm:col-span-2">
-          <img
-            src="/images/toto.webp"
-            alt="Bande originale de Dune par Toto — inspiration rock symphonique"
-            width={800}
-            height={800}
-            loading="lazy"
-            className="w-full h-auto cover-shadow"
-          />
+          <a href="https://youtube.com/playlist?list=PLAi1LIeUCIJ3Tdt7TnG2lN4Pv0yzS0lM2&si=hjqiZD-LwVAVZ3Kq"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="/images/toto.webp"
+              alt="Album Bobby Kimball Classic Toto Hits (with the Frankfurt Rock Orchestra) — inspiration rock symphonique"
+              width={800}
+              height={800}
+              loading="lazy"
+              className="w-full h-auto cover-shadow"
+            />
+          </a>
           <figcaption className="mt-4 text-sm text-white/70 text-center italic">
             Bobby Kimball Classic Toto Hits <br />
             (with the Frankfurt Rock Orchestra)
@@ -68,16 +73,21 @@ const BestOffHistoire = () => {
           </p>
 
           <figure className="my-8">
-            <img
-              src="/images/toto.webp"
-              alt="Bande originale de Dune par Toto — inspiration rock symphonique"
-              width={800}
-              height={800}
-              loading="lazy"
-              className="w-full h-auto"
-            />
+            <a href="https://youtube.com/playlist?list=PLAi1LIeUCIJ3Tdt7TnG2lN4Pv0yzS0lM2&si=hjqiZD-LwVAVZ3Kq"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="/images/toto.webp"
+                alt="Album Bobby Kimball Classic Toto Hits (with the Frankfurt Rock Orchestra) — inspiration rock symphonique"
+                width={800}
+                height={800}
+                loading="lazy"
+                className="w-full h-auto"
+              />
+            </a>
             <figcaption className="mt-2 text-sm text-white/70 text-center italic">
-                          Bobby Kimball Classic Toto Hits <br />
+            Bobby Kimball Classic Toto Hits <br />
             (with the Frankfurt Rock Orchestra)
             </figcaption>
           </figure>
