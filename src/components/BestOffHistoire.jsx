@@ -117,7 +117,7 @@ const BestOffHistoire = () => {
             width={800}
             height={800}
             loading="lazy"
-            className="w-full h-auto shadow-lg object-cover"
+            className="w-full h-auto sepia-50 shadow-lg object-cover"
           />
           <figcaption className="mt-2 sm:mt-4 text-sm text-white/70 text-center">
             Roland CIBIL
