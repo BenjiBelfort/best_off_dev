@@ -60,7 +60,7 @@ const PressKit = () => {
 
 
         <a
-          href="/files/logos.zip"
+          href="/files/BEST-OFF-logos.zip"
           download
           className="flex justify-center items-center w-full max-w-sm gap-2 px-4 py-2 border-2 border-white transition-transform transform hover:scale-110 cursor-pointer bg-white/10 hover:bg-red-400/10 hover:border-red-400"
         >

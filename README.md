@@ -13,3 +13,10 @@ If you are developing a production application, we recommend using TypeScript an
 
 
 npm run sitemap : créé le site-map image dans le dossier public
+
+
+à faire plus tard :
+- supprimer le JSON des past event et mettre chaque event dans un mdx dédié
+- inclure tout le SEO
+- mettre à jour le composant EventDetail.jsx
+- créer chaque Event dans un MDX

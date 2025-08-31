@@ -9,6 +9,7 @@ import eventsData from '../data/pastEvents.json';
 import Contact from '../components/Contact';
 
 const Biographie = lazy(() => import('../components/Biographie'));
+const BestOffHistoire = lazy(() => import('../components/BestOffHistoire'));
 const LatestEvents = lazy(() => import('../components/LatestEvents'));
 const Gallery = lazy(() => import('../components/ui/Gallery'));
 const PartnersComp = lazy(() => import('../components/PartnersComp'));
@@ -76,6 +77,10 @@ const Home = () => {
         <Separator />
         <Suspense fallback={<div>Chargement...</div>}>
           <Biographie />
+        </Suspense>
+        <Separator />
+        <Suspense fallback={<div>Chargement...</div>}>
+          <BestOffHistoire />
         </Suspense>
         <Separator />
         <Suspense fallback={<div>Chargement...</div>}>
