@@ -35,6 +35,7 @@ const PressKit = () => {
           href="https://www.instagram.com/bestoff90300/"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Visitez notre page Instagram"
         >
           <FaInstagramSquare className="w-8 h-8 hover:scale-110 transition-transform cursor-pointer" />
         </a>
@@ -42,6 +43,7 @@ const PressKit = () => {
           href="https://www.facebook.com/musicbestoff/"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Suivez-nous sur Facebook"
         >
           <FaFacebookSquare className="w-8 h-8 hover:scale-110 transition-transform cursor-pointer" />
         </a>

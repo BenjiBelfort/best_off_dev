@@ -25,6 +25,7 @@ const Contact = () => {
             href="https://www.instagram.com/bestoff90300/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="BEST OFF' sur Instagram"
           >
             <FaInstagramSquare
               className="w-8 h-8 hover:scale-110 transition-transform cursor-pointer"
@@ -34,6 +35,7 @@ const Contact = () => {
             href="https://www.facebook.com/musicbestoff/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="BEST OFF' sur Facebook"
           >
             <FaFacebookSquare
               className="w-8 h-8 hover:scale-110 transition-transform cursor-pointer"

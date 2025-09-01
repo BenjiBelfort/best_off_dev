@@ -36,8 +36,8 @@ const BestOffHistoire = () => {
             <img
               src="/images/toto.webp"
               alt="Album Bobby Kimball Classic Toto Hits (with the Frankfurt Rock Orchestra) — inspiration rock symphonique"
-              width={800}
-              height={800}
+              width={700}
+              height={703}
               loading="lazy"
               className="w-full h-auto cover-shadow"
             />

@@ -42,9 +42,9 @@ const MainImg = () => {
   return (
     <div className="relative w-full h-[100vh] bg-stone-900 -mt-20 overflow-hidden">
       <div 
-        className="relative w-full h-full bg-[url(/images/rideau-noir.webp)] bg-fixed  bg-no-repeat bg-cover bg-center"
+        className="relative w-full h-full"
       >
-        {/* <img 
+        <img 
           src="/images/rideau-noir.webp"
           alt="rideaux noirs"
           width="1041"
@@ -54,7 +54,7 @@ const MainImg = () => {
           fetchPriority="high"
           decoding="async"
           style={{ aspectRatio: '16 / 9' }}
-        /> */}
+        />
         
         <div className="absolute inset-0 bg-gradient-to-t from-stone-900/100 to-transparent" />
       </div>

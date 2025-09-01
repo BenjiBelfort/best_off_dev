@@ -162,6 +162,7 @@ const Footer = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-orange-300 transition-colors duration-300 cursor-pointer"
+                    aria-label="Site web développé par Benji Belfort"
                     >
                     Dev par Benji Belfort
                     </a>
