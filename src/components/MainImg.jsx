@@ -1,3 +1,4 @@
+// src/components/MainImg.jsx
 import { useState, useEffect } from 'react';
 
 const MainImg = () => {
@@ -44,17 +45,38 @@ const MainImg = () => {
       <div 
         className="relative w-full h-full"
       >
-        <img 
-          src="/images/rideau-noir.webp"
-          alt="rideaux noirs"
-          width="1041"
-          height="686"
-          loading="eager"
-          className="w-full h-full object-cover bg-stone-900"
-          fetchPriority="high"
-          decoding="async"
-          style={{ aspectRatio: '16 / 9' }}
-        />
+        <picture>
+      {/* AVIF d'abord */}
+      <source
+        type="image/avif"
+        srcSet={[
+          "/images/rideau-noir_640.avif 640w",
+          "/images/rideau-noir_768.avif 768w",
+          "/images/rideau-noir_1024.avif 1024w"
+        ].join(", ")}
+        sizes="100vw"
+      />
+      {/* WebP fallback */}
+      <source
+        type="image/webp"
+        srcSet={[
+          "/images/rideau-noir_640.webp 640w",
+          "/images/rideau-noir_768.webp 768w",
+          "/images/rideau-noir_1024.webp 1024w"
+        ].join(", ")}
+        sizes="100vw"
+      />
+      <img
+        src="/images/rideau-noir_1024.webp"
+        alt="rideaux noirs"
+        width={1041} height={686}
+        loading="eager"
+        fetchPriority="high"
+        decoding="async"
+        className="w-full h-full object-cover bg-stone-900"
+      />
+    </picture>
+
         
         <div className="absolute inset-0 bg-gradient-to-t from-stone-900/100 to-transparent" />
       </div>
