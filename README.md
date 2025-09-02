@@ -20,3 +20,4 @@ npm run sitemap : créé le site-map image dans le dossier public
 - inclure tout le SEO
 - mettre à jour le composant EventDetail.jsx
 - créer chaque Event dans un MDX
+- réduire la taille des images

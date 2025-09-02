@@ -8,9 +8,10 @@ const Recruitment = () => {
   return (
     <section id="recrutement" className="scroll-mt-20 mx-auto max-w-5xl px-4 py-8">
         <h3>Recrutement</h3>
-      <p className="text-white text-center mb-10">
-        BEST OFF' recrute pour renforcer l’équipe musicale !{" "}
-        Si tu as la motivation et l’envie de partager la scène, rejoins-nous
+      <p className="text-xl text-white text-center mb-10">
+        Vous avez envie de participer à l'aventure ?<br />
+        BEST OFF' recrute !
+        Si vous avez la motivation et l’envie de partager la scène, rejoignez-nous.
       </p>
 
       {/* Grid centrée vraiment */}
@@ -37,10 +38,10 @@ const Recruitment = () => {
       {/* CTA */}
       <div className="mt-6 text-center">
         <p className="text-white mb-4">
-          Engagement : Répétitions hebdomadaires à Offemont + dates de concerts
+          Engagement : Répétitions hebdomadaires à Offemont + dates de concerts.
         </p>
         <a
-          href="#contact"
+          href="/#contact"
           className="inline-block px-6 py-2 my-3 border-2 border-white text-white transition-transform transform hover:scale-110 cursor-pointer bg-white/10 hover:bg-red-400/10 hover:border-red-400"
         >
           Je postule

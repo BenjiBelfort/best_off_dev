@@ -2,6 +2,8 @@
 import { Title, Meta, Link as LinkTag } from 'react-head';
 import eventsData from '../data/pastEvents.json';
 import EventCard from '../components/EventCard';
+import Separator from '../components/ui/Separator';
+import Recruitment from '../components/Recruitment';
 
 const BASE = 'https://bestoffmusic.fr';
 
@@ -46,6 +48,8 @@ const Archives = () => {
             <EventCard key={event.id} event={event} />
           ))}
         </div>
+        <Separator />
+        <Recruitment />
       </section>
     </>
   );
