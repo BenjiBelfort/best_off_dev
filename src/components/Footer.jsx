@@ -152,9 +152,14 @@ const Footer = () => {
           <div>
             <h4 className="text-stone-100 font-semibold mb-3 text-left">Informations</h4>
             <ul className="space-y-2">
-              <li>
-                <MentionsLegalesModal />
-              </li>
+                <li>
+                  <Link
+                    to="/mentions-legales"
+                    className="hover:text-red-400 transition-colors duration-300 cursor-pointer"
+                  >
+                    Mentions légales
+                  </Link>
+                </li>
 
                 <li>
                   <a

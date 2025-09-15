@@ -9,6 +9,7 @@ const Archives = lazy(() => import('./pages/Archives'));
 const EventDetail = lazy(() => import('./pages/EventDetail'));
 const Galerie = lazy(() => import('./pages/Galerie'));
 const Presse = lazy(() => import('./pages/Presse'));
+const MentionsLegales = lazy(() => import('./pages/MentionsLegales'));
 
 import "./index.css";
 
@@ -22,6 +23,7 @@ const App = () => {
           <Route path="archives/:id" element={<EventDetail />} />
           <Route path="/galerie" element={<Galerie />} />
           <Route path="/presse" element={<Presse />} />
+          <Route path="/mentions-legales" element={<MentionsLegales />} />
         </Route>
       </Routes>
     </Suspense>
