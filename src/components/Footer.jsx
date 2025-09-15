@@ -157,16 +157,26 @@ const Footer = () => {
               </li>
 
                 <li>
-                    <a
+                  <a
                     href="https://benji-belfort-portfolio.netlify.app/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-orange-300 transition-colors duration-300 cursor-pointer"
+                    className="inline-flex items-center gap-2 hover:text-orange-300 transition-colors duration-300 cursor-pointer"
                     aria-label="Site web développé par Benji Belfort"
-                    >
-                    Dev par Benji Belfort
-                    </a>
+                  >
+                    <span>Dev by Benji Belfort</span>
+                    <img
+                      src="/images/logo-CPEP.png"
+                      alt="Logo CPEP"
+                      width={20}
+                      height={20}
+                      loading="lazy"
+                      decoding="async"
+                      className="h-5 w-5"
+                    />
+                  </a>
                 </li>
+
 
                 <details className="mt-2 text-stone-400 text-xs">
                 <summary className="hover:text-red-400 transition-colors duration-300 cursor-pointer">

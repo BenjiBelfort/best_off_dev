@@ -16,6 +16,9 @@ const Navbar = () => {
   const location = useLocation();
   const isHome = location.pathname === '/';
 
+  const HOVER_REVEAL_PX = 80;
+  const hoverRaf = useRef(null);
+
   // 1. Scroll + détection de section (HOME uniquement — inchangé)
   useEffect(() => {
     if (!isHome) {
@@ -107,6 +110,32 @@ const Navbar = () => {
     after:transform after:-translate-x-1/2 after:origin-center
     after:h-[2px] after:w-full after:bg-red-400
   `;
+
+  // nouvel effet : révélation à l’approche du haut de l’écran (desktop uniquement)
+  useEffect(() => {
+    // Ne déclenche que sur pointeur fin (souris/trackpad)
+    const mql = window.matchMedia('(hover: hover) and (pointer: fine)');
+    if (!mql.matches) return;
+
+    const onMove = (e) => {
+      if (hoverRaf.current) return;
+      hoverRaf.current = requestAnimationFrame(() => {
+        // Si la nav est cachée et qu’on approche du haut → on l’affiche
+        if (e.clientY <= HOVER_REVEAL_PX && hidden && !isOpen) {
+          setHidden(false);
+        }
+        hoverRaf.current = null;
+      });
+    };
+
+    window.addEventListener('mousemove', onMove, { passive: true });
+    return () => {
+      window.removeEventListener('mousemove', onMove);
+      if (hoverRaf.current) cancelAnimationFrame(hoverRaf.current);
+    };
+  }, [hidden, isOpen]);
+
+
 
   return (
     // CHANGE: on laisse <nav> SANS fond (le fond passe sur le wrapper animé)
