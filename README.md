@@ -20,4 +20,9 @@ If you are developing a production application, we recommend using TypeScript an
 - créer chaque Event dans un MDX
 - réduire la taille des images
 
+- mettre des "badges" compteur en bas à gauche des card affiches (badge photo 18 - badge partenaires 25)
+
 Pour la v 1.4.0 ajouter une section "En répète"
+
+
+V2 : Ajouter une administration et gestion de l'association (compte adhérent, cotiz, etc...)

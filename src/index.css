@@ -140,3 +140,24 @@ p {
 .fade-slide {
   animation: fade-slide 0.4s ease-out forwards;
 }
+
+/* effet Ken Burns */
+@keyframes zoomIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.slideshow-zoom {
+  animation: zoomIn 6s ease-in-out forwards;
+  transform-origin: center;
+}
+
+.slideshow-hold {
+  transform: scale(1.1);
+  transform-origin: center;
+}
+/* effet Ken Burns */
