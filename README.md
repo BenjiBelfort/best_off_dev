@@ -20,3 +20,4 @@ If you are developing a production application, we recommend using TypeScript an
 - créer chaque Event dans un MDX
 - réduire la taille des images
 
+Pour la v 1.4.0 ajouter une section "En répète"
