@@ -12,12 +12,11 @@ Currently, two official plugins are available:
 If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 
 
-npm run sitemap : créé le site-map image dans le dossier public
 
-
-à faire plus tard :
-- supprimer le JSON des past event et mettre chaque event dans un mdx dédié
-- inclure tout le SEO
+à faire plus tard : archives en MDX
+- supprimer le JSON des past event et mettre chaque event dans un mdx dédié avec la galerie photo, les partenaires, etc...
+- inclure tout le SEO dans les MDX
 - mettre à jour le composant EventDetail.jsx
 - créer chaque Event dans un MDX
 - réduire la taille des images
+
