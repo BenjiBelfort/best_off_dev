@@ -1,5 +1,3 @@
-import React from 'react';
-
 const SeeMoreButton = ({ onClick, label = "Voir plus +", className = "" }) => {
   return (
     <div className="mt-8 text-center">

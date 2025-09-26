@@ -17,12 +17,15 @@ If you are developing a production application, we recommend using TypeScript an
 - supprimer le JSON des past event et mettre chaque event dans un mdx dédié avec la galerie photo, les partenaires, etc...
 - inclure tout le SEO dans les MDX
 - mettre à jour le composant EventDetail.jsx
-- créer chaque Event dans un MDX
 - réduire la taille des images
+- ajouter en donnée des events le montant global récolté et le nom de l'association bénéficiaire
+- ajouter une section photos "En répète"
 
-- mettre des "badges" compteur en bas à gauche des card affiches (badge photo 18 - badge partenaires 25)
 
-Pour la v 1.4.0 ajouter une section "En répète"
+v 1.4.0 : badges sur events
+
+
+v 1.5.0 
 
 
 V2 : Ajouter une administration et gestion de l'association (compte adhérent, cotiz, etc...)
